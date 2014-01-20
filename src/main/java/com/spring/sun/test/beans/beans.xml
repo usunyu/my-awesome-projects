@@ -10,9 +10,13 @@
 	</bean>
 
 	<bean id="consoleWriter" class="com.spring.sun.test.ConsoleWriter">
+		<qualifier value="toconsole"></qualifier>
 	</bean>
 
-	<bean id="fileWriter" class="com.spring.sun.test.FileWriter">
+	<bean id="squirrel" class="com.spring.sun.test.ConsoleWriter">
+	</bean>
+
+	<bean id="mongoose" class="com.spring.sun.test.FileWriter">
 	</bean>
 
 	<context:annotation-config></context:annotation-config>
