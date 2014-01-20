@@ -25,4 +25,18 @@
 	<bean id="personfactory"
 		class="com.spring.sun.test.PersonFactory">
 	</bean>
+	<bean id="basket" class="com.spring.sun.test.FruitBasket">
+
+	<constructor-arg value="Sun's basket"></constructor-arg>
+	<constructor-arg>
+		<list>
+			<value>apple</value>
+			<value>banana</value>
+			<value>orange</value>
+			<value>kiwi</value>
+			<value>pear</value>
+			<value>pear</value>
+		</list>
+	</constructor-arg>
+	</bean>
 </beans>
