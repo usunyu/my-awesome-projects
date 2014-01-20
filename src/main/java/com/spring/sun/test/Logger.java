@@ -1,6 +1,6 @@
 package com.spring.sun.test;
 
-import javax.annotation.Resource;
+import javax.annotation.*;
 /*
  * Dummy implementation of logger.
  */
@@ -29,4 +29,13 @@ public class Logger {
 			consoleWriter.write(text);
 	}
 
+	@PostConstruct
+	public void init() {
+		System.out.println("init");
+	}
+	
+	@PreDestroy
+	public void destroy() {
+		System.out.println("destroy");
+	}
 }
