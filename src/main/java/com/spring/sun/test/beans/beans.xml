@@ -1,74 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	default-destroy-method="destory" default-init-method="init"
 	xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="person" class="com.spring.sun.test.Person" scope="singleton"
-		init-method="onCreate" destroy-method="onDestory" factory-method="getInstance">
-		<constructor-arg value="777" name="id" type="int"></constructor-arg>
-		<constructor-arg value="Mary" name="name" type="String"></constructor-arg>
-		<property name="taxId" value="321"></property>
-		<property name="address" ref="address"></property>
+	<bean id="logger" class="com.spring.sun.test.Logger" autowire="byType">
+
 	</bean>
 
-	<bean id="address" class="com.spring.sun.test.Address">
-		<constructor-arg name="street" value="1 Church Lane"></constructor-arg>
-		<constructor-arg name="postcode" value="9876"></constructor-arg>
+
+	<bean id="consolewriter" class="com.spring.sun.test.ConsoleWriter">
 	</bean>
 
-	<bean id="address2" class="com.spring.sun.test.Address" p:street="23 Vinyard Lane"
-		p:postcode="6789">
+	<bean id="filewriter" class="com.spring.sun.test.FileWriter">
 	</bean>
-
-	<bean id="personfactory" class="com.spring.sun.test.PersonFactory">
-	</bean>
-
-	<bean id="basket" class="com.spring.sun.test.FruitBasket">
-		<constructor-arg value="Sun's basket"></constructor-arg>
-		<constructor-arg>
-			<list>
-				<value>apple</value>
-				<value>banana</value>
-				<value>orange</value>
-				<value>kiwi</value>
-				<value>pear</value>
-				<value>pear</value>
-			</list>
-		</constructor-arg>
-	</bean>
-
-	<bean id="jungle" class="com.spring.sun.test.Jungle">
-		<property name="foods">
-			<props>
-				<prop key="gorilla">banana</prop>
-				<prop key="panda">bamboo</prop>
-				<prop key="snake">eggs</prop>
-			</props>
-		</property>
-		
-		<property name="animals">
-			<map>
-				<entry key="lion" value-ref="lion"></entry>
-				<entry key="elephant" value-ref="elephant"></entry>
-				<entry key="snake" value-ref="snake"></entry>
-			</map>
-		</property>
-	</bean>
-
-	<bean id="lion" class="com.spring.sun.test.Animal">
-		<property name="name" value="Igor"></property>
-		<property name="type" value="lion"></property>
-	</bean>
-
-	<bean id="elephant" class="com.spring.sun.test.Animal">
-		<property name="name" value="Richard"></property>
-		<property name="type" value="elephant"></property>
-	</bean>
-
-	<bean id="snake" class="com.spring.sun.test.Animal">
-		<property name="name" value="Bob"></property>
-		<property name="type" value="snake"></property>
-	</bean>
+	
 </beans>

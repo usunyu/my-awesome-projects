@@ -12,7 +12,7 @@ public class Person {
 	}
 	
 	public static Person getInstance(int id, String name) {
-		//System.out.println("Creating Person using factory method.");
+		System.out.println("Creating Person using factory method.");
 		return new Person(id, name);
 	}
 	
@@ -22,11 +22,11 @@ public class Person {
 	}
 	
 	public void onCreate() {
-		//System.out.println("Person created: " + this);
+		System.out.println("Person created: " + this);
 	}
 	
 	public void onDestory() {
-		//System.out.println("Person destoryed");
+		System.out.println("Person destoryed");
 	}
 	
 	public void setTaxId(int taxId) {

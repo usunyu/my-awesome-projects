@@ -18,8 +18,12 @@ public class App {
 		//FruitBasket basket = (FruitBasket)context.getBean("basket");
 		//System.out.println(basket);
 		
-		Jungle jungle = (Jungle)context.getBean("jungle");
-		System.out.println(jungle);
+		//Jungle jungle = (Jungle)context.getBean("jungle");
+		//System.out.println(jungle);
+		
+		Logger logger = (Logger)context.getBean("logger");
+		logger.writeConsole("Hello there");
+		logger.writeFile("Hi again");
 		
 		((ClassPathXmlApplicationContext)context).close();
 	}
