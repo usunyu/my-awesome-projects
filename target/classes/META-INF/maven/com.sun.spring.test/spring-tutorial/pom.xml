@@ -19,5 +19,10 @@
   		<artifactId>spring-context</artifactId>
   		<version>3.2.5.RELEASE</version>
   	</dependency>
+  	<dependency>
+  		<groupId>javax.inject</groupId>
+  		<artifactId>javax.inject</artifactId>
+  		<version>1</version>
+  	</dependency>
   </dependencies>
 </project>

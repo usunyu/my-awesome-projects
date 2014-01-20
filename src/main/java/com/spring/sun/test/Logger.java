@@ -1,21 +1,25 @@
 package com.spring.sun.test;
 
-import javax.annotation.*;
 /*
  * Dummy implementation of logger.
  */
+import javax.annotation.*;
+import javax.inject.Inject;
+import javax.inject.Named;
 
 public class Logger {
 
 	private ConsoleWriter consoleWriter;
 	private LogWriter fileWriter;
 
-	@Resource
+	@Inject
+	@Named(value="consoleWriter")
 	public void setConsoleWriter(ConsoleWriter writer) {
 		this.consoleWriter = writer;
 	}
 
-	@Resource(name="squirrel")
+	@Inject
+	@Named(value="squirrel")
 	public void setFileWriter(LogWriter fileWriter) {
 		this.fileWriter = fileWriter;
 	}
