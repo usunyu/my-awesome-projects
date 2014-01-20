@@ -15,8 +15,11 @@ public class App {
 		//Address address2 = (Address)context.getBean("address2");
 		//System.out.println(address2);
 		
-		FruitBasket basket = (FruitBasket)context.getBean("basket");
-		System.out.println(basket);
+		//FruitBasket basket = (FruitBasket)context.getBean("basket");
+		//System.out.println(basket);
+		
+		Jungle jungle = (Jungle)context.getBean("jungle");
+		System.out.println(jungle);
 		
 		((ClassPathXmlApplicationContext)context).close();
 	}
