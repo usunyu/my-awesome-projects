@@ -38,13 +38,17 @@
 			</list>
 		</constructor-arg>
 	</bean>
-	
+
 	<bean id="jungle" class="com.spring.sun.test.Jungle">
-		<property name="largest" ref="elephant"></property>
+		<property name="largest">
+			<bean class="com.spring.sun.test.Animal">
+				<property name="name" value="Richard"></property>
+				<property name="type" value="elephant"></property>
+			</bean>
+		</property>
 		<property name="animals">
 			<list>
 				<ref bean="snake" />
-				<ref bean="elephant" />
 				<ref bean="lion" />
 			</list>
 		</property>
@@ -54,10 +58,7 @@
 		<property name="name" value="Igor"></property>
 		<property name="type" value="lion"></property>
 	</bean>
-	<bean id="elephant" class="com.spring.sun.test.Animal">
-		<property name="name" value="Richard"></property>
-		<property name="type" value="elephant"></property>
-	</bean>
+
 	<bean id="snake" class="com.spring.sun.test.Animal">
 		<property name="name" value="Bob"></property>
 		<property name="type" value="snake"></property>
