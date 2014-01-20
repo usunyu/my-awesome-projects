@@ -4,15 +4,15 @@
 	xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="logger" class="com.spring.sun.test.Logger" autowire="byType">
+	<bean id="logger" class="com.spring.sun.test.Logger" autowire="byName">
 
 	</bean>
 
 
-	<bean id="consolewriter" class="com.spring.sun.test.ConsoleWriter">
+	<bean id="consoleWriter" class="com.spring.sun.test.ConsoleWriter">
 	</bean>
 
-	<bean id="filewriter" class="com.spring.sun.test.FileWriter">
+	<bean id="fileWriter" class="com.spring.sun.test.FileWriter">
 	</bean>
 	
 </beans>

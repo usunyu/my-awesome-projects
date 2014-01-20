@@ -6,14 +6,14 @@ package com.spring.sun.test;
 
 public class Logger {
 
-	private ConsoleWriter consoleWriter;
-	private FileWriter fileWriter;
+	private LogWriter consoleWriter;
+	private LogWriter fileWriter;
 
-	public void setConsoleWriter(ConsoleWriter writer) {
+	public void setConsoleWriter(LogWriter writer) {
 		this.consoleWriter = writer;
 	}
 
-	public void setFileWriter(FileWriter fileWriter) {
+	public void setFileWriter(LogWriter fileWriter) {
 		this.fileWriter = fileWriter;
 	}
 	
