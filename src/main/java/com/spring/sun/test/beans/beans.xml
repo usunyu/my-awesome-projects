@@ -7,5 +7,6 @@
 	<bean id="person" class="com.spring.sun.test.Person">
 		<constructor-arg value="777" name="id" type="int"></constructor-arg>
 		<constructor-arg value="Mary" name="name" type="String"></constructor-arg>
+		<property name="taxId" value="321"></property>
 	</bean>
 </beans>
