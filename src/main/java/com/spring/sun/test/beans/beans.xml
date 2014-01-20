@@ -47,6 +47,14 @@
 				<prop key="snake">eggs</prop>
 			</props>
 		</property>
+		
+		<property name="animals">
+			<map>
+				<entry key="lion" value-ref="lion"></entry>
+				<entry key="elephant" value-ref="elephant"></entry>
+				<entry key="snake" value-ref="snake"></entry>
+			</map>
+		</property>
 	</bean>
 
 	<bean id="lion" class="com.spring.sun.test.Animal">
