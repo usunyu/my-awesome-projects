@@ -21,9 +21,12 @@ public class App {
 		//Jungle jungle = (Jungle)context.getBean("jungle");
 		//System.out.println(jungle);
 		
-		Logger logger = (Logger)context.getBean("logger");
-		logger.writeConsole("Hello there");
-		logger.writeFile("Hi again");
+		//Logger logger = (Logger)context.getBean("logger");
+		//logger.writeConsole("Hello there");
+		//logger.writeFile("Hi again");
+		
+		Robot robot = (Robot)context.getBean("robot");
+		robot.speak();
 		
 		((ClassPathXmlApplicationContext)context).close();
 	}
