@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
+import org.springframework.dao.DataAccessException;
 
 public class App {
 
@@ -28,10 +29,15 @@ public class App {
 		//logger.writeFile("Hi again");
 		
 		OfferDao offerDao = (OfferDao)context.getBean("offerDao");
-		List<Offer> offers = offerDao.getOffers();
-		
-		for(Offer offer : offers) {
-			System.out.println(offer);
+		try {
+			List<Offer> offers = offerDao.getOffers();
+			
+			for(Offer offer : offers) {
+				System.out.println(offer);
+			}
+		} catch (DataAccessException e) {
+			System.out.println(e.getMessage());
+			System.out.println(e.getClass());
 		}
 		
 		((ClassPathXmlApplicationContext)context).close();
