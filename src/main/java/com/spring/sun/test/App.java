@@ -1,5 +1,7 @@
 package com.spring.sun.test;
 
+import java.util.List;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
@@ -25,8 +27,12 @@ public class App {
 		//logger.writeConsole("Hello there");
 		//logger.writeFile("Hi again");
 		
-		Robot robot = (Robot)context.getBean("robot");
-		robot.speak();
+		OfferDao offerDao = (OfferDao)context.getBean("offerDao");
+		List<Offer> offers = offerDao.getOffers();
+		
+		for(Offer offer : offers) {
+			System.out.println(offer);
+		}
 		
 		((ClassPathXmlApplicationContext)context).close();
 	}
