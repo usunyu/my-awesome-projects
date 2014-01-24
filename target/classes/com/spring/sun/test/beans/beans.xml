@@ -11,4 +11,12 @@
 	
 	<context:property-placeholder location="com/spring/sun/props/jdbc.properties" />
 
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+	<property name="driverClassName" value="${jdbc.driver}"></property>
+	<property name="url" value="${jdbc.url}"></property>
+	<property name="password" value="${jdbc.password}"></property>
+	<property name="username" value="${jdbc.username}"></property>
+	</bean>
 </beans>
