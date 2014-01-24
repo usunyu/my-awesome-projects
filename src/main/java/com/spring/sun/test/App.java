@@ -35,6 +35,9 @@ public class App {
 			for(Offer offer : offers) {
 				System.out.println(offer);
 			}
+			
+			Offer offer = offerDao.getOffer(2);
+			System.out.println("Should be Mike: " + offer);
 		} catch (DataAccessException e) {
 			System.out.println(e.getMessage());
 			System.out.println(e.getClass());
