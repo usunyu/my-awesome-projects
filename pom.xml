@@ -34,5 +34,10 @@
   		<artifactId>commons-dbcp</artifactId>
   		<version>1.4</version>
   	</dependency>
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-jdbc</artifactId>
+  		<version>3.2.4.RELEASE</version>
+  	</dependency>
   </dependencies>
 </project>
