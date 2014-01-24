@@ -42,6 +42,11 @@ public class OfferDao {
 		return jdbc.update("delete form offers where id = :id", params) == 1;
 	}
 	
+	public boolean update(Offer offer) {
+		BeanPropertySqlParameterSource params = new BeanPropertySqlParameterSource(offer);
+		return jdbc.update("update offers set name=:name, text=:text, email=:email where id=:id", params) == 1;
+	}
+	
 	public boolean create(Offer offer) {
 		BeanPropertySqlParameterSource params = new BeanPropertySqlParameterSource(offer);
 		return jdbc.update("insert into offers (name, text, email) values (:name, :text, :email)", params) == 1;

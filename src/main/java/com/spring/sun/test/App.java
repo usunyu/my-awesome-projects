@@ -29,18 +29,27 @@ public class App {
 		//logger.writeFile("Hi again");
 		
 		OfferDao offerDao = (OfferDao)context.getBean("offerDao");
+		Offer updateOffer = new Offer(6, "Sun", "sun@usc.edu", "Web server developer");
+		
+		if(offerDao.update(updateOffer)) {
+			System.out.println("Object updated.");
+		}
+		else {
+			System.out.println("Cannot update object.");
+		}
+		
 		try {
 			
-			Offer offer1 = new Offer("Sunny", "suny@usc.edu", "Algorithm, Java, Big Data, Clouding");
-			Offer offer2 = new Offer("Dave", "dave@usc.edu", "Software Testing");
+			//Offer offer1 = new Offer("Sunny", "suny@usc.edu", "Algorithm, Java, Big Data, Clouding");
+			//Offer offer2 = new Offer("Dave", "dave@usc.edu", "Software Testing");
 			
-			if(offerDao.create(offer1)) {
-				System.out.println("Created offer object.");
-			}
+			//if(offerDao.create(offer1)) {
+			//	System.out.println("Created offer object.");
+			//}
 			
-			if(offerDao.create(offer2)) {
-				System.out.println("Created offer object.");
-			}
+			//if(offerDao.create(offer2)) {
+			//	System.out.println("Created offer object.");
+			//}
 			
 			List<Offer> offers = offerDao.getOffers();
 			
