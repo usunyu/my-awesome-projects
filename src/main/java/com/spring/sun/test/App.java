@@ -1,10 +1,10 @@
 package com.spring.sun.test;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.context.support.FileSystemXmlApplicationContext;
 import org.springframework.dao.DataAccessException;
 
 public class App {
@@ -50,6 +50,16 @@ public class App {
 			//if(offerDao.create(offer2)) {
 			//	System.out.println("Created offer object.");
 			//}
+			
+			List<Offer> offersList = new ArrayList<Offer>();
+			offersList.add(new Offer("Tom", "tom@sina.com", "Cash for software"));
+			offersList.add(new Offer("Jerry", "jerry@sina.com", "iOS game developer"));
+			
+			int[] rvals = offerDao.create(offersList);
+			
+			for(int value : rvals) {
+				System.out.println("Updated " + value + " rows.");
+			}
 			
 			List<Offer> offers = offerDao.getOffers();
 			
