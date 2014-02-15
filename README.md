@@ -1,5 +1,5 @@
-spring-tutorial
-===============
+The Java Spring Framework
+=========================
 
 Cave of Programming Spring Tutorial
 
