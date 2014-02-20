@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  div.container
+    h3 File list
+    ul
+      each file in Contents
+        li
+          a(href="http://faq_system.s3.amazonaws.com/" + file.Key)= file.Key

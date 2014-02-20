@@ -1,0 +1,245 @@
+# AWS SDK for Node.js [![Build Status](https://travis-ci.org/aws/aws-sdk-js.png?branch=master)](https://travis-ci.org/aws/aws-sdk-js)
+
+The official JavaScript implementation of the AWS SDK for Node.js.
+
+## Installing
+
+The preferred way to install the AWS SDK for Node.js is to use the
+[npm](http://npmjs.org) package manager for Node.js. Simply type the following
+into a terminal window:
+
+```sh
+npm install aws-sdk
+```
+
+## Usage
+
+After you've installed the SDK, you can require the AWS package in your node
+application using `require`:
+
+```js
+var AWS = require('aws-sdk');
+```
+
+Here is a quick example that makes some requests against Amazon S3 with the SDK:
+
+```js
+// Load the AWS SDK for Node.js
+var AWS = require('aws-sdk');
+
+/**
+ * Don't hard-code your credentials!
+ * Load them from disk or your environment instead.
+ */
+// AWS.config.update({accessKeyId: 'AKID', secretAccessKey: 'SECRET'});
+
+// Instead, do this:
+AWS.config.loadFromPath('./path/to/credentials.json');
+
+// Set your region for future requests.
+AWS.config.update({region: 'us-east-1'});
+
+// Create a bucket using bound parameters and put something in it.
+var s3bucket = new AWS.S3({params: {Bucket: 'myBucket'}});
+s3bucket.createBucket(function() {
+  var data = {Key: 'myKey', Body: 'Hello!'};
+  s3bucket.putObject(data, function(err, data) {
+    if (err) {
+      console.log("Error uploading data: ", err);
+    } else {
+      console.log("Successfully uploaded data to myBucket/myKey");
+    }
+  });
+});
+```
+
+## Getting Started Guide
+
+You can find a getting started guide at:
+
+http://docs.amazonwebservices.com/nodejs/latest/dg/
+
+## Supported Services
+
+The SDK currently supports the following services:
+
+<table>
+  <thead>
+    <th>Service Name</th>
+    <th>API Version</th>
+    <th>Class Name</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Auto Scaling</td>
+      <td>2011-01-01</td>
+      <td>AWS.AutoScaling</td>
+    </tr>
+    <tr>
+      <td>AWS CloudFormation</td>
+      <td>2010-05-15</td>
+      <td>AWS.CloudFormation</td>
+    </tr>
+    <tr>
+      <td>Amazon CloudFront</td>
+      <td>2013-05-12<br>2012-05-05</td>
+      <td>AWS.CloudFront</td>
+    </tr>
+    <tr>
+      <td>Amazon CloudWatch</td>
+      <td>2010-08-01</td>
+      <td>AWS.CloudWatch</td>
+    </tr>
+    <tr>
+      <td>Amazon CloudSearch</td>
+      <td>2011-02-01</td>
+      <td>AWS.CloudSearch</td>
+    </tr>
+    <tr>
+      <td>AWS Data Pipeline</td>
+      <td>2012-10-29</td>
+      <td>AWS.DataPipeline</td>
+    </tr>
+    <tr>
+      <td>AWS Direct Connect</td>
+      <td>2012-10-25</td>
+      <td>AWS.DirectConnect</td>
+    </tr>
+    <tr>
+      <td>Amazon DynamoDB</td>
+      <td>2012-08-10<br>2011-12-05</td>
+      <td>AWS.DynamoDB</td>
+    </tr>
+    <tr>
+      <td>Amazon Elastic Compute Cloud</td>
+      <td>2012-12-01</td>
+      <td>AWS.EC2</td>
+    </tr>
+    <tr>
+      <td>Amazon ElastiCache</td>
+      <td>2012-11-15</td>
+      <td>AWS.ElastiCache</td>
+    </tr>
+    <tr>
+      <td>Amazon Glacier</td>
+      <td>2012-06-01</td>
+      <td>AWS.Glacier</td>
+    </tr>
+    <tr>
+      <td>Amazon Route 53</td>
+      <td>2012-12-12</td>
+      <td>AWS.Route53</td>
+    </tr>
+    <tr>
+      <td>AWS Elastic Beanstalk</td>
+      <td>2010-12-01</td>
+      <td>AWS.ElasticBeanstalk</td>
+    </tr>
+    <tr>
+      <td>Elastic Load Balancing</td>
+      <td>2012-06-01</td>
+      <td>AWS.ELB</td>
+    </tr>
+    <tr>
+      <td>Amazon Elastic MapReduce</td>
+      <td>2009-03-31</td>
+      <td>AWS.EMR</td>
+    </tr>
+    <tr>
+      <td>Amazon Elastic Transcoder</td>
+      <td>2012-09-25</td>
+      <td>AWS.ElasticTranscoder</td>
+    </tr>
+    <tr>
+      <td>AWS Identity and Access Management</td>
+      <td>2010-05-08</td>
+      <td>AWS.IAM</td>
+    </tr>
+    <tr>
+      <td>AWS Import/Export</td>
+      <td>2010-06-01</td>
+      <td>AWS.ImportExport</td>
+    </tr>
+    <tr>
+      <td>AWS OpsWorks</td>
+      <td>2013-02-18</td>
+      <td>AWS.OpsWorks</td>
+    </tr>
+    <tr>
+      <td>Amazon Relational Database Service</td>
+      <td>2013-05-15<br>2013-02-12<br>2013-01-10</td>
+      <td>AWS.RDS</td>
+    </tr>
+    <tr>
+      <td>Amazon Redshift</td>
+      <td>2012-12-01</td>
+      <td>AWS.Redshift</td>
+    </tr>
+    <tr>
+      <td>Amazon Simple Storage Service</td>
+      <td>2006-03-01</td>
+      <td>AWS.S3</td>
+    </tr>
+    <tr>
+      <td>Amazon SimpleDB</td>
+      <td>2009-04-15</td>
+      <td>AWS.SimpleDB</td>
+    </tr>
+    <tr>
+      <td>Amazon Simple Workflow Service</td>
+      <td>2012-01-25</td>
+      <td>AWS.SimpleWorkflow</td>
+    </tr>
+    <tr>
+      <td>Amazon Simple Email Service</td>
+      <td>2010-12-01</td>
+      <td>AWS.SES</td>
+    </tr>
+    <tr>
+      <td>Amazon Simple Notification Service</td>
+      <td>2010-03-31</td>
+      <td>AWS.SNS</td>
+    </tr>
+    <tr>
+      <td>Amazon Simple Queue Service</td>
+      <td>2012-11-05</td>
+      <td>AWS.SQS</td>
+    </tr>
+    <tr>
+      <td>AWS Storage Gateway</td>
+      <td>2012-06-30</td>
+      <td>AWS.StorageGateway</td>
+    </tr>
+    <tr>
+      <td>AWS Security Token Service</td>
+      <td>2011-06-15</td>
+      <td>AWS.STS</td>
+    </tr>
+    <tr>
+      <td>AWS Support</td>
+      <td>2013-04-15</td>
+      <td>AWS.Support</td>
+    </tr>
+  </tbody>
+</table>
+
+## License
+
+This SDK is distributed under the
+[Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+
+```no-highlight
+Copyright 2012. Amazon Web Services, Inc. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```

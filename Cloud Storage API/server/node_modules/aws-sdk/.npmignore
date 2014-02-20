@@ -1,0 +1,8 @@
+configuration
+node_modules
+npm-debug.log
+coverage.html
+vendor
+.yardoc
+doc
+doc-guide
