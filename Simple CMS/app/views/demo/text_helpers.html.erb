@@ -1,0 +1,42 @@
+<%
+text = "This is a long text example for http://lynda.com. It includes line breaks\n and double-line breaks.\n\n It rambles on and on and on.\n\n You can't email me at dont@email.com.".html_safe
+%>
+
+<h2>word_wrap</h2>
+<%= word_wrap(text, :line_width => 30) %>
+<hr />
+
+<h2>simple_format</h2>
+<%= simple_format(text) %>
+<hr />
+
+<h2>simple_format + word_wrap</h2>
+<%= simple_format(word_wrap(text, :line_width => 30)) %>
+<hr />
+
+<h2>truncate</h2>
+<%= truncate(text, :length => 40, :omission => "...") %>
+<hr />
+
+<h2>excerpt</h2>
+<%= excerpt(text, 'includes', :radius => 7, :omission => "...") %>
+<hr />
+
+<h2>highlight</h2>
+<%= highlight(text, 'text example') %>
+<hr />
+<%= highlight(text, ['example', 'rambles'], :highlighter => '<em>\1</em>') %>
+<hr />
+
+<h2>pluralize</h2>
+<%= "ox".pluralize %><br />
+<% (1..3).each do |n| %>
+  <%= pluralize(n, 'octopus') %><br />
+  <%= pluralize(n, 'snipe', 'snope') %><br />
+<% end %>
+<hr />
+
+<h2>cycle</h2>
+<% 5.times do %>
+  <%= cycle('red', 'green', 'blue') %><br />
+<% end %>

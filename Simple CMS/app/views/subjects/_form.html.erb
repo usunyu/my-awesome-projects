@@ -1,0 +1,19 @@
+<%= render(:partial => 'shared/error_messages', :locals => {:object => @subject}) %>
+<table summary="Subject form fields">
+  <tr>
+    <th>Name</th>
+    <td><%= f.text_field(:name) %></td>
+  </tr>
+  <tr>
+    <th>Position</th>
+    <td><%= f.select(:position, 1..@subject_count) %></td>
+  </tr>
+  <tr>
+    <th>Visible</th>
+    <td><%= f.check_box(:visible) %></td>
+  </tr>
+  <!-- <tr> -->
+    <!-- <th>Created</th> -->
+    <!-- <td><%= f.datetime_select(:created_at) %></td> -->
+  <!-- </tr> -->
+</table>

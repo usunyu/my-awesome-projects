@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Simple CMS | <%= @page_title || 'Admin Area' %></title>
+    <meta name="author" content="Yu Sun">
+
+    <!-- <link href="public.css" rel="stylesheet" type="text/css" media="all" /> -->
+    <%= stylesheet_link_tag('public', 'admin', :media => 'all') %>
+    <!-- <script src="javascript/application.js" type="text/javascript"></script> -->
+    <%= javascript_include_tag('application') %>
+
+  </head>
+  <body>
+    <div id="header">
+      <h1>Simple CMS Admin</h1>
+    </div>
+    <div id="main">
+      <% if !flash[:notice].blank? %>
+      <div class="notice">
+        <%= flash[:notice] %>
+      </div>
+      <% end %>
+      <div id="content">
+        <%= yield %>
+      </div>
+    </div>
+    <div id="footer">
+      <p id="copyright">&copy; sun812@usc.edu / Yu Sun</p>
+    </div>
+  </body>
+</html>
