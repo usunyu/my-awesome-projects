@@ -1,0 +1,3 @@
+Hot Tamale	Mexican	25
+Cafe Masala	Indian	30
+pita pocket	Fast Food	10
