@@ -1,0 +1,51 @@
+#loginPage,#chatMessagesPage,#friendsListPage{
+	display:none;
+}
+
+.chatbox{
+  border:1px solid #bbb;
+  width:230px;
+  padding:0; /* 10px 10px 10px ;*/
+  margin-top:5px;
+  margin-left:10px;
+  float:right;
+  background:#fff;
+  
+  }
+ .chatTextArea{
+  border:1px solid #bbb;
+  margin-top:10px;
+ }
+  
+ .closeButton{
+  color:#fff;
+  float:right; 
+  cursor:pointer;
+  padding:2px 4px;
+  font-weight:bold;
+ }
+ p.headerMessage{
+  line-height: 100%;
+  padding:1px  0;
+  height:1em;
+ }
+ .chatBoxMessagesContainer{
+  padding-left:5px;
+  height:225px;
+  overflow:auto; 
+ }
+ 
+ #chats{
+  position:fixed;
+  bottom:2%;
+  right:2%;
+  border:0px;
+  height:300px; 
+  background:transparent;    
+ }
+ 
+ .headerContainer{
+  padding:4px;
+  background:#357EC7;
+   color:#fff;
+ }

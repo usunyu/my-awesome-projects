@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Google App Engine: Code Lab Example 1</title>
+ 
+
+<link href="http://www.gstatic.com/codesite/ph/17444577587916266307/css/ph_core.css" rel="stylesheet" type="text/css" />
+ <link href="http://code.google.com/css/codesite.pack.04102009.css" rel="stylesheet" type="text/css" />
+  <script language="javascript" src='script/jquery-1.6.min.js'></script>
+  <script language="javascript" src='script/ajax.util.js'></script>
+</head>
+
+<body>
+    
+   
+  <!-- content -->  
+  <div  id="gc-pagecontent" >
+  <h1 class="page_title">Code Lab Example 1</h1>
+  
+ <!-- tabs --> 
+ <div id="tabs" class="gtb">
+      <a id="home" href="#home" class="tab">Home</a>	   
+	  <a id="product" href="#product" class="tab">Product</a> 
+	  <a id="item" href="#item" class="tab">Item</a>	   
+	  <div class="gtbc"></div>
+  </div>
+  <!-- home page content -->
+  <div class="g-unit" id="home-tab">
+  <h2>Create Flow Chart</h2>
+    <p>
+      <div align="left">
+        <img src="images/codeLab1Create.png" />
+      </div>
+      
+        <ol>
+          <li>Product/Item servlet will be invoked on clicking <b>Save</b>
+            from UI</li>
+          <li>doPut() method of respective servlet will
+            invoke <b>datastore API</b> to persist the data
+            into datastore</li>          
+        </ol>
+      </p>
+      
+    <h2>List Flow Chart</h2>
+     <p>
+      <div align="left">
+        <img src="images/codeLab1List.png" />
+      </div>
+     
+        <ol>
+          <li>Tab selection from UI invokes doGet() of the
+            respective servlet</li>          
+          <li>JSON objects are returned to the UI and
+            custom JSON converter will parse the JSON
+            objects</li>
+        </ol>
+      </p>
+  </div>  
+  
+  
+   <!-- ******************************************* product ******************************************* -->
+  <div class="g-unit" id="product-tab">
+    <div class ="message" id="product-show-message" style="display:none">
+  </div>
+   <!-- search container -->
+   	<div class="gsc-search-box" id="product-search-ctr">
+   	<!-- section title -->
+   	<h2>All Products</h2>
+   	<form name="product-search-form" id="product-search-form">
+	   	 <label>Name</label>
+	   	 <input type="text" name="q" id="q" class="gsc-input"/> 
+	     <input type="button" value="Search" onclick="search('product')" class="gsc-search-button" />
+	     <input type="button" value="Add" onclick="add('product')" class="gsc-search-button" />
+	     <input type="reset" id="product-search-reset" class="cancel" title="Reset" value="Reset" style="visibility: hidden"/>
+    </form>
+   	</div>
+   <!-- list container -->
+   	<div class="results" style="border:0;" id="product-list-ctr">
+          <table width="100%" cellspacing="0" cellpadding="2" border="0" style="border-collapse:collapse;">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Action</th>                      
+              </tr>
+            </thead>
+            <tbody id="product-list-tbody"></tbody>
+          </table>
+  	</div>
+  
+  	<!-- create container -->
+	  	<div class="create-ctr" id="product-create-ctr">
+	  	<h2>Create Product</h2>
+	  	<form name="product-create-form" id="product-create-form">
+	  	<table width="200" cellspacing="0" cellpadding="0">
+	  	<tbody>
+	  	<tr >
+		 <td>Name </td>
+          <td><span class="readonly"><input type="text" style="width: 185px;" autocomplete="off" class="gsc-input" maxlength="2048" name="name" id="name" /></span></td>
+		 </tr>
+		<tr>
+           <td>Description</td>
+           <td><input type="text" style="width: 185px;" autocomplete="off" class="gsc-input" maxlength="2048" name="description" id="description" /></td>
+         </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td> 
+          <input type="button" class="save" title="Save" value="Save" onclick="formValidate('product')" />
+          <input type="button" class="cancel" title="Cancel" value="Cancel" onclick="cancel('product')" />
+          <input type="reset" id="product-reset" class="cancel" title="Reset" value="Reset" style="visibility: hidden"/>
+         </td>
+        </tr>
+	  	</tbody>
+  </table>
+  </form>
+  </div>
+  
+  </div>
+   <!-- ******************************************* item ******************************************* -->
+  <div class="g-unit" id="item-tab">
+    <div class ="message" id="item-show-message" style="display:none">
+  </div>
+	   <!-- search container -->
+	   	<div class="gsc-search-box" id="item-search-ctr">
+	   	<!-- section title -->
+	   	<h2>All Items</h2>
+	   	<form name="item-search-form" id="item-search-form">
+	   	   <input type="text" name="q" id="q" class="gsc-input"/> 
+	   	   <select id="by" name="item-searchby" class="gsc-input">
+              <option value="name">Item</option>
+              <option value="product">Product</option>
+            </select> 
+            <input type="button" value="Search" onclick="search('item')" class="gsc-search-button" />
+            <input type="button" value="Add" onclick="add('item')" class="gsc-search-button" />
+            <input type="reset" id="item-search-reset" class="cancel" title="Reset" value="Reset" style="visibility: hidden"/>
+          </form>  
+	   	</div>
+	   <!-- list container -->
+	   	<div class="results" style="border:0;" id="item-list-ctr">
+           <table width="100%" cellspacing="0" cellpadding="2" border="0" style="border-collapse:collapse;">
+             <thead>
+               <tr>
+                 <th scope="col">Item Name</th>
+                 <th scope="col">Selling Price</th>
+                 <th scope="col">Product</th>
+                 <th scope="col">Action</th>                      
+               </tr>
+             </thead>
+             <tbody id="item-list-tbody"></tbody>
+           </table>
+	  	</div>
+	  	<!-- create container -->
+	  	<div class="create-ctr" id="item-create-ctr">
+	  	<h2>Create Item</h2>
+	  	<form name="item-create-form" id="item-create-form">
+	  	<table width="200" cellspacing="0" cellpadding="0">
+           <tr> 
+           	 <td>Item Name</td>
+             <td ><span class="readonly"><input type="text" style="width: 185px;" autocomplete="off" class="gsc-input" maxlength="2048" name="name" id="name" /></span></td>
+           </tr>
+           <tr>
+             <td>Selling Price</td>
+             <td><input type="text" style="width: 185px;" autocomplete="off" class="gsc-input" maxlength="2048" name="price" id="price" /></td>
+           </tr>
+           <tr>
+             <td>Product</td>
+             <td><select id="item-product-list" name="product"></select></td>
+           </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td> 
+                  <input type="button" class="save" title="Save" value="Save" onclick="formValidate('item')" />
+                  <input type="button" class="cancel" title="Cancel" value="Cancel" onclick="cancel('item')" />
+                  <input type="reset" id="item-reset" class="cancel" title="Reset" value="Reset" style="visibility: hidden"/>
+              </td>
+            </tr>
+			 </table>
+			 </form>
+	  	</div>
+	  	<!-- create conatiner ends here -->
+  </div>  
+  
+ </div>
+  
+<script type="text/javascript">
+
+ $(window).load(function () {
+   init();
+});
+
+</script>
+</body>
+</html>

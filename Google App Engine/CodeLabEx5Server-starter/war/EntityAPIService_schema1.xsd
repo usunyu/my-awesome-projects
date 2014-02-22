@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://server.soap.codelab.appengine.google.com/" xmlns:tns="http://server.soap.codelab.appengine.google.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="createOrUpdateItem" type="tns:createOrUpdateItem"/>
+
+  <xs:element name="createOrUpdateItemResponse" type="tns:createOrUpdateItemResponse"/>
+
+  <xs:element name="createOrUpdateProduct" type="tns:createOrUpdateProduct"/>
+
+  <xs:element name="createOrUpdateProductResponse" type="tns:createOrUpdateProductResponse"/>
+
+  <xs:element name="deleteItem" type="tns:deleteItem"/>
+
+  <xs:element name="deleteItemResponse" type="tns:deleteItemResponse"/>
+
+  <xs:element name="deleteProduct" type="tns:deleteProduct"/>
+
+  <xs:element name="deleteProductResponse" type="tns:deleteProductResponse"/>
+
+  <xs:element name="getAllItems" type="tns:getAllItems"/>
+
+  <xs:element name="getAllItemsResponse" type="tns:getAllItemsResponse"/>
+
+  <xs:element name="getAllProducts" type="tns:getAllProducts"/>
+
+  <xs:element name="getAllProductsResponse" type="tns:getAllProductsResponse"/>
+
+  <xs:element name="getItem" type="tns:getItem"/>
+
+  <xs:element name="getItemResponse" type="tns:getItemResponse"/>
+
+  <xs:element name="getItemsForProduct" type="tns:getItemsForProduct"/>
+
+  <xs:element name="getItemsForProductResponse" type="tns:getItemsForProductResponse"/>
+
+  <xs:element name="getProduct" type="tns:getProduct"/>
+
+  <xs:element name="getProductResponse" type="tns:getProductResponse"/>
+
+  <xs:complexType name="getItemsForProduct">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+      <xs:element name="arg1" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getItemsForProductResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getProduct">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getProductResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getAllProducts">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getAllProductsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getItem">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getItemResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="deleteItem">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="deleteItemResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getAllItems">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getAllItemsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="deleteProduct">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="deleteProductResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createOrUpdateProduct">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+      <xs:element name="arg1" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createOrUpdateProductResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createOrUpdateItem">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+      <xs:element name="arg1" type="xs:string" minOccurs="0"/>
+      <xs:element name="arg2" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createOrUpdateItemResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

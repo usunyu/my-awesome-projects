@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Google App Engine: Code Lab 10</title>
+ 
+
+<link href="http://www.gstatic.com/codesite/ph/17444577587916266307/css/ph_core.css" rel="stylesheet" type="text/css" />
+ <link href="http://code.google.com/css/codesite.pack.04102009.css" rel="stylesheet" type="text/css" />
+  <script language="javascript" src='script/jquery-1.6.min.js'></script>
+  <script language="javascript" src='script/ajax.util.js'></script>
+  <script language="javascript" src='script/prettify.js'></script>
+</head>
+
+<body>
+    
+   
+  <!-- content -->  
+  <div  id="gc-pagecontent" >
+  <h1 class="page_title">Code Lab Example 10</h1>
+  
+ <div id="tabs" class="gtb">
+      <a id="home" href="#home" class="tab">Home</a>
+      <a id="upload" href="#upload" class="tab">Upload</a>
+	  <a id="order" href="#order" class="tab">Order</a> 
+	  <div class="gtbc"></div>
+  </div>
+  <!-- home page content -->
+  <div class="g-unit" id="home-tab">
+  <h2>Working with large datasets for Pagination </h2>
+    <p>
+    <ol>
+      <li>After the orders are created, as we have large number of orders, we retrieve and display them page wise.</li>
+          <li>When we click on <strong>Next</strong>, an ajax call is made to retrieve the records for that page. </li>
+    </ol>
+    <p><b>Sample Xml File format</b>: There can be any number of orders which can be appended using the <code>&lt;order&gt;</code> tag</p>
+      <pre class="prettyprint">
+&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;orders&gt;
+  &lt;order&gt;
+    &lt;customer&gt;cnam&lt;/customer&gt;
+    &lt;status&gt;pending&lt;/status&gt;
+    &lt;user_orderid&gt;rep1&lt;/user_orderid&gt;
+    &lt;item&gt;item1&lt;/item&gt;
+    &lt;price&gt;12&lt;/price&gt;
+    &lt;quantity&gt;12&lt;/quantity&gt;
+  &lt;/order&gt;
+  &lt;order&gt;
+    &lt;customer&gt;cnam1&lt;/customer&gt;
+    &lt;status&gt;pending&lt;/status&gt;
+    &lt;user_orderid&gt;rep1&lt;/user_orderid&gt;
+    &lt;item&gt;item2&lt;/item&gt;
+    &lt;price&gt;120&lt;/price&gt;
+    &lt;quantity&gt;1&lt;/quantity&gt;
+  &lt;/order&gt;
+&lt;/orders&gt;</pre>
+      </p>
+  </div>
+  <!-- *************************************** Upload tab****************************************** -->
+  <div class="g-unit" id="upload-tab">
+  <div class ="message" id="upload-show-message" style="display:none"></div>
+  <h2>Upload Orders</h2> 
+    <div class="results" style="border:0;" id="upload-list-ctr"> 
+    <form  id="file-upload">
+    <table>
+    <tr><td><b>Choose the file To Upload:</b></td>
+    <td><input name="file" type="file" id="file"></td></tr>
+    <tr><td><input type="reset" id="upload-reset" value="reset" style="visibility:hidden"></td>
+    <td><input type="submit" value="Upload Orders" onclick="return validate()"></td></tr>
+    </table> 
+    </form></div>
+	</div>
+	 <!-- ******************************************* order ******************************************* -->
+  <div class="g-unit" id="order-tab">
+  <div class ="message" id="order-show-message" style="display:none">
+  </div>
+	   <!-- section title -->
+	   	<h2>All Orders</h2>
+	   	<!-- search container -->
+	   	<div class="gsc-search-box" id="order-search-ctr">
+	   	<form name="order-search-form" id="order-search-form">
+		   	<label>Status</label>
+	  	    <select name="q1" id="q1" class="gsc-input">
+	  			<option value="pending">Pending</option>
+	  			<option value="processing">Processing</option>
+	  			<option value="processed">Processed</option>
+			</select> 
+			<label>Order Id</label>
+			<input type="text" style="width: 185px;" autocomplete="off" 
+			       maxlength="128" class="gsc-input" name="q2" id="q2"
+			       title="for multiple ids use the format 1,2,3"></input>
+	        <input type="button" value="Search" onclick="search('order')" class="gsc-search-button" />
+	        <input type="reset" id="order-search-reset" class="cancel" title="Reset" value="Reset" style="visibility: hidden"/>
+          </form>
+	   </div>
+	   <!-- list container -->
+	   	<div class="results" style="border:0;" id="order-list-ctr">
+	   	<form name="order-process-form" id="order-process-form">
+           <table width="100%" id="order-table" cellspacing="0" cellpadding="2" border="0" style="border-collapse:collapse;">
+             <!-- <thead>
+               <tr>
+                 <th scope="col">Order Id</th>
+                 <th scope="col">Item Name</th>
+                 <th scope="col">Customer</th>
+			  	<th scope="col">Quantity</th>
+			  	<th scope="col">Price</th>
+			  	<th scope="col">Status</th>
+                <th scope="col">Action</th>
+                <th scope="col">Mark</th>             
+               </tr>
+             </thead>
+             <tbody id="order-list-tbody"></tbody> -->
+           </table>
+           <div id="process-orders"></div>
+         </form>
+         <br />
+         <br />
+	  	</div>
+  </div>
+ </div>
+  
+<script type="text/javascript">
+
+ $(window).load(function () {
+   init();
+   fillBody(0);
+ });
+
+</script>
+</body>
+</html>
+	

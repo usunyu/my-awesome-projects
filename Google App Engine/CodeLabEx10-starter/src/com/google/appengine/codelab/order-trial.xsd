@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:complexType name="orderBooking">
+     <xs:sequence>
+       <xs:element name="order" type="order" minOccurs="1" maxOccurs="unbounded"/>
+     </xs:sequence>
+   </xs:complexType>
+   
+   <xs:complexType name="order">
+     <xs:sequence>
+       <xs:element name="customer" type="xs:string" />
+       <xs:element name="status" type="xs:string" />
+       <xs:element name="user_orderid" type="xs:string" />
+       <xs:element name="item" type="xs:string" />
+       <xs:element name="quantity" type="xs:positiveInteger" />
+       <xs:element name="price" type="xs:decimal" />
+     </xs:sequence>
+     <xs:attribute name="id" type="xs:long" />
+   </xs:complexType>
+   
+</xs:schema>
