@@ -9,4 +9,14 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>URLParameters</display-name>
+    <servlet-name>URLParameters</servlet-name>
+    <servlet-class>gui.URLParameters</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>URLParameters</servlet-name>
+    <url-pattern>/URLParameters</url-pattern>
+  </servlet-mapping>
 </web-app>
