@@ -2,3 +2,5 @@
 /WordCountMapper.class
 /WordCountReducer.class
 /WordCountWithCombiner.class
+/DefaultDriver.class
+/SpecifiedDefaultDriver.class
