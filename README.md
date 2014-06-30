@@ -12,3 +12,4 @@ Learning by doing projects
 * [Servlets and JSPs](https://www.udemy.com/javawebtut/)
 * [The Java Spring Tutorial](https://www.udemy.com/javaspring/)
 * [Become a Certified Hadoop Developer](https://www.udemy.com/hadoop-tutorial/)
+* [Swift - Learn Apple's New Programming Language by Examples](https://www.udemy.com/swift-learn-apples-new-programming-language-by-examples)
