@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A4CA743B196A636A00A00619"
+               BlueprintIdentifier = "A4375209196A7B2A00636F59"
                BuildableName = "FirstSwiftApp.app"
                BlueprintName = "FirstSwiftApp"
                ReferencedContainer = "container:FirstSwiftApp.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A4CA7448196A636B00A00619"
+               BlueprintIdentifier = "A437521B196A7B2A00636F59"
                BuildableName = "FirstSwiftAppTests.xctest"
                BlueprintName = "FirstSwiftAppTests"
                ReferencedContainer = "container:FirstSwiftApp.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A4CA743B196A636A00A00619"
+            BlueprintIdentifier = "A4375209196A7B2A00636F59"
             BuildableName = "FirstSwiftApp.app"
             BlueprintName = "FirstSwiftApp"
             ReferencedContainer = "container:FirstSwiftApp.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A4CA743B196A636A00A00619"
+            BlueprintIdentifier = "A4375209196A7B2A00636F59"
             BuildableName = "FirstSwiftApp.app"
             BlueprintName = "FirstSwiftApp"
             ReferencedContainer = "container:FirstSwiftApp.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A4CA743B196A636A00A00619"
+            BlueprintIdentifier = "A4375209196A7B2A00636F59"
             BuildableName = "FirstSwiftApp.app"
             BlueprintName = "FirstSwiftApp"
             ReferencedContainer = "container:FirstSwiftApp.xcodeproj">
