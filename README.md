@@ -13,3 +13,4 @@ Learning by doing projects
 * [The Java Spring Tutorial](https://www.udemy.com/javaspring/)
 * [Become a Certified Hadoop Developer](https://www.udemy.com/hadoop-tutorial/)
 * [The Swift Programming Language](https://developer.apple.com/swift/)
+* [Apple Swift Tutorial](https://www.youtube.com/channel/UCysEngjfeIYapEER9K8aikw/videos)
