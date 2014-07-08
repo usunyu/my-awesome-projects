@@ -19,7 +19,7 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Total (Post-Tax):" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihc-Hz-L8B">
                                 <rect key="frame" x="33" y="81" width="151" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="151" id="HGN-Tm-gmJ"/>
+                                    <constraint firstAttribute="width" constant="151" id="PiY-Aa-4x3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -51,6 +51,17 @@
                                     <action selector="calculateTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CRQ-6m-TeP"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="1Nd-OT-AQy">
+                                <rect key="frame" x="0.0" y="187" width="580" height="293"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="580" id="eau-if-CcF"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="x49-vd-Iic"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="Fci-ap-Xcq"/>
+                                </connections>
+                            </tableView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsR-Ot-A80">
                                 <rect key="frame" x="20" y="187" width="440" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -61,27 +72,36 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="1Nd-OT-AQy" firstAttribute="top" secondItem="2QA-Kj-QDS" secondAttribute="bottom" constant="8" symbolic="YES" id="105-Wq-Qul"/>
                             <constraint firstItem="PsR-Ot-A80" firstAttribute="trailing" secondItem="4F9-Vr-bXo" secondAttribute="trailing" id="4wa-4l-1fw"/>
-                            <constraint firstItem="4F9-Vr-bXo" firstAttribute="bottom" secondItem="BA5-4s-sZa" secondAttribute="bottom" id="7yJ-7r-O8f"/>
+                            <constraint firstItem="BA5-4s-sZa" firstAttribute="top" secondItem="ihc-Hz-L8B" secondAttribute="bottom" constant="18" id="5It-tb-6QF"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="PsR-Ot-A80" secondAttribute="bottom" constant="5" id="BiY-ju-T1x"/>
                             <constraint firstItem="2QA-Kj-QDS" firstAttribute="centerX" secondItem="PsR-Ot-A80" secondAttribute="centerX" id="CXd-fk-PB3"/>
-                            <constraint firstItem="ihc-Hz-L8B" firstAttribute="bottom" secondItem="8au-5j-iP2" secondAttribute="bottom" id="DGs-28-kIy"/>
-                            <constraint firstItem="4F9-Vr-bXo" firstAttribute="leading" secondItem="8au-5j-iP2" secondAttribute="leading" id="IjI-6C-far"/>
-                            <constraint firstItem="BA5-4s-sZa" firstAttribute="top" secondItem="ihc-Hz-L8B" secondAttribute="bottom" constant="18" id="Khd-KP-oDU"/>
-                            <constraint firstItem="2QA-Kj-QDS" firstAttribute="top" secondItem="4F9-Vr-bXo" secondAttribute="bottom" constant="8" symbolic="YES" id="Ls2-ST-HaS"/>
-                            <constraint firstItem="ihc-Hz-L8B" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="17" id="TVd-IJ-5hk"/>
-                            <constraint firstItem="4F9-Vr-bXo" firstAttribute="leading" secondItem="BA5-4s-sZa" secondAttribute="trailing" constant="8" symbolic="YES" id="ZDl-XA-ZdF"/>
-                            <constraint firstItem="8au-5j-iP2" firstAttribute="trailing" secondItem="4F9-Vr-bXo" secondAttribute="trailing" id="ee7-0i-wdb"/>
+                            <constraint firstItem="4F9-Vr-bXo" firstAttribute="leading" secondItem="8au-5j-iP2" secondAttribute="leading" id="D0D-fS-2B1"/>
+                            <constraint firstItem="4F9-Vr-bXo" firstAttribute="leading" secondItem="BA5-4s-sZa" secondAttribute="trailing" constant="8" symbolic="YES" id="E2R-tF-21M"/>
+                            <constraint firstItem="8au-5j-iP2" firstAttribute="leading" secondItem="ihc-Hz-L8B" secondAttribute="trailing" constant="8" symbolic="YES" id="E4h-wh-Ucb"/>
+                            <constraint firstItem="ihc-Hz-L8B" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="17" id="EfI-9X-Zwy"/>
+                            <constraint firstAttribute="bottom" secondItem="1Nd-OT-AQy" secondAttribute="bottom" id="FCz-cW-ffh"/>
+                            <constraint firstAttribute="trailing" secondItem="8au-5j-iP2" secondAttribute="trailing" constant="20" symbolic="YES" id="Fcf-zs-u4n"/>
+                            <constraint firstItem="BA5-4s-sZa" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="VtQ-VD-jXq"/>
+                            <constraint firstItem="2QA-Kj-QDS" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="VwB-Ox-g3W"/>
+                            <constraint firstItem="4F9-Vr-bXo" firstAttribute="bottom" secondItem="BA5-4s-sZa" secondAttribute="bottom" id="Xlx-5Y-4TP"/>
+                            <constraint firstItem="ihc-Hz-L8B" firstAttribute="bottom" secondItem="8au-5j-iP2" secondAttribute="bottom" id="cv2-5E-SXG"/>
+                            <constraint firstItem="8au-5j-iP2" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="e3F-ha-2fl"/>
+                            <constraint firstItem="ihc-Hz-L8B" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="33" id="i8Z-pX-ASc"/>
                             <constraint firstItem="PsR-Ot-A80" firstAttribute="top" secondItem="2QA-Kj-QDS" secondAttribute="bottom" constant="8" symbolic="YES" id="j9t-CZ-hq4"/>
-                            <constraint firstItem="8au-5j-iP2" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="kjP-Od-N6u"/>
-                            <constraint firstItem="4F9-Vr-bXo" firstAttribute="top" secondItem="8au-5j-iP2" secondAttribute="bottom" constant="9" id="l7F-tQ-wd6"/>
-                            <constraint firstItem="8au-5j-iP2" firstAttribute="leading" secondItem="ihc-Hz-L8B" secondAttribute="trailing" constant="8" symbolic="YES" id="qaV-Qx-6ed"/>
+                            <constraint firstItem="2QA-Kj-QDS" firstAttribute="top" secondItem="4F9-Vr-bXo" secondAttribute="bottom" constant="8" symbolic="YES" id="muR-sz-Nh8"/>
                             <constraint firstItem="PsR-Ot-A80" firstAttribute="leading" secondItem="BA5-4s-sZa" secondAttribute="leading" id="rln-Ca-XkI"/>
-                            <constraint firstItem="BA5-4s-sZa" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="s0G-TW-WH8"/>
-                            <constraint firstItem="ihc-Hz-L8B" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="33" id="tb4-ab-2z4"/>
-                            <constraint firstAttribute="trailing" secondItem="8au-5j-iP2" secondAttribute="trailing" constant="20" symbolic="YES" id="ye2-pg-FF5"/>
+                            <constraint firstItem="8au-5j-iP2" firstAttribute="trailing" secondItem="4F9-Vr-bXo" secondAttribute="trailing" id="twr-kF-gWK"/>
+                            <constraint firstItem="4F9-Vr-bXo" firstAttribute="top" secondItem="8au-5j-iP2" secondAttribute="bottom" constant="9" id="vs2-Oa-u28"/>
+                            <constraint firstItem="1Nd-OT-AQy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ydN-kt-OKW"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="PsR-Ot-A80"/>
+                            </mask>
+                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="J4S-iY-27S" appends="YES" id="tRW-4z-6c5"/>
                         </connections>
@@ -89,6 +109,7 @@
                     <navigationItem key="navigationItem" id="D13-86-vOm"/>
                     <connections>
                         <outlet property="resultsTextView" destination="PsR-Ot-A80" id="uDD-yP-ztu"/>
+                        <outlet property="tableView" destination="1Nd-OT-AQy" id="soa-s2-orT"/>
                         <outlet property="taxPctLabel" destination="BA5-4s-sZa" id="8lK-WH-Yz7"/>
                         <outlet property="taxPctSlider" destination="4F9-Vr-bXo" id="Whp-zj-ONt"/>
                         <outlet property="totalTextField" destination="8au-5j-iP2" id="roI-1P-046"/>
