@@ -17,6 +17,7 @@
 		A4E149A6196BDC0C00D94872 /* CustomKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E149A5196BDC0C00D94872 /* CustomKitTests.swift */; };
 		A4E149A9196BDC0C00D94872 /* CustomKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E14994196BDC0C00D94872 /* CustomKit.framework */; };
 		A4E149AA196BDC0C00D94872 /* CustomKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4E14994196BDC0C00D94872 /* CustomKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A4E149B9196BDC8D00D94872 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E149B8196BDC8D00D94872 /* DemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,20 @@
 			remoteGlobalIDString = A4E14993196BDC0C00D94872;
 			remoteInfo = CustomKit;
 		};
+		A4E149B6196BDC0D00D94872 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4E14965196BCE0500D94872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4E14993196BDC0C00D94872;
+			remoteInfo = CustomKit;
+		};
+		A4E149BA196BDF8800D94872 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4E14965196BCE0500D94872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4E14993196BDC0C00D94872;
+			remoteInfo = CustomKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -87,6 +102,7 @@
 		A4E1499E196BDC0C00D94872 /* CustomKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E149A4196BDC0C00D94872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4E149A5196BDC0C00D94872 /* CustomKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKitTests.swift; sourceTree = "<group>"; };
+		A4E149B8196BDC8D00D94872 /* DemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoView.swift; path = ../DemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				A4E14998196BDC0C00D94872 /* CustomKit.h */,
+				A4E149B8196BDC8D00D94872 /* DemoView.swift */,
 				A4E14996196BDC0C00D94872 /* Supporting Files */,
 			);
 			path = CustomKit;
@@ -299,6 +316,8 @@
 			dependencies = (
 				A4E149A1196BDC0C00D94872 /* PBXTargetDependency */,
 				A4E149B5196BDC0D00D94872 /* PBXTargetDependency */,
+				A4E149B7196BDC0D00D94872 /* PBXTargetDependency */,
+				A4E149BB196BDF8800D94872 /* PBXTargetDependency */,
 			);
 			name = CustomKitTests;
 			productName = CustomKitTests;
@@ -406,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4E149B9196BDC8D00D94872 /* DemoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +464,16 @@
 			isa = PBXTargetDependency;
 			target = A4E14993196BDC0C00D94872 /* CustomKit */;
 			targetProxy = A4E149B4196BDC0D00D94872 /* PBXContainerItemProxy */;
+		};
+		A4E149B7196BDC0D00D94872 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4E14993196BDC0C00D94872 /* CustomKit */;
+			targetProxy = A4E149B6196BDC0D00D94872 /* PBXContainerItemProxy */;
+		};
+		A4E149BB196BDF8800D94872 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4E14993196BDC0C00D94872 /* CustomKit */;
+			targetProxy = A4E149BA196BDF8800D94872 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -597,6 +627,7 @@
 		A4E149AE196BDC0C00D94872 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -612,6 +643,7 @@
 				METAL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -621,6 +653,7 @@
 		A4E149AF196BDC0C00D94872 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
