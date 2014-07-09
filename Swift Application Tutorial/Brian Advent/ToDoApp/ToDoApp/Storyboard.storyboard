@@ -19,7 +19,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="ksE-EK-AX0" kind="push" id="8W2-Ye-GSX"/>
+                                    <segue destination="ksE-EK-AX0" kind="push" identifier="showDetail" id="8W2-Ye-GSX"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -31,7 +31,7 @@
                     <navigationItem key="navigationItem" id="7sc-Ld-YkK">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="TnV-Sx-YI8">
                             <connections>
-                                <segue destination="8lu-K5-c8l" kind="push" id="8PJ-Aj-Z5f"/>
+                                <segue destination="8lu-K5-c8l" kind="push" identifier="showAddVC" id="8PJ-Aj-Z5f"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -79,14 +79,22 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ocr-NT-Esb">
-                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="qCc-Zg-qC3"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="qCc-Zg-qC3">
+                            <connections>
+                                <action selector="deleteItem:" destination="ksE-EK-AX0" id="Hhb-zf-oPF"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="notesTextView" destination="c6r-Z1-Rik" id="iDL-fj-Wm3"/>
+                        <outlet property="titleTextField" destination="QYK-vC-1Da" id="IYf-Cr-hMM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ll4-E8-aJc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1223" y="639"/>
         </scene>
-        <!--Add View Controller-->
+        <!--Add View Controller - Add Item-->
         <scene sceneID="MDz-73-hjN">
             <objects>
                 <viewController id="8lu-K5-c8l" customClass="AddViewController" customModule="ToDoApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -124,9 +132,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2eW-dB-H6Q">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="14o-v3-9K7"/>
+                    <navigationItem key="navigationItem" title="Add Item" id="2eW-dB-H6Q">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="14o-v3-9K7">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="8lu-K5-c8l" id="nYZ-BU-SGa"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="notesTextView" destination="pSW-2g-G4r" id="d94-MA-GeL"/>
+                        <outlet property="titleTextField" destination="IUO-hT-3Rh" id="V0x-lT-G40"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FXM-me-jNI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

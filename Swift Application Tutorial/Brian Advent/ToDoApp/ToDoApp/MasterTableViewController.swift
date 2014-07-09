@@ -10,9 +10,27 @@ import UIKit
 
 class MasterTableViewController: UITableViewController {
 
+    var toDoItems:NSMutableArray = NSMutableArray()
+    
+    init(coder aDecoder: NSCoder!) {
+        super.init(coder: aDecoder)
+    }
+    
     init(style: UITableViewStyle) {
         super.init(style: style)
         // Custom initialization
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        var userDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        
+        var itemListFromUserDefaults:NSMutableArray? = userDefaults.objectForKey("itemList") as? NSMutableArray
+        
+        if(itemListFromUserDefaults) {
+            toDoItems = itemListFromUserDefaults!
+        }
+        
+        self.tableView.reloadData()
     }
 
     override func viewDidLoad() {
@@ -35,24 +53,24 @@ class MasterTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView?) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView?, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return toDoItems.count
     }
 
-    /*
     override func tableView(tableView: UITableView?, cellForRowAtIndexPath indexPath: NSIndexPath?) -> UITableViewCell? {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView!.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
 
         // Configure the cell...
+        var toDoItem:NSDictionary = toDoItems.objectAtIndex(indexPath!.row) as NSDictionary
+        cell.text = toDoItem.objectForKey("itemTitle") as String
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -89,14 +107,18 @@ class MasterTableViewController: UITableViewController {
     }
     */
 
-    /*
     // #pragma mark - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue?, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        if(segue && segue!.identifier == "showDetail") {
+            var selectedIndexPath:NSIndexPath = self.tableView.indexPathForSelectedRow()
+            var detailViewController:DetailViewController = segue!.destinationViewController as DetailViewController
+            detailViewController.toDoData = toDoItems.objectAtIndex(selectedIndexPath.row) as NSDictionary
+            
+        }
     }
-    */
 
 }
