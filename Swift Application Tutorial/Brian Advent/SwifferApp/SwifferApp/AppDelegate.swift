@@ -15,13 +15,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
         // Override point for customization after application launch.
+        
+        UINavigationBar.appearance().barTintColor = UIColor.orangeColor()
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        
         Parse.setApplicationId("wPrMzXGaRIy6aGtHybUdKeiEQpBJmMG2tpo8XFl2", clientKey: "77R2zyO7JYWAcJ9qJrZLydCrouK2bJ1nkf40qp1o")
         
+        /*
         var testObject:PFObject = PFObject(className: "TestObject")
         testObject["foo"] = "bar"
         testObject.setObject("user1", forKey: "user")
         
         testObject.saveInBackground()
+        */
         
         return true
     }

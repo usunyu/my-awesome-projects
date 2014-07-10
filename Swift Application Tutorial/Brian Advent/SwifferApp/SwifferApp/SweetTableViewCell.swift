@@ -10,6 +10,10 @@ import UIKit
 
 class SweetTableViewCell: UITableViewCell {
 
+    @IBOutlet strong var usernameLabel: UILabel = UILabel()
+    @IBOutlet strong var timestampLabel: UILabel = UILabel()
+    @IBOutlet strong var sweetTextView: UITextView = UITextView()
+    
     init(style: UITableViewCellStyle, reuseIdentifier: String) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         // Initialization code
