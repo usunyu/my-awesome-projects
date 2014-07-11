@@ -8,32 +8,36 @@
         <scene sceneID="xWF-jO-5LA">
             <objects>
                 <tableViewController id="Kvc-oT-n0j" customClass="TimeLineTableViewController" customModule="SwifferApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="128" sectionHeaderHeight="22" sectionFooterHeight="22" id="tVq-a2-QRh">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="140" sectionHeaderHeight="22" sectionFooterHeight="22" id="tVq-a2-QRh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="128" id="SMF-xm-oOj" customClass="SweetTableViewCell" customModule="SwifferApp" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="140" id="SMF-xm-oOj" customClass="SweetTableViewCell" customModule="SwifferApp" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SMF-xm-oOj" id="hPy-M4-5qP">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Kku-rd-1JS">
-                                            <rect key="frame" x="20" y="13" width="130" height="21"/>
+                                            <rect key="frame" x="20" y="9" width="130" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7iD-pp-eXM">
-                                            <rect key="frame" x="165" y="13" width="135" height="21"/>
+                                            <rect key="frame" x="165" y="9" width="135" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="DjG-RV-XrW">
+                                            <rect key="frame" x="20" y="38" width="80" height="80"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="BW0-NX-mDR">
-                                            <rect key="frame" x="20" y="42" width="280" height="66"/>
+                                            <rect key="frame" x="116" y="38" width="184" height="80"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -42,6 +46,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="profileImageView" destination="DjG-RV-XrW" id="IBv-W6-lhp"/>
                                     <outlet property="sweetTextView" destination="BW0-NX-mDR" id="vap-VU-4o7"/>
                                     <outlet property="timestampLabel" destination="7iD-pp-eXM" id="4VT-P0-AF8"/>
                                     <outlet property="usernameLabel" destination="Kku-rd-1JS" id="CJ3-EP-6ay"/>
