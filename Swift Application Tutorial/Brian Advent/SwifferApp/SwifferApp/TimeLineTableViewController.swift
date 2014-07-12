@@ -200,12 +200,22 @@ class TimeLineTableViewController: UITableViewController, UIImagePickerControlle
                 
                 // Profile Image
                 cell.profileImageView.alpha = 0
-                let profileImage:PFFile = user
+                let profileImage:PFFile = user["profileImage"] as PFFile
+                
+                profileImage.getDataInBackgroundWithBlock {
+                    (imageData:NSData!, error:NSError!)->Void in
+                    
+                    if !error {
+                        let image:UIImage = UIImage(data: imageData)
+                        cell.profileImageView.image = image
+                    }
+                }
                 
                 UIView.animateWithDuration(0.5, animations: {
                     cell.sweetTextView.alpha = 1
                     cell.timestampLabel.alpha = 1
                     cell.usernameLabel.alpha = 1
+                    cell.profileImageView.alpha = 1
                     })
             }
         }
