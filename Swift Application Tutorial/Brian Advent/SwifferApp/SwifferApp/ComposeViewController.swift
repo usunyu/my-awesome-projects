@@ -41,10 +41,18 @@ class ComposeViewController: UIViewController, UITextViewDelegate {
         
         sweet.saveInBackground()
         
+        var push:PFPush = PFPush()
+        push.setChannel("Reload")
+        
+        var data:NSDictionary = ["alert":"", "badge":"0", "content-available":"1", "sound":""]
+        
+        push.setData(data)
+        push.sendPushInBackground()
+        
         self.navigationController.popToRootViewControllerAnimated(true)
     }
     
-    func textView(_ textView: UITextView!,
+    func textView(textView: UITextView!,
         shouldChangeTextInRange range: NSRange,
         replacementText text: String!) -> Bool {
             var newLength:Int = (textView.text as NSString).length + (text as NSString).length - range.length

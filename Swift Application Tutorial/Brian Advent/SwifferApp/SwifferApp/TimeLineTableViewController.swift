@@ -21,7 +21,7 @@ class TimeLineTableViewController: UITableViewController, UIImagePickerControlle
         var findTimelineData:PFQuery = PFQuery(className: "Sweets")
         
         findTimelineData.findObjectsInBackgroundWithBlock{
-            (objects:AnyObject[]!, error:NSError!)->Void in
+            (objects:[AnyObject]!, error:NSError!)->Void in
             if !error {
                 for object:PFObject! in objects {
                     self.timelineData.addObject(object)
@@ -36,7 +36,6 @@ class TimeLineTableViewController: UITableViewController, UIImagePickerControlle
     }
 
     override func viewDidAppear(animated: Bool) {
-        self.loadData()
         
         var footerView:UIView = UIView(frame: CGRectMake(0, 0, self.view.frame.size.width, 50))
         self.tableView.tableFooterView = footerView
@@ -77,9 +76,14 @@ class TimeLineTableViewController: UITableViewController, UIImagePickerControlle
                 (user:PFUser!, error:NSError!)->Void in
                 if(user) {
                     println("login successful")
+                    
+                    var installiation:PFInstallation = PFInstallation.currentInstallation()
+                    installiation.addUniqueObject("Reload", forKey: "channels")
+                    installiation["user"] = PFUser.currentUser()
+                    installiation.saveInBackground()
                 }
                 else {
-                    println("login failed")
+                    println("Login failed")
                 }
             }
             }))
@@ -103,10 +107,14 @@ class TimeLineTableViewController: UITableViewController, UIImagePickerControlle
                     imagePicker.delegate = self
                     
                     self.presentViewController(imagePicker, animated: true, completion: nil)
+                    
+                    var installiation:PFInstallation = PFInstallation.currentInstallation()
+                    installiation.addUniqueObject("Reload", forKey: "channels")
+                    installiation["user"] = PFUser.currentUser()
+                    installiation.saveInBackground()
                 }
                 else {
-                    //                        let errorString = error.userInfo["error"] as String
-                    let errorString = "error"
+                    let errorString = error.userInfo["error"] as NSString
                     println(errorString)
                 }
             }
@@ -128,7 +136,7 @@ class TimeLineTableViewController: UITableViewController, UIImagePickerControlle
         PFUser.currentUser().setObject(imageFile, forKey: "profileImage")
         PFUser.currentUser().saveInBackground()
         
-        picker.dismissViewControllerAnimated(false, completion: nil)
+        picker.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func scaleImageWith(image:UIImage, newSize:CGSize)->UIImage {
@@ -141,6 +149,10 @@ class TimeLineTableViewController: UITableViewController, UIImagePickerControlle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.loadData()
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "loadData", name: "reloadTimeline", object: nil)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -193,7 +205,7 @@ class TimeLineTableViewController: UITableViewController, UIImagePickerControlle
         findSweeter.whereKey("objectId", equalTo: sweet.objectForKey("sweeter").objectId)
         
         findSweeter.findObjectsInBackgroundWithBlock{
-            (objects:AnyObject[]!, error:NSError!)->Void in
+            (objects:[AnyObject]!, error:NSError!)->Void in
             if !error {
                 let user:PFUser = (objects as NSArray).lastObject as PFUser
                 cell.usernameLabel.text = user.username

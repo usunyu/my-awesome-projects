@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4D84D4F1988D3F500F31D94 /* DirectMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D84D4E1988D3F500F31D94 /* DirectMessageTableViewController.swift */; };
 		A4E98799196E5A23003D2248 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E98798196E5A23003D2248 /* AppDelegate.swift */; };
 		A4E987A0196E5A23003D2248 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E9879F196E5A23003D2248 /* Images.xcassets */; };
 		A4E987AC196E5A23003D2248 /* SwifferAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E987AB196E5A23003D2248 /* SwifferAppTests.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A4D84D4E1988D3F500F31D94 /* DirectMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectMessageTableViewController.swift; sourceTree = "<group>"; };
 		A4E98793196E5A23003D2248 /* SwifferApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwifferApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E98797196E5A23003D2248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4E98798196E5A23003D2248 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				A4E98798196E5A23003D2248 /* AppDelegate.swift */,
 				A4E987D3196E80F1003D2248 /* TimeLineTableViewController.swift */,
 				A4E987D5196E8157003D2248 /* ComposeViewController.swift */,
+				A4D84D4E1988D3F500F31D94 /* DirectMessageTableViewController.swift */,
 				A4E987D7196E82F2003D2248 /* SweetTableViewCell.swift */,
 				A4E987CC196E6197003D2248 /* SwifferApp-Bridging-Header.h */,
 				A4E9879F196E5A23003D2248 /* Images.xcassets */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4D84D4F1988D3F500F31D94 /* DirectMessageTableViewController.swift in Sources */,
 				A4E987D6196E8157003D2248 /* ComposeViewController.swift in Sources */,
 				A4E987D4196E80F1003D2248 /* TimeLineTableViewController.swift in Sources */,
 				A4E987D8196E82F2003D2248 /* SweetTableViewCell.swift in Sources */,
@@ -459,6 +463,7 @@
 				A4E987B1196E5A23003D2248 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4E987B2196E5A23003D2248 /* Build configuration list for PBXNativeTarget "SwifferAppTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +472,7 @@
 				A4E987B4196E5A23003D2248 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
