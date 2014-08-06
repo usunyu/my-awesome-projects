@@ -12,5 +12,6 @@ Learning by doing projects
 * [Servlets and JSPs](https://www.udemy.com/javawebtut/)
 * [The Java Spring Tutorial](https://www.udemy.com/javaspring/)
 * [Become a Certified Hadoop Developer](https://www.udemy.com/hadoop-tutorial/)
+* [The Complete iOS 7 Course](https://www.udemy.com/the-complete-ios-7-course-learn-by-building-14-apps/)
 * [The Swift Programming Language](https://developer.apple.com/swift/)
 * Swift Application Tutorial [1](http://www.raywenderlich.com/tutorials), [2](https://www.youtube.com/channel/UCysEngjfeIYapEER9K8aikw/playlists), [3](https://www.youtube.com/user/Archetapp/playlists), [4](https://www.youtube.com/user/programmingswift/playlists), [5](https://www.youtube.com/user/rm2kdev/playlists)
