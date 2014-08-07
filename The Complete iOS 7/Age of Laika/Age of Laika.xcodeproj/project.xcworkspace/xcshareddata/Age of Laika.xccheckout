@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>54F96939-13D2-449E-915F-5CCB24B3E039</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Age of Laika</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>27D93735-D957-457D-8E81-BBFB94E861CE</key>
+		<string>https://github.com/usunyu/Demo-Projects.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>The Complete iOS 7/Age of Laika/Age of Laika.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>27D93735-D957-457D-8E81-BBFB94E861CE</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/usunyu/Demo-Projects.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>27D93735-D957-457D-8E81-BBFB94E861CE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>27D93735-D957-457D-8E81-BBFB94E861CE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Demo-Projects</string>
+		</dict>
+	</array>
+</dict>
+</plist>
