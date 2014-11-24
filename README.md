@@ -1,5 +1,5 @@
-Demo Projects
-=============
+My Projects
+===========
 
 Learning by doing projects
 
