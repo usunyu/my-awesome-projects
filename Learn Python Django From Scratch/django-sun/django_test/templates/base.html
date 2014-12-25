@@ -1,45 +1,25 @@
+{% load staticfiles %}
+
 <!DOCTYPE <!DOCTYPE html>
 <html>
 <head>
 	<title>{% block title %}My Base Template{% endblock %}</title>
-	<style type="text/css">
-		body {
-			text-align: center;
-		}
-
-		#page {
-			width: 960px;
-			text-align: left;
-			margin: 10px auto 20px auto;
-			background-color: #0c0c0c;
-		}
-
-		#sidebar {
-			float: left;
-			width: 200px;
-			border: 1px solid #000;
-		}
-
-		#content {
-			float: left;
-			width: 600px;
-			border: 1px solid #f00;
-			padding: 10px;
-		}
-	</style>
+<link rel="stylesheet" type="text/css" href="{% static 'assets/css/default.css' %}" />
 </head>
 <body>
 	<div id="page">
 		<div id="sidebar">
-			{% block sidebar %}
-				<ul>
-					<li><a href="/articles/all">Articles</a></li>
-					<li><a href="/admin">Admin</a></li>
-				</ul>
-			{% endblock %}
+		{% block sidebar %}
+			<ul>
+				<li><a href="/articles/all">Articles</a></li>
+				<li><a href="/admin">Admin</a></li>
+			</ul>
+		{% endblock %}
 		</div>
 		<div id="content">
-			{% block content %}This is the content area{% endblock %}
+		{% block content %}This is the content area{% endblock %}
+
+		<img src="{% static 'assets/images/python-logo.png' %}" width="100" />
 		</div>
 	</div>
 </body>
