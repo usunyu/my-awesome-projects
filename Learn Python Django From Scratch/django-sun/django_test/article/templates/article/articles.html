@@ -2,6 +2,10 @@
 
 {% block content %}
 
+<h2>Language is: {{ language }}</h2>
+
+<h2>Sessions Language is: {{ session_language }}</h2>
+
 {% if articles.count > 0 %}
 	{% for article in articles %}
 	<div>
