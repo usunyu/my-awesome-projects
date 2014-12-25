@@ -1,0 +1,10 @@
+#!"/Users/yusun/Repositories/MyProjects/Learn Python Django From Scratch/django-sun/bin/python"
+# EASY-INSTALL-ENTRY-SCRIPT: 'Django==1.7.1','console_scripts','django-admin'
+__requires__ = 'Django==1.7.1'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('Django==1.7.1', 'console_scripts', 'django-admin')()
+    )
