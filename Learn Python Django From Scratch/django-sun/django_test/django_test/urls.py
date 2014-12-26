@@ -15,4 +15,6 @@ urlpatterns = patterns('',
     url(r'^accounts/logout/$', 'django_test.views.logout'),
     url(r'^accounts/loggedin/$', 'django_test.views.loggedin'),
     url(r'^accounts/invalid/$', 'django_test.views.invalid_login'),
+    url(r'^accounts/register/$', 'django_test.views.register_user'),
+    url(r'^accounts/register_success/$', 'django_test.views.register_success'),
 )
