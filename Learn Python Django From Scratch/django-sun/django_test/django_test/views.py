@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.contrib import auth
 from django.core.context_processors import csrf
-from django.contrib.auth.forms import UserCreationForm
+from forms import MyRegistrationForm
 
 def login(request):
 	context = {}
@@ -33,7 +33,7 @@ def invalid_login(request):
 
 def register_user(request):
 	if request.method == 'POST':
-		form = UserCreationForm(request.POST)
+		form = MyRegistrationForm(request.POST)
 		if form.is_valid():
 			form.save()
 			return HttpResponseRedirect('/accounts/register_success')
@@ -41,7 +41,7 @@ def register_user(request):
 	context = {}
 	context.update(csrf(request))
 
-	context['form'] = UserCreationForm()
+	context['form'] = MyRegistrationForm()
 
 	return render(request, 'register.html', context)
 
