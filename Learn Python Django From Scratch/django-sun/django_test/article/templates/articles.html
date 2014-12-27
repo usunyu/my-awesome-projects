@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 
+{% block sidebar %}
+<ul>
+	<li><a href="/articles/all/">Articles</a></li>
+	<li><a href="/articles/create/">Create Article</a></li>
+</ul>
+{% endblock %}
+
 {% block content %}
 
 <h2>Language is: {{ language }}</h2>
