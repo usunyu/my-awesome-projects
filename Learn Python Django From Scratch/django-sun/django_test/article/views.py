@@ -48,6 +48,13 @@ def create(request):
 	context['form'] = form
 	return render(request, 'create_article.html', context)
 
+def like_article(request, article_id):
+	if article_id:
+		a = Article.objects.get(id=article_id)
+		a.likes = a.likes + 1
+		a.save()
+	return HttpResponseRedirect('/articles/get/%s' % article_id)
+
 # test demo
 def hello(request):
 	name = "Yu Sun"
