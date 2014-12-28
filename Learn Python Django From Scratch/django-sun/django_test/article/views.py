@@ -1,10 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from django.core.context_processors import csrf
+from django.utils import timezone
 from django.template.loader import get_template
 from django.template import Context
-from forms import ArticleForm
-from article.models import Article
+from article.models import Article, Comment
+from forms import ArticleForm, CommentForm
+
 
 # Create your views here.
 def articles(request):
@@ -50,10 +52,30 @@ def create(request):
 
 def like_article(request, article_id):
 	if article_id:
-		a = Article.objects.get(id=article_id)
-		a.likes = a.likes + 1
-		a.save()
+		article = Article.objects.get(id=article_id)
+		article.likes = article.likes + 1
+		article.save()
 	return HttpResponseRedirect('/articles/get/%s' % article_id)
+
+def add_comment(request, article_id):
+	article = Article.objects.get(id=article_id)
+
+	if request.method == "POST":
+		form = CommentForm(request.POST)
+		if form.is_valid():
+			comment = form.save(commit=False)
+			comment.pub_date = timezone.now()
+			comment.article = article
+			comment.save()
+			return HttpResponseRedirect('/articles/get/%s' % article_id)
+	else:
+		form = CommentForm()
+
+	context = {}
+	context.update(csrf(request))
+	context['article'] = article
+	context['form'] = form
+	return render(request, 'add_comment.html', context)
 
 # test demo
 def hello(request):
