@@ -9,3 +9,9 @@ class Article(models.Model):
 
 	def __str__(self):	# __unicode__ on Python 2
 		return self.title
+
+class Comment(models.Model):
+	name = models.CharField(max_length=200)
+	body = models.TextField()
+	pub_date = models.DateTimeField('date published')
+	article = models.ForeignKey(Article)
