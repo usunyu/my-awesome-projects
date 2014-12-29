@@ -4,23 +4,41 @@
 <html>
 <head>
 	<title>{% block title %}My Base Template{% endblock %}</title>
-<link rel="stylesheet" type="text/css" href="{% static 'assets/css/default.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/default.css' %}" />
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 </head>
 <body>
-	<div id="page">
-		<div id="sidebar">
-		{% block sidebar %}
-			<ul>
-				<li><a href="/articles/all">Articles</a></li>
-				<li><a href="/admin">Admin</a></li>
-			</ul>
-		{% endblock %}
+	<nav class="navbar navbar-fixed-top navbar-inverse">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="{% url 'article.views.articles' %}">Article App</a>
 		</div>
-		<div id="content">
-		{% block content %}This is the content area{% endblock %}
+		<div id="navbar" class="collapse navbar-collapse">
+		  <ul class="nav navbar-nav">
+			<li class="active"><a href="{% url 'article.views.articles' %}">Home</a></li>
+			<li><a href="{% url 'article.views.create' %}">New</a></li>
+		  </ul>
+		</div><!-- /.nav-collapse -->
+	  </div><!-- /.container -->
+	</nav><!-- /.navbar -->
 
-		<img src="{% static 'assets/images/python-logo.png' %}" width="100" />
-		</div>
-	</div>
+	<!-- <div class="container"> -->
+	{% block content %}
+
+	{% endblock %}
+	<!-- </div> -->
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>

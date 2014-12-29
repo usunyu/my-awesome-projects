@@ -1,28 +1,29 @@
 {% extends "base.html" %}
 
-{% block sidebar %}
-<ul>
-	<li><a href="/articles/all/">Articles</a></li>
-	<li><a href="/articles/create/">Create Article</a></li>
-</ul>
-{% endblock %}
-
 {% block content %}
 
-<h2>Language is: {{ language }}</h2>
+<div class="jumbotron">
+	<h2>Articles for you!</h2>
+	<p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
+</div>
 
-<h2>Sessions Language is: {{ session_language }}</h2>
-
-{% if articles.count > 0 %}
-	{% for article in articles %}
-	<div>
-		<h2><a href="/articles/get/{{ article.id }}">{{ article.title }}</a></h2>
-		<p>{{ article.body|lower|truncatewords:"20" }}</p>
-		<p>{{ article.likes }} people liked this article</p>
+<div class="container">
+	<div class="row">
+	{% if articles.count > 0 %}
+		{% for article in articles %}
+		<div class="col-xs-6 col-lg-4">
+			<h2>{{ article.title }}</h2>
+			<p>{{ article.body|lower|truncatewords:"20" }}</p>
+			<p>{{ article.likes }} people liked this article</p>
+			<p><a class="btn btn-default" href="{% url 'article.views.article' article.id %}">View Details</a></p>
+		</div>
+		{% endfor %}
+	{% else %}
+	<div class="col-xs-6 col-lg-4">
+		<p>None to show!</p>
 	</div>
-	{% endfor %}
-{% else %}
-<p>None to show!</p>
-{% endif %}
+	{% endif %}
+	</div>
+</div>
 
 {% endblock %}

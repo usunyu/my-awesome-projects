@@ -1,26 +1,24 @@
 {% extends "base.html" %}
 
-{% block sidebar %}
-<ul>
-	<li><a href="/articles/all">Articles</a></li>
-</ul>
-{% endblock %}
-
 {% block content %}
 
-<h1>{{ article.title }}</h1>
-<p>{{ article.body }}</p>
+<div class="container">
+<div class="col-md-8">
+	<h1>{{ article.title }}</h1>
+	<p>{{ article.body }}</p>
 
-{% if article.thumbnail %}
-<p><img src="/media/{{article.thumbnail}}" width="200"></p>
-{% endif %}
+	{% if article.thumbnail %}
+	<p><img src="/media/{{article.thumbnail}}" width="200"></p>
+	{% endif %}
 
-<p>{{ article.likes }} people liked this article</p>
-<p><a href="/articles/like/{{ article.id }}">Like</a></p>
-<h2>Comments</h2>
-{% for comment in article.comment_set.all %}
-	<p>{{ comment.name }}: {{ comment.body }}</p>
-{% endfor %}
-<p><a href="/articles/add_comment/{{article.id}}">Add Comment</a></p>
+	<p>{{ article.likes }} people liked this article</p>
+	<p><a href="/articles/like/{{ article.id }}" class="btn btn-xs btn-success">Like</a></p>
+	<h2>Comments</h2>
+	{% for comment in article.comment_set.all %}
+		<p>{{ comment.name }}: {{ comment.body }}</p>
+	{% endfor %}
+	<p><a href="/articles/add_comment/{{article.id}}" class="btn btn-primary">Add Comment</a></p>
 
-{% endblock %}
+	{% endblock %}
+</div>
+</div>
