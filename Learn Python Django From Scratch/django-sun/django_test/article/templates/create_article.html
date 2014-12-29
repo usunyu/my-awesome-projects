@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load bootstrap_toolkit %}
 
 {% block sidebar %}
 <ul>
@@ -8,12 +9,15 @@
 
 {% block content %}
 
-<form action="/articles/create/" method="post" enctype="multipart/form-data">
-	{% csrf_token %}
-	<ul>
-		{{ form.as_ul }}
-	</ul>
-	<input type="submit" name="submit" value="Create Article" />
-</form>
+<div class="container">
+	<form action="/articles/create/" method="post" enctype="multipart/form-data">
+		{% csrf_token %}
+		{{ form|as_bootstrap }}
+
+		<div class="form-actions">
+			<button type="submit" class="btn btn-primary">Create Article</button>
+		</div>
+	</form>
+</div>
 
 {% endblock %}
