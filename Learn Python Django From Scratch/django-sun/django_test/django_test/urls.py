@@ -8,6 +8,7 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^articles/', include('article.urls')),
+    url(r'^accounts/', include('userprofile.urls')),
 
     # user auth urls
     url(r'^accounts/login/$', 'django_test.views.login'),

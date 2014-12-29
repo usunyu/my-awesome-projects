@@ -37,6 +37,7 @@ INSTALLED_APPS = (
 	'django.contrib.messages',
 	'django.contrib.staticfiles',
 	'article',
+	'userprofile',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -94,3 +95,6 @@ STATICFILES_DIRS = (
 
 # Customizing your project's templates
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
+
+# User Profile
+AUTH_PROFILE_MODULE = 'userprofile.UserProfile'
