@@ -98,3 +98,7 @@ TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
 
 # User Profile
 AUTH_PROFILE_MODULE = 'userprofile.UserProfile'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+MEDIA_URL = '/media/'

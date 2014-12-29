@@ -1,4 +1,6 @@
 from django.conf.urls import patterns, include, url
+from django.conf.urls.static import static
+from django.conf import settings
 from django.contrib import admin
 
 urlpatterns = patterns('',
@@ -18,4 +20,4 @@ urlpatterns = patterns('',
     url(r'^accounts/invalid/$', 'django_test.views.invalid_login'),
     url(r'^accounts/register/$', 'django_test.views.register_user'),
     url(r'^accounts/register_success/$', 'django_test.views.register_success'),
-)
+) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
