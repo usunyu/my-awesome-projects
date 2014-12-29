@@ -8,7 +8,7 @@
 
 {% block content %}
 
-<form action="/articles/create/" method="post">
+<form action="/articles/create/" method="post" enctype="multipart/form-data">
 	{% csrf_token %}
 	<ul>
 		{{ form.as_ul }}

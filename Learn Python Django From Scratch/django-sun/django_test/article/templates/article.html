@@ -7,8 +7,14 @@
 {% endblock %}
 
 {% block content %}
+
 <h1>{{ article.title }}</h1>
 <p>{{ article.body }}</p>
+
+{% if article.thumbnail %}
+<p><img src="/media/{{article.thumbnail}}" width="200"></p>
+{% endif %}
+
 <p>{{ article.likes }} people liked this article</p>
 <p><a href="/articles/like/{{ article.id }}">Like</a></p>
 <h2>Comments</h2>
@@ -16,4 +22,5 @@
 	<p>{{ comment.name }}: {{ comment.body }}</p>
 {% endfor %}
 <p><a href="/articles/add_comment/{{article.id}}">Add Comment</a></p>
+
 {% endblock %}
