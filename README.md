@@ -22,4 +22,5 @@ Learning by doing projects
   3. [www.youtube.com/user/Archetapp/](https://www.youtube.com/user/Archetapp/playlists)
   4. [www.youtube.com/user/programmingswift](https://www.youtube.com/user/programmingswift/playlists)
   5. [www.youtube.com/user/rm2kdev/](https://www.youtube.com/user/rm2kdev/playlists)
+* [About You](http://www.codecademy.com/goals/web-beginner-en-3pc6w)
 * [Sun, Earth, and Code](http://www.codecademy.com/en/goals/web-beginner-en-ymqg0)
