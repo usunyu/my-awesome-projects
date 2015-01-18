@@ -16,6 +16,7 @@ Learning by doing projects
 * [Become a Certified Hadoop Developer](https://www.udemy.com/hadoop-tutorial/) [Udemy]
 * [The Complete iOS 7 Course](https://www.udemy.com/the-complete-ios-7-course-learn-by-building-14-apps/) [Udemy]
 * [The Swift Programming Language](https://developer.apple.com/swift/) [Tutorial]
+* [Django REST Framework](http://www.django-rest-framework.org/tutorial/1-serialization/) [Tutorial]
 * Swift Application Tutorial [Tutorial]:
   1. [www.raywenderlich.com/tutorials](http://www.raywenderlich.com/tutorials)
   2. [www.youtube.com/channel/UCysEngjfeIYapEER9K8aikw/](https://www.youtube.com/channel/UCysEngjfeIYapEER9K8aikw/playlists)
