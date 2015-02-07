@@ -1,0 +1,5 @@
+django==1.6
+django_oauth2_provider==0.2.6.1
+djangorestframework==2.3.13
+markdown==2.4.1
+django-filter==0.7
