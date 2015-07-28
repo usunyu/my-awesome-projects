@@ -26,4 +26,4 @@ Learning by doing projects
   5. [www.youtube.com/user/rm2kdev/](https://www.youtube.com/user/rm2kdev/playlists)
 * [About You](http://www.codecademy.com/goals/web-beginner-en-3pc6w) [Codecademy]
 * [Sun, Earth, and Code](http://www.codecademy.com/en/goals/web-beginner-en-ymqg0) [Codecademy]
-* [OpenGL Tutorial](http://www.opengl-tutorial.org/zh-hans/beginners-tutorials-zh/tutorial-1-opening-a-window-zh/) [Tutorial]
+* [OpenGL Tutorial](http://www.opengl-tutorial.org/zh-hans/beginners-tutorials-zh/) [Tutorial]
