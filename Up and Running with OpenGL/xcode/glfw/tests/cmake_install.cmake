@@ -1,4 +1,4 @@
-# Install script for directory: /Users/Sun/Repositories/MyProjects/Up and Running with OpenGL/glfw/tests
+# Install script for directory: /Users/yusun/Repositories/MyProjects/Up and Running with OpenGL/glfw/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

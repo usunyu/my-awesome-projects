@@ -2,9 +2,9 @@
 # Custom rules for ZERO_CHECK
 .SUFFIXES: 
 all: \
-	/Users/Sun/Repositories/MyProjects/Up\ and\ Running\ with\ OpenGL/xcode/CMakeFiles/ZERO_CHECK
+	/Users/yusun/Repositories/MyProjects/Up\ and\ Running\ with\ OpenGL/xcode/CMakeFiles/ZERO_CHECK
 
 
-/Users/Sun/Repositories/MyProjects/Up\ and\ Running\ with\ OpenGL/xcode/CMakeFiles/ZERO_CHECK: 
+/Users/yusun/Repositories/MyProjects/Up\ and\ Running\ with\ OpenGL/xcode/CMakeFiles/ZERO_CHECK: 
 	echo ""
-	make -f /Users/Sun/Repositories/MyProjects/Up\ and\ Running\ with\ OpenGL/xcode/CMakeScripts/ReRunCMake.make
+	make -f /Users/yusun/Repositories/MyProjects/Up\ and\ Running\ with\ OpenGL/xcode/CMakeScripts/ReRunCMake.make

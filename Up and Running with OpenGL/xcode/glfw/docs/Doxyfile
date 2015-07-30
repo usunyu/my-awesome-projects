@@ -52,7 +52,7 @@ PROJECT_LOGO           =
 # If a relative path is entered, it will be relative to the location
 # where doxygen was started. If left blank the current directory will be used.
 
-OUTPUT_DIRECTORY       = /Users/Sun/Repositories/MyProjects/Up and Running with OpenGL/xcode/glfw/docs
+OUTPUT_DIRECTORY       = /Users/yusun/Repositories/MyProjects/Up and Running with OpenGL/xcode/glfw/docs
 
 # If the CREATE_SUBDIRS tag is set to YES, then doxygen will create
 # 4096 sub-directories (in 2 levels) under the output directory of each output
@@ -641,7 +641,7 @@ WARN_FORMAT            = "$file:$line: $text"
 # and error messages should be written. If left blank the output is written
 # to stderr.
 
-WARN_LOGFILE           = /Users/Sun/Repositories/MyProjects/Up and Running with OpenGL/xcode/glfw/docs/warnings.txt
+WARN_LOGFILE           = /Users/yusun/Repositories/MyProjects/Up and Running with OpenGL/xcode/glfw/docs/warnings.txt
 
 #---------------------------------------------------------------------------
 # configuration options related to the input files
@@ -653,18 +653,18 @@ WARN_LOGFILE           = /Users/Sun/Repositories/MyProjects/Up and Running with 
 # with spaces.
 
 INPUT                  =                          \
-                         /Users/Sun/Repositories/MyProjects/Up and Running with OpenGL/glfw/include/GLFW/glfw3.h       \
-                         /Users/Sun/Repositories/MyProjects/Up and Running with OpenGL/glfw/include/GLFW/glfw3native.h \
-                         /Users/Sun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/main.dox              \
-                         /Users/Sun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/news.dox              \
-                         /Users/Sun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/quick.dox             \
-                         /Users/Sun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/moving.dox            \
-                         /Users/Sun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/compile.dox           \
-                         /Users/Sun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/build.dox             \
-                         /Users/Sun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/context.dox           \
-                         /Users/Sun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/monitor.dox           \
-                         /Users/Sun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/window.dox            \
-                         /Users/Sun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/compat.dox
+                         /Users/yusun/Repositories/MyProjects/Up and Running with OpenGL/glfw/include/GLFW/glfw3.h       \
+                         /Users/yusun/Repositories/MyProjects/Up and Running with OpenGL/glfw/include/GLFW/glfw3native.h \
+                         /Users/yusun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/main.dox              \
+                         /Users/yusun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/news.dox              \
+                         /Users/yusun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/quick.dox             \
+                         /Users/yusun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/moving.dox            \
+                         /Users/yusun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/compile.dox           \
+                         /Users/yusun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/build.dox             \
+                         /Users/yusun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/context.dox           \
+                         /Users/yusun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/monitor.dox           \
+                         /Users/yusun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/window.dox            \
+                         /Users/yusun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/compat.dox
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding, which is
@@ -724,7 +724,7 @@ EXCLUDE_SYMBOLS        = APIENTRY GLFWAPI
 # directories that contain example code fragments that are included (see
 # the \include command).
 
-EXAMPLE_PATH           = /Users/Sun/Repositories/MyProjects/Up and Running with OpenGL/glfw/examples
+EXAMPLE_PATH           = /Users/yusun/Repositories/MyProjects/Up and Running with OpenGL/glfw/examples
 
 # If the value of the EXAMPLE_PATH tag contains directories, you can use the
 # EXAMPLE_PATTERNS tag to specify one or more wildcard pattern (like *.cpp
@@ -900,13 +900,13 @@ HTML_FILE_EXTENSION    = .html
 # have to redo this when upgrading to a newer version of doxygen or when
 # changing the value of configuration settings such as GENERATE_TREEVIEW!
 
-HTML_HEADER            = /Users/Sun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/header.html
+HTML_HEADER            = /Users/yusun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/header.html
 
 # The HTML_FOOTER tag can be used to specify a personal HTML footer for
 # each generated HTML page. If it is left blank doxygen will generate a
 # standard footer.
 
-HTML_FOOTER            = /Users/Sun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/footer.html
+HTML_FOOTER            = /Users/yusun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/footer.html
 
 # The HTML_STYLESHEET tag can be used to specify a user-defined cascading
 # style sheet that is used by each HTML page. It can be used to
@@ -925,7 +925,7 @@ HTML_STYLESHEET        =
 # robust against future updates. Doxygen will copy the style sheet file to
 # the output directory.
 
-HTML_EXTRA_STYLESHEET  = /Users/Sun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/extra.css
+HTML_EXTRA_STYLESHEET  = /Users/yusun/Repositories/MyProjects/Up and Running with OpenGL/glfw/docs/extra.css
 
 # The HTML_EXTRA_FILES tag can be used to specify one or more extra images or
 # other source files which should be copied to the HTML output directory. Note

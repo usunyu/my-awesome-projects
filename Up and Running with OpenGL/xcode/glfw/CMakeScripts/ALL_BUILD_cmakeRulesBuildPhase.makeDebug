@@ -2,9 +2,9 @@
 # Custom rules for ALL_BUILD
 .SUFFIXES: 
 all: \
-	/Users/Sun/Repositories/MyProjects/Up\ and\ Running\ with\ OpenGL/xcode/glfw/CMakeFiles/ALL_BUILD
+	/Users/yusun/Repositories/MyProjects/Up\ and\ Running\ with\ OpenGL/xcode/glfw/CMakeFiles/ALL_BUILD
 
 
-/Users/Sun/Repositories/MyProjects/Up\ and\ Running\ with\ OpenGL/xcode/glfw/CMakeFiles/ALL_BUILD: 
+/Users/yusun/Repositories/MyProjects/Up\ and\ Running\ with\ OpenGL/xcode/glfw/CMakeFiles/ALL_BUILD: 
 	echo ""
 	echo Build\ all\ projects
