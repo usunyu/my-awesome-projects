@@ -27,3 +27,4 @@ Learning by doing projects
 * [About You](http://www.codecademy.com/goals/web-beginner-en-3pc6w) [Codecademy]
 * [Sun, Earth, and Code](http://www.codecademy.com/en/goals/web-beginner-en-ymqg0) [Codecademy]
 * [OpenGL Tutorial](http://www.opengl-tutorial.org/zh-hans/beginners-tutorials-zh/) [Tutorial]
+* [Up and Running with OpenGL](http://www.lynda.com/OpenGL-tutorials/Up-Running-OpenGL/166782-2.html) [Lynda]
