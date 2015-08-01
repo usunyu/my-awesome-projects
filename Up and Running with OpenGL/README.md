@@ -37,3 +37,5 @@ This is the image that you actually see on your screen. There are two framebuffe
 
 ##### OpenGL specifies its own data types:
 So, if you're a C programmer, you're familiar with int and unsigned byte and float. If we want to make sure that our GPU is receiving the same type of information, it's safe to say that if we want to send data to the GPU, we should use GL's versions of these types. So, we want to call it GLubyte or GLuint or GLfloat. Open GL will also specify enumerations for naming these types. You'll find that a lot of our functions will call for a particular data type to be specified.
+
+![OSM](pipeline.png)
