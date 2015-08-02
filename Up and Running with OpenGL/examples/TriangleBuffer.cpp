@@ -205,7 +205,7 @@ struct MyApp : public App{
     glEnableVertexAttribArray(positionID);
     // Tell OpenGL how to handle the buffer of data
     //                      attrib    num   type     normalize   stride   offset
-    glVertexAttribPointer( positionID, 2, GL_FLOAT, GL_FALSE, sizeof(vec2), 0 );  
+    glVertexAttribPointer( positionID, 2, GL_FLOAT, GL_FALSE, sizeof(vec2), 0 );
 
     /*-----------------------------------------------------------------------------
      *  UNBIND Vertex Array Object and Vertex Buffer Object

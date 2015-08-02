@@ -6,7 +6,7 @@ Up and Running with OpenGL
 2. cd into the CMake file directory:
 
 
-          	$ ./bootstrap && make && make install
+            $ ./bootstrap && make && make install
 3. You may not intalled GLEW yet: http://sourceforge.net/projects/glew/files/glew/1.12.0/glew-1.12.0.tgz/download
 4. cd into the GLEW ile directory: 
 
@@ -17,9 +17,9 @@ Up and Running with OpenGL
 3. Use CMake to generate an Xcode project file:
 
 
-			$ mkdir xcode
-			$ cd xcode
-			$ cmake -G "Xcode" ..
+            $ mkdir xcode
+            $ cd xcode
+            $ cmake -G "Xcode" ..
 
 #### Introduction to OpenGL terminology
 ##### A Pixel is an Area Unit of Color:
@@ -38,4 +38,38 @@ This is the image that you actually see on your screen. There are two framebuffe
 ##### OpenGL specifies its own data types:
 So, if you're a C programmer, you're familiar with int and unsigned byte and float. If we want to make sure that our GPU is receiving the same type of information, it's safe to say that if we want to send data to the GPU, we should use GL's versions of these types. So, we want to call it GLubyte or GLuint or GLfloat. Open GL will also specify enumerations for naming these types. You'll find that a lot of our functions will call for a particular data type to be specified.
 
+#### Understanding the programmable pipeline
 ![OSM](pipeline.png)
+
+#### Introducing shaders and the OpenGL Shading Language (GLSL)
+So let's think about the GPU. We want to give it some instructions for how to transform and render whatever it is we send to it. These instructions are actually complied programs and we call them shaders.
+
+GLSL data types exist as part of a pipeline, they're parameterized by whether they are inputs or outputs of the program:
+            
+            attribute - specify incoming vertex data
+
+            varying - interpolatable varying properties passed along to next process, which are passed from the vertex processor onto the fragment processor
+
+            uniforms - which are properties typically shared by all vertices on some primitive
+
+As for the data types themselves:
+            
+            vec2 - a two-dimensional vector
+
+            vec3 - a three-dimensional vector
+
+            vec4 - a four-dimensional vector (e.g. a homogenized vec3)
+
+            mat2 - a 2 x 2 matrix
+
+            mat3 - a 3 x 3 matrix
+
+            mat4 - a 4 x 4 matrix
+
+A GLSL program has to have a main function:
+            
+            void main(void) {} - required function of a shader
+
+            gl_Position - required final calculated vertex position, we have to set the variable gl_Position at some point in the vertex processing stage
+
+            gl_FlagColor - required final calculated pixel color, we have to set the variable gl_FragColor at some point in the fragment processing stage
