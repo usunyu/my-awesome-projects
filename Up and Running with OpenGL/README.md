@@ -73,3 +73,18 @@ A GLSL program has to have a main function:
             gl_Position - required final calculated vertex position, we have to set the variable gl_Position at some point in the vertex processing stage
 
             gl_FlagColor - required final calculated pixel color, we have to set the variable gl_FragColor at some point in the fragment processing stage
+
+#### Vertex Array Objects & Vertex Buffer Objects
+We exchange data with the GPU with vertex buffer objects. We exchange data with the GPU about where those buffer objects are with vertex array objects.
+
+We tell the GPU how to navigate that data with vertex attribute pointers. The vertex array object allows us to find a particular number, a "glu int" to a whole set of data on the GPU. On the CPU side, we can refer to a whole buffer of data on the GPU by just binding this particular number. The vertex array object is a number which represents a whole set of vertex data.
+
+The first step is to assign our position ID to the address of our position variable in our shader source code
+
+The second step will be to assign our array ID to a new vertex array object
+
+The third step will be to assign our buffer ID to the actual buffer of data that we send over to the GPU
+
+Finally, we're going to tell the GPU how to navigate the data we've sent to it by specifying the type of data we've sent and the stride between each data block
+
+If our vertex array object is the glue between our shader and our vertex data on the GPU, and our attribute pointer is how to navigate that data, then our vertex buffer object is the data itself.

@@ -112,6 +112,11 @@ struct vec2 {
   float x,y;
 };
 
+struct vec3 {
+    vec3(float _x=0, float _y=0, float _z=0) : x(_x), y(_y), z(_z) {}
+    float x,y,z;
+};
+
 
 
 /*-----------------------------------------------------------------------------
@@ -120,7 +125,8 @@ struct vec2 {
 struct MyApp : public App{
 
   //A Container for Vertices
-  vector<vec2> triangle; 
+  vector<vec2> triangle;
+  vector<vec3> triangle2;
 
   //ID of shader
   GLuint sID;
@@ -139,7 +145,11 @@ struct MyApp : public App{
     //Specify the 3 VERTICES of A Triangle
     triangle.push_back( vec2(-1,-.5) );               
     triangle.push_back( vec2(0,1) ); 
-    triangle.push_back( vec2(1,-.5) ); 
+    triangle.push_back( vec2(1,-.5) );
+      
+    triangle2.push_back( vec3(-1,-.5,1) );
+    triangle2.push_back( vec3(0,1,.5) );
+    triangle2.push_back( vec3(1,-.5,0) );
 
     /*-----------------------------------------------------------------------------
      *  CREATE THE SHADER
@@ -185,7 +195,11 @@ struct MyApp : public App{
     /*-----------------------------------------------------------------------------
      *  CREATE THE VERTEX ARRAY OBJECT
      *-----------------------------------------------------------------------------*/
+    //  if(GLEW_APPLE_vertex_array_object) glGenVertexArraysAPPLE(1,id);
+    //  else if (GLEW_ARB_vertex_array_object) glGenVertexArrays(n,id);
     GENVERTEXARRAYS(1, &arrayID);
+    //  if(GLEW_APPLE_vertex_array_object) glBindVertexArrayAPPLE(id);
+    //  else if (GLEW_ARB_vertex_array_object) glBindVertexArray(id);
     BINDVERTEXARRAY(arrayID);
 
     /*-----------------------------------------------------------------------------
@@ -196,7 +210,9 @@ struct MyApp : public App{
     // Bind Array Buffer 
     glBindBuffer( GL_ARRAY_BUFFER, bufferID);
     // Send data over buffer to GPU
-    glBufferData( GL_ARRAY_BUFFER, triangle.size() * sizeof(vec2), triangle.data(), GL_STATIC_DRAW );
+    // glBufferData( GL_ARRAY_BUFFER, triangle.size() * sizeof(vec2), triangle.data(), GL_STATIC_DRAW );
+    
+    glBufferData( GL_ARRAY_BUFFER, triangle2.size() * sizeof(vec3), triangle2.data(), GL_STATIC_DRAW );
 
     /*-----------------------------------------------------------------------------
      *  ENABLE VERTEX ATTRIBUTES
@@ -205,7 +221,8 @@ struct MyApp : public App{
     glEnableVertexAttribArray(positionID);
     // Tell OpenGL how to handle the buffer of data
     //                      attrib    num   type     normalize   stride   offset
-    glVertexAttribPointer( positionID, 2, GL_FLOAT, GL_FALSE, sizeof(vec2), 0 );
+    // glVertexAttribPointer( positionID, 2, GL_FLOAT, GL_FALSE, sizeof(vec2), 0 );
+    glVertexAttribPointer( positionID, 3, GL_FLOAT, GL_FALSE, sizeof(vec3), 0 );
 
     /*-----------------------------------------------------------------------------
      *  UNBIND Vertex Array Object and Vertex Buffer Object
