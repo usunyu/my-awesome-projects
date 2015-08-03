@@ -39,7 +39,7 @@ This is the image that you actually see on your screen. There are two framebuffe
 So, if you're a C programmer, you're familiar with int and unsigned byte and float. If we want to make sure that our GPU is receiving the same type of information, it's safe to say that if we want to send data to the GPU, we should use GL's versions of these types. So, we want to call it GLubyte or GLuint or GLfloat. Open GL will also specify enumerations for naming these types. You'll find that a lot of our functions will call for a particular data type to be specified.
 
 #### Understanding the programmable pipeline
-![OSM](pipeline.png)
+![pipeline](pipeline.png)
 
 #### Introducing shaders and the OpenGL Shading Language (GLSL)
 So let's think about the GPU. We want to give it some instructions for how to transform and render whatever it is we send to it. These instructions are actually complied programs and we call them shaders.
@@ -97,6 +97,9 @@ If our vertex array object is the glue between our shader and our vertex data on
 3. We can project them onto screen.
 
 #### Using Model, View, and Projection matrices:
+##### Model matrices:
+The first thing we can do with them is take our local vertex positions, we call that "local space," and put them in a world, which we call "world space." We do that with the model transformation matrix.
+
 Model transformation matrix can do three things to our vertices:
 
 1. It can scale vertices, relative to the origin.
@@ -104,4 +107,22 @@ Model transformation matrix can do three things to our vertices:
 1. It can rotate vertices, relative to the origin.
 
 2. it can translate vertices, relative to the origin.
-![OSM](model_view.png)
+![model_mat](model_mat.png)
+
+The order in which we do these three operations matters. We always want to scale, then rotate, then translate. The reason for this is because we're executing these transformations relative to the origin. If we were to translate first and then rotate, we would get unexpected results.
+
+Last matrix to be multiplied is the first one to be applied:
+
+            matrix = translate * rotate * scale
+
+##### View matrices:
+The second major transformation matrix we can apply is the view transformation matrix. This takes our world space coordinates, which have been already scaled, rotated, and translated, and re-positions them in what we call "eye space," which is the position of the vertices relative to our camera.
+![view_mat](view_mat.png)
+The view transformation matrix takes as its parameters the position of our camera, or our eye, the direction it's looking at, or the target, and the direction of its up axis, or which way is up.
+
+##### Projection matrices:
+The last matrix to consider is the projection matrix. We can think of this as a lens.
+![projection_mat](projection_mat.png)
+If we have a model, which has been transformed from local space into world space and a camera, relative to which we've transformed the model. We need to get that vertex information onto our screen. We do that with a projection matrix. This takes the eye space coordinates and turns them into clip space. Clip space is basically the coordinates on your screen.
+
+These matrices need to be applied in a certain order as well. The first thing we want to do is transform from local space to world space using the model matrix. The second thing we want to do is transform from world space to eye space, using the view matrix. The third thing we want to do is transform from eye space to clip space using the projection matrix. As you might expect, this means when you then multiply the projection matrix, by the view matrix, by the model matrix, by the position.
