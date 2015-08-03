@@ -88,3 +88,20 @@ The third step will be to assign our buffer ID to the actual buffer of data that
 Finally, we're going to tell the GPU how to navigate the data we've sent to it by specifying the type of data we've sent and the stride between each data block
 
 If our vertex array object is the glue between our shader and our vertex data on the GPU, and our attribute pointer is how to navigate that data, then our vertex buffer object is the data itself.
+
+#### Introducing matrix transformations:
+1. We can scale, rotate or translate vertex positions.
+
+2. We can remap them to different coordinate system.
+
+3. We can project them onto screen.
+
+#### Using Model, View, and Projection matrices:
+Model transformation matrix can do three things to our vertices:
+
+1. It can scale vertices, relative to the origin.
+
+1. It can rotate vertices, relative to the origin.
+
+2. it can translate vertices, relative to the origin.
+![OSM](model_view.png)
