@@ -55,7 +55,7 @@ const char * vert = GLSL(120,
 
 const char * frag = GLSL(120, 
   void main(){
-    gl_FragColor = vec4(1.0,1.0,1.0,1.0);
+    gl_FragColor = vec4(1.0,0.0,0.0,1.0);
   }
 );
 
@@ -148,8 +148,8 @@ struct MyApp : public App{
     triangle.push_back( vec2(1,-.5) );
       
     triangle2.push_back( vec3(-1,-.5,1) );
-    triangle2.push_back( vec3(0,1,.5) );
-    triangle2.push_back( vec3(1,-.5,0) );
+    triangle2.push_back( vec3(0,.5,.5) );
+    triangle2.push_back( vec3(2,-.5,0) );
 
     /*-----------------------------------------------------------------------------
      *  CREATE THE SHADER
@@ -212,7 +212,7 @@ struct MyApp : public App{
     // Send data over buffer to GPU
     // glBufferData( GL_ARRAY_BUFFER, triangle.size() * sizeof(vec2), triangle.data(), GL_STATIC_DRAW );
     
-    glBufferData( GL_ARRAY_BUFFER, triangle2.size() * sizeof(vec3), triangle2.data(), GL_STATIC_DRAW );
+    glBufferData( GL_ARRAY_BUFFER, triangle2.size() * sizeof(vec3), &(triangle2[0]), GL_STATIC_DRAW );
 
     /*-----------------------------------------------------------------------------
      *  ENABLE VERTEX ATTRIBUTES
