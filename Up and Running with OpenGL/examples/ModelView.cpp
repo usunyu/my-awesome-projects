@@ -167,13 +167,15 @@ struct MyApp : public App{
     /*-----------------------------------------------------------------------------
      *  Set up view and projection matrices
      *-----------------------------------------------------------------------------*/
-    glm::vec3 eyepos = glm::vec3(cos(time) * 1.0, 0, sin(time)*5.0);
+//    glm::vec3 eyepos = glm::vec3(cos(time) * 1.0, 0, sin(time)*5.0);
+//    glm::vec3 eyepos = glm::vec3(sin(time)*5.0, 0, 1);
+    glm::vec3 eyepos = glm::vec3(0, 0, 2);
       
     glm::mat4 view = glm::lookAt( eyepos,                           //eye
                                   glm::vec3(0,0,0),                 //target
                                   glm::vec3(0,1,0) );               //up
       
-    glm::mat4 proj = glm::perspective( PI/3.0f, (float)window().ratio(), 0.1f, -10.0f);
+    glm::mat4 proj = glm::perspective( PI/3.0f + (1 + sin(time)), (float)window().ratio(), 0.1f, -10.0f);
 
     glUniformMatrix4fv( viewID, 1, GL_FALSE, glm::value_ptr(view) );
     glUniformMatrix4fv( projectionID, 1, GL_FALSE, glm::value_ptr(proj) );
