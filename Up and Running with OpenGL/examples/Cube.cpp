@@ -204,6 +204,14 @@ struct MyApp : public App{
     glUniformMatrix4fv( projectionID, 1, GL_FALSE, glm::value_ptr(proj) );
 
     glm::mat4 model = glm::rotate( glm::mat4(), time, glm::vec3(0,1,0) );
+//    glm::mat4 model = glm::rotate( glm::mat4(), 0.0f, glm::vec3(0,1,0) );
+      
+//    glm::mat4 translation =  glm::translate( glm::mat4(), glm::vec3(0,0,0) );
+//    glm::mat4 rotation =  glm::rotate( glm::mat4(), 0.0f, glm::vec3(0,1,0) );
+//    glm::mat4 scale = glm::scale( glm::mat4(), glm::vec3(1) );
+//    //ORDER MATTERS!
+//    glm::mat4 model = translation * rotation * scale;
+    
     glUniformMatrix4fv( modelID, 1, GL_FALSE, glm::value_ptr(model) );
     
     //glBindBuffer( GL_ELEMENT_ARRAY_BUFFER, elementID);
