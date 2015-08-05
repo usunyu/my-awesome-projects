@@ -174,8 +174,8 @@ struct MyApp : public App{
     glm::mat4 view = glm::lookAt( eyepos,                           //eye
                                   glm::vec3(0,0,0),                 //target
                                   glm::vec3(0,1,0) );               //up
-      
-    glm::mat4 proj = glm::perspective( PI/3.0f + (1 + sin(time)), (float)window().ratio(), 0.1f, -10.0f);
+//      cout << time;
+    glm::mat4 proj = glm::perspective( 0.0f, (float)window().ratio(), 0.1f, -10.0f);
 
     glUniformMatrix4fv( viewID, 1, GL_FALSE, glm::value_ptr(view) );
     glUniformMatrix4fv( projectionID, 1, GL_FALSE, glm::value_ptr(proj) );
@@ -199,7 +199,7 @@ struct MyApp : public App{
               glm::mat4 scale =  glm::scale( glm::mat4(), vscale );
 
               //ORDER MATTERS!
-              glm::mat4 model = translation * rotation * scale;
+              glm::mat4 model = glm::mat4();
               
               glUniformMatrix4fv( modelID, 1, GL_FALSE, glm::value_ptr(model) );
               glDrawArrays(GL_TRIANGLES, 0, 3);

@@ -198,12 +198,12 @@ struct MyApp : public App{
     BINDVERTEXARRAY(arrayID);
 
     glm::mat4 view = glm::lookAt( glm::vec3(0,0,5), glm::vec3(0,0,0), glm::vec3(0,1,0) );
-    glm::mat4 proj = glm::perspective( 3.14f / 3.f, (float)window().width()/window().height(), 0.1f,-10.f);
+    glm::mat4 proj = glm::perspective( time, (float)window().width()/window().height(), 0.1f + time,-10.f);
 
     glUniformMatrix4fv( viewID, 1, GL_FALSE, glm::value_ptr(view) );
     glUniformMatrix4fv( projectionID, 1, GL_FALSE, glm::value_ptr(proj) );
 
-    glm::mat4 model = glm::rotate( glm::mat4(), time, glm::vec3(0,1,0) );
+    glm::mat4 model = glm::rotate( glm::mat4(), 0.0f, glm::vec3(0,1,0) );
 //    glm::mat4 model = glm::rotate( glm::mat4(), 0.0f, glm::vec3(0,1,0) );
       
 //    glm::mat4 translation =  glm::translate( glm::mat4(), glm::vec3(0,0,0) );
