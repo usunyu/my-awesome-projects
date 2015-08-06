@@ -103,7 +103,7 @@ struct MyApp : public App{
 
   void init(){
 
-    w = 10; h = 10;
+    w = 5; h = 5;
    
     /*-----------------------------------------------------------------------------
      *  Create vertices of a 2d grid mesh
