@@ -1,0 +1,1 @@
+[{"pk": 1, "model": "ReactComments.comment", "fields": {"text": "This is one comment.", "author": "Pete Hunt"}}, {"pk": 2, "model": "ReactComments.comment", "fields": {"text": "This is *another* comment.", "author": "Jordan Walke"}}, {"pk": "Jordan Walke", "model": "ReactComments.author", "fields": {}}, {"pk": "Pete Hunt", "model": "ReactComments.author", "fields": {}}]
