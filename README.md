@@ -10,6 +10,7 @@ Learning by doing projects
 * [The RSpec Book](http://www.amazon.com/The-RSpec-Book-Behaviour-Development/dp/1934356379) [Tutorial]
 * [Up and Running with Cloud Storage APIs](http://www.lynda.com/sdk/Azure-tutorials/Up-Running-Cloud-Storage-APIs/133320-2.html) [Lynda]
 * [Google App Engine Tutorial](http://googcloudlabs.appspot.com/whatgae.html) [Tutorial]
+* [Image Crawler] [Project]
 * [Java Multithreading](https://www.udemy.com/java-multithreading) [Udemy]
 * [Servlets and JSPs](https://www.udemy.com/javawebtut/) [Udemy]
 * [The Java Spring Tutorial](https://www.udemy.com/javaspring/) [Udemy]
