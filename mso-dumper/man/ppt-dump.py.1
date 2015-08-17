@@ -1,0 +1,51 @@
+.TH PPT-DUMP.PY 1 "27 November 2013"
+.SH NAME
+ppt-dump.py \- PowerPoint 97-2007 file analysis and text extraction
+.SH SYNOPSIS
+.B ppt\-dump.py
+[
+.B \-\-help
+]
+.br
+.B ppt\-dump.py
+[
+.B \-\-no\-struct\-output
+]
+[
+.B \-\-dump\-text
+]
+[
+.B \-\-no\-raw\-dumps
+]
+[
+.B \-\-id\-select=id1[,id2...]
+]
+<filename.ppt>
+
+.SH DESCRIPTION
+The 
+.B ppt-dump.py
+command will analyse a PowerPoint 97-2007 file and print selected
+elements. By default the command will print out a detailed description of
+the file data and structure. In this mode the
+.B \-\-id\-select
+option will allow to select what specific records to print, and the 
+.B \-\-no\-raw\-dumps
+option will suppress hexadecimal dumps of uninterpreted data.
+.P
+If option
+.B \-\-no\-struct\-output
+is given, the default output will be suppressed. In this mode, if option
+.B \-\-dump\-text
+is given, the command will print out the file text content, encoded as UTF-8.
+.SH EXAMPLES
+Printing out only the header, directory and record types 4000 and 4008:
+.RS
+ppt\-dump.py \-\-no\-raw\-dumps \-\-id\-select=4000,4008 myfile.ppt
+.RE
+.PP
+Extracting the slides text as UTF\-8:
+.RS
+ppt\-dump.py \-\-no\-struct\-output \-\-dump\-text myfile.ppt
+.RE
+
