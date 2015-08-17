@@ -6,6 +6,7 @@ Learning by doing projects
 * [Writing your first Django app](https://docs.djangoproject.com/en/dev/intro/tutorial01/) [Tutorial]
 * [Learn Python Django From Scratch](https://www.udemy.com/learn-python-django-from-scratch/) [Udemy]
 * Image Crawler [Project]
+* React tutorial Django [Project]
 * [Ruby Essential Training](http://www.lynda.com/sdk/Ruby-tutorials/essential-training/47905-2.html) [Lynda]
 * [Ruby on Rails 3 Essential Training](http://www.lynda.com/sdk/Ruby-Rails-tutorials/Ruby-Rails-3-Essential-Training/55960-2.html) [Lynda]
 * [The RSpec Book](http://www.amazon.com/The-RSpec-Book-Behaviour-Development/dp/1934356379) [Tutorial]
