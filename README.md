@@ -27,6 +27,7 @@ Learning by doing projects
   4. [www.youtube.com/user/programmingswift](https://www.youtube.com/user/programmingswift/playlists)
   5. [www.youtube.com/user/rm2kdev/](https://www.youtube.com/user/rm2kdev/playlists)
 * Speech Helper API Support [Project]
+* MSO Dumper (fetch content of Word, PPT, Excel) [Project]
 * [About You](http://www.codecademy.com/goals/web-beginner-en-3pc6w) [Codecademy]
 * [Sun, Earth, and Code](http://www.codecademy.com/en/goals/web-beginner-en-ymqg0) [Codecademy]
 * [OpenGL Tutorial](http://www.opengl-tutorial.org/zh-hans/beginners-tutorials-zh/) [Tutorial]
