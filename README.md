@@ -5,13 +5,13 @@ Learning by doing projects
 
 * [Writing your first Django app](https://docs.djangoproject.com/en/dev/intro/tutorial01/) [Tutorial]
 * [Learn Python Django From Scratch](https://www.udemy.com/learn-python-django-from-scratch/) [Udemy]
+* Image Crawler [Project]
 * [Ruby Essential Training](http://www.lynda.com/sdk/Ruby-tutorials/essential-training/47905-2.html) [Lynda]
 * [Ruby on Rails 3 Essential Training](http://www.lynda.com/sdk/Ruby-Rails-tutorials/Ruby-Rails-3-Essential-Training/55960-2.html) [Lynda]
 * [The RSpec Book](http://www.amazon.com/The-RSpec-Book-Behaviour-Development/dp/1934356379) [Tutorial]
 * [Up and Running with Cloud Storage APIs](http://www.lynda.com/sdk/Azure-tutorials/Up-Running-Cloud-Storage-APIs/133320-2.html) [Lynda]
 * [Google App Engine Tutorial](http://googcloudlabs.appspot.com/whatgae.html) [Tutorial]
 * Content Match [Project]
-* Image Crawler [Project]
 * [Java Multithreading](https://www.udemy.com/java-multithreading) [Udemy]
 * [Servlets and JSPs](https://www.udemy.com/javawebtut/) [Udemy]
 * [The Java Spring Tutorial](https://www.udemy.com/javaspring/) [Udemy]
@@ -26,6 +26,7 @@ Learning by doing projects
   3. [www.youtube.com/user/Archetapp/](https://www.youtube.com/user/Archetapp/playlists)
   4. [www.youtube.com/user/programmingswift](https://www.youtube.com/user/programmingswift/playlists)
   5. [www.youtube.com/user/rm2kdev/](https://www.youtube.com/user/rm2kdev/playlists)
+* Speech Helper API Support [Project]
 * [About You](http://www.codecademy.com/goals/web-beginner-en-3pc6w) [Codecademy]
 * [Sun, Earth, and Code](http://www.codecademy.com/en/goals/web-beginner-en-ymqg0) [Codecademy]
 * [OpenGL Tutorial](http://www.opengl-tutorial.org/zh-hans/beginners-tutorials-zh/) [Tutorial]
