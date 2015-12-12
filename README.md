@@ -25,7 +25,9 @@ Learning by doing projects
 * [Servlets and JSPs](https://www.udemy.com/javawebtut/) [Udemy]
 * [The Java Spring Tutorial](https://www.udemy.com/javaspring/) [Udemy]
 
-5.Algorithm:
+5.Other:
+* [Java Multithreading](https://www.udemy.com/java-multithreading) [Udemy]
+* [Google App Engine Tutorial](http://googcloudlabs.appspot.com/whatgae.html) [Tutorial]
 
 6.Project:
 * Image Crawler
@@ -40,18 +42,14 @@ Learning by doing projects
 * [Django REST Framework](http://www.django-rest-framework.org/tutorial/1-serialization/) [Tutorial]
 * [Simple Todo API with Django and OAuth2](http://www.madewithtea.com/simple-todo-api-with-django-and-oauth2.html) [Tutorial]
 
-8. Ruby on Rails:
+8.Ruby on Rails:
 * [Ruby Essential Training](http://www.lynda.com/sdk/Ruby-tutorials/essential-training/47905-2.html) [Lynda]
 * [Ruby on Rails 3 Essential Training](http://www.lynda.com/sdk/Ruby-Rails-tutorials/Ruby-Rails-3-Essential-Training/55960-2.html) [Lynda]
 * [The RSpec Book](http://www.amazon.com/The-RSpec-Book-Behaviour-Development/dp/1934356379) [Tutorial]
 
-9. Other:
-* [Java Multithreading](https://www.udemy.com/java-multithreading) [Udemy]
-* [Google App Engine Tutorial](http://googcloudlabs.appspot.com/whatgae.html) [Tutorial]
-
-10. OpenGL:
+9.OpenGL:
 * [OpenGL Tutorial](http://www.opengl-tutorial.org/zh-hans/beginners-tutorials-zh/) [Tutorial]
 * [Up and Running with OpenGL](http://www.lynda.com/OpenGL-tutorials/Up-Running-OpenGL/166782-2.html) [Lynda]
 
-11. Unity:
+10.Unity:
 * [Learn To Code by Making Games - The Complete Unity Developer](https://www.udemy.com/unitycourse/learn/#/) [Udemy]
