@@ -48,7 +48,7 @@ Learning by doing projects
 * [The RSpec Book](http://www.amazon.com/The-RSpec-Book-Behaviour-Development/dp/1934356379) [Tutorial]
 
 9.OpenGL:
-* [OpenGL Tutorial](http://www.opengl-tutorial.org/zh-hans/beginners-tutorials-zh/) [Tutorial]
+* [OpenGL Tutorial](http://www.opengl-tutorial.org/) [Tutorial]
 * [Up and Running with OpenGL](http://www.lynda.com/OpenGL-tutorials/Up-Running-OpenGL/166782-2.html) [Lynda]
 
 10.Unity:
