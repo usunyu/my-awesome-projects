@@ -10,14 +10,14 @@ Learning by doing projects
 2.iOS:
 * [The Complete iOS 7 Course](https://www.udemy.com/the-complete-ios-7-course-learn-by-building-14-apps/) [Udemy]
 * [The Swift Programming Language](https://developer.apple.com/swift/) [Tutorial]
-* [Raywenderlich iPhone Tutorials](http://www.raywenderlich.com/tutorials)
-* [Brian Advent Tutorials](https://www.youtube.com/channel/UCysEngjfeIYapEER9K8aikw/playlists)
-* [Jared Davidson Tutorials](https://www.youtube.com/user/Archetapp/playlists)
-* [Nate Murray Swift Tutorials](https://www.youtube.com/user/programmingswift/playlists)
-* [Rm2kdev Game Tutorials](https://www.youtube.com/user/rm2kdev/playlists)
+* [Raywenderlich iPhone Tutorials](http://www.raywenderlich.com/tutorials) [Tutorial]
+* [Brian Advent Tutorials](https://www.youtube.com/channel/UCysEngjfeIYapEER9K8aikw/playlists) [YouTube]
+* [Jared Davidson Tutorials](https://www.youtube.com/user/Archetapp/playlists) [YouTube]
+* [Nate Murray Swift Tutorials](https://www.youtube.com/user/programmingswift/playlists) [YouTube]
+* [Rm2kdev Game Tutorials](https://www.youtube.com/user/rm2kdev/playlists) [YouTube]
 
 3.Android:
-* [Android Apps Development Tutorial](https://www.youtube.com/watch?v=VgAoI9MQbSY)
+* [Android Apps Development Tutorial](https://www.youtube.com/watch?v=VgAoI9MQbSY) [YouTube]
 
 4.Backend:
 * [Become a Certified Hadoop Developer](https://www.udemy.com/hadoop-tutorial/) [Udemy]
