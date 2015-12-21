@@ -1,0 +1,12 @@
+
+Visuals
+=======
+* Slime model and texture created by "sketchstick" released as CC0 at http://opengameart.org/content/little-slime
+* Shuriken created by Clint Bellanger released as CC0 at http://opengameart.org/content/shuriken
+* Ninja created by “dokuro” released as CC-BY at http://www.blendswap.com/blends/view/67100
+* Snow texture created by "yughues" released as CC0 at http://opengameart.org/content/free-tiling-textures-pack-53
+
+Audio
+=====
+* Whoosh sound created by "Qubodup" released as CC0 at http://www.freesound.org/people/qubodup/sounds/60009/
+* Enemy hit sound a combination of Injured Grunts created by “trettflms” released as CC0  at https://www.freesound.org/people/trettfilms/sounds/128227/ and Filth Sound created by  “gelo_papas" released as CC0 at http://www.freesound.org/people/gelo_papas/sounds/47340/

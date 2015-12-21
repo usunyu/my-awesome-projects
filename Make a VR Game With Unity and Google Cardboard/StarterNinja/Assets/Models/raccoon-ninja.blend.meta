@@ -1,0 +1,215 @@
+fileFormatVersion: 2
+guid: d8fc4f236b79e41d8a3c1d4e79472843
+timeCreated: 1438288055
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: armBoneL_001
+    100002: armBoneL_002
+    100004: armBoneR_001
+    100006: armBoneR_002
+    100008: Bone
+    100010: bones
+    100012: chestBone
+    100014: choulderBoneR
+    100016: eyes_whide_flat_003
+    100018: footBoneL
+    100020: footBoneR
+    100022: hair_homme
+    100024: hair_raccoon
+    100026: hair_raccoon_001
+    100028: hair_raccoon_lear
+    100030: hair_raccoon_rear
+    100032: hair_raccoon_tail
+    100034: handBoneL
+    100036: handBoneR
+    100038: headBone
+    100040: headBone_001
+    100042: headBone_002
+    100044: headBone_007
+    100046: headBone_008
+    100048: headBone_hair
+    100050: headBone_hair_001
+    100052: headBone_hair_002
+    100054: headBone_hair_003
+    100056: headBone_hair_004
+    100058: headBone_hair_005
+    100060: headBone_hair_006
+    100062: headBone_hair_007
+    100064: headBone_Lear_hat
+    100066: headBone_Leye
+    100068: headBone_Rear_hat
+    100070: headBone_Reye
+    100072: hipBone
+    100074: hipBone_001
+    100076: hipBone_002
+    100078: hommebody
+    100080: kneeBoneL
+    100082: kneeBoneR
+    100084: legBoneL
+    100086: legBoneL_001
+    100088: legBoneL_002
+    100090: legBoneR
+    100092: legBoneR_001
+    100094: legBoneR_002
+    100096: mask_rogue
+    100098: neckBone
+    100100: neckBone_001
+    100102: neckBone_002
+    100104: neckBone_003
+    100106: neckBone_004
+    100108: //RootNode
+    100110: shoulderBoneL
+    100112: sub-round_001
+    100114: sub-round_002
+    100116: wep_kunai
+    400000: armBoneL_001
+    400002: armBoneL_002
+    400004: armBoneR_001
+    400006: armBoneR_002
+    400008: Bone
+    400010: bones
+    400012: chestBone
+    400014: choulderBoneR
+    400016: eyes_whide_flat_003
+    400018: footBoneL
+    400020: footBoneR
+    400022: hair_homme
+    400024: hair_raccoon
+    400026: hair_raccoon_001
+    400028: hair_raccoon_lear
+    400030: hair_raccoon_rear
+    400032: hair_raccoon_tail
+    400034: handBoneL
+    400036: handBoneR
+    400038: headBone
+    400040: headBone_001
+    400042: headBone_002
+    400044: headBone_007
+    400046: headBone_008
+    400048: headBone_hair
+    400050: headBone_hair_001
+    400052: headBone_hair_002
+    400054: headBone_hair_003
+    400056: headBone_hair_004
+    400058: headBone_hair_005
+    400060: headBone_hair_006
+    400062: headBone_hair_007
+    400064: headBone_Lear_hat
+    400066: headBone_Leye
+    400068: headBone_Rear_hat
+    400070: headBone_Reye
+    400072: hipBone
+    400074: hipBone_001
+    400076: hipBone_002
+    400078: hommebody
+    400080: kneeBoneL
+    400082: kneeBoneR
+    400084: legBoneL
+    400086: legBoneL_001
+    400088: legBoneL_002
+    400090: legBoneR
+    400092: legBoneR_001
+    400094: legBoneR_002
+    400096: mask_rogue
+    400098: neckBone
+    400100: neckBone_001
+    400102: neckBone_002
+    400104: neckBone_003
+    400106: neckBone_004
+    400108: //RootNode
+    400110: shoulderBoneL
+    400112: sub-round_001
+    400114: sub-round_002
+    400116: wep_kunai
+    4300000: hair_homme
+    4300002: hair_raccoon_tail
+    4300004: hommebody
+    4300006: eyes_whide_flat_003
+    4300008: hair_raccoon
+    4300010: hair_raccoon_rear
+    4300012: hair_raccoon_lear
+    4300014: hair_raccoon_001
+    4300016: mask_rogue
+    4300018: wep_kunai
+    4300020: sub-round_001
+    4300022: sub-round_002
+    7400000: Default Take
+    7400002: attack
+    7400004: shuriken
+    9500000: //RootNode
+    13700000: eyes_whide_flat_003
+    13700002: hair_homme
+    13700004: hair_raccoon
+    13700006: hair_raccoon_001
+    13700008: hair_raccoon_lear
+    13700010: hair_raccoon_rear
+    13700012: hair_raccoon_tail
+    13700014: hommebody
+    13700016: mask_rogue
+    13700018: sub-round_001
+    13700020: sub-round_002
+    13700022: wep_kunai
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
