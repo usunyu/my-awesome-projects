@@ -1,0 +1,25 @@
+SkySphere Volume 1 
+=======================
+It's vers simple juste :
+1- Drag an drop  skysphere mesh of your choice in your scene (Meshes folder)
+2- Drag an drop material on this skysphere mesh (Skysphere/Materials folder)
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
