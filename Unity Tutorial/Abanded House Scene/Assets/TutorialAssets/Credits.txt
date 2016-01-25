@@ -1,0 +1,8 @@
+Credits:
+Tree model: Unity Technologies
+House model + textures: Tf3dm.com
+___________________________________
+
+As part of use in the unity 5 basics tutorial by MNB https://www.youtube.com/user/misterninjaboy
+
+Forum here: http://www.unityninja.net/
