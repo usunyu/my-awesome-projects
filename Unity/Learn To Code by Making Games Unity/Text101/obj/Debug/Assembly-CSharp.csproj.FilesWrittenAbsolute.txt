@@ -1,0 +1,17 @@
+/Users/yusun/Repositories/MyProjects/Learn To Code by Making Games Unity/Text101/Temp/bin/Debug/UnityEngine.dll
+/Users/yusun/Repositories/MyProjects/Learn To Code by Making Games Unity/Text101/Temp/bin/Debug/UnityEditor.dll
+/Users/yusun/Repositories/MyProjects/Learn To Code by Making Games Unity/Text101/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/yusun/Repositories/MyProjects/Learn To Code by Making Games Unity/Text101/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/yusun/Repositories/MyProjects/Learn To Code by Making Games Unity/Text101/Temp/bin/Debug/Mono.Cecil.dll
+/Users/yusun/Repositories/MyProjects/Learn To Code by Making Games Unity/Text101/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/yusun/Repositories/MyProjects/Learn To Code by Making Games Unity/Text101/Temp/bin/Debug/Unity.DataContract.dll
+/Users/yusun/Repositories/MyProjects/Learn To Code by Making Games Unity/Text101/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/yusun/Repositories/MyProjects/Learn To Code by Making Games Unity/Text101/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/yusun/Repositories/MyProjects/Learn To Code by Making Games Unity/Text101/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/yusun/Repositories/MyProjects/Learn To Code by Making Games Unity/Text101/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/yusun/Repositories/MyProjects/Learn To Code by Making Games Unity/Text101/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/yusun/Repositories/MyProjects/Learn To Code by Making Games Unity/Text101/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/yusun/Repositories/MyProjects/Learn To Code by Making Games Unity/Text101/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/yusun/Repositories/MyProjects/Learn To Code by Making Games Unity/Text101/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/yusun/Repositories/MyProjects/Learn To Code by Making Games Unity/Text101/obj/Debug/Assembly-CSharp.dll
+/Users/yusun/Repositories/MyProjects/Learn To Code by Making Games Unity/Text101/obj/Debug/Assembly-CSharp.dll.mdb
