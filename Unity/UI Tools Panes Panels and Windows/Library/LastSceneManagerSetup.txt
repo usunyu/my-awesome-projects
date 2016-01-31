@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/PA_SciFiWarzoneSampleScene.unity
+  isLoaded: 1
+  isActive: 1

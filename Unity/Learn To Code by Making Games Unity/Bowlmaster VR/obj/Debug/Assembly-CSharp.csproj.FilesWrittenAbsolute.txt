@@ -1,0 +1,17 @@
+/Users/yusun/repos/MyProjects/Learn To Code by Making Games Unity/Bowlmaster/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/yusun/repos/MyProjects/Learn To Code by Making Games Unity/Bowlmaster/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/yusun/repos/MyProjects/Learn To Code by Making Games Unity/Bowlmaster/obj/Debug/Assembly-CSharp.dll
+/Users/yusun/repos/MyProjects/Learn To Code by Making Games Unity/Bowlmaster/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/yusun/repos/MyProjects/Learn To Code by Making Games Unity/Bowlmaster/Temp/bin/Debug/UnityEngine.dll
+/Users/yusun/repos/MyProjects/Learn To Code by Making Games Unity/Bowlmaster/Temp/bin/Debug/UnityEditor.dll
+/Users/yusun/repos/MyProjects/Learn To Code by Making Games Unity/Bowlmaster/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/yusun/repos/MyProjects/Learn To Code by Making Games Unity/Bowlmaster/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/yusun/repos/MyProjects/Learn To Code by Making Games Unity/Bowlmaster/Temp/bin/Debug/Mono.Cecil.dll
+/Users/yusun/repos/MyProjects/Learn To Code by Making Games Unity/Bowlmaster/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/yusun/repos/MyProjects/Learn To Code by Making Games Unity/Bowlmaster/Temp/bin/Debug/Unity.DataContract.dll
+/Users/yusun/repos/MyProjects/Learn To Code by Making Games Unity/Bowlmaster/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/yusun/repos/MyProjects/Learn To Code by Making Games Unity/Bowlmaster/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/yusun/repos/MyProjects/Learn To Code by Making Games Unity/Bowlmaster/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/yusun/repos/MyProjects/Learn To Code by Making Games Unity/Bowlmaster/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/yusun/repos/MyProjects/Learn To Code by Making Games Unity/Bowlmaster/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/yusun/repos/MyProjects/Learn To Code by Making Games Unity/Bowlmaster/Temp/bin/Debug/Mono.Cecil.Mdb.dll
