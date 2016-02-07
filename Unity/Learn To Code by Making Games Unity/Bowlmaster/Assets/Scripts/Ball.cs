@@ -4,12 +4,14 @@ using System.Collections;
 public class Ball : MonoBehaviour {
 
 	public Vector3 launchVeclocity;
+	public bool inPlay = false;
 
 	private Rigidbody rigidBoday;
 	private AudioSource audioSource;
 
 	public void Launch (Vector3 vec)
 	{
+		inPlay = true;
 		rigidBoday.velocity = vec;
 		rigidBoday.useGravity = true;
 
