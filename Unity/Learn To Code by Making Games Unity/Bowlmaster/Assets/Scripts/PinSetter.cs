@@ -5,7 +5,6 @@ using System.Collections;
 public class PinSetter : MonoBehaviour {
 	public int lastStandingCount = -1;
 	public Text standingDisplay;
-	public float distanceToRaise = 40f;
 
 	private Ball ball;
 	private float lastChangeTime;
@@ -14,14 +13,14 @@ public class PinSetter : MonoBehaviour {
 	public void RaisePins() {
 		// raise standing pins
 		foreach (Pin pin in GameObject.FindObjectsOfType<Pin>()) {
-			if (pin.IsStanding ()) {
-				pin.transform.Translate (new Vector3 (0, distanceToRaise, 0));
-			}
+			pin.Raise ();
 		}
 	}
 
 	public void LowerPins() {
-		Debug.Log("LowerPins");
+		foreach (Pin pin in GameObject.FindObjectsOfType<Pin>()) {
+			pin.Lower ();
+		}
 	}
 
 	public void RenewPins() {
