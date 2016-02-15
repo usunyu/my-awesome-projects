@@ -5,10 +5,28 @@ using System.Collections;
 public class PinSetter : MonoBehaviour {
 	public int lastStandingCount = -1;
 	public Text standingDisplay;
+	public float distanceToRaise = 40f;
 
 	private Ball ball;
 	private float lastChangeTime;
 	private bool ballEnteredBox = false;
+
+	public void RaisePins() {
+		// raise standing pins
+		foreach (Pin pin in GameObject.FindObjectsOfType<Pin>()) {
+			if (pin.IsStanding ()) {
+				pin.transform.Translate (new Vector3 (0, distanceToRaise, 0));
+			}
+		}
+	}
+
+	public void LowerPins() {
+		Debug.Log("LowerPins");
+	}
+
+	public void RenewPins() {
+		Debug.Log("RenewPins");
+	}
 
 	void CheckStanding() {
 		// Update lastStandingCount
@@ -56,7 +74,7 @@ public class PinSetter : MonoBehaviour {
 	void OnTriggerExit(Collider collider) {
 		GameObject thingLeft = collider.gameObject;
 		if (thingLeft.tag == "Pin") {
-			print ("Pin Destroy");
+//			print ("Pin Destroy");
 			Destroy (thingLeft.transform.parent.gameObject);
 		}
 //		if (thingLeft.GetComponent<Pin> ()) {
