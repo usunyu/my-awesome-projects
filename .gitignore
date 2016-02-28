@@ -146,3 +146,6 @@ ExportedObj/
 
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
+
+# Project Cache
+Virtual Reality/Unity VR Project/Library/ShaderCache/
