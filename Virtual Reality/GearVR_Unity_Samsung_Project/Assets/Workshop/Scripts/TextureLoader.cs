@@ -4,6 +4,14 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
+static class TextureLoaderUtils {
+	// Gets the list of files in the directory by extention and filters for our specified ones (images)
+	public static IEnumerable<FileInfo> GetFilesWithExtensions (this DirectoryInfo dir, params string[] extensions) {
+		IEnumerable<FileInfo> files = dir.GetFiles();
+		return files.Where(f => extensions.Contains(f.Extension));
+	}
+}
+
 public class TextureLoader : SingletonMonoBehaviour<TextureLoader> {
 
 	public Texture2D[] mStartingTextures	= new Texture2D[1];
@@ -97,7 +105,7 @@ public class TextureLoader : SingletonMonoBehaviour<TextureLoader> {
 
 	private void readTextureFileNames() {
 		if(!string.IsNullOrEmpty(mLocalStorageDirPath) && System.IO.Directory.Exists (mLocalStorageDirPath)) {
-			foreach(FileInfo file in GetFilesWithExtensions(
+			foreach(FileInfo file in TextureLoaderUtils.GetFilesWithExtensions(
 				new DirectoryInfo(mLocalStorageDirPath), 
 				new string[]{ WorkshopUtils.PNG_EXTENSION, WorkshopUtils.JPEG_EXTENSION })) {
 
@@ -110,11 +118,11 @@ public class TextureLoader : SingletonMonoBehaviour<TextureLoader> {
 		}
 	}
 	
-	// Gets the list of files in the directory by extention and filters for our specified ones (images)
-	private IEnumerable<FileInfo> GetFilesWithExtensions (this DirectoryInfo dir, params string[] extensions) {
-		IEnumerable<FileInfo> files = dir.GetFiles();
-		return files.Where(f => extensions.Contains(f.Extension));
-	}
+//	// Gets the list of files in the directory by extention and filters for our specified ones (images)
+//	private static IEnumerable<FileInfo> GetFilesWithExtensions (this DirectoryInfo dir, params string[] extensions) {
+//		IEnumerable<FileInfo> files = dir.GetFiles();
+//		return files.Where(f => extensions.Contains(f.Extension));
+//	}
 
 	public bool isFinishedLoadingFirstTexture() {
 		return mFinishedFirstTexture;
