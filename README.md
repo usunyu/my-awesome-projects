@@ -58,4 +58,4 @@ Learning by doing projects
 
 11.Virtual Reality:
 * [Make a VR Game With Unity and Google Cardboard](http://www.raywenderlich.com/116805/make-vr-game-unity-google-cardboard) [Tutorial]
-* [Apps and Games with Game Engines](http://www.samsung.com/us/samsungdeveloperconnection/developer-resources/gear-vr/apps-and-games/exercise-1-creating-a-unity-project.html)
+* [Apps and Games with Game Engines](http://www.samsung.com/us/samsungdeveloperconnection/developer-resources/gear-vr/apps-and-games/exercise-1-creating-a-unity-project.html) [Tutorial]
