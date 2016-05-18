@@ -23,5 +23,14 @@ int main(int argc, const char * argv[]) {
     cout << "val 3 (bad): " << values[3] << endl;
     cout << "=======================================" << endl;
 
+    cout << "(Lec 25, Sizeof Multidimensional Arrays)" << endl;
+    string animals[][3] = {
+        {"fox", "dog", "cat"},
+        {"mouse", "tiger", "lion"},
+    };
+    cout << "sizeof(animals): " << sizeof(animals) << endl;
+    cout << "sizeof(string): " << sizeof(string) << endl;
+    cout << "=======================================" << endl;
+
     return 0;
 }
