@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include "Person.hpp"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -30,6 +31,13 @@ int main(int argc, const char * argv[]) {
     };
     cout << "sizeof(animals): " << sizeof(animals) << endl;
     cout << "sizeof(string): " << sizeof(string) << endl;
+    cout << "=======================================" << endl;
+    
+    cout << "(Lec 34, C++ Getters and Setters)" << endl;
+    Person person;
+    person.setName("Yu");
+    cout << person.toString() << endl;
+    cout << "name with get method: " << person.getName() << endl;
     cout << "=======================================" << endl;
 
     return 0;
