@@ -55,6 +55,7 @@ Learning by doing projects
 * [Learn To Code by Making Games - The Complete Unity Developer](https://www.udemy.com/unitycourse/learn/#/) [Udemy]
 * [Unity 5 Tutorial : Basics](https://www.youtube.com/watch?v=Ep0rlBQRcVc) [YouTube]
 * [New UI World Space Canvas](https://www.youtube.com/watch?v=Mzt1rEEdeOI) [YouTube]
+* [Unite 2015 - Writing Shaders](https://www.youtube.com/watch?v=epixwRw80MM) [YouTube]
 
 13.Virtual Reality:
 * [Make a VR Game With Unity and Google Cardboard](http://www.raywenderlich.com/116805/make-vr-game-unity-google-cardboard) [Tutorial]
