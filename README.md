@@ -55,9 +55,11 @@ Learning by doing projects
 * [Learn To Code by Making Games - The Complete Unity Developer](https://www.udemy.com/unitycourse/learn/#/) [Udemy]
 * [Unity 5 Tutorial : Basics](https://www.youtube.com/watch?v=Ep0rlBQRcVc) [YouTube]
 * [New UI World Space Canvas](https://www.youtube.com/watch?v=Mzt1rEEdeOI) [YouTube]
-* [Unite 2015 - Writing Shaders](https://www.youtube.com/watch?v=epixwRw80MM) [YouTube]
 
-13.Virtual Reality:
+13.Shanding Language:
+* [Unite 2015 - Writing Shaders](https://www.youtube.com/watch?v=epixwRw80MM) [YouTube]
+* [A gentle introduction to shaders in Unity3D Tutorial Series](http://www.alanzucconi.com/2015/06/10/a-gentle-introduction-to-shaders-in-unity3d/) [Tutorial]
+
+14.Virtual Reality:
 * [Make a VR Game With Unity and Google Cardboard](http://www.raywenderlich.com/116805/make-vr-game-unity-google-cardboard) [Tutorial]
 * [Apps and Games with Game Engines](http://www.samsung.com/us/samsungdeveloperconnection/developer-resources/gear-vr/apps-and-games/exercise-1-creating-a-unity-project.html) [Tutorial]
-
