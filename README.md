@@ -61,9 +61,3 @@ Learning by doing projects
 * [Make a VR Game With Unity and Google Cardboard](http://www.raywenderlich.com/116805/make-vr-game-unity-google-cardboard) [Tutorial]
 * [Apps and Games with Game Engines](http://www.samsung.com/us/samsungdeveloperconnection/developer-resources/gear-vr/apps-and-games/exercise-1-creating-a-unity-project.html) [Tutorial]
 
-14.Other:
-* Image Crawler
-* React tutorial Django
-* Content Match
-* Speech Helper API Support
-* MSO Dumper (fetch content of Word, PPT, Excel)
