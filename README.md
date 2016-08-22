@@ -57,6 +57,7 @@ Learning by doing projects
 * [New UI World Space Canvas](https://www.youtube.com/watch?v=Mzt1rEEdeOI) [YouTube]
 
 13.Shanding Language:
+* [Shaders 101 - Intro to Shaders](https://www.youtube.com/watch?v=T-HXmQAMhG0) [YouTube]
 * [Unite 2015 - Writing Shaders](https://www.youtube.com/watch?v=epixwRw80MM) [YouTube]
 * [A gentle introduction to shaders in Unity3D Tutorial Series](http://www.alanzucconi.com/2015/06/10/a-gentle-introduction-to-shaders-in-unity3d/) [Tutorial]
 
