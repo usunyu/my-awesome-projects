@@ -40,7 +40,7 @@ Learning by doing projects
 * [Django REST Framework](http://www.django-rest-framework.org/tutorial/1-serialization/) [Tutorial]
 * [Simple Todo API with Django and OAuth2](http://www.madewithtea.com/simple-todo-api-with-django-and-oauth2.html) [Tutorial]
 
-9.Platform:
+9.Cloud:
 * [Up and Running with Cloud Storage APIs](http://www.lynda.com/sdk/Azure-tutorials/Up-Running-Cloud-Storage-APIs/133320-2.html) [Lynda]
 * [Google App Engine Tutorial](http://googcloudlabs.appspot.com/whatgae.html) [Tutorial]
 
