@@ -55,9 +55,9 @@ Learning by doing projects
 * [Become a Certified Hadoop Developer](https://www.udemy.com/hadoop-tutorial/) [Udemy]
 
 13.OpenGL:
-* [Setup GLFW and GLEW](https://www.youtube.com/watch?v=Tz0dq2krCW8) [YouTube]
 * [OpenGL Tutorial](http://www.opengl-tutorial.org/) [Tutorial]
 * [Up and Running with OpenGL](http://www.lynda.com/OpenGL-tutorials/Up-Running-OpenGL/166782-2.html) [Lynda]
+* [LearnOpenGL CN](https://learnopengl-cn.github.io/) [Tutorial]
 
 14.Unity:
 * [Learn To Code by Making Games - The Complete Unity Developer](https://www.udemy.com/unitycourse/learn/#/) [Udemy]
