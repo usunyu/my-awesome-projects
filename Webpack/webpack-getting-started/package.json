@@ -1,0 +1,16 @@
+{
+  "name": "webpack-getting-started",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bundle.js",
+  "dependencies": {
+    "css-loader": "^0.25.0",
+    "style-loader": "^0.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yu Sun",
+  "license": "ISC"
+}

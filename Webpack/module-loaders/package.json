@@ -1,0 +1,16 @@
+{
+  "name": "module-loaders",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yu Sun",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "lodash": "^4.16.3",
+    "webpack": "^1.13.2"
+  }
+}

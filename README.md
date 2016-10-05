@@ -31,6 +31,7 @@ Learning by doing projects
 
 7.Webpack:
 * [A simple example](https://webpack.github.io/docs/tutorials/getting-started/) [Tutorial]
+* [Webpack Tutorial - Replace Gulp/Grunt plugins with a single tool](https://www.youtube.com/watch?v=9kJVYpOqcVU) [YouTube]
 
 8.Flux:
 * [Tutorial – Todo List](https://facebook.github.io/flux/docs/todo-list.html) [Tutorial]
