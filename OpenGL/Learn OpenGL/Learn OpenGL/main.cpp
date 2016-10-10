@@ -120,6 +120,9 @@ int main()
         // Draw the triangle
         ourShader.Use();
         
+        GLfloat offset = 0.5f;
+        glUniform1f(glGetUniformLocation(ourShader.Program, "xOffset"), offset);
+        
         glBindVertexArray(VAO);
         glDrawArrays(GL_TRIANGLES, 0, 3);
 //        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
