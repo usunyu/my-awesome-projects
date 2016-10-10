@@ -25,16 +25,19 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 // Shaders
 const GLchar* vertexShaderSource = "#version 330 core\n"
     "layout (location = 0) in vec3 position;\n"
+    "layout (location = 1) in vec3 color;\n"
+    "out vec3 ourColor;\n"
     "void main()\n"
     "{\n"
-    "gl_Position = vec4(position.x, position.y, position.z, 1.0);\n"
+    "gl_Position = vec4(position, 1.0);\n"
+    "ourColor = color;\n"
     "}\0";
 const GLchar* fragmentShaderSource = "#version 330 core\n"
-    "uniform vec4 ourColor;"
+    "in vec3 ourColor;\n"
     "out vec4 color;\n"
     "void main()\n"
     "{\n"
-    "color = ourColor;\n"
+    "color = vec4(ourColor, 1.0f);\n"
     "}\n\0";
 
 // The MAIN function, from here we start the application and run the game loop
@@ -117,9 +120,10 @@ int main()
     
     // Set up vertex data (and buffer(s)) and attribute pointers
     GLfloat vertices[] = {
-        -0.5f, -0.5f, 0.0f, // Left
-        0.5f, -0.5f, 0.0f, // Right
-        0.0f,  0.5f, 0.0f  // Top
+        // 位置              // 颜色
+        0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 0.0f,   // 右下
+        -0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,   // 左下
+        0.0f,  0.5f, 0.0f,  0.0f, 0.0f, 1.0f    // 顶部
     };
     
     GLuint VBO, VAO; //, EBO;
@@ -136,8 +140,12 @@ int main()
 //    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
 //    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
     
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat), (GLvoid*)0);
+    // 位置属性
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), (GLvoid*)0);
     glEnableVertexAttribArray(0);
+    // 颜色属性
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), (GLvoid*)(3* sizeof(GLfloat)));
+    glEnableVertexAttribArray(1);
     
     glBindBuffer(GL_ARRAY_BUFFER, 0); // Note that this is allowed, the call to glVertexAttribPointer registered VBO as the currently bound vertex buffer object so afterwards we can safely unbind
     
