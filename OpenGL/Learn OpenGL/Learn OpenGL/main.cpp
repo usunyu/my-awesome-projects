@@ -35,6 +35,19 @@ const GLchar* fragmentShaderSource = "#version 330 core\n"
     "color = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
     "}\n\0";
 
+const GLchar* vertexShaderSource2 = "#version 330 core\n"
+"layout (location = 0) in vec3 position;\n"
+"void main()\n"
+"{\n"
+"gl_Position = vec4(position.x, position.y, position.z, 1.0);\n"
+"}\0";
+const GLchar* fragmentShaderSource2 = "#version 330 core\n"
+"out vec4 color;\n"
+"void main()\n"
+"{\n"
+"color = vec4(0.0f, 0.5f, 0.0f, 1.0f);\n"
+"}\n\0";
+
 // The MAIN function, from here we start the application and run the game loop
 int main()
 {
@@ -74,7 +87,6 @@ int main()
     glfwGetFramebufferSize(window, &width, &height);
     glViewport(0, 0, width, height);
     
-    // Hello Triangle
     // Build and compile our shader program
     // Vertex shader
     GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
@@ -113,6 +125,43 @@ int main()
     }
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
+    
+    // Build and compile our shader program2
+    // Vertex shader
+    GLuint vertexShader2 = glCreateShader(GL_VERTEX_SHADER);
+    glShaderSource(vertexShader2, 1, &vertexShaderSource2, NULL);
+    glCompileShader(vertexShader2);
+    // Check for compile time errors
+    glGetShaderiv(vertexShader2, GL_COMPILE_STATUS, &success);
+    if (!success)
+    {
+        glGetShaderInfoLog(vertexShader2, 512, NULL, infoLog);
+        std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
+    }
+    // Fragment shader
+    GLuint fragmentShader2 = glCreateShader(GL_FRAGMENT_SHADER);
+    glShaderSource(fragmentShader2, 1, &fragmentShaderSource2, NULL);
+    glCompileShader(fragmentShader2);
+    // Check for compile time errors
+    glGetShaderiv(fragmentShader2, GL_COMPILE_STATUS, &success);
+    if (!success)
+    {
+        glGetShaderInfoLog(fragmentShader2, 512, NULL, infoLog);
+        std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
+    }
+    // Link shaders
+    GLuint shaderProgram2 = glCreateProgram();
+    glAttachShader(shaderProgram2, vertexShader2);
+    glAttachShader(shaderProgram2, fragmentShader2);
+    glLinkProgram(shaderProgram2);
+    // Check for linking errors
+    glGetProgramiv(shaderProgram2, GL_LINK_STATUS, &success);
+    if (!success) {
+        glGetProgramInfoLog(shaderProgram2, 512, NULL, infoLog);
+        std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
+    }
+    glDeleteShader(vertexShader2);
+    glDeleteShader(fragmentShader2);
     
     // Set up vertex data (and buffer(s)) and attribute pointers
 //    GLfloat vertices[] = {
@@ -189,7 +238,7 @@ int main()
     glBindVertexArray(0);
     
     // Uncommenting this call will result in wireframe polygons.
-    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+//    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
     
     // Game loop
     while (!glfwWindowShouldClose(window))
@@ -209,7 +258,9 @@ int main()
         glDrawArrays(GL_TRIANGLES, 0, 3);
 //        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
         glBindVertexArray(0);
+        glUseProgram(0);
         
+        glUseProgram(shaderProgram2);
         glBindVertexArray(VAO2);
         glDrawArrays(GL_TRIANGLES, 0, 3);
         glBindVertexArray(0);
