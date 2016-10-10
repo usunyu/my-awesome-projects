@@ -26,6 +26,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A47FFBB11DAC078E00A4EC24 /* Shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		A47FFBB21DAC07E700A4EC24 /* shader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
+		A47FFBB41DAC09B300A4EC24 /* shader.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.frag; sourceTree = "<group>"; };
 		A4B0BBC51DA55E9E00BAE859 /* Learn OpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Learn OpenGL"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B0BBC81DA55E9E00BAE859 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A4B0BBD01DA55EF600BAE859 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -68,6 +71,9 @@
 			isa = PBXGroup;
 			children = (
 				A4B0BBC81DA55E9E00BAE859 /* main.cpp */,
+				A47FFBB11DAC078E00A4EC24 /* Shader.h */,
+				A47FFBB21DAC07E700A4EC24 /* shader.vs */,
+				A47FFBB41DAC09B300A4EC24 /* shader.frag */,
 			);
 			path = "Learn OpenGL";
 			sourceTree = "<group>";
