@@ -44,6 +44,7 @@
 		A49BCB461DAC8F4B00555B29 /* stbi_DDS_aug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug.h; sourceTree = "<group>"; };
 		A49BCB471DAC8FB600555B29 /* stbi_DDS_aug_c.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug_c.h; sourceTree = "<group>"; };
 		A49BCB4B1DAC96E100555B29 /* container.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpg; sourceTree = "<group>"; };
+		A49BCB4C1DACA42A00555B29 /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
 		A4B0BBC51DA55E9E00BAE859 /* Learn OpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Learn OpenGL"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B0BBC81DA55E9E00BAE859 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A4B0BBD01DA55EF600BAE859 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -85,6 +86,7 @@
 		A49BCB481DAC94A800555B29 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				A49BCB4C1DACA42A00555B29 /* awesomeface.png */,
 				A49BCB4B1DAC96E100555B29 /* container.jpg */,
 			);
 			name = resources;
