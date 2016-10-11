@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A49BCB3C1DAC8E6600555B29 /* SOIL.c in Sources */ = {isa = PBXBuildFile; fileRef = A49BCB3B1DAC8E6600555B29 /* SOIL.c */; };
+		A49BCB3F1DAC8EAC00555B29 /* stb_image_aug.c in Sources */ = {isa = PBXBuildFile; fileRef = A49BCB3D1DAC8EAC00555B29 /* stb_image_aug.c */; };
+		A49BCB421DAC8EE400555B29 /* image_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = A49BCB401DAC8EE400555B29 /* image_helper.c */; };
+		A49BCB451DAC8F0900555B29 /* image_DXT.c in Sources */ = {isa = PBXBuildFile; fileRef = A49BCB431DAC8F0900555B29 /* image_DXT.c */; };
 		A4B0BBC91DA55E9E00BAE859 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4B0BBC81DA55E9E00BAE859 /* main.cpp */; };
 		A4B0BBD11DA55EF600BAE859 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B0BBD01DA55EF600BAE859 /* OpenGL.framework */; };
 		A4B0BBD31DA55F0B00BAE859 /* libglfw3.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B0BBD21DA55F0B00BAE859 /* libglfw3.3.2.dylib */; };
@@ -29,6 +33,17 @@
 		A47FFBB11DAC078E00A4EC24 /* Shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
 		A47FFBB21DAC07E700A4EC24 /* shader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
 		A47FFBB41DAC09B300A4EC24 /* shader.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.frag; sourceTree = "<group>"; };
+		A49BCB3A1DAC8E4000555B29 /* SOIL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOIL.h; sourceTree = "<group>"; };
+		A49BCB3B1DAC8E6600555B29 /* SOIL.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SOIL.c; sourceTree = "<group>"; };
+		A49BCB3D1DAC8EAC00555B29 /* stb_image_aug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stb_image_aug.c; sourceTree = "<group>"; };
+		A49BCB3E1DAC8EAC00555B29 /* stb_image_aug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_aug.h; sourceTree = "<group>"; };
+		A49BCB401DAC8EE400555B29 /* image_helper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_helper.c; sourceTree = "<group>"; };
+		A49BCB411DAC8EE400555B29 /* image_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_helper.h; sourceTree = "<group>"; };
+		A49BCB431DAC8F0900555B29 /* image_DXT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_DXT.c; sourceTree = "<group>"; };
+		A49BCB441DAC8F0900555B29 /* image_DXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_DXT.h; sourceTree = "<group>"; };
+		A49BCB461DAC8F4B00555B29 /* stbi_DDS_aug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug.h; sourceTree = "<group>"; };
+		A49BCB471DAC8FB600555B29 /* stbi_DDS_aug_c.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug_c.h; sourceTree = "<group>"; };
+		A49BCB4B1DAC96E100555B29 /* container.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpg; sourceTree = "<group>"; };
 		A4B0BBC51DA55E9E00BAE859 /* Learn OpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Learn OpenGL"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B0BBC81DA55E9E00BAE859 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A4B0BBD01DA55EF600BAE859 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -50,6 +65,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A49BCB171DAC8D3500555B29 /* soil */ = {
+			isa = PBXGroup;
+			children = (
+				A49BCB3A1DAC8E4000555B29 /* SOIL.h */,
+				A49BCB3B1DAC8E6600555B29 /* SOIL.c */,
+				A49BCB3D1DAC8EAC00555B29 /* stb_image_aug.c */,
+				A49BCB3E1DAC8EAC00555B29 /* stb_image_aug.h */,
+				A49BCB401DAC8EE400555B29 /* image_helper.c */,
+				A49BCB411DAC8EE400555B29 /* image_helper.h */,
+				A49BCB431DAC8F0900555B29 /* image_DXT.c */,
+				A49BCB441DAC8F0900555B29 /* image_DXT.h */,
+				A49BCB461DAC8F4B00555B29 /* stbi_DDS_aug.h */,
+				A49BCB471DAC8FB600555B29 /* stbi_DDS_aug_c.h */,
+			);
+			name = soil;
+			sourceTree = "<group>";
+		};
+		A49BCB481DAC94A800555B29 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				A49BCB4B1DAC96E100555B29 /* container.jpg */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
 		A4B0BBBC1DA55E9E00BAE859 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +110,8 @@
 		A4B0BBC71DA55E9E00BAE859 /* Learn OpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				A49BCB481DAC94A800555B29 /* resources */,
+				A49BCB171DAC8D3500555B29 /* soil */,
 				A4B0BBC81DA55E9E00BAE859 /* main.cpp */,
 				A47FFBB11DAC078E00A4EC24 /* Shader.h */,
 				A47FFBB21DAC07E700A4EC24 /* shader.vs */,
@@ -145,7 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A49BCB3F1DAC8EAC00555B29 /* stb_image_aug.c in Sources */,
+				A49BCB421DAC8EE400555B29 /* image_helper.c in Sources */,
+				A49BCB3C1DAC8E6600555B29 /* SOIL.c in Sources */,
 				A4B0BBC91DA55E9E00BAE859 /* main.cpp in Sources */,
+				A49BCB451DAC8F0900555B29 /* image_DXT.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
