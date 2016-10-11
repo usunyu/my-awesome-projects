@@ -25,6 +25,9 @@
 // Window dimensions
 const GLuint WIDTH = 800, HEIGHT = 600;
 
+// Holds uniform value of texture mix
+GLfloat mixValue = 0.2f;
+
 // Function prototypes
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode);
 
@@ -74,11 +77,11 @@ int main()
     
     // Set up vertex data (and buffer(s)) and attribute pointers
     GLfloat vertices[] = {
-        // Positions          // Colors           // Texture Coords  (Note that we changed them to 'zoom in' on our texture image)
-        0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   0.55f, 0.55f,  // Top Right
-        0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   0.55f, 0.45f, // Bottom Right
-        -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.45f, 0.45f, // Bottom Left
-        -0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.45f, 0.55f  // Top Left
+        // Positions          // Colors           // Texture Coords
+        0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f, // Top Right
+        0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f, // Bottom Right
+        -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f, // Bottom Left
+        -0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f  // Top Left
     };
     GLuint indices[] = {  // Note that we start from 0!
         0, 1, 3, // First Triangle
@@ -187,6 +190,9 @@ int main()
         glBindTexture(GL_TEXTURE_2D, texture2);
         glUniform1i(glGetUniformLocation(ourShader.Program, "ourTexture2"), 1);
         
+        // Set current value of uniform mix
+        glUniform1f(glGetUniformLocation(ourShader.Program, "mixValue"), mixValue);
+        
         glBindVertexArray(VAO);
 //        glDrawArrays(GL_TRIANGLES, 0, 3);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
@@ -198,7 +204,7 @@ int main()
     // Properly de-allocate all resources once they've outlived their purpose
     glDeleteVertexArrays(1, &VAO);
     glDeleteBuffers(1, &VBO);
-     glDeleteBuffers(1, &EBO);
+    glDeleteBuffers(1, &EBO);
     // Terminate GLFW, clearing any resources allocated by GLFW.
     glfwTerminate();
     return 0;
@@ -210,5 +216,18 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
     // closing the application
     if(key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
         glfwSetWindowShouldClose(window, GL_TRUE);
+    // Change value of uniform with arrow keys (sets amount of textre mix)
+    if (key == GLFW_KEY_UP && action == GLFW_PRESS)
+    {
+        mixValue += 0.1f;
+        if (mixValue >= 1.0f)
+        mixValue = 1.0f;
+    }
+    if (key == GLFW_KEY_DOWN && action == GLFW_PRESS)
+    {
+        mixValue -= 0.1f;
+        if (mixValue <= 0.0f)
+        mixValue = 0.0f;
+    }
 }
 
