@@ -199,15 +199,28 @@ int main()
         glUniform1f(glGetUniformLocation(ourShader.Program, "mixValue"), mixValue);
         
         // Create transformations
-        glm::mat4 trans;
-        trans = glm::rotate(trans,(GLfloat)glfwGetTime() * 10.0f, glm::vec3(0.0f, 0.0f, 1.0f));
-        trans = glm::translate(trans, glm::vec3(0.5f, -0.5f, 0.0f));
-        // Get matrix's uniform location and set matrix
-        GLuint transformLoc = glGetUniformLocation(ourShader.Program, "transform");
-        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans));
+        glm::mat4 transform;
+        // First container
+        // =======================
+        transform = glm::translate(transform, glm::vec3(0.5f, -0.5f, 0.0f));
+        transform = glm::rotate(transform, (GLfloat)glfwGetTime() * 10.0f, glm::vec3(0.0f, 0.0f, 1.0f));
+        // Get their uniform location and set matrix
+        GLint transformLoc = glGetUniformLocation(ourShader.Program, "transform");
+        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(transform));
         
+        // With the uniform matrix set, draw the first container
         glBindVertexArray(VAO);
-//        glDrawArrays(GL_TRIANGLES, 0, 3);
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        
+        // Second transformation
+        // ===================
+        transform = glm::mat4(); // Reset it to an identity matrix
+        transform = glm::translate(transform, glm::vec3(-0.5f, 0.5f, 0.0f));
+        GLfloat scaleAmount = sin(glfwGetTime());
+        transform = glm::scale(transform, glm::vec3(scaleAmount, scaleAmount, scaleAmount));
+        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(transform));
+        
+        // Now with the uniform matrix being replaced with new transformations, draw it again.
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
         glBindVertexArray(0);
         
