@@ -16,6 +16,11 @@
 // GLFW
 #include <GLFW/glfw3.h>
 
+// GLM
+#include "glm/glm.hpp"
+#include "glm/gtc/matrix_transform.hpp"
+#include "glm/gtc/type_ptr.hpp"
+
 // Other Libs
 #include "SOIL.h"
 
@@ -192,6 +197,14 @@ int main()
         
         // Set current value of uniform mix
         glUniform1f(glGetUniformLocation(ourShader.Program, "mixValue"), mixValue);
+        
+        // Create transformations
+        glm::mat4 trans;
+        trans = glm::translate(trans, glm::vec3(0.5f, -0.5f, 0.0f));
+        trans = glm::rotate(trans,(GLfloat)glfwGetTime() * 10.0f, glm::vec3(0.0f, 0.0f, 1.0f));
+        // Get matrix's uniform location and set matrix
+        GLuint transformLoc = glGetUniformLocation(ourShader.Program, "transform");
+        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans));
         
         glBindVertexArray(VAO);
 //        glDrawArrays(GL_TRIANGLES, 0, 3);
