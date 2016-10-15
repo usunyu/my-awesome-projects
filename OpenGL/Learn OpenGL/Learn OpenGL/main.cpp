@@ -36,6 +36,9 @@ glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
 glm::vec3 cameraUp    = glm::vec3(0.0f, 1.0f,  0.0f);
 bool keys[1024];
 
+GLfloat deltaTime = 0.0f;   // 当前帧与上一帧的时间差
+GLfloat lastFrame = 0.0f;   // 上一帧的时间
+
 // Function prototypes
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode);
 void do_movement();
@@ -240,6 +243,10 @@ int main()
         glfwPollEvents();
         do_movement();
         
+        GLfloat currentFrame = glfwGetTime();
+        deltaTime = currentFrame - lastFrame;
+        lastFrame = currentFrame;
+        
         // Render
         // Clear the colorbuffer
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
@@ -301,7 +308,7 @@ int main()
 void do_movement()
 {
     // Camera controls
-    GLfloat cameraSpeed = 0.01f;
+    GLfloat cameraSpeed = 5.0f * deltaTime;
     if (keys[GLFW_KEY_W])
         cameraPos += cameraSpeed * cameraFront;
     if (keys[GLFW_KEY_S])
