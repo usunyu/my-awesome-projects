@@ -78,6 +78,7 @@
 		A4F0AB521DADF5C8007C49E8 /* vec3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vec3.hpp; path = glm/vec3.hpp; sourceTree = "<group>"; };
 		A4F0AB531DADF5C8007C49E8 /* vec4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vec4.hpp; path = glm/vec4.hpp; sourceTree = "<group>"; };
 		A4F0AB541DADF5C8007C49E8 /* vector_relational.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vector_relational.hpp; path = glm/vector_relational.hpp; sourceTree = "<group>"; };
+		A4F305B61DB26E8100F0A878 /* Camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +148,7 @@
 				A47FFBB11DAC078E00A4EC24 /* Shader.h */,
 				A47FFBB21DAC07E700A4EC24 /* shader.vs */,
 				A47FFBB41DAC09B300A4EC24 /* shader.frag */,
+				A4F305B61DB26E8100F0A878 /* Camera.h */,
 			);
 			path = "Learn OpenGL";
 			sourceTree = "<group>";

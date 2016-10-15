@@ -26,21 +26,24 @@
 
 // Other includes
 #include "Shader.h"
+#include "Camera.h"
 
 // Window dimensions
 const GLuint WIDTH = 800, HEIGHT = 600;
 
 // Camera
-glm::vec3 cameraPos   = glm::vec3(0.0f, 0.0f,  3.0f);
-glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
-glm::vec3 cameraUp    = glm::vec3(0.0f, 1.0f,  0.0f);
+Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
 bool keys[1024];
+GLfloat lastX = 400, lastY = 300;
+bool firstMouse = true;
 
 GLfloat deltaTime = 0.0f;   // 当前帧与上一帧的时间差
 GLfloat lastFrame = 0.0f;   // 上一帧的时间
 
 // Function prototypes
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode);
+void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
+void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 void do_movement();
 
 // The MAIN function, from here we start the application and run the game loop
@@ -65,8 +68,14 @@ int main()
         return -1;
     }
     glfwMakeContextCurrent(window);
+    
     // Set the required callback functions
     glfwSetKeyCallback(window, key_callback);
+    glfwSetCursorPosCallback(window, mouse_callback);
+    glfwSetScrollCallback(window, scroll_callback);
+    
+    // Options
+    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
     
     // Set this to true so GLEW knows to use a modern approach to retrieving function pointers and extensions
     glewExperimental = GL_TRUE;
@@ -87,19 +96,7 @@ int main()
                      "/Users/sun/repos/MyProjects/OpenGL/Learn OpenGL/Learn OpenGL/shader.vs",
                      "/Users/sun/repos/MyProjects/OpenGL/Learn OpenGL/Learn OpenGL/shader.frag");
     
-//    // Set up vertex data (and buffer(s)) and attribute pointers
-//    GLfloat vertices[] = {
-//        // Positions          // Texture Coords
-//        0.5f,  0.5f, 0.0f,   1.0f, 1.0f, // Top Right
-//        0.5f, -0.5f, 0.0f,   1.0f, 0.0f, // Bottom Right
-//        -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, // Bottom Left
-//        -0.5f,  0.5f, 0.0f,   0.0f, 1.0f  // Top Left
-//    };
-//    GLuint indices[] = {  // Note that we start from 0!
-//        0, 1, 3, // First Triangle
-//        1, 2, 3  // Second Triangle
-//    };
-    
+    // Set up our vertex data (and buffer(s)) and attribute pointers
     GLfloat vertices[] = {
         -0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
         0.5f, -0.5f, -0.5f,  1.0f, 0.0f,
@@ -243,6 +240,7 @@ int main()
         glfwPollEvents();
         do_movement();
         
+        // Set frame time
         GLfloat currentFrame = glfwGetTime();
         deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
@@ -263,12 +261,11 @@ int main()
         glBindTexture(GL_TEXTURE_2D, texture2);
         glUniform1i(glGetUniformLocation(ourShader.Program, "ourTexture2"), 1);
 
-        // Camera/View transformation
+        // Create camera transformation
         glm::mat4 view;
-        view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
-        // Projection
+        view = camera.GetViewMatrix();
         glm::mat4 projection;
-        projection = glm::perspective(45.0f, (GLfloat)WIDTH / (GLfloat)HEIGHT, 0.1f, 100.0f);
+        projection = glm::perspective(camera.Zoom, (float)width/(float)height, 0.1f, 1000.0f);
         // Get the uniform locations
         GLint modelLoc = glGetUniformLocation(ourShader.Program, "model");
         GLint viewLoc = glGetUniformLocation(ourShader.Program, "view");
@@ -276,7 +273,6 @@ int main()
         // Pass the matrices to the shader
         glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
         glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
-        
         
         glBindVertexArray(VAO);
         for(GLuint i = 0; i < 10; i++)
@@ -305,20 +301,21 @@ int main()
     return 0;
 }
 
+// Moves/alters the camera positions based on user input
 void do_movement()
 {
     // Camera controls
-    GLfloat cameraSpeed = 5.0f * deltaTime;
-    if (keys[GLFW_KEY_W])
-        cameraPos += cameraSpeed * cameraFront;
-    if (keys[GLFW_KEY_S])
-        cameraPos -= cameraSpeed * cameraFront;
-    if (keys[GLFW_KEY_A])
-        cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
-    if (keys[GLFW_KEY_D])
-        cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+    if(keys[GLFW_KEY_W])
+        camera.ProcessKeyboard(FORWARD, deltaTime);
+    if(keys[GLFW_KEY_S])
+        camera.ProcessKeyboard(BACKWARD, deltaTime);
+    if(keys[GLFW_KEY_A])
+        camera.ProcessKeyboard(LEFT, deltaTime);
+    if(keys[GLFW_KEY_D])
+        camera.ProcessKeyboard(RIGHT, deltaTime);
 }
 
+// Is called whenever a key is pressed/released via GLFW
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode)
 {
     // When a user presses the escape key, we set the WindowShouldClose property to true,
@@ -335,3 +332,26 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
     }
 }
 
+void mouse_callback(GLFWwindow* window, double xpos, double ypos)
+{
+    if(firstMouse)
+    {
+        lastX = xpos;
+        lastY = ypos;
+        firstMouse = false;
+    }
+    
+    GLfloat xoffset = xpos - lastX;
+    GLfloat yoffset = lastY - ypos;  // Reversed since y-coordinates go from bottom to left
+    
+    lastX = xpos;
+    lastY = ypos;
+    
+    camera.ProcessMouseMovement(xoffset, yoffset);
+}
+
+
+void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
+{
+    camera.ProcessMouseScroll(yoffset);
+}
