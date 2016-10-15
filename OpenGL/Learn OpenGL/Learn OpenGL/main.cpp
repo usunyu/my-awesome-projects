@@ -255,9 +255,15 @@ int main()
         glm::mat4 model;
         glm::mat4 view;
         glm::mat4 projection;
+        
+        GLfloat radius = 10.0f;
+        GLfloat camX = sin(glfwGetTime()) * radius;
+        GLfloat camZ = cos(glfwGetTime()) * radius;
+        view = glm::lookAt(glm::vec3(camX, 0.0, camZ), glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 1.0, 0.0));
+        
 //        model = glm::rotate(model, 15.0f, glm::vec3(1.0f, 0.0f, 0.0f));
 //        model = glm::rotate(model, (GLfloat)glfwGetTime() * 1.0f, glm::vec3(0.5f, 1.0f, 0.0f));
-        view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
+//        view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
         projection = glm::perspective(45.0f, (GLfloat)WIDTH / (GLfloat)HEIGHT, 0.1f, 100.0f);
         // Get their uniform location
         GLint modelLoc = glGetUniformLocation(ourShader.Program, "model");
