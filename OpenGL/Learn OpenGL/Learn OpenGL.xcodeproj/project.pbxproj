@@ -50,6 +50,8 @@
 		A4B0BBD01DA55EF600BAE859 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		A4B0BBD21DA55F0B00BAE859 /* libglfw3.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw3.3.2.dylib; path = ../../../../../../usr/local/Cellar/glfw3/3.2.1/lib/libglfw3.3.2.dylib; sourceTree = "<group>"; };
 		A4B0BBD41DA55F1E00BAE859 /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = ../../../../../../usr/local/Cellar/glew/2.0.0/lib/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
+		A4C77C701DB3AA800017CE08 /* advanced.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = advanced.vs; sourceTree = "<group>"; };
+		A4C77C711DB3AA940017CE08 /* advanced.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = advanced.frag; sourceTree = "<group>"; };
 		A4F0AB391DADF5C8007C49E8 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = glm/CMakeLists.txt; sourceTree = "<group>"; };
 		A4F0AB3A1DADF5C8007C49E8 /* common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = common.hpp; path = glm/common.hpp; sourceTree = "<group>"; };
 		A4F0AB3B1DADF5C8007C49E8 /* detail */ = {isa = PBXFileReference; lastKnownFileType = folder; name = detail; path = glm/detail; sourceTree = "<group>"; };
@@ -149,6 +151,8 @@
 				A47FFBB21DAC07E700A4EC24 /* shader.vs */,
 				A47FFBB41DAC09B300A4EC24 /* shader.frag */,
 				A4F305B61DB26E8100F0A878 /* Camera.h */,
+				A4C77C701DB3AA800017CE08 /* advanced.vs */,
+				A4C77C711DB3AA940017CE08 /* advanced.frag */,
 			);
 			path = "Learn OpenGL";
 			sourceTree = "<group>";
