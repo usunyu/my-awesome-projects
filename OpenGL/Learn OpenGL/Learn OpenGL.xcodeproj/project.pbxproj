@@ -52,6 +52,8 @@
 		A4B0BBD41DA55F1E00BAE859 /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = ../../../../../../usr/local/Cellar/glew/2.0.0/lib/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
 		A4C77C701DB3AA800017CE08 /* advanced.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = advanced.vs; sourceTree = "<group>"; };
 		A4C77C711DB3AA940017CE08 /* advanced.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = advanced.frag; sourceTree = "<group>"; };
+		A4C77C721DB4F87D0017CE08 /* screen.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = screen.vs; sourceTree = "<group>"; };
+		A4C77C731DB4F88E0017CE08 /* screen.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = screen.frag; sourceTree = "<group>"; };
 		A4F0AB391DADF5C8007C49E8 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = glm/CMakeLists.txt; sourceTree = "<group>"; };
 		A4F0AB3A1DADF5C8007C49E8 /* common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = common.hpp; path = glm/common.hpp; sourceTree = "<group>"; };
 		A4F0AB3B1DADF5C8007C49E8 /* detail */ = {isa = PBXFileReference; lastKnownFileType = folder; name = detail; path = glm/detail; sourceTree = "<group>"; };
@@ -153,6 +155,8 @@
 				A4F305B61DB26E8100F0A878 /* Camera.h */,
 				A4C77C701DB3AA800017CE08 /* advanced.vs */,
 				A4C77C711DB3AA940017CE08 /* advanced.frag */,
+				A4C77C721DB4F87D0017CE08 /* screen.vs */,
+				A4C77C731DB4F88E0017CE08 /* screen.frag */,
 			);
 			path = "Learn OpenGL";
 			sourceTree = "<group>";
