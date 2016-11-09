@@ -78,5 +78,5 @@ Learning by doing projects
 * Make a VR Game With Unity and Google Cardboard [[Tutorial](http://www.raywenderlich.com/116805/make-vr-game-unity-google-cardboard)]
 * Apps and Games with Game Engines [[Tutorial](http://www.samsung.com/us/samsungdeveloperconnection/developer-resources/gear-vr/apps-and-games/exercise-1-creating-a-unity-project.html)]
 
-18.[Video Tech](https://github.com/usunyu/MyProjects/tree/master/Video%20Tech):
+18.[FFmpeg](https://github.com/usunyu/MyProjects/tree/master/FFmpeg):
 * 最简单的基于FFMPEG的视频编码器(YUV编码为H.264) [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/25430425)] [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_video_encoder)]
