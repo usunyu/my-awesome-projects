@@ -33,54 +33,52 @@ Learning by doing projects
 * A simple example [[Tutorial](https://webpack.github.io/docs/tutorials/getting-started/)]
 * Webpack Tutorial - Replace Gulp/Grunt plugins with a single tool [[YouTube](https://www.youtube.com/watch?v=9kJVYpOqcVU)]
 
-8.React:
+8.[React](https://github.com/usunyu/MyProjects/tree/master/React):
 * React JS Tutorials [[YouTube](https://www.youtube.com/watch?v=MhkGQAoc7bc&index=1&list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b)]
+* Flux - Todo List [[Tutorial](https://facebook.github.io/flux/docs/todo-list.html)]
 
-9.[Flux](https://github.com/usunyu/MyProjects/tree/master/Flux):
-* Tutorial – Todo List [[Tutorial](https://facebook.github.io/flux/docs/todo-list.html)]
-
-10.[Ruby on Rails](https://github.com/usunyu/MyProjects/tree/master/Runy%20on%20Rails):
+9.[Ruby on Rails](https://github.com/usunyu/MyProjects/tree/master/Runy%20on%20Rails):
 * Ruby Essential Training [[Lynda](http://www.lynda.com/sdk/Ruby-tutorials/essential-training/47905-2.html)]
 * Ruby on Rails 3 Essential Training [[Lynda](http://www.lynda.com/sdk/Ruby-Rails-tutorials/Ruby-Rails-3-Essential-Training/55960-2.html)]
 * The RSpec Book [[Book](http://www.amazon.com/The-RSpec-Book-Behaviour-Development/dp/1934356379)]
 
-11.[Djago](https://github.com/usunyu/MyProjects/tree/master/Django):
+10.[Djago](https://github.com/usunyu/MyProjects/tree/master/Django):
 * Writing your first Django app [[Tutorial](https://docs.djangoproject.com/en/dev/intro/tutorial01/)]
 * Learn Python Django From Scratch [[Udemy](https://www.udemy.com/learn-python-django-from-scratch/)]
 * Django REST Framework [[Tutorial](http://www.django-rest-framework.org/tutorial/1-serialization/)]
 * Simple Todo API with Django and OAuth2 [[Tutorial](http://www.madewithtea.com/simple-todo-api-with-django-and-oauth2.html)]
 
-12.[Clouding](https://github.com/usunyu/MyProjects/tree/master/Clouding):
+11.[Clouding](https://github.com/usunyu/MyProjects/tree/master/Clouding):
 * Up and Running with Cloud Storage APIs [[Lynda](http://www.lynda.com/sdk/Azure-tutorials/Up-Running-Cloud-Storage-APIs/133320-2.html)]
 * Google App Engine Tutorial [[Tutorial](http://googcloudlabs.appspot.com/whatgae.html)]
 
-13.Big Data:
+12.Big Data:
 * Become a Certified Hadoop Developer [[Udemy](https://www.udemy.com/hadoop-tutorial/)]
 
-14.[OpenGL](https://github.com/usunyu/MyProjects/tree/master/OpenGL):
+13.[OpenGL](https://github.com/usunyu/MyProjects/tree/master/OpenGL):
 * OpenGL Tutorial [[Tutorial](http://www.opengl-tutorial.org/)]
 * Up and Running with OpenGL [[Lynda](http://www.lynda.com/OpenGL-tutorials/Up-Running-OpenGL/166782-2.html)]
 * LearnOpenGL CN [[Tutorial](https://learnopengl-cn.github.io/)]
 
-15.[Unity](https://github.com/usunyu/MyProjects/tree/master/Unity):
+14.[Unity](https://github.com/usunyu/MyProjects/tree/master/Unity):
 * Learn To Code by Making Games - The Complete Unity Developer [[Udemy](https://www.udemy.com/unitycourse/learn/#/)]
 * Unity 5 Tutorial : Basics [[YouTube](https://www.youtube.com/watch?v=Ep0rlBQRcVc)]
 * New UI World Space Canvas [[YouTube](https://www.youtube.com/watch?v=Mzt1rEEdeOI)]
 * Write Native Plugins for Unity [[Tutorial](http://www.alanzucconi.com/2015/10/11/how-to-write-native-plugins-for-unity/)]
 * C++ in Unity3D tutorial (C# Marshaling) [[YouTube](https://www.youtube.com/watch?v=w3jGgTHJoCY)]
 
-16.Shanding Language:
+15.Shanding Language:
 * Shaders 101 - Intro to Shaders [[YouTube](https://www.youtube.com/watch?v=T-HXmQAMhG0)]
 * Unite 2015 - Writing Shaders [[YouTube](https://www.youtube.com/watch?v=epixwRw80MM)]
 * A gentle introduction to shaders in Unity3D Tutorial Series [[Tutorial](http://www.alanzucconi.com/2015/06/10/a-gentle-introduction-to-shaders-in-unity3d/)]
 
-17.[Virtual Reality](https://github.com/usunyu/MyProjects/tree/master/Virtual%20Reality):
+16.[Virtual Reality](https://github.com/usunyu/MyProjects/tree/master/Virtual%20Reality):
 * Make a VR Game With Unity and Google Cardboard [[Tutorial](http://www.raywenderlich.com/116805/make-vr-game-unity-google-cardboard)]
 * Apps and Games with Game Engines [[Tutorial](http://www.samsung.com/us/samsungdeveloperconnection/developer-resources/gear-vr/apps-and-games/exercise-1-creating-a-unity-project.html)]
 
-18.[FFmpeg](https://github.com/usunyu/MyProjects/tree/master/FFmpeg):
+17.[FFmpeg](https://github.com/usunyu/MyProjects/tree/master/FFmpeg):
 * 最简单的基于FFmpeg的视频编码器(YUV编码为H.264) [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/25430425)] [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_video_encoder)]
 * 最简单的基于FFmpeg的视频解码器 [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_player/tree/master/simplest_ffmpeg_decoder)]
 
-19.[OpenCV](https://github.com/usunyu/MyProjects/tree/master/OpenCV):
+18.[OpenCV](https://github.com/usunyu/MyProjects/tree/master/OpenCV):
 * Simple OpenCV Stitcher
