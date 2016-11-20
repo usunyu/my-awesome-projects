@@ -34,8 +34,8 @@ Learning by doing projects
 * Webpack Tutorial - Replace Gulp/Grunt plugins with a single tool [[YouTube](https://www.youtube.com/watch?v=9kJVYpOqcVU)]
 
 8.[React](https://github.com/usunyu/MyProjects/tree/master/React):
-* React JS Tutorials [[YouTube](https://www.youtube.com/watch?v=MhkGQAoc7bc&index=1&list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b)]
 * Flux - Todo List [[Tutorial](https://facebook.github.io/flux/docs/todo-list.html)]
+* React + Redux + Webpack [[YouTube](https://www.youtube.com/watch?v=fZKaq623y38&list=PLQDnxXqV213JJFtDaG0aE9vqvp6Wm7nBg)]
 
 9.[Ruby on Rails](https://github.com/usunyu/MyProjects/tree/master/Runy%20on%20Rails):
 * Ruby Essential Training [[Lynda](http://www.lynda.com/sdk/Ruby-tutorials/essential-training/47905-2.html)]
