@@ -79,6 +79,7 @@ Learning by doing projects
 17.[FFmpeg](https://github.com/usunyu/MyProjects/tree/master/FFmpeg):
 * 最简单的基于FFmpeg的视频编码器(YUV编码为H.264) [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/25430425)] [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_video_encoder)]
 * 最简单的基于FFmpeg的视频解码器 [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_player/tree/master/simplest_ffmpeg_decoder)]
+* 最简单的基于FFmpeg的推流器(以推送RTMP为例) [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/39803457)] [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_streamer)]
 
 18.[OpenCV](https://github.com/usunyu/MyProjects/tree/master/OpenCV):
 * Simple OpenCV Stitcher
