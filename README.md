@@ -67,9 +67,9 @@ Learning by doing projects
 * Simple OpenCV Stitcher [[Github](https://github.com/prateekvjoshi/PanoStitch)]
 
 16.[FFmpeg](https://github.com/usunyu/MyProjects/tree/master/FFmpeg):
-* 最简单的基于FFmpeg的视频编码器(YUV编码为H.264) [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/25430425)] [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_video_encoder)]
-* 最简单的基于FFmpeg的视频解码器 [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_player/tree/master/simplest_ffmpeg_decoder)]
-* 最简单的基于FFmpeg的推流器(以推送RTMP为例) [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/39803457)] [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_streamer)]
+* Simplest FFmpeg Video Encoder (YUV to H.264) [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/25430425)] [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_video_encoder)]
+* Simplest FFmpeg Video Decoder [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_player/tree/master/simplest_ffmpeg_decoder)]
+* Simplest FFmpeg Streamer (RTMP example) [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/39803457)] [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_streamer)]
 
 17.[Unity](https://github.com/usunyu/MyProjects/tree/master/Unity):
 * Learn To Code by Making Games - The Complete Unity Developer [[Udemy](https://www.udemy.com/unitycourse/learn/#/)]
