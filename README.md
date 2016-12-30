@@ -52,34 +52,37 @@ Learning by doing projects
 * Up and Running with Cloud Storage APIs [[Lynda](http://www.lynda.com/sdk/Azure-tutorials/Up-Running-Cloud-Storage-APIs/133320-2.html)]
 * Google App Engine Tutorial [[Tutorial](http://googcloudlabs.appspot.com/whatgae.html)]
 
-12.Big Data:
+12.[Hadoop](https://github.com/usunyu/MyProjects/tree/master/Hadoop):
 * Become a Certified Hadoop Developer [[Udemy](https://www.udemy.com/hadoop-tutorial/)]
 
-13.[OpenGL](https://github.com/usunyu/MyProjects/tree/master/OpenGL):
+13.[Druid](https://github.com/usunyu/MyProjects/tree/master/Druid)
+* Druid Quickstart [[Tutorial](http://druid.io/docs/latest/tutorials/quickstart.html)]
+
+14.[OpenGL](https://github.com/usunyu/MyProjects/tree/master/OpenGL):
 * OpenGL Tutorial [[Tutorial](http://www.opengl-tutorial.org/)]
 * Up and Running with OpenGL [[Lynda](http://www.lynda.com/OpenGL-tutorials/Up-Running-OpenGL/166782-2.html)]
 * LearnOpenGL CN [[Tutorial](https://learnopengl-cn.github.io/)]
 
-14.[Unity](https://github.com/usunyu/MyProjects/tree/master/Unity):
+15.[Unity](https://github.com/usunyu/MyProjects/tree/master/Unity):
 * Learn To Code by Making Games - The Complete Unity Developer [[Udemy](https://www.udemy.com/unitycourse/learn/#/)]
 * Unity 5 Tutorial : Basics [[YouTube](https://www.youtube.com/watch?v=Ep0rlBQRcVc)]
 * New UI World Space Canvas [[YouTube](https://www.youtube.com/watch?v=Mzt1rEEdeOI)]
 * Write Native Plugins for Unity [[Tutorial](http://www.alanzucconi.com/2015/10/11/how-to-write-native-plugins-for-unity/)]
 * C++ in Unity3D tutorial (C# Marshaling) [[YouTube](https://www.youtube.com/watch?v=w3jGgTHJoCY)]
 
-15.Shanding Language:
+16.Shanding Language:
 * Shaders 101 - Intro to Shaders [[YouTube](https://www.youtube.com/watch?v=T-HXmQAMhG0)]
 * Unite 2015 - Writing Shaders [[YouTube](https://www.youtube.com/watch?v=epixwRw80MM)]
 * A gentle introduction to shaders in Unity3D Tutorial Series [[Tutorial](http://www.alanzucconi.com/2015/06/10/a-gentle-introduction-to-shaders-in-unity3d/)]
 
-16.[Virtual Reality](https://github.com/usunyu/MyProjects/tree/master/Virtual%20Reality):
+17.[Virtual Reality](https://github.com/usunyu/MyProjects/tree/master/Virtual%20Reality):
 * Make a VR Game With Unity and Google Cardboard [[Tutorial](http://www.raywenderlich.com/116805/make-vr-game-unity-google-cardboard)]
 * Apps and Games with Game Engines [[Tutorial](http://www.samsung.com/us/samsungdeveloperconnection/developer-resources/gear-vr/apps-and-games/exercise-1-creating-a-unity-project.html)]
 
-17.[FFmpeg](https://github.com/usunyu/MyProjects/tree/master/FFmpeg):
+18.[FFmpeg](https://github.com/usunyu/MyProjects/tree/master/FFmpeg):
 * 最简单的基于FFmpeg的视频编码器(YUV编码为H.264) [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/25430425)] [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_video_encoder)]
 * 最简单的基于FFmpeg的视频解码器 [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_player/tree/master/simplest_ffmpeg_decoder)]
 * 最简单的基于FFmpeg的推流器(以推送RTMP为例) [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/39803457)] [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_streamer)]
 
-18.[OpenCV](https://github.com/usunyu/MyProjects/tree/master/OpenCV):
-* Simple OpenCV Stitcher
+19.[OpenCV](https://github.com/usunyu/MyProjects/tree/master/OpenCV):
+* Simple OpenCV Stitcher [[Github](https://github.com/prateekvjoshi/PanoStitch)]
