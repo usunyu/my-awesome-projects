@@ -25,17 +25,17 @@ Learning by doing projects
 5.Android:
 * Android Apps Development Tutorial [[YouTube](https://www.youtube.com/watch?v=VgAoI9MQbSY)]
 
-6.[JSP](https://github.com/usunyu/MyProjects/tree/master/JSP):
-* Servlets and JSPs [[Udemy](https://www.udemy.com/javawebtut/)]
-* The Java Spring Tutorial [[Udemy](https://www.udemy.com/javaspring/)]
-
-7.[Webpack](https://github.com/usunyu/MyProjects/tree/master/Webpack):
+6.[Webpack](https://github.com/usunyu/MyProjects/tree/master/Webpack):
 * A simple example [[Tutorial](https://webpack.github.io/docs/tutorials/getting-started/)]
 * Webpack Tutorial - Replace Gulp/Grunt plugins with a single tool [[YouTube](https://www.youtube.com/watch?v=9kJVYpOqcVU)]
 
-8.[React](https://github.com/usunyu/MyProjects/tree/master/React):
+7.[React](https://github.com/usunyu/MyProjects/tree/master/React):
 * Flux - Todo List [[Tutorial](https://facebook.github.io/flux/docs/todo-list.html)]
 * React + Redux + Webpack [[YouTube](https://www.youtube.com/watch?v=fZKaq623y38&list=PLQDnxXqV213JJFtDaG0aE9vqvp6Wm7nBg)]
+
+8.[JSP](https://github.com/usunyu/MyProjects/tree/master/JSP):
+* Servlets and JSPs [[Udemy](https://www.udemy.com/javawebtut/)]
+* The Java Spring Tutorial [[Udemy](https://www.udemy.com/javaspring/)]
 
 9.[Ruby on Rails](https://github.com/usunyu/MyProjects/tree/master/Runy%20on%20Rails):
 * Ruby Essential Training [[Lynda](http://www.lynda.com/sdk/Ruby-tutorials/essential-training/47905-2.html)]
