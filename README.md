@@ -57,6 +57,7 @@ Learning by doing projects
 
 13.[Druid](https://github.com/usunyu/MyProjects/tree/master/Druid)
 * Druid Quickstart [[Tutorial](http://druid.io/docs/latest/tutorials/quickstart.html)]
+* Tutorial: Load your own streaming data [[Tutorial](http://druid.io/docs/latest/tutorials/tutorial-streams.html)]
 
 14.[OpenGL](https://github.com/usunyu/MyProjects/tree/master/OpenGL):
 * OpenGL Tutorial [[Tutorial](http://www.opengl-tutorial.org/)]
