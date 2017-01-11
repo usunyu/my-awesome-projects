@@ -18,6 +18,14 @@
 			// 这里编写Shader代码
 			CGPROGRAM
 			// 使用CG语言编写Shader代码
+			float4 _Color;
+			float4 _Vector;
+			float _Int;
+			float _Float;
+			float _Range;
+			sampler2D _2D;
+			samplerCube _Cube;
+			sampler3D _3D;
 
 			ENDCG
 		}
