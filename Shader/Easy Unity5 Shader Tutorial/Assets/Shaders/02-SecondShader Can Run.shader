@@ -10,6 +10,11 @@ CGPROGRAM
 // 基本作用 返回模型对应的屏幕上的每一个像素的颜色值
 #pragma fragment frag
 
+float4 vert (float4 v : POSITION) : SV_POSITION {	// 通过语义告诉系统，这个参数是干什么的，比如POSITION告诉系统是顶点坐标
+													// SV_POSITION这个语义用来解释说明返回值，是剪裁空间下的顶点坐标
+	float4 pos = mul(UNITY_MATRIX_MVP, v);
+	return pos;
+}
 
 ENDCG
 
