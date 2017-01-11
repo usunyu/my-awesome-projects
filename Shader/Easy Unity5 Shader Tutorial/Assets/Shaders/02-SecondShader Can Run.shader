@@ -16,8 +16,11 @@ float4 vert (float4 v : POSITION) : SV_POSITION {	// 通过语义告诉系统，
 	return pos;
 }
 
-ENDCG
+fixed4 frag () : SV_Target {
+	return fixed4(.5, 1, 1, 1);
+}
 
+ENDCG
 		}
 	}
 	Fallback "VertexLit"
