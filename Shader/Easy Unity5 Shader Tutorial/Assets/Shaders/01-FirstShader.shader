@@ -26,10 +26,11 @@
 			sampler2D _2D;
 			samplerCube _Cube;
 			sampler3D _3D;
-
+			// float 32 bit
+			// half 16 bit -6w~6w
+			// fixed 11 bit -2~2
 			ENDCG
 		}
 	}
-
 	Fallback "VertexLit"
 }
