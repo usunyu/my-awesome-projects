@@ -83,6 +83,7 @@ Learning by doing projects
 * Shaders 101 - Intro to Shaders [[YouTube](https://www.youtube.com/watch?v=T-HXmQAMhG0)]
 * Unite 2015 - Writing Shaders [[YouTube](https://www.youtube.com/watch?v=epixwRw80MM)]
 * A gentle introduction to shaders in Unity3D Tutorial Series [[Tutorial](http://www.alanzucconi.com/2015/06/10/a-gentle-introduction-to-shaders-in-unity3d/)]
+* Easy Unity5 Shader Tutorial [[Sikiedu](http://www.sikiedu.com/course/32)]
 
 19.[Virtual Reality](https://github.com/usunyu/MyProjects/tree/master/Virtual%20Reality):
 * Make a VR Game With Unity and Google Cardboard [[Tutorial](http://www.raywenderlich.com/116805/make-vr-game-unity-google-cardboard)]
