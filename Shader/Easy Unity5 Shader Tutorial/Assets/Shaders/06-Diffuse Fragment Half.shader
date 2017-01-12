@@ -1,6 +1,6 @@
 ﻿// Upgrade NOTE: replaced '_World2Object' with 'unity_WorldToObject'
 
-Shader "Siki/05 diffuse fragment" {
+Shader "Siki/06 diffuse fragment HalfLambert" {
 	Properties {
 		_Diffuse ("Diffuse Color", Color) = (1, 1, 1, 1)
 	}
@@ -59,8 +59,10 @@ fixed4 frag (v2f f) : SV_Target {
 	// _WorldSpaceLightPos0 取得平行光位置
 	fixed3 lightDir = normalize( _WorldSpaceLightPos0.xyz ); // 对于每个顶点来说，光的位置就是光的方向，因为是平行光
 
+	float halfLambert = dot(normalDir, lightDir) * 0.5 + 0.5;
+
 	// _LightColor0 取得平行光的颜色
-	fixed3 diffuse = _LightColor0.rgb * max( dot(normalDir, lightDir), 0 ) * _Diffuse.rgb; // 取得漫反射颜色
+	fixed3 diffuse = _LightColor0.rgb * halfLambert * _Diffuse.rgb; // 取得漫反射颜色
 
 	fixed3 tempColor = diffuse + ambient;
 
