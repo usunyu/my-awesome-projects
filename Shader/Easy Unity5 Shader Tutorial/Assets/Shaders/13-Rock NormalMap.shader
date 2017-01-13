@@ -6,6 +6,7 @@ Shader "Siki/13 rock normal map" {
 		_Color("Color", Color) = (1, 1, 1, 1)
 		_MainTex("Main Tex", 2D) = "white" {}
 		_NormalMap("Normal Map", 2D) = "bump" {}
+		_BumpScale("Bump Scale", Float) = 1
 	}
 
 	SubShader {
@@ -24,6 +25,7 @@ sampler2D _MainTex;
 float4 _MainTex_ST;
 sampler2D _NormalMap;
 float4 _NormalMap_ST;
+float _BumpScale;
 
 struct a2v {
 	float4 vertex : POSITION;
@@ -68,7 +70,9 @@ fixed4 frag(v2f f) : SV_Target {
 	fixed4 normalColor = tex2D(_NormalMap, f.uv.zw);
 
 //	fixed3 tangentNormal = normalColor.xyz * 2 - 1; // 切线空间下的法线
-	fixed3 tangentNormal = normalize(UnpackNormal(normalColor));
+	fixed3 tangentNormal = UnpackNormal(normalColor);
+	tangentNormal.xy = tangentNormal.xy * _BumpScale;
+	tangentNormal = normalize(tangentNormal);
 
 	fixed3 lightDir = normalize(WorldSpaceLightDir(f.worldVertex));
 
