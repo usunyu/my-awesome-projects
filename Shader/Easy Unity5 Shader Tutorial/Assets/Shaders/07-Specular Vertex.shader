@@ -3,6 +3,8 @@
 Shader "Siki/07 specular vertex" {
 	Properties {
 		_Diffuse ("Diffuse Color", Color) = (1, 1, 1, 1)
+		_Specular ("Specular Color", Color) = (1, 1, 1, 1)
+		_Gloss("Gloss", Range(8, 200)) = 10
 	}
 	SubShader {
 		Pass {
@@ -18,7 +20,9 @@ CGPROGRAM
 // 基本作用 返回模型对应的屏幕上的每一个像素的颜色值
 #pragma fragment frag
 
-fixed3 _Diffuse;
+fixed4 _Diffuse;
+fixed4 _Specular;
+half _Gloss;
 
 // application to vertex
 struct a2v {
@@ -53,7 +57,7 @@ v2f vert (a2v v) {	// 通过语义告诉系统，这个参数是干什么的，�
 
 	fixed3 viewDir = normalize(_WorldSpaceCameraPos.xyz - mul ( v.vertex, unity_WorldToObject).xyz);
 
-	fixed3 specular = _LightColor0.rgb * pow(max (dot(reflectDir, viewDir) , 0), 10);
+	fixed3 specular = _LightColor0.rgb * _Specular.rgb * pow(max (dot(reflectDir, viewDir) , 0), _Gloss);
 
 	f.color = diffuse + ambient + specular;
 	return f;
