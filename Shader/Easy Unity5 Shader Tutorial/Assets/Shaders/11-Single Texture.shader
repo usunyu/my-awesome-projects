@@ -22,6 +22,7 @@ CGPROGRAM
 //fixed4 _Diffuse;
 fixed4 _Color;
 sampler2D _MainTex;
+float4 _MainTex_ST;
 fixed4 _Specular;
 half _Gloss;
 
@@ -35,7 +36,7 @@ struct v2f {
 	float4 svPos : SV_POSITION;
 	float3 worldNormal : TEXCOORD0;
 	float4 worldVertex : TEXCOORD1;
-	float4 uv : TEXCOORD2;
+	float2 uv : TEXCOORD2;
 };
 
 v2f vert(a2v v) {
@@ -43,7 +44,7 @@ v2f vert(a2v v) {
 	f.svPos = mul (UNITY_MATRIX_MVP, v.vertex);
 	f.worldNormal = UnityObjectToWorldNormal(v.normal);
 	f.worldVertex = mul ( v.vertex, unity_WorldToObject );
-	f.uv = v.texcoord;
+	f.uv = v.texcoord.xy * _MainTex_ST.xy + _MainTex_ST.zw;
 	return f;
 }
 
