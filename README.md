@@ -24,6 +24,7 @@ Learning by doing projects
 
 5.Android:
 * Android Apps Development Tutorial [[YouTube](https://www.youtube.com/watch?v=VgAoI9MQbSY)]
+* TextureView SurfaceTexture OpenGL Video Player [[Tutorial](http://www.jianshu.com/p/d3d3186eefcb)]
 
 6.[Webpack](https://github.com/usunyu/MyProjects/tree/master/Webpack):
 * A simple example [[Tutorial](https://webpack.github.io/docs/tutorials/getting-started/)]
