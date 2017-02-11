@@ -8,8 +8,12 @@ let initialState = {
     todos: [{
         id: 0,
         completed: false,
-        text: 'initial todo for demo purposes'
-    }]
+        text: 'initial todo for demo purposes',
+    }],
+    user: {
+        username: 'usunyu',
+        id: 22,
+    },
 }
 
 let store = configureStore(initialState)
