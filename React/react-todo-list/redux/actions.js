@@ -21,6 +21,13 @@ let actions = {
         }
     },
 
+    createNewUserID: function() {
+        return {
+            type: 'CREATE_USER_ID',
+            id: Math.round(Math.random() * 100),
+        }
+    }
+
 }
 
 // store.dispatch(addTodo('some text'))
