@@ -12,7 +12,7 @@ class App extends Component {
 		return (
             <div className="app">
                 <h1>Todo List</h1>
-                <UserInfo user={this.props.user} createNewUserID={this.props.actions.createNewUserID} />
+                <UserInfo user={this.props.user} actions={this.props.actions} />
                 <TodoInput addTodo={this.props.actions.addTodo} />
                 <TodoList actions={this.props.actions} todos={this.props.todos}/>
             </div>
