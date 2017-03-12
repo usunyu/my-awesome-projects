@@ -92,7 +92,7 @@ protected:
         float BaseSpeed;
 
     UFUNCTION(BlueprintImplementableEvent, Category = "Power")
-    void PowerChangeEffect();
+        void PowerChangeEffect();
 
 public:
     /** Returns CameraBoom subobject **/
