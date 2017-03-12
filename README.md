@@ -83,6 +83,7 @@ Learning by doing projects
 
 18.[Unreal](https://github.com/usunyu/MyProjects/tree/master/Unreal):
 * Blueprint Twin Stick Shooter [[Tutorial](https://docs.unrealengine.com/latest/INT/Videos/PLZlv_N0_O1gb5sdygbSiEU7hb0eomNLdq/1pmPb_TWG-8/index.html)]
+* C++ 3rd Person Battery Collector Power Up Game [[Tutorial](https://docs.unrealengine.com/latest/INT/Videos/PLZlv_N0_O1gYup-gvJtMsgJqnEB_dGiM4/mSRov77hNR4/index.html)]
 
 19.[Shader](https://github.com/usunyu/MyProjects/tree/master/Shader):
 * Shaders 101 - Intro to Shaders [[YouTube](https://www.youtube.com/watch?v=T-HXmQAMhG0)]
