@@ -17,6 +17,7 @@ Learning by doing projects
 * The Complete iOS 7 Course [[Udemy](https://www.udemy.com/the-complete-ios-7-course-learn-by-building-14-apps/)]
 * The Swift Programming Language [[Tutorial](https://developer.apple.com/swift/)]
 * Raywenderlich iPhone Tutorials [[Tutorial](http://www.raywenderlich.com/tutorials)]
+* Brian Advent Tutorials [[YouTube](https://www.youtube.com/channel/UCysEngjfeIYapEER9K8aikw/playlists)]
 
 5.[Android](https://github.com/usunyu/MyProjects/tree/master/Android):
 * TextureView SurfaceTexture OpenGL Video Player [[Tutorial](http://www.jianshu.com/p/d3d3186eefcb)]
