@@ -33,7 +33,7 @@ Learning by doing projects
 * Servlets and JSPs [[Udemy](https://www.udemy.com/javawebtut/)]
 * The Java Spring Tutorial [[Udemy](https://www.udemy.com/javaspring/)]
 
-9.[Ruby on Rails](https://github.com/usunyu/MyProjects/tree/master/Runy%20on%20Rails):
+9.[Ruby on Rails](https://github.com/usunyu/MyProjects/tree/master/Ruby%20on%20Rails):
 * Ruby Essential Training [[Lynda](http://www.lynda.com/sdk/Ruby-tutorials/essential-training/47905-2.html)]
 * Ruby on Rails 3 Essential Training [[Lynda](http://www.lynda.com/sdk/Ruby-Rails-tutorials/Ruby-Rails-3-Essential-Training/55960-2.html)]
 * The RSpec Book [[Book](http://www.amazon.com/The-RSpec-Book-Behaviour-Development/dp/1934356379)]
