@@ -17,13 +17,8 @@ Learning by doing projects
 * The Complete iOS 7 Course [[Udemy](https://www.udemy.com/the-complete-ios-7-course-learn-by-building-14-apps/)]
 * The Swift Programming Language [[Tutorial](https://developer.apple.com/swift/)]
 * Raywenderlich iPhone Tutorials [[Tutorial](http://www.raywenderlich.com/tutorials)]
-* Brian Advent Tutorials [[YouTube](https://www.youtube.com/channel/UCysEngjfeIYapEER9K8aikw/playlists)]
-* Jared Davidson Tutorials [[YouTube](https://www.youtube.com/user/Archetapp/playlists)]
-* Nate Murray Swift Tutorials [[YouTube](https://www.youtube.com/user/programmingswift/playlists)]
-* Rm2kdev Game Tutorials [[YouTube](https://www.youtube.com/user/rm2kdev/playlists)]
 
 5.[Android](https://github.com/usunyu/MyProjects/tree/master/Android):
-* Android Apps Development Tutorial [[YouTube](https://www.youtube.com/watch?v=VgAoI9MQbSY)]
 * TextureView SurfaceTexture OpenGL Video Player [[Tutorial](http://www.jianshu.com/p/d3d3186eefcb)]
 
 6.[Webpack](https://github.com/usunyu/MyProjects/tree/master/Webpack):
@@ -46,7 +41,6 @@ Learning by doing projects
 10.[Djago](https://github.com/usunyu/MyProjects/tree/master/Django):
 * Writing your first Django app [[Tutorial](https://docs.djangoproject.com/en/dev/intro/tutorial01/)]
 * Learn Python Django From Scratch [[Udemy](https://www.udemy.com/learn-python-django-from-scratch/)]
-* Django REST Framework [[Tutorial](http://www.django-rest-framework.org/tutorial/1-serialization/)]
 * Simple Todo API with Django and OAuth2 [[Tutorial](http://www.madewithtea.com/simple-todo-api-with-django-and-oauth2.html)]
 
 11.[Clouding](https://github.com/usunyu/MyProjects/tree/master/Clouding):
@@ -75,8 +69,6 @@ Learning by doing projects
 
 17.[Unity](https://github.com/usunyu/MyProjects/tree/master/Unity):
 * Learn To Code by Making Games - The Complete Unity Developer [[Udemy](https://www.udemy.com/unitycourse/learn/#/)]
-* Unity 5 Tutorial : Basics [[YouTube](https://www.youtube.com/watch?v=Ep0rlBQRcVc)]
-* New UI World Space Canvas [[YouTube](https://www.youtube.com/watch?v=Mzt1rEEdeOI)]
 * Write Native Plugins for Unity [[Tutorial](http://www.alanzucconi.com/2015/10/11/how-to-write-native-plugins-for-unity/)]
 * C++ in Unity3D tutorial (C# Marshaling) [[YouTube](https://www.youtube.com/watch?v=w3jGgTHJoCY)]
 * Introduction to a Simple Multiplayer Example [[Tutorial](https://unity3d.com/learn/tutorials/topics/multiplayer-networking/introduction-simple-multiplayer-example)]
