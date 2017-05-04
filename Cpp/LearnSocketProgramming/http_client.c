@@ -24,5 +24,15 @@ int main(int argc, char const *argv[]) {
 
     connect(client_socket, (struct sockaddr *) &remote_address, sizeof(remote_address));
 
+    char request[] = "GET / HTTP/1.1\r\n\r\n";
+    char response[4096];
+
+    send(client_socket, request, sizeof(request), 0);
+    recv(client_socket, &response, sizeof(response), 0);
+
+    printf("response from the server: %s\n", response);
+
+    close(client_socket);
+
     return 0;
 }
