@@ -81,9 +81,8 @@ Learning by doing projects
 * C++ 3rd Person Battery Collector Power Up Game [[Tutorial](https://docs.unrealengine.com/latest/INT/Videos/PLZlv_N0_O1gYup-gvJtMsgJqnEB_dGiM4/mSRov77hNR4/index.html)]
 
 19.[Shader](https://github.com/usunyu/MyProjects/tree/master/Shader):
-* Shaders 101 - Intro to Shaders [[YouTube](https://www.youtube.com/watch?v=T-HXmQAMhG0)]
-* A gentle introduction to shaders in Unity3D Tutorial Series [[Tutorial](http://www.alanzucconi.com/2015/06/10/a-gentle-introduction-to-shaders-in-unity3d/)]
 * Easy Unity5 Shader Tutorial [[Sikiedu](http://www.sikiedu.com/course/32)]
+* QianMo Unity3D Shader Tutorial [[Tutorial](http://blog.csdn.net/column/details/unity3d-shader.html)]
 
 20.[Virtual Reality](https://github.com/usunyu/MyProjects/tree/master/Virtual%20Reality):
 * Make a VR Game With Unity and Google Cardboard [[Tutorial](http://www.raywenderlich.com/116805/make-vr-game-unity-google-cardboard)]
