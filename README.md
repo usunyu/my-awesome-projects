@@ -64,29 +64,32 @@ Learning by doing projects
 * Up and Running with OpenGL [[Lynda](http://www.lynda.com/OpenGL-tutorials/Up-Running-OpenGL/166782-2.html)]
 * LearnOpenGL CN [[Tutorial](https://learnopengl-cn.github.io/)]
 
-16.[OpenCV](https://github.com/usunyu/MyProjects/tree/master/OpenCV):
+16.[D3D](https://github.com/usunyu/MyProjects/tree/master/D3D):
+* C++ DirectX11 Tutorial [[Youtube](https://www.youtube.com/watch?v=a1y7yYPEx7s&list=PLuepR07d9noUHvSQ98T0gxNQOvWBLfQGh)]
+
+17.[OpenCV](https://github.com/usunyu/MyProjects/tree/master/OpenCV):
 * Simple OpenCV Stitcher [[Github](https://github.com/prateekvjoshi/PanoStitch)]
 
-17.[FFmpeg](https://github.com/usunyu/MyProjects/tree/master/FFmpeg):
+18.[FFmpeg](https://github.com/usunyu/MyProjects/tree/master/FFmpeg):
 * Simplest FFmpeg Video Encoder (YUV to H.264) [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/25430425)] [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_video_encoder)]
 * Simplest FFmpeg Video Decoder [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_player/tree/master/simplest_ffmpeg_decoder)]
 * Simplest FFmpeg Streamer (RTMP example) [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/39803457)] [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_streamer)]
 
-18.[Unity](https://github.com/usunyu/MyProjects/tree/master/Unity):
+19.[Unity](https://github.com/usunyu/MyProjects/tree/master/Unity):
 * Learn To Code by Making Games - The Complete Unity Developer [[Udemy](https://www.udemy.com/unitycourse/learn/#/)]
 * Write Native Plugins for Unity [[Tutorial](http://www.alanzucconi.com/2015/10/11/how-to-write-native-plugins-for-unity/)]
 * C++ in Unity3D tutorial (C# Marshaling) [[YouTube](https://www.youtube.com/watch?v=w3jGgTHJoCY)]
 * Introduction to a Simple Multiplayer Example [[Tutorial](https://unity3d.com/learn/tutorials/topics/multiplayer-networking/introduction-simple-multiplayer-example)]
 * Unity Multiplayer (UNET) - Transport Layer API [[YouTube](https://www.youtube.com/watch?v=qGkkaNkq8co)]
 
-19.[Unreal](https://github.com/usunyu/MyProjects/tree/master/Unreal):
+20.[Unreal](https://github.com/usunyu/MyProjects/tree/master/Unreal):
 * Blueprint Twin Stick Shooter [[Tutorial](https://docs.unrealengine.com/latest/INT/Videos/PLZlv_N0_O1gb5sdygbSiEU7hb0eomNLdq/1pmPb_TWG-8/index.html)]
 * C++ 3rd Person Battery Collector Power Up Game [[Tutorial](https://docs.unrealengine.com/latest/INT/Videos/PLZlv_N0_O1gYup-gvJtMsgJqnEB_dGiM4/mSRov77hNR4/index.html)]
 
-20.[Shader](https://github.com/usunyu/MyProjects/tree/master/Shader):
+21.[Shader](https://github.com/usunyu/MyProjects/tree/master/Shader):
 * Easy Unity5 Shader Tutorial [[Sikiedu](http://www.sikiedu.com/course/32)]
 * QianMo Unity3D Shader Tutorial [[Tutorial](http://blog.csdn.net/column/details/unity3d-shader.html)]
 
-21.[Virtual Reality](https://github.com/usunyu/MyProjects/tree/master/Virtual%20Reality):
+22.[Virtual Reality](https://github.com/usunyu/MyProjects/tree/master/Virtual%20Reality):
 * Make a VR Game With Unity and Google Cardboard [[Tutorial](http://www.raywenderlich.com/116805/make-vr-game-unity-google-cardboard)]
 * Apps and Games with Game Engines [[Tutorial](http://www.samsung.com/us/samsungdeveloperconnection/developer-resources/gear-vr/apps-and-games/exercise-1-creating-a-unity-project.html)]
