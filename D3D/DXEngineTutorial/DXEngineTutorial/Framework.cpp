@@ -81,7 +81,7 @@ bool Framework::CreateDXWindow(char* windowTitle, int x, int y, int width, int h
 
     int screenWidth = GetSystemMetrics(SM_CXSCREEN);
     int screenHeight = GetSystemMetrics(SM_CYSCREEN);
-    printf("screenWidth: %d", screenWidth);
+
     if (FULL_SCREEN)
     {
         DEVMODE dmScreenSettings;
