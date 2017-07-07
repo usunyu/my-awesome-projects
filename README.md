@@ -55,25 +55,24 @@ Learning by doing projects
 13.[Hadoop](https://github.com/usunyu/MyProjects/tree/master/Hadoop):
 * Become a Certified Hadoop Developer [[Udemy](https://www.udemy.com/hadoop-tutorial/)]
 
-14.[Druid](https://github.com/usunyu/MyProjects/tree/master/Druid)
-* Druid Quickstart [[Tutorial](http://druid.io/docs/latest/tutorials/quickstart.html)]
-* Tutorial: Load your own streaming data [[Tutorial](http://druid.io/docs/latest/tutorials/tutorial-streams.html)]
-
-15.[OpenGL](https://github.com/usunyu/MyProjects/tree/master/OpenGL):
+14.[OpenGL](https://github.com/usunyu/MyProjects/tree/master/OpenGL):
 * OpenGL Tutorial [[Tutorial](http://www.opengl-tutorial.org/)]
 * Up and Running with OpenGL [[Lynda](http://www.lynda.com/OpenGL-tutorials/Up-Running-OpenGL/166782-2.html)]
 * LearnOpenGL CN [[Tutorial](https://learnopengl-cn.github.io/)]
 
-16.[D3D](https://github.com/usunyu/MyProjects/tree/master/D3D):
+15.[D3D](https://github.com/usunyu/MyProjects/tree/master/D3D):
 * C++ DirectX11 Tutorial [[Youtube](https://www.youtube.com/watch?v=a1y7yYPEx7s&list=PLuepR07d9noUHvSQ98T0gxNQOvWBLfQGh)]
 
-17.[OpenCV](https://github.com/usunyu/MyProjects/tree/master/OpenCV):
+16.[OpenCV](https://github.com/usunyu/MyProjects/tree/master/OpenCV):
 * Simple OpenCV Stitcher [[Github](https://github.com/prateekvjoshi/PanoStitch)]
 
-18.[FFmpeg](https://github.com/usunyu/MyProjects/tree/master/FFmpeg):
+17.[FFmpeg](https://github.com/usunyu/MyProjects/tree/master/FFmpeg):
 * Simplest FFmpeg Video Encoder (YUV to H.264) [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/25430425)] [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_video_encoder)]
 * Simplest FFmpeg Video Decoder [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_player/tree/master/simplest_ffmpeg_decoder)]
 * Simplest FFmpeg Streamer (RTMP example) [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/39803457)] [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_streamer)]
+
+18.[LibRTMP](https://github.com/usunyu/MyProjects/tree/master/LibRTMP):
+* Simplest libRTMP Send FLV [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/42104945)] [[Github](https://github.com/leixiaohua1020/simplest_librtmp_example/tree/master/simplest_librtmp_send_flv)]
 
 19.[Unity](https://github.com/usunyu/MyProjects/tree/master/Unity):
 * Learn To Code by Making Games - The Complete Unity Developer [[Udemy](https://www.udemy.com/unitycourse/learn/#/)]
