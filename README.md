@@ -68,7 +68,7 @@ Learning by doing projects
 
 17.[FFmpeg](https://github.com/usunyu/MyProjects/tree/master/FFmpeg):
 * Simplest FFmpeg Video Encoder (YUV to H.264) [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/25430425)] [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_video_encoder)]
-* Simplest FFmpeg Video Decoder [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_player/tree/master/simplest_ffmpeg_decoder)]
+* Simplest FFmpeg Video Decoder [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/46889389)] [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_player/tree/master/simplest_ffmpeg_decoder)]
 * Simplest FFmpeg Streamer (RTMP example) [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/39803457)] [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_streamer)]
 
 18.[LibRTMP](https://github.com/usunyu/MyProjects/tree/master/LibRTMP):
