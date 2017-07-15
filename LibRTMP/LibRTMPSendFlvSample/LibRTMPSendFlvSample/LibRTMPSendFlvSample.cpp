@@ -1,16 +1,16 @@
 ﻿/**
-* Simplest Librtmp Send FLV
-*
-* 雷霄骅，张晖
-* leixiaohua1020@126.com
-* zhanghuicuc@gmail.com
-* 中国传媒大学/数字电视技术
-* Communication University of China / Digital TV Technology
-* http://blog.csdn.net/leixiaohua1020
-*
-* 本程序用于将FLV格式的视音频文件使用RTMP推送至RTMP流媒体服务器。
-* This program can send local flv file to net server as a rtmp live stream.
-*/
+ * Simplest Librtmp Send FLV
+ *
+ * 雷霄骅，张晖
+ * leixiaohua1020@126.com
+ * zhanghuicuc@gmail.com
+ * 中国传媒大学/数字电视技术
+ * Communication University of China / Digital TV Technology
+ * http://blog.csdn.net/leixiaohua1020
+ *
+ * 本程序用于将FLV格式的视音频文件使用RTMP推送至RTMP流媒体服务器。
+ * This program can send local flv file to net server as a rtmp live stream.
+ */
 
 // LibRTMPSendFlvSample.cpp : Defines the entry point for the console application.
 
