@@ -477,16 +477,16 @@ int ReadFirstNaluFromBuf(NaluUnit &nalu, int(*read_buffer)(uint8_t *buf, int buf
 }
 
 /**
-* 从内存中读取出一个Nal单元
-*
-* @param nalu 存储nalu数据
-* @param read_buffer 回调函数，当数据不足的时候，系统会自动调用该函数获取输入数据。
-*					2个参数功能：
-*					uint8_t *buf：外部数据送至该地址
-*					int buf_size：外部数据大小
-*					返回值：成功读取的内存大小
-* @成功则返回 1 , 失败则返回0
-*/
+ * 从内存中读取出一个Nal单元
+ *
+ * @param nalu 存储nalu数据
+ * @param read_buffer 回调函数，当数据不足的时候，系统会自动调用该函数获取输入数据。
+ *					2个参数功能：
+ *					uint8_t *buf：外部数据送至该地址
+ *					int buf_size：外部数据大小
+ *					返回值：成功读取的内存大小
+ * @成功则返回 1 , 失败则返回0
+ */
 int ReadOneNaluFromBuf(NaluUnit &nalu, int(*read_buffer)(uint8_t *buf, int buf_size))
 {
 

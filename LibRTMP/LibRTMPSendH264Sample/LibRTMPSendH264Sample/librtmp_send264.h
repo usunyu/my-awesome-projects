@@ -12,6 +12,8 @@
  *
  */
 
+#pragma once
+#include <WinSock2.h>
 /**
  * 初始化并连接到服务器
  *
