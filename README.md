@@ -91,6 +91,8 @@ Learning by doing projects
 * Easy Unity5 Shader Tutorial [[Sikiedu](http://www.sikiedu.com/course/32)]
 * QianMo Unity3D Shader Tutorial [[Tutorial](http://blog.csdn.net/column/details/unity3d-shader.html)]
 
-22.[Virtual Reality](https://github.com/usunyu/MyProjects/tree/master/Virtual%20Reality):
+22.[Cardboard](https://github.com/usunyu/MyProjects/tree/master/Cardboard):
 * Make a VR Game With Unity and Google Cardboard [[Tutorial](http://www.raywenderlich.com/116805/make-vr-game-unity-google-cardboard)]
+
+23.[GearVR](https://github.com/usunyu/MyProjects/tree/master/GearVR):
 * Apps and Games with Game Engines [[Tutorial](http://www.samsung.com/us/samsungdeveloperconnection/developer-resources/gear-vr/apps-and-games/exercise-1-creating-a-unity-project.html)]
