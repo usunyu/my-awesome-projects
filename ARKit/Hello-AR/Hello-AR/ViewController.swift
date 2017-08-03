@@ -29,17 +29,26 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Create a new scene
         let scene = SCNScene()
         
-        let box = SCNBox(width: 0.2, height: 0.2, length: 0.2, chamferRadius: 0)
+        let textGeometry = SCNText(string: "Hello World", extrusionDepth: 1.0)
+        textGeometry.firstMaterial?.diffuse.contents = UIColor.black
         
-        let material = SCNMaterial()
-        material.diffuse.contents = UIColor.red
+        let textNode = SCNNode(geometry: textGeometry)
+        textNode.position = SCNVector3(0, 0.1, -0.5)
+        textNode.scale = SCNVector3(0.01, 0.01, 0.01)
         
-        let node = SCNNode()
-        node.geometry = box
-        node.geometry?.materials = [material]
-        node.position = SCNVector3(0, 0.1, -0.5)
+        scene.rootNode.addChildNode(textNode)
         
-        scene.rootNode.addChildNode(node)
+//        let box = SCNBox(width: 0.2, height: 0.2, length: 0.2, chamferRadius: 0)
+//
+//        let material = SCNMaterial()
+//        material.diffuse.contents = UIColor.red
+//
+//        let node = SCNNode()
+//        node.geometry = box
+//        node.geometry?.materials = [material]
+//        node.position = SCNVector3(0, 0.1, -0.5)
+//
+//        scene.rootNode.addChildNode(node)
         
         // Set the scene to the view
         sceneView.scene = scene
