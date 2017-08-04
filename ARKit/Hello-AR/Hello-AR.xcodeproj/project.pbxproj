@@ -15,6 +15,7 @@
 		A47EAEE31F321629003EE5D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47EAEE11F321629003EE5D3 /* LaunchScreen.storyboard */; };
 		A4DBDDC41F3369CE0033A9E7 /* earthmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4DBDDC31F3369CE0033A9E7 /* earthmap.jpg */; };
 		A4DBDDC61F336A110033A9E7 /* brick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4DBDDC51F336A110033A9E7 /* brick.jpg */; };
+		A4DBDDC81F341B0F0033A9E7 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DBDDC71F341B0F0033A9E7 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A47EAEE41F321629003EE5D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4DBDDC31F3369CE0033A9E7 /* earthmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earthmap.jpg; sourceTree = "<group>"; };
 		A4DBDDC51F336A110033A9E7 /* brick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brick.jpg; sourceTree = "<group>"; };
+		A4DBDDC71F341B0F0033A9E7 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				A47EAEDF1F321629003EE5D3 /* Assets.xcassets */,
 				A47EAEE11F321629003EE5D3 /* LaunchScreen.storyboard */,
 				A47EAEE41F321629003EE5D3 /* Info.plist */,
+				A4DBDDC71F341B0F0033A9E7 /* Extension.swift */,
 			);
 			path = "Hello-AR";
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4DBDDC81F341B0F0033A9E7 /* Extension.swift in Sources */,
 				A47EAEDB1F321629003EE5D3 /* ViewController.swift in Sources */,
 				A47EAED71F321629003EE5D3 /* AppDelegate.swift in Sources */,
 			);

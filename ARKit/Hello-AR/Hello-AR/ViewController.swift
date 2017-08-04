@@ -41,6 +41,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let box = SCNBox(width: 0.2, height: 0.2, length: 0.2, chamferRadius: 0)
 
         let material = SCNMaterial()
+        material.name = "Color"
         material.diffuse.contents = UIImage(named : "brick.jpg")
 
         let node = SCNNode()
@@ -48,21 +49,39 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         node.geometry?.materials = [material]
         node.position = SCNVector3(0, 0.1, -0.5)
         
-        let sphere = SCNSphere(radius: 0.2)
-        
-        let sphereMaterial = SCNMaterial()
-        sphereMaterial.diffuse.contents = UIImage(named : "earthmap.jpg")
-        
-        let sphereNode = SCNNode()
-        sphereNode.geometry = sphere
-        sphereNode.geometry?.materials = [sphereMaterial]
-        sphereNode.position = SCNVector3(0.5, 0.1, -1)
-
         scene.rootNode.addChildNode(node)
-        scene.rootNode.addChildNode(sphereNode)
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapped))
+        self.sceneView.addGestureRecognizer(tapGestureRecognizer)
+        
+//        let sphere = SCNSphere(radius: 0.2)
+//
+//        let sphereMaterial = SCNMaterial()
+//        sphereMaterial.diffuse.contents = UIImage(named : "earthmap.jpg")
+//
+//        let sphereNode = SCNNode()
+//        sphereNode.geometry = sphere
+//        sphereNode.geometry?.materials = [sphereMaterial]
+//        sphereNode.position = SCNVector3(0.5, 0.1, -1)
+
+//        scene.rootNode.addChildNode(sphereNode)
         
         // Set the scene to the view
         sceneView.scene = scene
+    }
+    
+    @objc func tapped(recongizer: UITapGestureRecognizer) {
+    
+        let sceneView = recongizer.view as! SCNView
+        let touchLocation = recongizer.location(in: sceneView)
+        let hitResult = sceneView.hitTest(touchLocation, options: [:])
+        
+        if (!hitResult.isEmpty) {
+            let node = hitResult[0].node
+            let material = node.geometry?.material(named: "Color")
+            
+            material?.diffuse.contents = UIColor.random()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
