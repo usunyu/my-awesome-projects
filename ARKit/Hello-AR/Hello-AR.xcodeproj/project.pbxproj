@@ -13,6 +13,7 @@
 		A47EAEDE1F321629003EE5D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47EAEDC1F321629003EE5D3 /* Main.storyboard */; };
 		A47EAEE01F321629003EE5D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47EAEDF1F321629003EE5D3 /* Assets.xcassets */; };
 		A47EAEE31F321629003EE5D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47EAEE11F321629003EE5D3 /* LaunchScreen.storyboard */; };
+		A4982B301F3D68C7001135F0 /* PlacingVirtualObjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4982B2F1F3D68C7001135F0 /* PlacingVirtualObjectsViewController.swift */; };
 		A4DBDDC41F3369CE0033A9E7 /* earthmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4DBDDC31F3369CE0033A9E7 /* earthmap.jpg */; };
 		A4DBDDC61F336A110033A9E7 /* brick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4DBDDC51F336A110033A9E7 /* brick.jpg */; };
 		A4DBDDC81F341B0F0033A9E7 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DBDDC71F341B0F0033A9E7 /* Extension.swift */; };
@@ -30,6 +31,7 @@
 		A47EAEDF1F321629003EE5D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A47EAEE21F321629003EE5D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A47EAEE41F321629003EE5D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4982B2F1F3D68C7001135F0 /* PlacingVirtualObjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacingVirtualObjectsViewController.swift; sourceTree = "<group>"; };
 		A4DBDDC31F3369CE0033A9E7 /* earthmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earthmap.jpg; sourceTree = "<group>"; };
 		A4DBDDC51F336A110033A9E7 /* brick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brick.jpg; sourceTree = "<group>"; };
 		A4DBDDC71F341B0F0033A9E7 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 		A47EAED51F321629003EE5D3 /* Hello-AR */ = {
 			isa = PBXGroup;
 			children = (
+				A4982B2E1F3D68B2001135F0 /* PlacingVirtualObjectsOnPlane */,
 				A4DBDDC91F344CD80033A9E7 /* OverlayingPlanes */,
 				A4DBDDC51F336A110033A9E7 /* brick.jpg */,
 				A4DBDDC31F3369CE0033A9E7 /* earthmap.jpg */,
@@ -81,6 +84,14 @@
 				A4DBDDC71F341B0F0033A9E7 /* Extension.swift */,
 			);
 			path = "Hello-AR";
+			sourceTree = "<group>";
+		};
+		A4982B2E1F3D68B2001135F0 /* PlacingVirtualObjectsOnPlane */ = {
+			isa = PBXGroup;
+			children = (
+				A4982B2F1F3D68C7001135F0 /* PlacingVirtualObjectsViewController.swift */,
+			);
+			path = PlacingVirtualObjectsOnPlane;
 			sourceTree = "<group>";
 		};
 		A4DBDDC91F344CD80033A9E7 /* OverlayingPlanes */ = {
@@ -168,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4982B301F3D68C7001135F0 /* PlacingVirtualObjectsViewController.swift in Sources */,
 				A4DBDDCB1F344CFF0033A9E7 /* OverlayingPlanes.swift in Sources */,
 				A4DBDDC81F341B0F0033A9E7 /* Extension.swift in Sources */,
 				A47EAEDB1F321629003EE5D3 /* ViewController.swift in Sources */,
