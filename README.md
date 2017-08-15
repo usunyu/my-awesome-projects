@@ -51,7 +51,7 @@ Learning by doing projects
 [Flask](https://github.com/usunyu/MyProjects/tree/master/Flask):
 * Creating a RESTFul API with Python and Flask[[YouTube](https://www.youtube.com/playlist?list=PLXmMXHVSvS-AFMUmbBeIfL3PqTvgw8ygb)]
 
-[Djago](https://github.com/usunyu/MyProjects/tree/master/Django):
+[Django](https://github.com/usunyu/MyProjects/tree/master/Django):
 * Writing your first Django app [[Tutorial](https://docs.djangoproject.com/en/dev/intro/tutorial01/)]
 * Learn Python Django From Scratch [[Udemy](https://www.udemy.com/learn-python-django-from-scratch/)]
 * Simple Todo API with Django and OAuth2 [[Tutorial](http://www.madewithtea.com/simple-todo-api-with-django-and-oauth2.html)]
