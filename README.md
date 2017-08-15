@@ -73,6 +73,7 @@ Learning by doing projects
 
 [Core ML](https://github.com/usunyu/MyProjects/tree/master/Core%20ML):
 * Super Impressive and Easy Face Detection using Vision API in Swift 4 [[Youtube](https://www.youtube.com/watch?v=d0U5j89M6aI)]
+* Real Time Camera Object Detection with Machine Learning - Swift 4 [[Youtube](https://www.youtube.com/watch?v=p6GA8ODlnX0)]
 
 ## Graphic
 
