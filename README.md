@@ -58,8 +58,10 @@ Learning by doing projects
 
 ## Cloud Service
 
-[Clouding](https://github.com/usunyu/MyProjects/tree/master/Clouding):
+[AWS](https://github.com/usunyu/MyProjects/tree/master/AWS):
 * Up and Running with Cloud Storage APIs [[Lynda](http://www.lynda.com/sdk/Azure-tutorials/Up-Running-Cloud-Storage-APIs/133320-2.html)]
+
+[Google App Engine](https://github.com/usunyu/MyProjects/tree/master/Google%20App%20Engine):
 * Google App Engine Tutorial [[Tutorial](http://googcloudlabs.appspot.com/whatgae.html)]
 
 ## Big Data
@@ -79,7 +81,7 @@ Learning by doing projects
 * Up and Running with OpenGL [[Lynda](http://www.lynda.com/OpenGL-tutorials/Up-Running-OpenGL/166782-2.html)]
 * LearnOpenGL CN [[Tutorial](https://learnopengl-cn.github.io/)]
 
-[D3D](https://github.com/usunyu/MyProjects/tree/master/D3D):
+[Direct3D](https://github.com/usunyu/MyProjects/tree/master/Direct3D):
 * C++ DirectX11 Tutorial [[Youtube](https://www.youtube.com/watch?v=a1y7yYPEx7s&list=PLuepR07d9noUHvSQ98T0gxNQOvWBLfQGh)]
 
 ## Image
