@@ -48,8 +48,15 @@ class EnablingPhysicsViewController: UIViewController, ARSCNViewDelegate {
     private func registerGestureRecognizers() {
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapped))
+        tapGestureRecognizer.numberOfTapsRequired = 1
+        
+        let doubleTappedGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(doubleTapped))
+        doubleTappedGestureRecognizer.numberOfTapsRequired = 2
+        
+        tapGestureRecognizer.require(toFail: doubleTappedGestureRecognizer)
         
         self.sceneView.addGestureRecognizer(tapGestureRecognizer)
+        self.sceneView.addGestureRecognizer(doubleTappedGestureRecognizer)
     }
     
     
@@ -69,9 +76,27 @@ class EnablingPhysicsViewController: UIViewController, ARSCNViewDelegate {
         }
     }
     
+    @objc func doubleTapped(recognizer :UIGestureRecognizer)
+    {
+        let sceneView = recognizer.view as! ARSCNView
+        let touch = recognizer.location(in: sceneView)
+        
+        let hitResults = sceneView.hitTest(touch, options: [:])
+        
+        if !hitResults.isEmpty {
+            guard let hitResult = hitResults.first else { return }
+            let node = hitResult.node
+            node.physicsBody?.applyForce(SCNVector3(
+                hitResult.worldCoordinates.x * Float(2.0),
+                Float(2.0),
+                hitResult.worldCoordinates.z * Float(2.0)),
+                asImpulse: true)
+        }
+    }
+    
     private func addBox(hitResult :ARHitTestResult) {
         
-        let boxGeometry = SCNBox(width: 0.2, height: 0.2, length: 0.1, chamferRadius: 0)
+        let boxGeometry = SCNBox(width: 0.2, height: 0.2, length: 0.2, chamferRadius: 0)
         let material = SCNMaterial()
         material.diffuse.contents = UIColor.red
         
