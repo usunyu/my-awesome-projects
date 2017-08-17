@@ -72,7 +72,8 @@ class EnablingPhysicsViewController: UIViewController, ARSCNViewDelegate {
             guard let hitResult = hitTestResult.first else {
                 return
             }
-            addBox(hitResult :hitResult)
+//            addBox(hitResult :hitResult)
+            addTable(hitResult :hitResult)
         }
     }
     
@@ -90,8 +91,21 @@ class EnablingPhysicsViewController: UIViewController, ARSCNViewDelegate {
                 hitResult.worldCoordinates.x * Float(2.0),
                 Float(2.0),
                 hitResult.worldCoordinates.z * Float(2.0)),
-                asImpulse: true)
+                                         asImpulse: true)
         }
+    }
+    
+    private func addTable(hitResult: ARHitTestResult) {
+        let tableScene = SCNScene(named: "art.scnassets/bench.dae")
+        let tableNode = tableScene?.rootNode.childNode(withName: "SketchUp", recursively: true)
+        
+        tableNode?.position = SCNVector3(
+            hitResult.worldTransform.columns.3.x,
+            hitResult.worldTransform.columns.3.y,
+            hitResult.worldTransform.columns.3.z)
+        tableNode?.scale = SCNVector3(0.5,0.5,0.5)
+        
+        self.sceneView.scene.rootNode.addChildNode(tableNode!)
     }
     
     private func addBox(hitResult :ARHitTestResult) {
@@ -117,7 +131,7 @@ class EnablingPhysicsViewController: UIViewController, ARSCNViewDelegate {
         super.viewWillAppear(animated)
         
         // Create a session configuration
-        let configuration = ARWorldTrackingSessionConfiguration()
+        let configuration = ARWorldTrackingConfiguration()
         
         configuration.planeDetection = .horizontal
         
