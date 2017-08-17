@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A473FD921F459E6F001978A7 /* EnablingPhyiscsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A473FD911F459E6F001978A7 /* EnablingPhyiscsViewController.swift */; };
 		A47EAED71F321629003EE5D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47EAED61F321629003EE5D3 /* AppDelegate.swift */; };
 		A47EAED91F321629003EE5D3 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A47EAED81F321629003EE5D3 /* art.scnassets */; };
 		A47EAEDB1F321629003EE5D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47EAEDA1F321629003EE5D3 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A473FD911F459E6F001978A7 /* EnablingPhyiscsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnablingPhyiscsViewController.swift; sourceTree = "<group>"; };
 		A47EAED31F321629003EE5D3 /* Hello-AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello-AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47EAED61F321629003EE5D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A47EAED81F321629003EE5D3 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -51,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A473FD901F459E35001978A7 /* EnablingPhyiscs */ = {
+			isa = PBXGroup;
+			children = (
+				A473FD911F459E6F001978A7 /* EnablingPhyiscsViewController.swift */,
+			);
+			path = EnablingPhyiscs;
+			sourceTree = "<group>";
+		};
 		A47EAECA1F321629003EE5D3 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +80,7 @@
 		A47EAED51F321629003EE5D3 /* Hello-AR */ = {
 			isa = PBXGroup;
 			children = (
+				A473FD901F459E35001978A7 /* EnablingPhyiscs */,
 				A4982B2E1F3D68B2001135F0 /* PlacingVirtualObjectsOnPlane */,
 				A4DBDDC91F344CD80033A9E7 /* OverlayingPlanes */,
 				A4DBDDC51F336A110033A9E7 /* brick.jpg */,
@@ -180,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4982B301F3D68C7001135F0 /* PlacingVirtualObjectsViewController.swift in Sources */,
+				A473FD921F459E6F001978A7 /* EnablingPhyiscsViewController.swift in Sources */,
 				A4DBDDCB1F344CFF0033A9E7 /* OverlayingPlanes.swift in Sources */,
 				A4DBDDC81F341B0F0033A9E7 /* Extension.swift in Sources */,
 				A47EAEDB1F321629003EE5D3 /* ViewController.swift in Sources */,
