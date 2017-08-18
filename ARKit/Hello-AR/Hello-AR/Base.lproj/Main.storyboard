@@ -7,10 +7,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
     </dependencies>
     <scenes>
-        <!--Enabling Physics View Controller-->
+        <!--Light View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="EnablingPhysicsViewController" customModule="Hello_AR" customModuleProvider="target" sceneMemberID="viewController"/>
+                <viewController id="BV1-FR-VrT" customClass="LightViewController" customModule="Hello_AR" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
