@@ -12,11 +12,13 @@ Learning by doing projects
 [Java](https://github.com/usunyu/MyProjects/tree/master/Java):
 * Java Multithreading [[Udemy](https://www.udemy.com/java-multithreading)]
 
-## Mobile
+[Swift](https://github.com/usunyu/MyProjects/tree/master/Swift):
+* The Swift Programming Language [[Tutorial](https://developer.apple.com/swift/)]
+
+## App
 
 [iOS](https://github.com/usunyu/MyProjects/tree/master/iOS):
 * The Complete iOS 7 Course [[Udemy](https://www.udemy.com/the-complete-ios-7-course-learn-by-building-14-apps/)]
-* The Swift Programming Language [[Tutorial](https://developer.apple.com/swift/)]
 * Raywenderlich iPhone Tutorials [[Tutorial](http://www.raywenderlich.com/tutorials)]
 * Brian Advent Tutorials [[YouTube](https://www.youtube.com/channel/UCysEngjfeIYapEER9K8aikw/playlists)]
 
@@ -75,21 +77,6 @@ Learning by doing projects
 * Super Impressive and Easy Face Detection using Vision API in Swift 4 [[Youtube](https://www.youtube.com/watch?v=d0U5j89M6aI)]
 * Real Time Camera Object Detection with Machine Learning - Swift 4 [[Youtube](https://www.youtube.com/watch?v=p6GA8ODlnX0)]
 
-## Graphic
-
-[OpenGL](https://github.com/usunyu/MyProjects/tree/master/OpenGL):
-* OpenGL Tutorial [[Tutorial](http://www.opengl-tutorial.org/)]
-* Up and Running with OpenGL [[Lynda](http://www.lynda.com/OpenGL-tutorials/Up-Running-OpenGL/166782-2.html)]
-* LearnOpenGL CN [[Tutorial](https://learnopengl-cn.github.io/)]
-
-[Direct3D](https://github.com/usunyu/MyProjects/tree/master/Direct3D):
-* C++ DirectX11 Tutorial [[Youtube](https://www.youtube.com/watch?v=a1y7yYPEx7s&list=PLuepR07d9noUHvSQ98T0gxNQOvWBLfQGh)]
-
-## Image
-
-[OpenCV](https://github.com/usunyu/MyProjects/tree/master/OpenCV):
-* Simple OpenCV Stitcher [[Github](https://github.com/prateekvjoshi/PanoStitch)]
-
 ## Video
 
 [FFmpeg](https://github.com/usunyu/MyProjects/tree/master/FFmpeg):
@@ -100,6 +87,21 @@ Learning by doing projects
 [LibRTMP](https://github.com/usunyu/MyProjects/tree/master/LibRTMP):
 * Simplest libRTMP Send FLV [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/42104945)] [[Github](https://github.com/leixiaohua1020/simplest_librtmp_example/tree/master/simplest_librtmp_send_flv)]
 * Simplest libRTMP Send H264 [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/42105049)] [[Github](https://github.com/leixiaohua1020/simplest_librtmp_example/tree/master/simplest_librtmp_send264)]
+
+## Computer Vision
+
+[OpenCV](https://github.com/usunyu/MyProjects/tree/master/OpenCV):
+* Simple OpenCV Stitcher [[Github](https://github.com/prateekvjoshi/PanoStitch)]
+
+## Graphic
+
+[OpenGL](https://github.com/usunyu/MyProjects/tree/master/OpenGL):
+* OpenGL Tutorial [[Tutorial](http://www.opengl-tutorial.org/)]
+* Up and Running with OpenGL [[Lynda](http://www.lynda.com/OpenGL-tutorials/Up-Running-OpenGL/166782-2.html)]
+* LearnOpenGL CN [[Tutorial](https://learnopengl-cn.github.io/)]
+
+[Direct3D](https://github.com/usunyu/MyProjects/tree/master/Direct3D):
+* C++ DirectX11 Tutorial [[Youtube](https://www.youtube.com/watch?v=a1y7yYPEx7s&list=PLuepR07d9noUHvSQ98T0gxNQOvWBLfQGh)]
 
 ## Game Engine
 
