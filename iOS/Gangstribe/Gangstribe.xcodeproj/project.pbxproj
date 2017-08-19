@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		227FFC711D5353BF007DF37A /* FaceReplacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227FFC701D5353BF007DF37A /* FaceReplacer.swift */; };
+		227FFC741D53569F007DF37A /* LiveTranscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227FFC731D53569F007DF37A /* LiveTranscribeViewController.swift */; };
+		227FFC761D535716007DF37A /* FaceSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227FFC751D535716007DF37A /* FaceSource.swift */; };
+		227FFC781D535731007DF37A /* FaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227FFC771D535731007DF37A /* FaceCell.swift */; };
+		22D398161D5278C800A4DF66 /* 01_ItsLikeThat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 22D3980C1D5278C800A4DF66 /* 01_ItsLikeThat.m4a */; };
+		22D398171D5278C800A4DF66 /* 02_JumpAround.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 22D3980D1D5278C800A4DF66 /* 02_JumpAround.m4a */; };
+		22D398181D5278C800A4DF66 /* 03_GangstasParadise.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 22D3980E1D5278C800A4DF66 /* 03_GangstasParadise.m4a */; };
+		22D398191D5278C800A4DF66 /* 04_UCantTouchThis.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 22D3980F1D5278C800A4DF66 /* 04_UCantTouchThis.m4a */; };
+		22D3981A1D5278C800A4DF66 /* 05_RappersDelight.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 22D398101D5278C800A4DF66 /* 05_RappersDelight.m4a */; };
+		22D3981B1D5278C800A4DF66 /* 06_ILikeBigButts.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 22D398111D5278C800A4DF66 /* 06_ILikeBigButts.m4a */; };
+		22D3981C1D5278C800A4DF66 /* 07_OneDance.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 22D398121D5278C800A4DF66 /* 07_OneDance.m4a */; };
+		22D3981D1D5278C800A4DF66 /* 08_NoSleepTilBrooklyn.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 22D398131D5278C800A4DF66 /* 08_NoSleepTilBrooklyn.m4a */; };
+		22D3981E1D5278C800A4DF66 /* 09_Informer.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 22D398141D5278C800A4DF66 /* 09_Informer.m4a */; };
+		22D3981F1D5278C800A4DF66 /* 10_RaiseYourHands.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 22D398151D5278C800A4DF66 /* 10_RaiseYourHands.m4a */; };
+		22E6D29E1D507F9800D8CE41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6D29D1D507F9800D8CE41 /* AppDelegate.swift */; };
+		22E6D2A01D507F9800D8CE41 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6D29F1D507F9800D8CE41 /* MasterViewController.swift */; };
+		22E6D2A51D507F9900D8CE41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E6D2A31D507F9900D8CE41 /* Main.storyboard */; };
+		22E6D2A71D507F9900D8CE41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E6D2A61D507F9900D8CE41 /* Assets.xcassets */; };
+		22E6D2AA1D507F9900D8CE41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E6D2A81D507F9900D8CE41 /* LaunchScreen.storyboard */; };
+		22E6D2B61D50814800D8CE41 /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6D2B51D50814800D8CE41 /* RecordingViewController.swift */; };
+		22E6D2B81D50827000D8CE41 /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6D2B71D50827000D8CE41 /* Recording.swift */; };
+		22E6D2BD1D50926C00D8CE41 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6D2BC1D50926C00D8CE41 /* BorderedButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		227FFC701D5353BF007DF37A /* FaceReplacer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceReplacer.swift; sourceTree = "<group>"; };
+		227FFC731D53569F007DF37A /* LiveTranscribeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveTranscribeViewController.swift; sourceTree = "<group>"; };
+		227FFC751D535716007DF37A /* FaceSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceSource.swift; sourceTree = "<group>"; };
+		227FFC771D535731007DF37A /* FaceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceCell.swift; sourceTree = "<group>"; };
+		22D3980C1D5278C800A4DF66 /* 01_ItsLikeThat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01_ItsLikeThat.m4a; sourceTree = "<group>"; };
+		22D3980D1D5278C800A4DF66 /* 02_JumpAround.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02_JumpAround.m4a; sourceTree = "<group>"; };
+		22D3980E1D5278C800A4DF66 /* 03_GangstasParadise.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 03_GangstasParadise.m4a; sourceTree = "<group>"; };
+		22D3980F1D5278C800A4DF66 /* 04_UCantTouchThis.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 04_UCantTouchThis.m4a; sourceTree = "<group>"; };
+		22D398101D5278C800A4DF66 /* 05_RappersDelight.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 05_RappersDelight.m4a; sourceTree = "<group>"; };
+		22D398111D5278C800A4DF66 /* 06_ILikeBigButts.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 06_ILikeBigButts.m4a; sourceTree = "<group>"; };
+		22D398121D5278C800A4DF66 /* 07_OneDance.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 07_OneDance.m4a; sourceTree = "<group>"; };
+		22D398131D5278C800A4DF66 /* 08_NoSleepTilBrooklyn.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 08_NoSleepTilBrooklyn.m4a; sourceTree = "<group>"; };
+		22D398141D5278C800A4DF66 /* 09_Informer.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 09_Informer.m4a; sourceTree = "<group>"; };
+		22D398151D5278C800A4DF66 /* 10_RaiseYourHands.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 10_RaiseYourHands.m4a; sourceTree = "<group>"; };
+		22E6D29A1D507F9800D8CE41 /* Gangstribe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gangstribe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22E6D29D1D507F9800D8CE41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22E6D29F1D507F9800D8CE41 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		22E6D2A41D507F9900D8CE41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22E6D2A61D507F9900D8CE41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22E6D2A91D507F9900D8CE41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22E6D2AB1D507F9900D8CE41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22E6D2B51D50814800D8CE41 /* RecordingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
+		22E6D2B71D50827000D8CE41 /* Recording.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
+		22E6D2BC1D50926C00D8CE41 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22E6D2971D507F9800D8CE41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		227FFC721D535681007DF37A /* FaceReplace */ = {
+			isa = PBXGroup;
+			children = (
+				227FFC701D5353BF007DF37A /* FaceReplacer.swift */,
+				227FFC751D535716007DF37A /* FaceSource.swift */,
+				227FFC771D535731007DF37A /* FaceCell.swift */,
+			);
+			name = FaceReplace;
+			path = Gangstribe;
+			sourceTree = "<group>";
+		};
+		22E6D2911D507F9800D8CE41 = {
+			isa = PBXGroup;
+			children = (
+				22E6D29C1D507F9800D8CE41 /* Gangstribe */,
+				227FFC721D535681007DF37A /* FaceReplace */,
+				22E6D29B1D507F9800D8CE41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22E6D29B1D507F9800D8CE41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22E6D29A1D507F9800D8CE41 /* Gangstribe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22E6D29C1D507F9800D8CE41 /* Gangstribe */ = {
+			isa = PBXGroup;
+			children = (
+				22E6D2B91D508EAD00D8CE41 /* Audio Samples */,
+				22E6D2B41D50809500D8CE41 /* Views */,
+				22E6D2B31D50808D00D8CE41 /* Supporting Files */,
+				22E6D2B21D50808600D8CE41 /* Models */,
+				22E6D2B11D50808000D8CE41 /* Controllers */,
+			);
+			path = Gangstribe;
+			sourceTree = "<group>";
+		};
+		22E6D2B11D50808000D8CE41 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				22E6D29F1D507F9800D8CE41 /* MasterViewController.swift */,
+				22E6D2B51D50814800D8CE41 /* RecordingViewController.swift */,
+				227FFC731D53569F007DF37A /* LiveTranscribeViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		22E6D2B21D50808600D8CE41 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				22E6D2B71D50827000D8CE41 /* Recording.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		22E6D2B31D50808D00D8CE41 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22E6D2A61D507F9900D8CE41 /* Assets.xcassets */,
+				22E6D2AB1D507F9900D8CE41 /* Info.plist */,
+				22E6D29D1D507F9800D8CE41 /* AppDelegate.swift */,
+				22E6D2A81D507F9900D8CE41 /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22E6D2B41D50809500D8CE41 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				22E6D2A31D507F9900D8CE41 /* Main.storyboard */,
+				22E6D2BC1D50926C00D8CE41 /* BorderedButton.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		22E6D2B91D508EAD00D8CE41 /* Audio Samples */ = {
+			isa = PBXGroup;
+			children = (
+				22D3980C1D5278C800A4DF66 /* 01_ItsLikeThat.m4a */,
+				22D3980D1D5278C800A4DF66 /* 02_JumpAround.m4a */,
+				22D3980E1D5278C800A4DF66 /* 03_GangstasParadise.m4a */,
+				22D3980F1D5278C800A4DF66 /* 04_UCantTouchThis.m4a */,
+				22D398101D5278C800A4DF66 /* 05_RappersDelight.m4a */,
+				22D398111D5278C800A4DF66 /* 06_ILikeBigButts.m4a */,
+				22D398121D5278C800A4DF66 /* 07_OneDance.m4a */,
+				22D398131D5278C800A4DF66 /* 08_NoSleepTilBrooklyn.m4a */,
+				22D398141D5278C800A4DF66 /* 09_Informer.m4a */,
+				22D398151D5278C800A4DF66 /* 10_RaiseYourHands.m4a */,
+			);
+			name = "Audio Samples";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22E6D2991D507F9800D8CE41 /* Gangstribe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22E6D2AE1D507F9900D8CE41 /* Build configuration list for PBXNativeTarget "Gangstribe" */;
+			buildPhases = (
+				22E6D2961D507F9800D8CE41 /* Sources */,
+				22E6D2971D507F9800D8CE41 /* Frameworks */,
+				22E6D2981D507F9800D8CE41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gangstribe;
+			productName = Gangstribe;
+			productReference = 22E6D29A1D507F9800D8CE41 /* Gangstribe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22E6D2921D507F9800D8CE41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Razeware;
+				TargetAttributes = {
+					22E6D2991D507F9800D8CE41 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = U44796ZVJ3;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 22E6D2951D507F9800D8CE41 /* Build configuration list for PBXProject "Gangstribe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22E6D2911D507F9800D8CE41;
+			productRefGroup = 22E6D29B1D507F9800D8CE41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22E6D2991D507F9800D8CE41 /* Gangstribe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22E6D2981D507F9800D8CE41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D3981A1D5278C800A4DF66 /* 05_RappersDelight.m4a in Resources */,
+				22E6D2AA1D507F9900D8CE41 /* LaunchScreen.storyboard in Resources */,
+				22D3981F1D5278C800A4DF66 /* 10_RaiseYourHands.m4a in Resources */,
+				22D398171D5278C800A4DF66 /* 02_JumpAround.m4a in Resources */,
+				22D3981D1D5278C800A4DF66 /* 08_NoSleepTilBrooklyn.m4a in Resources */,
+				22E6D2A71D507F9900D8CE41 /* Assets.xcassets in Resources */,
+				22D3981B1D5278C800A4DF66 /* 06_ILikeBigButts.m4a in Resources */,
+				22D3981E1D5278C800A4DF66 /* 09_Informer.m4a in Resources */,
+				22D398181D5278C800A4DF66 /* 03_GangstasParadise.m4a in Resources */,
+				22D398161D5278C800A4DF66 /* 01_ItsLikeThat.m4a in Resources */,
+				22D3981C1D5278C800A4DF66 /* 07_OneDance.m4a in Resources */,
+				22D398191D5278C800A4DF66 /* 04_UCantTouchThis.m4a in Resources */,
+				22E6D2A51D507F9900D8CE41 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22E6D2961D507F9800D8CE41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E6D2BD1D50926C00D8CE41 /* BorderedButton.swift in Sources */,
+				22E6D2B61D50814800D8CE41 /* RecordingViewController.swift in Sources */,
+				22E6D2A01D507F9800D8CE41 /* MasterViewController.swift in Sources */,
+				227FFC761D535716007DF37A /* FaceSource.swift in Sources */,
+				227FFC741D53569F007DF37A /* LiveTranscribeViewController.swift in Sources */,
+				22E6D29E1D507F9800D8CE41 /* AppDelegate.swift in Sources */,
+				227FFC781D535731007DF37A /* FaceCell.swift in Sources */,
+				22E6D2B81D50827000D8CE41 /* Recording.swift in Sources */,
+				227FFC711D5353BF007DF37A /* FaceReplacer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		22E6D2A31D507F9900D8CE41 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22E6D2A41D507F9900D8CE41 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22E6D2A81D507F9900D8CE41 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22E6D2A91D507F9900D8CE41 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22E6D2AC1D507F9900D8CE41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22E6D2AD1D507F9900D8CE41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22E6D2AF1D507F9900D8CE41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U44796ZVJ3;
+				INFOPLIST_FILE = Gangstribe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.usunyu.gangstribe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		22E6D2B01D507F9900D8CE41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U44796ZVJ3;
+				INFOPLIST_FILE = Gangstribe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.usunyu.gangstribe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22E6D2951D507F9800D8CE41 /* Build configuration list for PBXProject "Gangstribe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22E6D2AC1D507F9900D8CE41 /* Debug */,
+				22E6D2AD1D507F9900D8CE41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22E6D2AE1D507F9900D8CE41 /* Build configuration list for PBXNativeTarget "Gangstribe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22E6D2AF1D507F9900D8CE41 /* Debug */,
+				22E6D2B01D507F9900D8CE41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22E6D2921D507F9800D8CE41 /* Project object */;
+}
