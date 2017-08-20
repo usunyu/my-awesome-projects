@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>I want to record you live</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
 	<string>I want to write down everything you say</string>
 	<key>CFBundleDevelopmentRegion</key>
