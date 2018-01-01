@@ -1,4 +1,4 @@
-// generated on 2017-12-30 using generator-webapp 3.0.1
+// generated on 2017-02-01 using generator-webapp 2.3.2
 const gulp = require('gulp');
 const gulpLoadPlugins = require('gulp-load-plugins');
 const browserSync = require('browser-sync').create();
@@ -9,13 +9,13 @@ const runSequence = require('run-sequence');
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
-let dev = true;
+var dev = true;
 
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.css')
-    .pipe($.if(dev, $.sourcemaps.init()))
+    .pipe($.sourcemaps.init())
     .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
-    .pipe($.if(dev, $.sourcemaps.write()))
+    .pipe($.sourcemaps.write())
     .pipe(gulp.dest('.tmp/styles'))
     .pipe(reload({stream: true}));
 });
@@ -23,14 +23,14 @@ gulp.task('styles', () => {
 gulp.task('scripts', () => {
   return gulp.src('app/scripts/**/*.js')
     .pipe($.plumber())
-    .pipe($.if(dev, $.sourcemaps.init()))
+    .pipe($.sourcemaps.init())
     .pipe($.babel())
-    .pipe($.if(dev, $.sourcemaps.write('.')))
+    .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('.tmp/scripts'))
     .pipe(reload({stream: true}));
 });
 
-function lint(files) {
+function lint(files, options) {
   return gulp.src(files)
     .pipe($.eslint({ fix: true }))
     .pipe(reload({stream: true, once: true}))
@@ -50,18 +50,9 @@ gulp.task('lint:test', () => {
 gulp.task('html', ['styles', 'scripts'], () => {
   return gulp.src('app/*.html')
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
-    .pipe($.if(/\.js$/, $.uglify({compress: {drop_console: true}})))
-    .pipe($.if(/\.css$/, $.cssnano({safe: true, autoprefixer: false})))
-    .pipe($.if(/\.html$/, $.htmlmin({
-      collapseWhitespace: true,
-      minifyCSS: true,
-      minifyJS: {compress: {drop_console: true}},
-      processConditionalComments: true,
-      removeComments: true,
-      removeEmptyAttributes: true,
-      removeScriptTypeAttributes: true,
-      removeStyleLinkTypeAttributes: true
-    })))
+    .pipe($.if('*.js', $.uglify()))
+    .pipe($.if('*.css', $.cssnano({safe: true, autoprefixer: false})))
+    .pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))
     .pipe(gulp.dest('dist'));
 });
 

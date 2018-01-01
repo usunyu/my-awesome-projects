@@ -1,56 +1,409 @@
-<!doctype html>
+
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ethereum dapp</title>
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blockchain Course - Development with Web3 Section</title>
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+<link rel="icon" type="image/png" href="http://thedapps.com/favicon-32x32.png" sizes="32x32" />
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-    
-  </head>
-  <body>
-    <!--[if IE]>
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+</head>
+
+<body>
+  <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>jQuery</li>
-      </ul>
-    </div>
-    
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-    
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-  </body>
+
+    <!-- top -->
+  <div class="item top">
+    <a href="http://thedapps.com" >
+          <img class="logo">
+    </a>
+  </div>
+  <!-- About -->
+  <div class="item about">
+    <img class="workbench">
+    <p class="text">
+      Web3 Workbench Application developed in section "Developing DAPPs with Web3"
+      <ul>
+      <li>To connect with geth or TestRPC provide URL and hit connect</li>
+      <li>To connect with MetaMask - enable MetaMask and reload</li>
+      </ul>
+    </p>
+  </div>
+
+  <!-- Setup & Version -->
+  <div class="hero-unit">
+    <h1>Connect</h1>
+
+    <!-- setup  -->
+    <div class="sidekick">
+      <h1>Setup</h1>
+      <p class='notready' id='connect_status'>Not connected</p>
+      <span>Provider</span>
+      <span><input type='text' id='provider_url' value='http://localhost:8545'></span>
+      <span>
+        <button onclick="doConnect()">Connect</button>
+      </span>
+      <br>
+      <span>
+        <button onclick="doGetNodeStatus()">Node Status</button>
+      </span>
+      <span id="get_peer_count" class="notready">...</span>
+    </div>
+    <!-- version -->
+    <div class="sidekick">
+      <h1>Version</h1>
+      <pre id='version_information'></pre>
+    </div>
+  </div>
+
+  <!-- Accounts -->
+  <div class="hero-unit">
+    <h1>Accounts</h1>
+    <!-- accounts list -->
+    <div class="sidekick">
+      <h1>Accounts</h1>
+      <span>Count</span><span class='notready' id='accounts_count'>...</span>
+      <span>Coinbase</span><span class='notready' id='coinbase'>...</span>
+      <span>Default A/c</span><span class='notready' id='defaultAccount'>...</span>
+      <ol id="accounts_list">
+        <!-- This is where the accounts will be added -->
+      </ol>
+      <span><button onclick="doGetAccounts()">Get Accounts</button>
+</span>
+    </div>
+    <!-- account balances -->
+    <div class="sidekick">
+      <h1>Balances</h1>
+      <ol id="account_balances_list">
+        <!-- This is where the accounts balances will be added -->
+      </ol>
+    </div>
+  </div>
+
+  <!-- Lock / Unlock Account -->
+  <div class="hero-unit">
+    <h1>UnLock &amp; Lock Accounts</h1>
+    <!-- unlock the account -->
+    <div class="sidekick">
+      <h1>Unlock Account</h1>
+      <span>To</span>
+      <span><select id="select_to_unlock_account"></select></span>
+      <br>
+      <span>Password</span><input id="unlock_account_password" type="text" value="password" />
+      <br>
+      <span><button onclick="doUnlockAccount()">UnLock Account</button>
+</span>
+      <span><button onclick="doLockAccount()">Lock Account</button>
+</span>
+    </div>
+    <div class="sidekick">
+      <h1>Un/Lock Result</h1>
+      <p class="notready" id="lock_unlock_result">...</p>
+    </div>
+  </div>
+
+  <!-- Send Transaction -->
+  <div class="hero-unit">
+    <h1>Send Ethers</h1>
+    <div class="sidekick">
+      <h1>Transaction Object</h1>
+      <span>From</span>
+      <span><select id="send_from_account"></select></span>
+      <br>
+      <span>To</span>
+      <!--
+    <span><select id="send_to_account"></select></span>
+    -->
+
+      <input list="send_to_account" id="send_to_account_value" />
+      <datalist id="send_to_account">
+        <option value="Chrome">
+          <option value="Firefox">
+            <option value="Internet Explorer">
+              <option value="Opera">
+                <option value="Safari">
+                  <option value="Microsoft Edge">
+      </datalist>
+
+
+      <br>
+      <span>Value (Ether)</span> <input id="send_value_in_ether" type="text" value="0.01" />
+      <br>
+      <span>Gas</span><input id="send_gas" type="text" value="default" />
+      <br>
+      <span>Gas Price (wei)</span><input id="send_gas_price" type="text" value="default" />
+      <br>
+      <span>Data (ascii)</span><input id="send_data" type="text" value="default" />
+      <br>
+      <span>Nonce</span><input id="send_nonce" type="text" value="default" />
+      <br>
+      <span><button onclick="generateTransactionJSON()">JSON &gt;&gt;</button>
+</span>
+      <span><button onclick="resetTransactionObjectParameters()">Reset</button>
+</span>
+
+    </div>
+    <!-- transaction object json -->
+    <div class="sidekick">
+      <h1>JSON</h1>
+      <pre id='send_transaction_object_json'></pre>
+    </div>
+
+    <!-- send  -->
+    <div class="sidekick">
+      <h1>Send</h1>
+      <span><button onclick="doSendTransaction()">Send Transaction</button>
+</span>
+    </div>
+    <!-- send transaction result -->
+    <div class="sidekick">
+      <h1>Result</h1>
+      <p class="notready" id="send_transaction_error_or_result">...</p>
+      <a href="" id="etherscan_io_tx_link" target="_blank">...</a>
+    </div>
+  </div>
+
+  <!-- Compile & Deploy Contracts -->
+  <div class="hero-unit">
+    <h1>Compile &amp; Deploy Contracts</h1>
+    <!--contract compilation -->
+    <div class="sidekick">
+      <h1>Compile</h1>
+      <span id="list_of_compilers" class="notready">...</span>
+      <br>
+      <button id="button_do_compile" onclick="doCompileSolidityContract()">Compile Code</button><br>
+      <textarea id="sourcecode" cols="45" rows="10">
+pragma solidity ^0.4.6;
+contract MyContract {
+
+  uint   num;
+                
+  event NumberSetEvent(address indexed caller, bytes32 indexed oldNum, bytes32 indexed newNum);
+
+   function getNum()  returns (uint n) {
+     return num;
+  }
+               
+   function setNum(uint n) {
+      uint old = num;
+      num=n;
+      NumberSetEvent(msg.sender,bytes32(old),bytes32(num));
+   }
+               
+   function MyContract(uint x){num=x;}
+}
+
+      </textarea>
+    </div>
+    <!-- compilation result -->
+    <div class="sidekick">
+      <h1>Result</h1>
+      <span class='notready' id='compilation_result'>...</span>
+      <br><span>Bytecode</span>
+      <textarea id="compiled_bytecode" cols="40" rows="3"></textarea>
+      <!-- ABI Definition -->
+      <br><span>ABI Definitions</span>
+      <textarea id="compiled_abidefinition" cols="40" rows="3"></textarea>
+    </div>
+    <!-- deploy the contract -->
+    <div class="sidekick">
+      <h1>Deploy</h1>
+      <p>Gas (Wei)
+        <input type="text" id="deployment_estimatedgas" size="10" value="4700000" /></p>
+      <button onclick="doDeployContract()">Deploy Contract</button><br>
+    </div>
+    <!-- deploy result -->
+    <div class="sidekick">
+      <h1>Result</h1>
+      <p>Transaction Hash</p>
+      <p id="contracttransactionhash" class="notready">...</p>
+      <a href="" id="contracttransactionhash_link" target="_blank"></a>
+      <p>Contract Address</p>
+      <input id="contractaddress" class="ready" size="40" value="">
+      <a href="" id="contractaddress_link" target="_blank"></a>
+      <br>
+    </div>
+  </div>
+
+  <!-- Execute Contract Function -->
+  <div class="hero-unit">
+    <h1>Contract Invocations</h1>
+    <div class="sidekick">
+      <h1>Execute</h1>
+      <p class="ready">Address &amp; ABIDefinition picked from deployed contract</p>
+      <span>
+      <select id="contract_select_function">
+        <option value="getNum">getNum()</option>
+        <option value="setNum">setNum()</option>
+      </select>
+    </span>
+      <br>
+      <span>Parameter for setNum()</span>
+      <input id="setnum_parameter" size="6" type="text" value="5" />
+      <span>Estimated Gas</span>
+      <input type="text" id="contract_execute_estimatedgas" size="10" value="4700000" />
+      <br>
+      <span>Value (Ether)</span> <input id="invocation_send_value_in_ether" type="text" value="0" disabled />
+      <br>
+      <span><button onclick="doContractFunctionCall()">Call</button></span>
+      <span><button onclick="doContractSendCall()">Send</button></span>
+    </div>
+    <div class="sidekick">
+      <h1>Result</h1>
+      <span>Details</span>
+      <br>
+      <span id="invoke_details">...</span>
+      <br>
+      <span>Return</span>
+      <span id="invoke_return_value">...</span>
+      <br>
+      <span>Transaction Hash</span>
+      <span id="invoke_contracttransactionhash" class="notready">...</span>
+      <a href="" id="invoke_contracttransactionhash_link" target="_blank"></a>
+    </div>
+  </div>
+
+  <!-- Filter - watch, stopWatching,get -->
+  <div class="hero-unit">
+    <h1>Events &amp; Logs : Filter, Watch, Get</h1>
+    <!-- Filter options fields -->
+    <div class="sidekick">
+      <h1>Filter</h1>
+      <span>From Block</span><input id="from_block_filter" type="text" value="latest" />
+      <br>
+      <span>To Block</span><input id="to_block_filter" type="text" value="" />
+      <br>
+      <span>Contract Addresses (newline separated)</span>
+      <textarea id="addresses_filter" cols="40" rows="3" value=""></textarea>
+      <br>
+
+      <span>Topics</span>
+      <pre>[0=event sig,1=addr,2 &amp; 3=32byteHex]</pre>
+      <!-- The default for the 
+       NumberSetEvent(address indexed caller, bytes32 indexed oldNum, bytes32 indexed newNum)
+       [0]=Signature of the event
+       [1]=Address of the caller
+       [2]=null but can be set to Old number as 32 byte string
+       [3]=New number as 32 byte string
+    -->
+      <textarea id="topics_filter" cols="40" rows="5" value="">0x108fd0bf2253f6baf35f111ba80fb5369c2e004b88e36ac8486fcee0c87e61ce
+      null
+      null
+      0x0000000000000000000000000000000000000000000000000000000000000005
+    </textarea>
+      <span><button onclick="generateFilterOptions()">Options &gt;&gt;</button>
+  </div>
+  <!-- Options object -->
+  <div class="sidekick">
+    <h1>Options</h1>
+    <pre id='options_filter'></pre>
+  </div>
+  <!-- Add a watch -->
+  
+  <div class="sidekick">
+    <h1>Watch</h1>
+    <span><button onclick="doFilterWatchStart()">Watch()</button></span>
+      <span><button onclick="doFilterStopWatching()">stopWatching()</button></span>
+    </div>
+    <div class="sidekick">
+      <h1>Events (5 Latest)</h1>
+      <span>Applied</span><input type="text" size="40" id="applied_watch_filter" class="ready" disabled />
+      <span>Recieve Count:</span><span id="watch_event_count" class="notready">Not Watching</span>
+      <ol id="watch_events_list">
+        <!-- This is where the events will be added -->
+      </ol>
+    </div>
+
+    <!-- filter.get -->
+    <div class="sidekick">
+      <h1>Get Logs</h1>
+      <span><button onclick="doFilterGetLogs()">Get()</button></span>
+    </div>
+    <div class="sidekick">
+      <h1>Logs</h1>
+      <span>Applied</span><input type="text" size="40" id="applied_log_filter" class="ready" disabled />
+      <span>Recieve Count:</span><span id="get_log_count" class="notready">....</span>
+      <ol id="get_logs_list">
+        <!-- This is where the events will be added -->
+      </ol>
+    </div>
+
+  </div>
+
+  <!-- contract.myEvent & allEvent -->
+  <div class="hero-unit">
+    <h1>Contract Events</h1>
+    <!-- Watch events from specific contract instance -->
+    <div class="sidekick">
+      <h1>Watch Instance Events</h1>
+      <span>Contract Instance Address</span>
+      <pre>abiDefinition picked from "compile" section</pre>
+      <span><input id="contract_instance_address" type="text" size="40" value="" placeholder="Copy&amp;Paste Contract Address here." /></span>
+      <br>
+      <span>Indexed return values (JSON)</span>
+      <textarea id="indexed_event_values" cols="40" rows="5">
+    {
+      "newNum":"0x0000000000000000000000000000000000000000000000000000000000000005"
+    }
+    </textarea>
+      <span>Additional filters</span>
+      <textarea id="additional_filter_event_values" cols="40" rows="5">
+    {
+      "fromBlock":"latest"
+    }
+    </textarea>
+      <span><button onclick="doContractEventWatchStart()">event.watch()</button></span>
+      <span><button onclick="doContractEventWatchStop()">event.stopWatching()</button></span>
+    </div>
+    <div class="sidekick">
+      <h1>Events/Logs (5 Latest)</h1>
+      <span>Recieve Count:</span><span id="watch_contract_instance_event_count" class="notready">Not Watching</span>
+      <ol id="watch_contract_events_list">
+        <!-- This is where the events will be added -->
+      </ol>
+    </div>
+    <!-- contract event.get -->
+    <div class="sidekick">
+      <h1>Contract Instance Logs</h1>
+      <span><button onclick="doContractEventGet()">event.Get()</button></span>
+    </div>
+    <div class="sidekick">
+      <h1>Logs</h1>
+      <span>Recieve Count:</span><span id="get_contract_instance_log_count" class="notready">....</span>
+      <ol id="get_contract_instance_logs_list">
+        <!-- This is where the events will be added -->
+      </ol>
+    </div>
+  </div>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/bignumber.js/bignumber.js"></script>
+  <script src="/bower_components/crypto-js/index.js"></script>
+  <script src="/bower_components/web3/dist/web3.js"></script>
+  <script src="/bower_components/web3/dist/web3.min.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/utils.js"></script>
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+
 </html>
