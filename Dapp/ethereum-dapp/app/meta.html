@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blockchain Course Web3</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+</head>
+
+<body onload="init()">
+
+
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/bignumber.js/bignumber.js"></script>
+<script src="/bower_components/crypto-js/index.js"></script>
+<script src="/bower_components/web3/dist/web3.js"></script>
+<script src="/bower_components/web3/dist/web3.min.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<script src="scripts/utils.js"></script>
+<!-- endbuild -->
+
+</body>
+
+<script>
+  function  init(){
+      web3.eth.getAccounts(function (error, result) {
+        console.log(error);
+        console.log(result);
+      });
+  }
+</script>
+
+</html>
