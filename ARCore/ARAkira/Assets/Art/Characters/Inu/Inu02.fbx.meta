@@ -1,0 +1,2154 @@
+fileFormatVersion: 2
+guid: 9b2cefb222316744ead172f843579a96
+timeCreated: 1499305751
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: be_bottomJaw01
+    100002: be_l_ear01
+    100004: be_l_foot01
+    100006: be_l_hand01
+    100008: be_main01
+    100010: be_r_ear01
+    100012: be_r_foot01
+    100014: be_r_hand01
+    100016: be_tail01
+    100018: be_topJaw01
+    100020: bn_bottomJaw01
+    100022: bn_head01
+    100024: bn_l_ankle01
+    100026: bn_l_arm01
+    100028: bn_l_ear01
+    100030: bn_l_ear02
+    100032: bn_l_elbow01
+    100034: bn_l_knee01
+    100036: bn_l_leg01
+    100038: bn_l_shoulder01
+    100040: bn_neck01
+    100042: bn_pelvis01
+    100044: bn_r_ankle01
+    100046: bn_r_arm01
+    100048: bn_r_ear01
+    100050: bn_r_ear02
+    100052: bn_r_elbow01
+    100054: bn_r_knee01
+    100056: bn_r_leg01
+    100058: bn_r_shoulder01
+    100060: bn_spine01
+    100062: bn_spine02
+    100064: bn_spine03
+    100066: bn_spine04
+    100068: bn_spine05
+    100070: bn_tail01
+    100072: bn_tail02
+    100074: bn_tail03
+    100076: bn_tail04
+    100078: bn_tail05
+    100080: bn_tail06
+    100082: bn_tail07
+    100084: bn_tail08
+    100086: bn_tail09
+    100088: bn_tail10
+    100090: bn_tail12
+    100092: bn_topJaw01
+    100094: curve19
+    100096: globalControl01
+    100098: globalScale01
+    100100: //RootNode
+    100102: joint8
+    100104: joints01
+    100106: mesh01
+    100108: polySurface8
+    400000: be_bottomJaw01
+    400002: be_l_ear01
+    400004: be_l_foot01
+    400006: be_l_hand01
+    400008: be_main01
+    400010: be_r_ear01
+    400012: be_r_foot01
+    400014: be_r_hand01
+    400016: be_tail01
+    400018: be_topJaw01
+    400020: bn_bottomJaw01
+    400022: bn_head01
+    400024: bn_l_ankle01
+    400026: bn_l_arm01
+    400028: bn_l_ear01
+    400030: bn_l_ear02
+    400032: bn_l_elbow01
+    400034: bn_l_knee01
+    400036: bn_l_leg01
+    400038: bn_l_shoulder01
+    400040: bn_neck01
+    400042: bn_pelvis01
+    400044: bn_r_ankle01
+    400046: bn_r_arm01
+    400048: bn_r_ear01
+    400050: bn_r_ear02
+    400052: bn_r_elbow01
+    400054: bn_r_knee01
+    400056: bn_r_leg01
+    400058: bn_r_shoulder01
+    400060: bn_spine01
+    400062: bn_spine02
+    400064: bn_spine03
+    400066: bn_spine04
+    400068: bn_spine05
+    400070: bn_tail01
+    400072: bn_tail02
+    400074: bn_tail03
+    400076: bn_tail04
+    400078: bn_tail05
+    400080: bn_tail06
+    400082: bn_tail07
+    400084: bn_tail08
+    400086: bn_tail09
+    400088: bn_tail10
+    400090: bn_tail12
+    400092: bn_topJaw01
+    400094: curve19
+    400096: globalControl01
+    400098: globalScale01
+    400100: //RootNode
+    400102: joint8
+    400104: joints01
+    400106: mesh01
+    400108: polySurface8
+    4300000: polySurface8
+    7400000: Inu_idle01
+    7400002: Inu_idle02
+    7400004: Inu_walk01
+    7400006: Inu_talk01
+    7400008: Inu_think01
+    7400010: Inu_excited01
+    7400012: Inu_excited02
+    7400014: Inu_excited03
+    7400016: Inu_sad01
+    7400018: Inu_sadLoop01
+    7400020: Inu_suprised01
+    7400022: Inu_laydown01
+    7400024: Inu_tantrum01
+    7400026: Inu_stoick01
+    9500000: //RootNode
+    13700000: polySurface8
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert4
+    second: {fileID: 2100000, guid: d2d86b5e2b3f9354a9d2f8307a7e7604, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert5
+    second: {fileID: 2100000, guid: 407fd65f605b2f94892d4e9b29b38be6, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Inu_idle01
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 33
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: globalControl01
+        weight: 1
+      - path: globalControl01/globalScale01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01/be_l_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01/be_r_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01/bn_tail12
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01/be_l_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01/be_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/be_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02/be_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02/be_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01/be_r_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/curve19
+        weight: 1
+      - path: mesh01
+        weight: 1
+      - path: mesh01/polySurface8
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Inu_idle02
+      takeName: Take 001
+      firstFrame: 41.5
+      lastFrame: 72
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: globalControl01
+        weight: 1
+      - path: globalControl01/globalScale01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01/be_l_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01/be_r_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01/bn_tail12
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01/be_l_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01/be_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/be_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02/be_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02/be_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01/be_r_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/curve19
+        weight: 1
+      - path: mesh01
+        weight: 1
+      - path: mesh01/polySurface8
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Inu_walk01
+      takeName: Take 001
+      firstFrame: 81
+      lastFrame: 112
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: globalControl01
+        weight: 1
+      - path: globalControl01/globalScale01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01/be_l_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01/be_r_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01/bn_tail12
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01/be_l_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01/be_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/be_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02/be_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02/be_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01/be_r_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/curve19
+        weight: 1
+      - path: mesh01
+        weight: 1
+      - path: mesh01/polySurface8
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Inu_talk01
+      takeName: Take 001
+      firstFrame: 120
+      lastFrame: 152
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: globalControl01
+        weight: 1
+      - path: globalControl01/globalScale01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01/be_l_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01/be_r_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01/bn_tail12
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01/be_l_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01/be_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/be_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02/be_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02/be_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01/be_r_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/curve19
+        weight: 1
+      - path: mesh01
+        weight: 1
+      - path: mesh01/polySurface8
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Inu_think01
+      takeName: Take 001
+      firstFrame: 161.5
+      lastFrame: 192
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: globalControl01
+        weight: 1
+      - path: globalControl01/globalScale01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01/be_l_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01/be_r_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01/bn_tail12
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01/be_l_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01/be_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/be_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02/be_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02/be_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01/be_r_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/curve19
+        weight: 1
+      - path: mesh01
+        weight: 1
+      - path: mesh01/polySurface8
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Inu_excited01
+      takeName: Take 001
+      firstFrame: 200
+      lastFrame: 250
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: globalControl01
+        weight: 1
+      - path: globalControl01/globalScale01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01/be_l_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01/be_r_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01/bn_tail12
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01/be_l_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01/be_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/be_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02/be_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02/be_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01/be_r_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/curve19
+        weight: 1
+      - path: mesh01
+        weight: 1
+      - path: mesh01/polySurface8
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Inu_excited02
+      takeName: Take 001
+      firstFrame: 260
+      lastFrame: 292
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: globalControl01
+        weight: 1
+      - path: globalControl01/globalScale01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01/be_l_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01/be_r_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01/bn_tail12
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01/be_l_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01/be_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/be_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02/be_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02/be_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01/be_r_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/curve19
+        weight: 1
+      - path: mesh01
+        weight: 1
+      - path: mesh01/polySurface8
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Inu_excited03
+      takeName: Take 001
+      firstFrame: 300.5
+      lastFrame: 324
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: globalControl01
+        weight: 1
+      - path: globalControl01/globalScale01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01/be_l_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01/be_r_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01/bn_tail12
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01/be_l_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01/be_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/be_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02/be_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02/be_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01/be_r_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/curve19
+        weight: 1
+      - path: mesh01
+        weight: 1
+      - path: mesh01/polySurface8
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Inu_sad01
+      takeName: Take 001
+      firstFrame: 331
+      lastFrame: 399
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: globalControl01
+        weight: 1
+      - path: globalControl01/globalScale01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01/be_l_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01/be_r_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01/bn_tail12
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01/be_l_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01/be_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/be_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02/be_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02/be_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01/be_r_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/curve19
+        weight: 1
+      - path: mesh01
+        weight: 1
+      - path: mesh01/polySurface8
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Inu_sadLoop01
+      takeName: Take 001
+      firstFrame: 411
+      lastFrame: 442
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: globalControl01
+        weight: 1
+      - path: globalControl01/globalScale01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01/be_l_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01/be_r_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01/bn_tail12
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01/be_l_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01/be_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/be_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02/be_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02/be_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01/be_r_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/curve19
+        weight: 1
+      - path: mesh01
+        weight: 1
+      - path: mesh01/polySurface8
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Inu_suprised01
+      takeName: Take 001
+      firstFrame: 450
+      lastFrame: 485
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: globalControl01
+        weight: 1
+      - path: globalControl01/globalScale01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01/be_l_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01/be_r_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01/bn_tail12
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01/be_l_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01/be_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/be_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02/be_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02/be_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01/be_r_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/curve19
+        weight: 1
+      - path: mesh01
+        weight: 1
+      - path: mesh01/polySurface8
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Inu_laydown01
+      takeName: Take 001
+      firstFrame: 491
+      lastFrame: 522
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: globalControl01
+        weight: 1
+      - path: globalControl01/globalScale01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01/be_l_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01/be_r_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01/bn_tail12
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01/be_l_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01/be_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/be_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02/be_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02/be_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01/be_r_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/curve19
+        weight: 1
+      - path: mesh01
+        weight: 1
+      - path: mesh01/polySurface8
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Inu_tantrum01
+      takeName: Take 001
+      firstFrame: 530.5
+      lastFrame: 550
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: globalControl01
+        weight: 1
+      - path: globalControl01/globalScale01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01/be_l_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01/be_r_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01/bn_tail12
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01/be_l_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01/be_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/be_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02/be_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02/be_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01/be_r_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/curve19
+        weight: 1
+      - path: mesh01
+        weight: 1
+      - path: mesh01/polySurface8
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Inu_stoick01
+      takeName: Take 001
+      firstFrame: 561
+      lastFrame: 595
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: globalControl01
+        weight: 1
+      - path: globalControl01/globalScale01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_l_leg01/bn_l_knee01/bn_l_ankle01/be_l_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_r_leg01/bn_r_knee01/bn_r_ankle01/be_r_foot01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_pelvis01/bn_tail01/bn_tail02/bn_tail03/bn_tail04/bn_tail05/bn_tail06/bn_tail07/bn_tail08/bn_tail09/bn_tail10/be_tail01/bn_tail12
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_l_shoulder01/bn_l_arm01/bn_l_elbow01/be_l_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_bottomJaw01/be_bottomJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/be_topJaw01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_l_ear01/bn_l_ear02/be_l_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_neck01/joint8/bn_head01/bn_topJaw01/bn_r_ear01/bn_r_ear02/be_r_ear01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/bn_spine01/bn_spine02/bn_spine03/bn_spine04/bn_spine05/bn_r_shoulder01/bn_r_arm01/bn_r_elbow01/be_r_hand01
+        weight: 1
+      - path: globalControl01/globalScale01/joints01/be_main01/curve19
+        weight: 1
+      - path: mesh01
+        weight: 1
+      - path: mesh01/polySurface8
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.2
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
