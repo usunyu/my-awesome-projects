@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Akira_ARCore.unity
+    guid: 1d0a033b3ae7ee84a8ca0e73d6735ab8
+  - enabled: 1
+    path: Assets/Scenes/PortalPainterFinished.unity
+    guid: ccfb894e17c194faba6e627ea30fa650
