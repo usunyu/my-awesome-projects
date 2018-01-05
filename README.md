@@ -15,7 +15,18 @@ Learning by doing projects
 [Swift](https://github.com/usunyu/MyProjects/tree/master/Swift):
 * The Swift Programming Language [[Tutorial](https://developer.apple.com/swift/)]
 
-## Web
+## App
+
+[iOS](https://github.com/usunyu/MyProjects/tree/master/iOS):
+* The Complete iOS 7 Course [[Udemy](https://www.udemy.com/the-complete-ios-7-course-learn-by-building-14-apps/)]
+* Raywenderlich iPhone Tutorials [[Tutorial](http://www.raywenderlich.com/tutorials)]
+* Brian Advent Tutorials [[YouTube](https://www.youtube.com/channel/UCysEngjfeIYapEER9K8aikw/playlists)]
+* Speech Recognition Tutorial for iOS [[Tutorial](https://www.raywenderlich.com/155752/speech-recognition-tutorial-ios)]
+
+[Android](https://github.com/usunyu/MyProjects/tree/master/Android):
+* TextureView SurfaceTexture OpenGL Video Player [[Tutorial](http://www.jianshu.com/p/d3d3186eefcb)]
+
+## Frontend
 
 [HTML](https://github.com/usunyu/MyProjects/tree/master/HTML):
 * About You [[Codecademy](http://www.codecademy.com/goals/web-beginner-en-3pc6w)]
@@ -28,17 +39,7 @@ Learning by doing projects
 [React](https://github.com/usunyu/MyProjects/tree/master/React):
 * Flux - Todo List [[Tutorial](https://facebook.github.io/flux/docs/todo-list.html)]
 * React + Redux + Webpack [[YouTube](https://www.youtube.com/watch?v=fZKaq623y38&list=PLQDnxXqV213JJFtDaG0aE9vqvp6Wm7nBg)]
-
-## App
-
-[iOS](https://github.com/usunyu/MyProjects/tree/master/iOS):
-* The Complete iOS 7 Course [[Udemy](https://www.udemy.com/the-complete-ios-7-course-learn-by-building-14-apps/)]
-* Raywenderlich iPhone Tutorials [[Tutorial](http://www.raywenderlich.com/tutorials)]
-* Brian Advent Tutorials [[YouTube](https://www.youtube.com/channel/UCysEngjfeIYapEER9K8aikw/playlists)]
-* Speech Recognition Tutorial for iOS [[Tutorial](https://www.raywenderlich.com/155752/speech-recognition-tutorial-ios)]
-
-[Android](https://github.com/usunyu/MyProjects/tree/master/Android):
-* TextureView SurfaceTexture OpenGL Video Player [[Tutorial](http://www.jianshu.com/p/d3d3186eefcb)]
+* Modern React with Redux [[Udemy](https://www.udemy.com/react-redux/learn/v4/overview)]
 
 ## Backend
 
@@ -104,7 +105,7 @@ Learning by doing projects
 [Direct3D](https://github.com/usunyu/MyProjects/tree/master/Direct3D):
 * C++ DirectX11 Tutorial [[Youtube](https://www.youtube.com/watch?v=a1y7yYPEx7s&list=PLuepR07d9noUHvSQ98T0gxNQOvWBLfQGh)]
 
-## Game Engine
+## Game
 
 [Unity](https://github.com/usunyu/MyProjects/tree/master/Unity):
 * Learn To Code by Making Games - The Complete Unity Developer [[Udemy](https://www.udemy.com/unitycourse/learn/#/)]
