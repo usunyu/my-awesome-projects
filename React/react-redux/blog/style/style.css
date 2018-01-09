@@ -1,3 +1,25 @@
 form a {
     margin-left: 5px;
 }
+
+.fade-enter {
+    /* right: 5px; */
+    opacity: 0;
+}
+
+.fade-enter-active {
+    right: 0px;
+    opacity: 1;
+    transition: .5s ease-in all;
+}
+
+.fade-exit {
+    right: 0px;
+    opacity: 1;
+}
+
+.fade-exit-active {
+    /* right: -5px; */
+    opacity: 0;
+    transition: .5s ease-out all;
+}

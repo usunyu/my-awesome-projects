@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form';
 import { Link } from 'react-router-dom';
@@ -10,6 +11,25 @@ import { createPost } from '../actions';
 // onFocus={field.input.onFocus}
 // onBlur={field.input.onBlur}
 
+const FIELDS = {
+    title: {
+        name: 'title',
+        type: 'input',
+        label: 'Title for post',
+        // validate: () => {},
+    },
+    categories: {
+        name: 'categories',
+        type: 'input',
+        label: 'Categories for post',
+    },
+    content: {
+        name: 'content',
+        type: 'textarea',
+        label: 'Post contents',
+    }
+};
+
 class PostsNew extends Component {
     renderField(field) {
         const { meta } = field;
@@ -17,7 +37,7 @@ class PostsNew extends Component {
         return (
             <div className={className}>
                 <label>{field.label}</label>
-                <input
+                <field.type
                     className='form-control'
                     type='text'
                     {...field.input} />
@@ -38,18 +58,17 @@ class PostsNew extends Component {
         const { handleSubmit } = this.props;
         return (
             <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
-                <Field
-                    label='Title'
-                    name='title'
-                    component={this.renderField} />
-                <Field
-                    label='Categories'
-                    name='categories'
-                    component={this.renderField} />
-                <Field
-                    label='Post Content'
-                    name='content'
-                    component={this.renderField} />
+                <h3>Create A New Post</h3>
+                {_.map(FIELDS, (field) => {
+                    return (
+                        <Field
+                            key={field.name}
+                            label={field.label}
+                            name={field.name}
+                            type={field.type}
+                            component={this.renderField} />
+                    );
+                })}
                 <button type='submit' className='btn btn-primary'>Submit</button>
                 <Link to='/' className='btn btn-danger'>Cancel</Link>
             </form>
@@ -59,20 +78,27 @@ class PostsNew extends Component {
 
 function validate(values) {
     const errors = {};
-    if (!values.title || values.title.length < 3) {
-        errors.title = 'Enter a title that is at least 3 char!';
-    }
-    if (!values.categories) {
-        errors.categories = 'Enter some categories!';
-    }
-    if (!values.content) {
-        errors.content = 'Enter some content!';
-    }
+
+    _.each(FIELDS, (type, field) => {
+        if (!values[field]) {
+            errors[field] = `Enter a ${field}`;
+        }
+    });
+    // if (!values.title || values.title.length < 3) {
+    //     errors.title = 'Enter a title that is at least 3 char!';
+    // }
+    // if (!values.categories) {
+    //     errors.categories = 'Enter some categories!';
+    // }
+    // if (!values.content) {
+    //     errors.content = 'Enter some content!';
+    // }
     return errors;
 }
 
 export default reduxForm({
     validate, // validate: validate
+    fields: _.keys(FIELDS),
     form: 'PostsNewForm'
 })(
     connect(null, {createPost})(PostsNew)
