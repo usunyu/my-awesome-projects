@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { showModal } from 'react-redux-modal-provider';
 import { fetchPost, deletePost } from '../actions';
+import PostsDeleteConfirmModal from './posts_delete_confirm_modal';
 
 class PostsShow extends Component {
     componentDidMount() {
@@ -28,7 +30,9 @@ class PostsShow extends Component {
                 <Link to='/'>Back to Index</Link>
                 <button
                     className='btn btn-danger pull-xs-right'
-                    onClick={this.onDeleteClick.bind(this)}>
+                    onClick={() => showModal(
+                        PostsDeleteConfirmModal,
+                        { onDeleteClick: this.onDeleteClick.bind(this) })}>
                     Delete Post
                 </button>
                 <h3>{post.title}</h3>

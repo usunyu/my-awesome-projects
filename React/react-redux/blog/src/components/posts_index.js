@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchPosts } from '../actions';
+// import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import { TransitionGroup } from 'react-transition-group';
+import { FadeTransition } from './FadeTransition';
 
 class PostsIndex extends Component {
     componentDidMount() {
@@ -12,11 +15,13 @@ class PostsIndex extends Component {
     renderPosts() {
         return _.map(this.props.posts, post => {
             return (
-                <li className='list-group-item' key={post.id}>
-                    <Link to={`/posts/${post.id}`}>
-                        {post.title}
-                    </Link>
-                </li>
+                <FadeTransition key={post.id}>
+                    <li className='list-group-item'>
+                        <Link to={`/posts/${post.id}`}>
+                            {post.title}
+                        </Link>
+                    </li>
+                </FadeTransition>
             )
         });
     }
@@ -31,7 +36,9 @@ class PostsIndex extends Component {
                 </div>
                 <h3>Posts</h3>
                 <ul className='list-group'>
-                    {this.renderPosts()}
+                    <TransitionGroup>
+                        {this.renderPosts()}
+                    </TransitionGroup>
                 </ul>
             </div>
         );
