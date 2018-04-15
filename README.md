@@ -15,6 +15,11 @@ Learning by doing projects
 [Swift](https://github.com/usunyu/MyProjects/tree/master/Swift):
 * The Swift Programming Language [[Tutorial](https://developer.apple.com/swift/)]
 
+## Design Pattern
+
+[Java](https://github.com/usunyu/MyProjects/tree/master/Design%20Pattern/Design%20Patterns%20in%20Java):
+* Design Patterns Video Tutorial [[YouTube](https://www.youtube.com/watch?v=vNHpsC5ng_E&list=PLF206E906175C7E07&index=1)]
+
 ## App
 
 [iOS](https://github.com/usunyu/MyProjects/tree/master/iOS):
