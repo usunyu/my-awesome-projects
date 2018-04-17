@@ -1,4 +1,5 @@
 {
-  "name": "albums",
-  "displayName": "albums"
+  "expo": {
+    "sdkVersion": "26.0.0"
+  }
 }
