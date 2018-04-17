@@ -49,7 +49,7 @@ Learning by doing projects
 [React Native](https://github.com/usunyu/MyProjects/tree/master/React%20Native/):
 * The Complete React Native and Redux Course [[Udemy](https://www.udemy.com/the-complete-react-native-and-redux-course/learn/v4/)]
 
-## Backend
+## Web Service
 
 [JSP](https://github.com/usunyu/MyProjects/tree/master/JSP):
 * Servlets and JSPs [[Udemy](https://www.udemy.com/javawebtut/)]
