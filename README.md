@@ -8,8 +8,6 @@ Learning by doing projects
 [Cpp](https://github.com/usunyu/MyProjects/tree/master/Cpp):
 * C++ Tutorial for Complete Beginners [[Udemy](https://www.udemy.com/free-learn-c-tutorial-beginners/learn/v4/overview)]
 
-[Java](https://github.com/usunyu/MyProjects/tree/master/Java):
-* Java Multithreading [[Udemy](https://www.udemy.com/java-multithreading)]
 
 [Swift](https://github.com/usunyu/MyProjects/tree/master/Swift):
 * The Swift Programming Language [[Tutorial](https://developer.apple.com/swift/)]
@@ -18,6 +16,11 @@ Learning by doing projects
 
 [Socket](https://github.com/usunyu/MyProjects/tree/master/Socket):
 * Learn Socket Programming in C from Scratch [[Udemy](https://www.udemy.com/learn-socket-programming-in-c-from-scratch/learn/v4/overview)]
+
+## Parallel
+
+[Multithreading](https://github.com/usunyu/MyProjects/tree/master/Multithreading):
+* Java Multithreading [[Udemy](https://www.udemy.com/java-multithreading)]
 
 ## Web App
 
