@@ -158,6 +158,6 @@ Learning by doing projects
 
 ## Architect
 
-[Design Patterns](https://github.com/usunyu/MyProjects/tree/master/Design%20Pattern/Design%20Patterns):
+[Design Patterns](https://github.com/usunyu/MyProjects/tree/master/Design%20Pattern):
 * Design Patterns Video Tutorial [[YouTube](https://www.youtube.com/watch?v=vNHpsC5ng_E&list=PLF206E906175C7E07&index=1)]
 
