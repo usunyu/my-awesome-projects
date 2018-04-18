@@ -16,7 +16,7 @@ Learning by doing projects
 
 ## Network
 
-[Network](https://github.com/usunyu/MyProjects/tree/master/Network):
+[Socket](https://github.com/usunyu/MyProjects/tree/master/Socket):
 * Learn Socket Programming in C from Scratch [[Udemy](https://www.udemy.com/learn-socket-programming-in-c-from-scratch/learn/v4/overview)]
 
 ## Web App
