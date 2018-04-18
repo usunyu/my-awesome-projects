@@ -7,7 +7,6 @@ Learning by doing projects
 
 [Cpp](https://github.com/usunyu/MyProjects/tree/master/Cpp):
 * C++ Tutorial for Complete Beginners [[Udemy](https://www.udemy.com/free-learn-c-tutorial-beginners/learn/v4/overview)]
-* Learn Socket Programming in C from Scratch [[Udemy](https://www.udemy.com/learn-socket-programming-in-c-from-scratch/learn/v4/overview)]
 
 [Java](https://github.com/usunyu/MyProjects/tree/master/Java):
 * Java Multithreading [[Udemy](https://www.udemy.com/java-multithreading)]
@@ -15,10 +14,10 @@ Learning by doing projects
 [Swift](https://github.com/usunyu/MyProjects/tree/master/Swift):
 * The Swift Programming Language [[Tutorial](https://developer.apple.com/swift/)]
 
-## Design Pattern
+## Network
 
-[Java](https://github.com/usunyu/MyProjects/tree/master/Design%20Pattern/Design%20Patterns%20in%20Java):
-* Design Patterns Video Tutorial [[YouTube](https://www.youtube.com/watch?v=vNHpsC5ng_E&list=PLF206E906175C7E07&index=1)]
+[Network](https://github.com/usunyu/MyProjects/tree/master/Network):
+* Learn Socket Programming in C from Scratch [[Udemy](https://www.udemy.com/learn-socket-programming-in-c-from-scratch/learn/v4/overview)]
 
 ## Web App
 
@@ -153,3 +152,9 @@ Learning by doing projects
 * Full Stack Hello World Voting Ethereum Dapp Tutorial — Part 1 [[Tutorial](https://medium.com/@mvmurthy/full-stack-hello-world-voting-ethereum-dapp-tutorial-part-1-40d2d0d807c2)]
 * Full Stack Hello World Voting Ethereum Dapp Tutorial — Part 2 [[Tutorial](https://medium.com/@mvmurthy/full-stack-hello-world-voting-ethereum-dapp-tutorial-part-2-30b3d335aa1f)]
 * Ethereum Pet Shop [[Tutorial](http://truffleframework.com/tutorials/pet-shop)]
+
+## Architect
+
+[Design Patterns](https://github.com/usunyu/MyProjects/tree/master/Design%20Pattern/Design%20Patterns):
+* Design Patterns Video Tutorial [[YouTube](https://www.youtube.com/watch?v=vNHpsC5ng_E&list=PLF206E906175C7E07&index=1)]
+
