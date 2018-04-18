@@ -86,7 +86,12 @@ Learning by doing projects
 * Super Impressive and Easy Face Detection using Vision API in Swift 4 [[Youtube](https://www.youtube.com/watch?v=d0U5j89M6aI)]
 * Real Time Camera Object Detection with Machine Learning - Swift 4 [[Youtube](https://www.youtube.com/watch?v=p6GA8ODlnX0)]
 
-## Video
+## Computer Vision
+
+[OpenCV](https://github.com/usunyu/MyProjects/tree/master/OpenCV):
+* Simple OpenCV Stitcher [[Github](https://github.com/prateekvjoshi/PanoStitch)]
+
+## Media
 
 [FFmpeg](https://github.com/usunyu/MyProjects/tree/master/FFmpeg):
 * Simplest FFmpeg Video Encoder (YUV to H.264) [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/25430425)] [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_video_encoder)]
@@ -97,10 +102,8 @@ Learning by doing projects
 * Simplest libRTMP Send FLV [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/42104945)] [[Github](https://github.com/leixiaohua1020/simplest_librtmp_example/tree/master/simplest_librtmp_send_flv)]
 * Simplest libRTMP Send H264 [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/42105049)] [[Github](https://github.com/leixiaohua1020/simplest_librtmp_example/tree/master/simplest_librtmp_send264)]
 
-## Computer Vision
-
-[OpenCV](https://github.com/usunyu/MyProjects/tree/master/OpenCV):
-* Simple OpenCV Stitcher [[Github](https://github.com/prateekvjoshi/PanoStitch)]
+[Video Player](https://github.com/usunyu/MyProjects/tree/master/Video%20Player):
+* TextureView SurfaceTexture OpenGL Video Player [[Tutorial](http://www.jianshu.com/p/d3d3186eefcb)]
 
 ## Graphic
 
@@ -129,11 +132,6 @@ Learning by doing projects
 [Shader](https://github.com/usunyu/MyProjects/tree/master/Shader):
 * Easy Unity5 Shader Tutorial [[Sikiedu](http://www.sikiedu.com/course/32)]
 * QianMo Unity3D Shader Tutorial [[Tutorial](http://blog.csdn.net/column/details/unity3d-shader.html)]
-
-## Media Player
-
-[Video Player](https://github.com/usunyu/MyProjects/tree/master/Video%20Player):
-* TextureView SurfaceTexture OpenGL Video Player [[Tutorial](http://www.jianshu.com/p/d3d3186eefcb)]
 
 ## Virtual Reality
 
