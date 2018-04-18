@@ -45,9 +45,6 @@ Learning by doing projects
 * Brian Advent Tutorials [[YouTube](https://www.youtube.com/channel/UCysEngjfeIYapEER9K8aikw/playlists)]
 * Speech Recognition Tutorial for iOS [[Tutorial](https://www.raywenderlich.com/155752/speech-recognition-tutorial-ios)]
 
-[Android](https://github.com/usunyu/MyProjects/tree/master/Android):
-* TextureView SurfaceTexture OpenGL Video Player [[Tutorial](http://www.jianshu.com/p/d3d3186eefcb)]
-
 [React Native](https://github.com/usunyu/MyProjects/tree/master/React%20Native/):
 * The Complete React Native and Redux Course [[Udemy](https://www.udemy.com/the-complete-react-native-and-redux-course/learn/v4/)]
 
@@ -132,6 +129,11 @@ Learning by doing projects
 [Shader](https://github.com/usunyu/MyProjects/tree/master/Shader):
 * Easy Unity5 Shader Tutorial [[Sikiedu](http://www.sikiedu.com/course/32)]
 * QianMo Unity3D Shader Tutorial [[Tutorial](http://blog.csdn.net/column/details/unity3d-shader.html)]
+
+## Media Player
+
+[Video Player](https://github.com/usunyu/MyProjects/tree/master/Video%20Player):
+* TextureView SurfaceTexture OpenGL Video Player [[Tutorial](http://www.jianshu.com/p/d3d3186eefcb)]
 
 ## Virtual Reality
 
