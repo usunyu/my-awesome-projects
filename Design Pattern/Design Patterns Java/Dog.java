@@ -8,6 +8,8 @@ public class Dog extends Animal {
         super();
 
         setSound("Bark");
+
+        flyingType = new CantFly();
     }
 
     public void changeVar(int randNum) {
