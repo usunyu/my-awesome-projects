@@ -1,13 +1,4 @@
-//public class UFOEnemyShip extends EnemyShip {
-//
-//    public UFOEnemyShip() {
-//
-//        setName("UFO Enemy Ship");
-//        setDamage(20.0);
-//    }
-//}
-
-public class UFOEnemyShip extends EnemyShip {
+public class UFOBossEnemyShip extends EnemyShip {
 
     // We define the type of ship we want to create
     // by stating we want to use the factory that
@@ -19,24 +10,26 @@ public class UFOEnemyShip extends EnemyShip {
     // this method. They state that the enemy ship
     // must have a weapon and engine assigned. That
     // object also states the specific parts needed
-    // to make a regular UFO versus a Boss UFO
+    // to make a Boss UFO versus a Regular UFO
 
-    public UFOEnemyShip(EnemyShipFactory shipFactory) {
+    public UFOBossEnemyShip(EnemyShipFactory shipFactory) {
 
         this.shipFactory = shipFactory;
 
     }
 
     // EnemyShipBuilding calls this method to build a
-    // specific UFOEnemyShip
+    // specific UFOBossEnemyShip
 
     void makeShip() {
+
+        // TODO Auto-generated method stub
 
         System.out.println("Making enemy ship " + getName());
 
         // The specific weapon & engine needed were passed in
         // shipFactory. We are assigning those specific part
-        // objects to the UFOEnemyShip here
+        // objects to the UFOBossEnemyShip here
 
         weapon = shipFactory.addESGun();
         engine = shipFactory.addESEngine();
