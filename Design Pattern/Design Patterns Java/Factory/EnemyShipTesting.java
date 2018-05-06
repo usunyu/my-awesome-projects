@@ -1,6 +1,3 @@
-package Factory;
-
-import Factory.EnemyShip;
 public class EnemyShipTesting {
 
     public static void main(String[] args) {

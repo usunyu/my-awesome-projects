@@ -1,5 +1,3 @@
-package OOP;
-
 public class AnimalPlay {
 
     public static void main(String[] args) {

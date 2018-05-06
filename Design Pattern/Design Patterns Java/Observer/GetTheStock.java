@@ -1,5 +1,3 @@
-package Observer;
-
 import java.text.DecimalFormat;
 
 public class GetTheStock implements Runnable {

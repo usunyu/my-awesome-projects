@@ -1,10 +1,3 @@
-package OOP;
-
-import OOP.Animal;
-import OOP.Cat;
-import OOP.Dog;
-import OOP.Giraffe;
-
 public class WorkWithAnimals {
 
     public static void main(String[] args) {

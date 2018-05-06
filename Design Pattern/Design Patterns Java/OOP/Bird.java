@@ -1,5 +1,3 @@
-package OOP;
-
 class Bird extends Animal {
 
     public Bird() {

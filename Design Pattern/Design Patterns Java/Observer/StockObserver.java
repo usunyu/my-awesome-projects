@@ -1,5 +1,3 @@
-package Observer;
-
 public class StockObserver implements Observer {
 
     private double ibmPrice;

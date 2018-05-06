@@ -1,5 +1,3 @@
-package Factory;
-
 // Any part that implements the interface Factory.ESEngine
 // can replace that part in any ship
 

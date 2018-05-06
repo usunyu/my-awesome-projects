@@ -1,5 +1,3 @@
-package OOP;
-
 public class Dog extends Animal {
 
     public void digHole() {

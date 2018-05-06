@@ -1,4 +1,4 @@
-package Factory;// This factory uses the Factory.EnemyShipFactory interface
+// This factory uses the Factory.EnemyShipFactory interface
 // to create very specific UFO Enemy Ship
 
 // This is where we define all of the parts the ship

@@ -1,5 +1,3 @@
-//package Factory;
-//
 //public class BigUFOEnemyShip extends UFOEnemyShip {
 //
 //    public BigUFOEnemyShip() {

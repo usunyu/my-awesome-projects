@@ -1,5 +1,3 @@
-package Factory;
-
 // This is the only class that needs to change, if you
 // want to determine which enemy ships you want to
 // provide as an option to build

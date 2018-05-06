@@ -1,5 +1,3 @@
-package OOP;
-
 public class Giraffe extends Creature {
 
     @Override
