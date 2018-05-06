@@ -1,5 +1,3 @@
-package Factory;
-
 //public abstract class Factory.EnemyShip {
 //
 //    private String name;

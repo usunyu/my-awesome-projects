@@ -1,5 +1,3 @@
-package OOP;
-
 public interface Flys {
 
     String fly();

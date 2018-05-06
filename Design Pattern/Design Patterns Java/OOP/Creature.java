@@ -1,5 +1,3 @@
-package OOP;
-
 abstract public class Creature {
 
     protected String name;

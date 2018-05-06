@@ -1,5 +1,3 @@
-package OOP;
-
 public class Animal {
 
     private String name;

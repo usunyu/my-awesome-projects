@@ -1,4 +1,4 @@
-package Factory;// Here we define a basic component of a space ship
+// Here we define a basic component of a space ship
 // Any part that implements the interface Factory.ESEngine
 // can replace that part in any ship
 

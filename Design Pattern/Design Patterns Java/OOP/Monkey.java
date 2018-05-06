@@ -1,5 +1,3 @@
-package OOP;
-
 public class Monkey implements Living {
 
     @Override

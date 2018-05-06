@@ -1,5 +1,3 @@
-package Factory;
-
 //public class Factory.EnemyShipFactory {
 //
 //    public Factory.EnemyShip makeEnemyShip(String newShipType) {

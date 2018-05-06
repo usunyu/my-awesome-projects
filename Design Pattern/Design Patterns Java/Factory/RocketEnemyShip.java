@@ -1,5 +1,3 @@
-//package Factory;
-//
 //public class RocketEnemyShip extends EnemyShip {
 //
 //    public RocketEnemyShip() {

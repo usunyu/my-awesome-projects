@@ -1,4 +1,4 @@
-package Factory;// Any part that implements the interface Factory.ESWeapon
+// Any part that implements the interface Factory.ESWeapon
 // can replace that part in any ship
 
 public interface ESWeapon {

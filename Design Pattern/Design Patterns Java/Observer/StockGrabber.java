@@ -1,5 +1,3 @@
-package Observer;
-
 import java.util.ArrayList;
 
 public class StockGrabber implements Subject {
