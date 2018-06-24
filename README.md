@@ -154,9 +154,9 @@ Learning by doing projects
 ## Blockchain
 
 [Dapp](https://github.com/usunyu/my-projects/tree/master/Dapp):
-* Full Stack Hello World Voting Ethereum Dapp Tutorial — Part 1 [[Tutorial](https://medium.com/@mvmurthy/full-stack-hello-world-voting-ethereum-dapp-tutorial-part-1-40d2d0d807c2)]
-* Full Stack Hello World Voting Ethereum Dapp Tutorial — Part 2 [[Tutorial](https://medium.com/@mvmurthy/full-stack-hello-world-voting-ethereum-dapp-tutorial-part-2-30b3d335aa1f)]
+* Full Stack Hello World Voting Ethereum Dapp Tutorial [[Tutorial](https://medium.com/@mvmurthy/full-stack-hello-world-voting-ethereum-dapp-tutorial-part-1-40d2d0d807c2)]
 * Ethereum Pet Shop [[Tutorial](http://truffleframework.com/tutorials/pet-shop)]
+* Crypto Zombies [[Tutorial](https://cryptozombies.io/en/course/)]
 
 ## Architect
 
