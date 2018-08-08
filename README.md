@@ -70,6 +70,7 @@ Learning by doing projects
 
 [AWS](https://github.com/usunyu/my-projects/tree/master/AWS):
 * Up and Running with Cloud Storage APIs [[Lynda](http://www.lynda.com/sdk/Azure-tutorials/Up-Running-Cloud-Storage-APIs/133320-2.html)]
+* Large File Uploads with Amazon S3 + Django [[Youtube](https://www.youtube.com/watch?v=CbB7UoPyErY)]
 
 [GAE](https://github.com/usunyu/my-projects/tree/master/GAE):
 * Google App Engine Tutorial [[Tutorial](http://googcloudlabs.appspot.com/whatgae.html)]
