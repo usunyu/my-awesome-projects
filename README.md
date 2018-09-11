@@ -34,8 +34,8 @@ Learning by doing projects
 [React](https://github.com/usunyu/my-projects/tree/master/React):
 * Flux - Todo List [[Tutorial](https://facebook.github.io/flux/docs/todo-list.html)]
 * React + Redux + Webpack [[YouTube](https://www.youtube.com/watch?v=fZKaq623y38&list=PLQDnxXqV213JJFtDaG0aE9vqvp6Wm7nBg)]
-* Modern React with Redux [[Udemy](https://www.udemy.com/react-redux/learn/v4/overview)]
 * React Router tutorial for beginners [[YouTube](https://www.youtube.com/watch?v=91F8reC8kvo)]
+* Modern React with Redux [[Udemy](https://www.udemy.com/react-redux/learn/v4/overview)]
 
 ## Mobile App
 
