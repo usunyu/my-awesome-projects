@@ -67,6 +67,9 @@ Learning by doing projects
 * Learn Python Django From Scratch [[Udemy](https://www.udemy.com/learn-python-django-from-scratch/)]
 * Simple Todo API with Django and OAuth2 [[Tutorial](http://www.madewithtea.com/simple-todo-api-with-django-and-oauth2.html)]
 
+[Express](https://github.com/usunyu/my-projects/tree/master/Express):
+* Learn express web framework [[Tutorial](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs)]
+
 ## Cloud Service
 
 [AWS](https://github.com/usunyu/my-projects/tree/master/AWS):
