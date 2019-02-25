@@ -11,6 +11,9 @@ Learning by doing projects
 [Swift](https://github.com/usunyu/my-projects/tree/master/Swift):
 * The Swift Programming Language [[Tutorial](https://developer.apple.com/swift/)]
 
+[Dart](https://github.com/usunyu/my-projects/tree/master/Dart):
+* The Dart Complete Developer's Guide [[Udemy](https://www.udemy.com/dart-and-flutter-the-complete-developers-guide/learn/v4/t/lecture/10847252?start=0)]
+
 ## Computer Architecture
 
 [Multithreading](https://github.com/usunyu/my-projects/tree/master/Multithreading):
