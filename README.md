@@ -51,6 +51,9 @@ Learning by doing projects
 [React Native](https://github.com/usunyu/my-projects/tree/master/React%20Native/):
 * The Complete React Native and Redux Course [[Udemy](https://www.udemy.com/the-complete-react-native-and-redux-course/learn/v4/)]
 
+[Flutter](https://github.com/usunyu/my-projects/tree/master/Flutter):
+* The Flutter Complete Developer's Guide [[Udemy](https://www.udemy.com/dart-and-flutter-the-complete-developers-guide/learn/v4/t/lecture/10874418?start=0)]
+
 ## Web Service
 
 [JSP](https://github.com/usunyu/my-projects/tree/master/JSP):
