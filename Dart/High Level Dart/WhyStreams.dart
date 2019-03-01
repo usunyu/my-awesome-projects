@@ -10,8 +10,8 @@ void main() {
     )
     .listen(
         (event) {
-        print("You clicked!");
-      },
+          print("You clicked!");
+        },
         onError: (err) => print(err),
     );
 }
