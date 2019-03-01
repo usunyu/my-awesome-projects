@@ -16,5 +16,3 @@ class Bloc with Validator {
     _password.close();
   }
 }
-
-final bloc = Bloc();
