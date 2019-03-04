@@ -6,23 +6,23 @@ Learning by doing projects
 ## Language
 
 [Cpp](https://github.com/usunyu/my-projects/tree/master/Cpp):
-* C++ Tutorial for Complete Beginners [[Udemy](https://www.udemy.com/free-learn-c-tutorial-beginners/learn/v4/overview)]
+* C++ Tutorial for Complete Beginners [[Udemy](https://www.udemy.com/share/1000sQAkAfeVdVRQ==/)]
 
 [Swift](https://github.com/usunyu/my-projects/tree/master/Swift):
 * The Swift Programming Language [[Tutorial](https://developer.apple.com/swift/)]
 
 [Dart](https://github.com/usunyu/my-projects/tree/master/Dart):
-* The Dart Complete Developer's Guide [[Udemy](https://www.udemy.com/dart-and-flutter-the-complete-developers-guide/learn/v4/t/lecture/10847252?start=0)]
+* The Dart Complete Developer's Guide [[Udemy](https://www.udemy.com/share/100hSWAkAfeVdVRQ==/)]
 
 ## Computer Architecture
 
 [Multithreading](https://github.com/usunyu/my-projects/tree/master/Multithreading):
-* Java Multithreading [[Udemy](https://www.udemy.com/java-multithreading)]
+* Java Multithreading [[Udemy](https://www.udemy.com/share/10043OAkAfeVdVRQ==/)]
 
 ## Network
 
 [Socket](https://github.com/usunyu/my-projects/tree/master/Socket):
-* Learn Socket Programming in C from Scratch [[Udemy](https://www.udemy.com/learn-socket-programming-in-c-from-scratch/learn/v4/overview)]
+* Learn Socket Programming in C from Scratch [[Udemy](https://www.udemy.com/share/1008p6AkAfeVdVRQ==/)]
 
 ## Web App
 
@@ -38,39 +38,39 @@ Learning by doing projects
 * Flux - Todo List [[Tutorial](https://facebook.github.io/flux/docs/todo-list.html)]
 * React + Redux + Webpack [[YouTube](https://www.youtube.com/watch?v=fZKaq623y38&list=PLQDnxXqV213JJFtDaG0aE9vqvp6Wm7nBg)]
 * React Router tutorial for beginners [[YouTube](https://www.youtube.com/watch?v=91F8reC8kvo)]
-* Modern React with Redux [[Udemy](https://www.udemy.com/react-redux/learn/v4/overview)]
+* Modern React with Redux [[Udemy](https://www.udemy.com/share/1000dWAkAfeVdVRQ==/)]
 
 ## Mobile App
 
 [iOS](https://github.com/usunyu/my-projects/tree/master/iOS):
-* The Complete iOS 7 Course [[Udemy](https://www.udemy.com/the-complete-ios-7-course-learn-by-building-14-apps/)]
+* The Complete iOS 7 Course [[Udemy](https://www.udemy.com/share/100sGmAkAfeVdVRQ==/)]
 * Raywenderlich iPhone Tutorials [[Tutorial](http://www.raywenderlich.com/tutorials)]
 * Brian Advent Tutorials [[YouTube](https://www.youtube.com/channel/UCysEngjfeIYapEER9K8aikw/playlists)]
 * Speech Recognition Tutorial for iOS [[Tutorial](https://www.raywenderlich.com/155752/speech-recognition-tutorial-ios)]
 
 [React Native](https://github.com/usunyu/my-projects/tree/master/React%20Native/):
-* The Complete React Native and Redux Course [[Udemy](https://www.udemy.com/the-complete-react-native-and-redux-course/learn/v4/)]
+* The Complete React Native and Redux Course [[Udemy](https://www.udemy.com/share/1001rgAkAfeVdVRQ==/)]
 
 [Flutter](https://github.com/usunyu/my-projects/tree/master/Flutter):
-* The Flutter Complete Developer's Guide [[Udemy](https://www.udemy.com/dart-and-flutter-the-complete-developers-guide/learn/v4/t/lecture/10874418?start=0)]
+* The Flutter Complete Developer's Guide [[Udemy](https://www.udemy.com/share/100hSWAkAfeVdVRQ==/)]
 
 ## Web Service
 
 [JSP](https://github.com/usunyu/my-projects/tree/master/JSP):
-* Servlets and JSPs [[Udemy](https://www.udemy.com/javawebtut/)]
-* The Java Spring Tutorial [[Udemy](https://www.udemy.com/javaspring/)]
+* Servlets and JSPs [[Udemy](https://www.udemy.com/share/1006zcAkAfeVdVRQ==/)]
+* The Java Spring Tutorial [[Udemy](https://www.udemy.com/share/1006imAkAfeVdVRQ==/)]
 
 [Ruby on Rails](https://github.com/usunyu/my-projects/tree/master/Ruby%20on%20Rails):
 * Ruby Essential Training [[Lynda](http://www.lynda.com/sdk/Ruby-tutorials/essential-training/47905-2.html)]
 * Ruby on Rails 3 Essential Training [[Lynda](http://www.lynda.com/sdk/Ruby-Rails-tutorials/Ruby-Rails-3-Essential-Training/55960-2.html)]
-* The RSpec Book [[Book](http://www.amazon.com/The-RSpec-Book-Behaviour-Development/dp/1934356379)]
+* The RSpec Book [[Book](https://amzn.to/2XDLKQs)]
 
 [Flask](https://github.com/usunyu/my-projects/tree/master/Flask):
 * Creating a RESTFul API with Python and Flask[[YouTube](https://www.youtube.com/playlist?list=PLXmMXHVSvS-AFMUmbBeIfL3PqTvgw8ygb)]
 
 [Django](https://github.com/usunyu/my-projects/tree/master/Django):
 * Writing your first Django app [[Tutorial](https://docs.djangoproject.com/en/dev/intro/tutorial01/)]
-* Learn Python Django From Scratch [[Udemy](https://www.udemy.com/learn-python-django-from-scratch/)]
+* Learn Python Django From Scratch [[Udemy](https://www.udemy.com/share/1005QYAkAfeVdVRQ==/)]
 * Simple Todo API with Django and OAuth2 [[Tutorial](http://www.madewithtea.com/simple-todo-api-with-django-and-oauth2.html)]
 
 [Express](https://github.com/usunyu/my-projects/tree/master/Express):
@@ -88,7 +88,7 @@ Learning by doing projects
 ## Big Data
 
 [Hadoop](https://github.com/usunyu/my-projects/tree/master/Hadoop):
-* Become a Certified Hadoop Developer [[Udemy](https://www.udemy.com/hadoop-tutorial/)]
+* Become a Certified Hadoop Developer [[Udemy](https://www.udemy.com/share/1007h8AkAfeVdVRQ==/)]
 
 ## Machine Learning
 
@@ -128,7 +128,7 @@ Learning by doing projects
 ## Game
 
 [Unity](https://github.com/usunyu/my-projects/tree/master/Unity):
-* Learn To Code by Making Games - The Complete Unity Developer [[Udemy](https://www.udemy.com/unitycourse/learn/#/)]
+* Learn To Code by Making Games - The Complete Unity Developer [[Udemy](https://www.udemy.com/share/1000PUAkAfeVdVRQ==/)]
 * Write Native Plugins for Unity [[Tutorial](http://www.alanzucconi.com/2015/10/11/how-to-write-native-plugins-for-unity/)]
 * C++ in Unity3D tutorial (C# Marshaling) [[YouTube](https://www.youtube.com/watch?v=w3jGgTHJoCY)]
 * Introduction to a Simple Multiplayer Example [[Tutorial](https://unity3d.com/learn/tutorials/topics/multiplayer-networking/introduction-simple-multiplayer-example)]
@@ -157,7 +157,7 @@ Learning by doing projects
 ## Augmented Reality
 
 [ARKit](https://github.com/usunyu/my-projects/tree/master/ARKit):
-* Mastering ARKit for iOS [[Udemy](https://www.udemy.com/mastering-arkit-for-ios-using-swift/learn/v4/overview)]
+* Mastering ARKit for iOS [[Udemy](https://www.udemy.com/share/1003sKAkAfeVdVRQ==/)]
 
 [ARCore](https://github.com/usunyu/my-projects/tree/master/ARCore):
 * Create ARCore App in Unity [[Tutorial](https://connect.unity.com/p/ji-zhu-zhi-bo-zai-unityzhong-chuang-jian-arcoreying-yong)]
