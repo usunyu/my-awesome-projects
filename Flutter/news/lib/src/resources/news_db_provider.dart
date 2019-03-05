@@ -16,22 +16,25 @@ class NewsDbProvider implements Source, Cache {
   void init() async {
     Directory documentsDirectory = await getApplicationDocumentsDirectory();
     final path = join(documentsDirectory.path, 'items.db');
+    // print('db path: $path');
 
     db = await openDatabase(
       path,
       version: 1,
       onCreate: (Database newDb, int version) {
         newDb.execute("""
-          CREATE TABEL Items
+          CREATE TABLE Items
           (
             id INTEGER PRIMARY KEY,
             type TEXT,
             by TEXT,
+            text TEXT,
             time INTEGER,
             parent INTEGER,
             kids BLOB,
             dead INTEGER,
             deleted INTEGER,
+            score INTEGER,
             url TEXT,
             title TEXT,
             descendants INTEGER
@@ -59,7 +62,15 @@ class NewsDbProvider implements Source, Cache {
   }
 
   Future<int> addItem(ItemModel item) {
-    return db.insert("Items", item.toMapForDb());
+    return db.insert(
+      "Items",
+      item.toMapForDb(),
+      // conflictAlgorithm: ConflictAlgorithm.ignore,
+    );
+  }
+
+  Future<int> clear() {
+    return db.delete("Items");
   }
 }
 
