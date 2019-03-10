@@ -39,6 +39,7 @@ Learning by doing projects
 * React + Redux + Webpack [[YouTube](https://www.youtube.com/watch?v=fZKaq623y38&list=PLQDnxXqV213JJFtDaG0aE9vqvp6Wm7nBg)]
 * React Router tutorial for beginners [[YouTube](https://www.youtube.com/watch?v=91F8reC8kvo)]
 * Modern React with Redux [[Udemy](https://www.udemy.com/share/1000dWAkAfeVdVRQ==/)]
+* Server Side Rendering with React and Redux [[Udemy](https://www.udemy.com/share/100aViAkAfeVdVRQ==/)]
 
 ## Mobile App
 
