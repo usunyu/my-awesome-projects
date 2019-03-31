@@ -54,6 +54,7 @@ Learning by doing projects
 
 [Flutter](https://github.com/usunyu/my-projects/tree/master/Flutter):
 * The Flutter Complete Developer's Guide [[Udemy](https://www.udemy.com/share/100hSWAkAfeVdVRQ==/)]
+* Writing custom platform-specific code [[Tutorial](https://flutter.dev/docs/development/platform-integration/platform-channels)]
 
 ## Web Service
 
