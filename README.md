@@ -14,9 +14,7 @@ Learning by doing projects
 [Dart](https://github.com/usunyu/my-projects/tree/master/Dart):
 * The Dart Complete Developer's Guide [[Udemy](https://www.udemy.com/share/100hSWAkAfeVdVRQ==/)]
 
-## Computer Architecture
-
-[Multithreading](https://github.com/usunyu/my-projects/tree/master/Multithreading):
+[Java](https://github.com/usunyu/my-projects/tree/master/Java):
 * Java Multithreading [[Udemy](https://www.udemy.com/share/10043OAkAfeVdVRQ==/)]
 
 ## Network
@@ -24,7 +22,12 @@ Learning by doing projects
 [Socket](https://github.com/usunyu/my-projects/tree/master/Socket):
 * Learn Socket Programming in C from Scratch [[Udemy](https://www.udemy.com/share/1008p6AkAfeVdVRQ==/)]
 
-## Web App
+## Architect
+
+[Design Patterns](https://github.com/usunyu/my-projects/tree/master/Design%20Pattern):
+* Design Patterns Video Tutorial [[YouTube](https://www.youtube.com/watch?v=vNHpsC5ng_E&list=PLF206E906175C7E07&index=1)]
+
+## Web Application
 
 [HTML](https://github.com/usunyu/my-projects/tree/master/HTML):
 * About You [[Codecademy](http://www.codecademy.com/goals/web-beginner-en-3pc6w)]
@@ -41,7 +44,7 @@ Learning by doing projects
 * Modern React with Redux [[Udemy](https://www.udemy.com/share/1000dWAkAfeVdVRQ==/)]
 * Server Side Rendering with React and Redux [[Udemy](https://www.udemy.com/share/100aViAkAfeVdVRQ==/)]
 
-## Mobile App
+## Mobile Application
 
 [iOS](https://github.com/usunyu/my-projects/tree/master/iOS):
 * The Complete iOS 7 Course [[Udemy](https://www.udemy.com/share/100sGmAkAfeVdVRQ==/)]
@@ -56,7 +59,7 @@ Learning by doing projects
 * The Flutter Complete Developer's Guide [[Udemy](https://www.udemy.com/share/100hSWAkAfeVdVRQ==/)]
 * Writing custom platform-specific code [[Tutorial](https://flutter.dev/docs/development/platform-integration/platform-channels)]
 
-## Web Service
+## Web Framework
 
 [JSP](https://github.com/usunyu/my-projects/tree/master/JSP):
 * Servlets and JSPs [[Udemy](https://www.udemy.com/share/1006zcAkAfeVdVRQ==/)]
@@ -170,9 +173,4 @@ Learning by doing projects
 * Full Stack Hello World Voting Ethereum Dapp Tutorial [[Tutorial](https://medium.com/@mvmurthy/full-stack-hello-world-voting-ethereum-dapp-tutorial-part-1-40d2d0d807c2)]
 * Ethereum Pet Shop [[Tutorial](http://truffleframework.com/tutorials/pet-shop)]
 * Crypto Zombies [[Tutorial](https://cryptozombies.io/en/course/)]
-
-## Architect
-
-[Design Patterns](https://github.com/usunyu/my-projects/tree/master/Design%20Pattern):
-* Design Patterns Video Tutorial [[YouTube](https://www.youtube.com/watch?v=vNHpsC5ng_E&list=PLF206E906175C7E07&index=1)]
 
