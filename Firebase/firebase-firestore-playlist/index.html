@@ -19,7 +19,6 @@
   </div>
 
   <script>
-    // Initialize Firebase
     var config = {
       apiKey: "AIzaSyCYSigTsKHj15U5x5kBWVawhb-XCRZVCN4",
       authDomain: "firestore-playlist-project.firebaseapp.com",
@@ -30,7 +29,6 @@
     };
     firebase.initializeApp(config);
     const db = firebase.firestore();
-    db.settings({ timestampInSnapshots: true });
   </script>
   <script src="app.js"></script>
 </body>
