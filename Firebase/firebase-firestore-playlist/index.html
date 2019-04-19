@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-firestore.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <h1>Cloud Cafe</h1>
+
+  <div class="content">
+
+    <form id="add-cafe-form"></form>
+
+    <ul id="cafe-list"></ul>
+
+  </div>
+
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCYSigTsKHj15U5x5kBWVawhb-XCRZVCN4",
+      authDomain: "firestore-playlist-project.firebaseapp.com",
+      databaseURL: "https://firestore-playlist-project.firebaseio.com",
+      projectId: "firestore-playlist-project",
+      storageBucket: "firestore-playlist-project.appspot.com",
+      messagingSenderId: "563534824513"
+    };
+    firebase.initializeApp(config);
+    const db = firebase.firestore();
+    db.settings({ timestampInSnapshots: true });
+  </script>
+  <script src="app.js"></script>
+</body>
+
+</html>
