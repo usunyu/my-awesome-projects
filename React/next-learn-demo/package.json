@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "lint-fix": "prettier --write **/**/*"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4"
+  }
+}
