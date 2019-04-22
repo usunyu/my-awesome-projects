@@ -1,4 +1,4 @@
-import Layout from '../components/MyLayout.js'
+import Layout from '../components/MyLayout.js';
 
 export default function About() {
   return (
@@ -6,4 +6,4 @@ export default function About() {
       <p>This is the about page</p>
     </Layout>
   )
-}
+};
