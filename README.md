@@ -1,5 +1,5 @@
-My Projects
-===========
+My Awesome Projects
+===================
 
 Learning by doing projects
 
