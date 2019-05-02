@@ -91,6 +91,9 @@ Learning by doing projects
 [GAE](https://github.com/usunyu/my-projects/tree/master/GAE):
 * Google App Engine Tutorial [[Tutorial](http://googcloudlabs.appspot.com/whatgae.html)]
 
+[Firebase](https://github.com/usunyu/my-projects/tree/master/Firebase):
+* Firebase Firestore Tutorial [[Tutorial](https://www.youtube.com/watch?v=4d-gIPGzmK4&list=PL4cUxeGkcC9itfjle0ji1xOZ2cjRGY_WB)]
+
 ## Big Data
 
 [Hadoop](https://github.com/usunyu/my-projects/tree/master/Hadoop):
