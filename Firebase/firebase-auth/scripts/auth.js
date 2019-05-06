@@ -1,3 +1,18 @@
+// listen for auth state change
+auth.onAuthStateChanged(user => {
+  if (user) {
+    // console.log('user logged in:', user);
+    // get data
+    db.collection('guides').get().then((snapshot) => {
+      setupGuides(snapshot.docs);
+    })
+  }
+  else {
+    // console.log('user logged out');
+    setupGuides([]);
+  }
+});
+
 // signup
 const signupForm = document.querySelector('#signup-form');
 signupForm.addEventListener('submit', (e) => {
@@ -19,9 +34,7 @@ signupForm.addEventListener('submit', (e) => {
 const logout = document.querySelector('#logout');
 logout.addEventListener('click', (e) => {
   e.preventDefault();
-  auth.signOut().then(() => {
-    console.log('user log out');
-  });
+  auth.signOut();
 });
 
 const loginForm = document.querySelector('#login-form');
@@ -34,7 +47,7 @@ loginForm.addEventListener('submit', (e) => {
 
   // log user in
   auth.signInWithEmailAndPassword(email, password).then((cred) => {
-    console.log(cred.user);
+    // console.log(cred.user);
 
     const modal = document.querySelector('#modal-login');
     M.Modal.getInstance(modal).close();
