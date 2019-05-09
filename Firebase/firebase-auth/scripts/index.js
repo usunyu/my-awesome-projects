@@ -1,12 +1,29 @@
 const guideList = document.querySelector('.guides');
 const loggedOutLinks = document.querySelectorAll('.logged-out');
 const loggedInLinks = document.querySelectorAll('.logged-in');
+const accountDetails = document.querySelector('.account-details');
+const adminItems = document.querySelectorAll('.admin-actions');
 
 const setupUI = (user) => {
   if (user) {
+    if (user.admin) {
+      adminItems.forEach(item => item.style.display = 'block');
+    }
+    // account info
+    db.collection('users').doc(user.uid).get().then(doc => {
+      // console.log(doc);
+      const html = `
+        <div>Logged in as ${user.email}</div>
+        <div>${doc.data().bio}</div>
+        <div>${user.admin ? 'Admin' : ''}</div>
+      `;
+      accountDetails.innerHTML = html;
+    });
     loggedInLinks.forEach(item => item.style.display = 'block');
     loggedOutLinks.forEach(item => item.style.display = 'none');
   } else {
+    adminItems.forEach(item => item.style.display = 'none');
+    accountDetails.innerHTML = '';
     loggedInLinks.forEach(item => item.style.display = 'none');
     loggedOutLinks.forEach(item => item.style.display = 'block');
   }

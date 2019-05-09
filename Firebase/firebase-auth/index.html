@@ -9,7 +9,7 @@
   <title>GameGuidez</title>
 </head>
 
-<body class="grey lighten-3"">
+<body class="grey lighten-3">
   <!-- NAVBAR -->
   <nav class=" z-depth-0 grey lighten-4">
   <div class="nav-wrapper container">
@@ -36,6 +36,13 @@
     </ul>
   </div>
   </nav>
+
+  <!-- ADMIN ACTIONS -->
+  <form class="center-align admin-actions" style="margin: 40px auto; max-width: 300px; display: none;">
+    <input type="email" placeholder="User email" id="admin-email" required />
+    <button class="btn-small yellow darken-2 z-depth-0">Make admin</button>
+  </form>
+
   <!-- SIGN UP MODAL -->
   <div id="modal-signup" class="modal">
     <div class="modal-content">
@@ -48,6 +55,10 @@
         <div class="input-field">
           <input type="password" id="signup-password" required />
           <label for="signup-password">Choose password</label>
+        </div>
+        <div class="input-field">
+          <input type="text" id="signup-bio" required />
+          <label for="signup-bio">One Line Bio</label>
         </div>
         <button class="btn yellow darken-2 z-depth-0">Sign up</button>
       </form>
@@ -105,6 +116,7 @@
   <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-functions.js"></script>
 
   <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#config-web-app -->
@@ -126,6 +138,7 @@
     // make auth and firestore references
     const auth = firebase.auth();
     const db = firebase.firestore();
+    const functions = firebase.functions();
   </script>
 
   <!-- Compiled and minified JavaScript -->
