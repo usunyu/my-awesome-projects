@@ -66,6 +66,9 @@ signupForm.addEventListener('submit', (e) => {
     const modal = document.querySelector('#modal-signup');
     M.Modal.getInstance(modal).close();
     signupForm.reset();
+    signupForm.querySelector('.error').innerHTML = '';
+  }).catch(err => {
+    signupForm.querySelector('.error').innerHTML = err.message;
   });
 });
 
@@ -76,6 +79,7 @@ logout.addEventListener('click', (e) => {
   auth.signOut();
 });
 
+// login
 const loginForm = document.querySelector('#login-form');
 loginForm.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -91,5 +95,8 @@ loginForm.addEventListener('submit', (e) => {
     const modal = document.querySelector('#modal-login');
     M.Modal.getInstance(modal).close();
     loginForm.reset();
+    loginForm.querySelector('.error').innerHTML = '';
+  }).catch(err => {
+    loginForm.querySelector('.error').innerHTML = err.message;
   });
 });

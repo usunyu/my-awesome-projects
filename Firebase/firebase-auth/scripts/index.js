@@ -2,7 +2,7 @@ const guideList = document.querySelector('.guides');
 const loggedOutLinks = document.querySelectorAll('.logged-out');
 const loggedInLinks = document.querySelectorAll('.logged-in');
 const accountDetails = document.querySelector('.account-details');
-const adminItems = document.querySelectorAll('.admin-actions');
+const adminItems = document.querySelectorAll('.admin');
 
 const setupUI = (user) => {
   if (user) {
