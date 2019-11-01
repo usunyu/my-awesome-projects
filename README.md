@@ -45,6 +45,9 @@ Learning by doing projects
 * Server Side Rendering with React and Redux [[Udemy](https://www.udemy.com/share/100aViAkAfeVdVRQ==/)]
 * Learn Next.js [[Tutorial](https://nextjs.org/learn/basics/getting-started)]
 
+[WebAssembly](https://github.com/usunyu/my-awesome-projects/tree/master/WebAssembly):
+* WebAssembly on MDN [[Tutorial](https://developer.mozilla.org/en-US/docs/WebAssembly)]
+
 ## Mobile Application
 
 [iOS](https://github.com/usunyu/my-awesome-projects/tree/master/iOS):
