@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Simple template</title>
+</head>
+
+<body>
+  <script>
+    fetch('table.wasm').then(response =>
+      response.arrayBuffer()
+    ).then(bytes =>
+      WebAssembly.instantiate(bytes)
+    ).then(results => {
+      var tbl = results.instance.exports.tbl;
+      console.log(tbl.get(0)());  // 13
+      console.log(tbl.get(1)());  // 42
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Simple template</title>
+</head>
+
+<body>
+  <script>
+    var memory = new WebAssembly.Memory({ initial: 10, maximum: 100 });
+    // WebAssembly.instantiateStreaming(fetch('memory.wasm'), { js: { mem: memory } })
+    //   .then(results => {
+    //     // add code here
+    //   });
+    fetch('memory.wasm').then(response =>
+      response.arrayBuffer()
+    ).then(bytes =>
+      WebAssembly.instantiate(bytes, { js: { mem: memory } })
+    ).then(results => {
+      var i32 = new Uint32Array(memory.buffer);
+
+      for (var i = 0; i < 10; i++) {
+        i32[i] = i;
+      }
+
+      var sum = results.instance.exports.accumulate(0, 10);
+      console.log(sum);
+    });
+  </script>
+</body>
+
+</html>
