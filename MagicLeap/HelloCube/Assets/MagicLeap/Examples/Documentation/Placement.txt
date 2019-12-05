@@ -1,0 +1,13 @@
+# Example Scene: Placement
+
+This example scene demonstrates how to place virtual content that doesn't
+intersect with any real world geometry, instead it's placed on top of it.
+This includes placing objects on the walls, or on top of horizontal surfaces that
+are large enough to contain the object that is being placed.
+
+
+## Bumper
+Cycles through the placement objects: Rug, Phonograph, PictureFrame, and Chair.
+
+## Trigger
+Places an instance of the current object when there is a valid location.

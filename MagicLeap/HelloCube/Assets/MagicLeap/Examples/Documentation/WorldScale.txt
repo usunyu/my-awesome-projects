@@ -1,0 +1,13 @@
+# Example Scene: World Scale
+
+Description:
+This example is presented with two individual scenes, one scene uses world
+scale:1 (meters) and the other scene uses world scale:100 (centimeters).
+In each scene the user can adjust a physical marker along a ruler to gauge
+the real world distance of the marker. The on screen text depicts the world
+scale and the distance from the controller to the marker, using the current
+unit of measurement.
+
+## Touchpad Swipe Up/Down:
+Adjust the distance of the marker within the range of
+(0.25 - 1) Meters or (25 - 100) Centimeters respectively.

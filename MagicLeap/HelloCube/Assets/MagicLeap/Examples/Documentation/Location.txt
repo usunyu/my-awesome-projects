@@ -1,0 +1,11 @@
+# Example Scene: Location
+
+Pre-requisites:
+- Internet Connection
+
+Description:
+This example provides and example of how to retrieve the current
+location data, and convert the latitude and longitude values to
+cartesian coordinates and find the location on a sphere.  The user
+should see a pin placed at their location on the earth, and the
+globe should rotate so that the pin faces the user.

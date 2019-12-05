@@ -1,0 +1,12 @@
+# Example Scene: Raw Video Capture
+
+This example demonstrates the functionality of using the camera
+for raw video capturing.  The data received from the camera is
+processed with a posterization algorithm and then rendered to a
+texture for example purposes. Intrinsic properties of the
+camera are shown on the side when recording starts.
+
+## Bumper
+- First Press: Displays raw video frames.
+- Second Press: Stops displaying raw video frames.
+- Repeat

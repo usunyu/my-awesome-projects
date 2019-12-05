@@ -1,0 +1,14 @@
+# Example Scene: InputModule
+
+This example scene demonstrates the MLInputModule, which implements a seamless integration
+between Magic Leap input with the native Unity UI elements. The Input Module specifies
+which input (Headpose, Eye Tracking, or Control) will be taken as a pointer and which
+control input (either Bumper or Trigger) executes a 'button click'.
+
+The Input Module interacts with all Canvases with the MLInputRaycaster component.
+
+The following events are currently supported: PointerEnter, PointerExit, PointerDown,
+PointerUp, PointerClick, Select, Deselect, Scroll.
+
+## Trigger or Bumper
+- Register as a 'button click' event

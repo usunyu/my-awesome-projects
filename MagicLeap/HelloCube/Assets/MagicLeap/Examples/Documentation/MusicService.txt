@@ -1,0 +1,36 @@
+# Example Scene: Music Service
+
+This example demonstrates and prescribes preferred methods for using the Music Service
+API. The example needs a Background Music Service (BMS) Provider (included as a
+pre-build step) and a controller to work with the User Interface.
+
+The BMS Provider serves as the media content provider to be used by the Music Service.
+To build the BMS Provider; from the top menu, click on Magic Leap, click on Setup Music
+Service Example. This will build the provider in Assets/MagicLeap/BackgroundMusicExample,
+copy the music_manifest.xml, and copy the sample media to Assets/StreamingAssets. See
+Assets/MagicLeap/BackgroundMusicExample/readme.txt for more information.
+
+The controller acts as a virtual pointer. A ray coming out of the controller model
+indicates where the controller is pointing at. If the controller is pointing at an
+interactable interface, the ray cursor is a yellow circle. Pull the trigger
+to activate the interface and change the cursor color green.
+
+## Timeline Slider
+Pull the trigger while pointing at the Timeline control:
+- The playhead jumps to that location. The content might need to buffer for a short
+  time before playback can continue.
+- You can scrub through the timeline by dragging the playhead.
+
+## Prev/Next
+Pull the trigger while pointing at the Prev/Next button:
+- Jump to the previous or next track in the playlist
+
+## Play/Pause
+Pull the trigger while pointing at the Play/Pause control:
+- If the media is paused, this resumes playback.
+- If the media is playing, this pauses the video playback.
+- If the media is stopped, this resets the playhead back to the beginning and starts playing.
+
+## Volume Slider
+Pull the trigger while pointing to the Volume control:
+- Modifies the volume.

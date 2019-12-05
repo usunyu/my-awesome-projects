@@ -1,0 +1,63 @@
+<!--
+Certain features require a privilege to be requested in the manifest. For the scenes that use these features,
+a custom manifest is needed with the required privileges. This file lists all the ones that the examples use.
+It can be modified by adding/trimming privileges as needed for the specific example or scene.
+The custom manifest should live in the Assets/Plugins/Lumin project folder with the filename manifest.xml.
+-->
+
+<!--
+Along with being in the manifest, certain privileges need to be requested at runtime as well:
+
+PwFoundObjRead is a sensitive privilege and must be requested before the API that needs it is started.
+
+CameraCapture and AudioCaptureMic are reality privileges and must be requested before the API that needs it
+is started and every time the app regains focus, such as returning from a pause.
+
+The examples that use these privileges demonstrate how this is done.
+-->
+
+<!--
+This manifest will contain all the privileges required for the examples. It will also work for every example
+excluding the MusicService one. MusicService requires its own custom manifest and custom setup. You can setup
+the custom manifest and properties to run the MusicService example automatically by clicking the button
+Set Up Music Service Example in the MagicLeap drop down menu in the Unity Editor.
+-->
+
+<!--
+Unity will automatically fill in areas marked as Placeholder from the Player Settings.
+-->
+<manifest xmlns:ml="magicleap" ml:package="Placeholder" ml:version_code="1" ml:version_name="">
+  <application ml:min_api_level="6" ml:sdk_version="1.0" ml:visible_name="Placeholder">
+    <!--Examples using AddressBookRead: Contacts-->
+    <uses-privilege ml:name="AddressBookRead" />
+    <!--Examples using AddressBookWrite: Contacts-->
+    <uses-privilege ml:name="AddressBookWrite" />
+    <!--Examples using AudioCaptureMic: VideoCapture, AudioCapture, RawVideoCapture-->
+    <uses-privilege ml:name="AudioCaptureMic" />
+    <!--Examples using CameraCapture: ImageCapture, ImageTracking, VideoCapture, LightTracking, RawVideoCapture-->
+    <uses-privilege ml:name="CameraCapture" />
+    <!--Examples using GesturesSubscribe: HandTracking, HandMeshing-->
+    <uses-privilege ml:name="GesturesSubscribe" />
+    <!--Examples using GesturesConfig: HandTracking, HandMeshing-->
+    <uses-privilege ml:name="GesturesConfig" />
+    <!--Examples using HandMesh: HandMeshing-->
+    <uses-privilege ml:name="HandMesh" />
+    <!--Examples using Internet: MediaPlayer, Screens-->
+    <uses-privilege ml:name="Internet" />
+    <!--Examples using PwFoundObjRead: Persistence-->
+    <uses-privilege ml:name="PwFoundObjRead" />
+    <!--Examples using WorldReconstruction: Meshing, Planes, Raycast, Placement, LightTracking, Vignette-->
+    <uses-privilege ml:name="WorldReconstruction" />
+    <!--Examples using ControllerPose: Contacts, Controller, Persistence, ImageTracking, ImageCapture, InputModule, VideoCapture, AudioCapture, LightTracking, MediaPlayer, MediaPlayerStereo, Meshing, Planes, Raycast, Placement, Vignette, WorldScale_Centimeters, WorldScale_Meters-->
+    <uses-privilege ml:name="ControllerPose" />
+    <!--Examples using CoarseLocation: Location-->
+    <uses-privilege ml:name="CoarseLocation" />
+    <!--Examples using ComputerVision: RawVideoCapture-->
+    <uses-privilege ml:name="ComputerVision" />
+    <!--Examples using ScreensProvider: Screens-->
+    <uses-privilege ml:name="ScreensProvider" />
+    <component ml:binary_name="bin/Player.elf" ml:name=".fullscreen" ml:type="Fullscreen" ml:visible_name="Placeholder">
+      <icon ml:model_folder="Icon/Model" ml:portal_folder="Icon/Portal" />
+    </component>
+  </application>
+</manifest>

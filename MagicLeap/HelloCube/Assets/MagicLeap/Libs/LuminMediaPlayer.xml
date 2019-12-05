@@ -1,0 +1,1135 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LuminMediaPlayer</name>
+    </assembly>
+    <members>
+        <member name="T:IMediaPlayer">
+            <summary>
+            Interface for target classes used by MLMediaPlayer
+            Each function must be implemented by the child player type
+            </summary>
+        </member>
+        <member name="T:UnityEngine.XR.MagicLeap.MLMediaPlayer">
+            <summary>
+            Media player script that allows playback of a streaming video (either from file or web URL)
+            This script will update the main texture parameter of the Renderer attached as a sibling
+            with the video frame from playback. Audio is also handled through this class and will
+            playback audio from the file.
+            </summary>
+        </member>
+        <member name="T:UnityEngine.XR.MagicLeap.MLMediaPlayer.VideoStereoMode">
+            <summary>
+            Enumeration of the available stereo rendering modes for video frames.
+            </summary>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaPlayer.VideoStereoMode.Mono">
+            <summary/>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaPlayer.VideoStereoMode.SideBySide">
+            <summary/>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaPlayer.VideoStereoMode.OverUnder">
+            <summary/>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaPlayer._subtitleTracksCache">
+            <summary>
+            Used to cache last received subtitle track info.
+            </summary>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayer.TryApplyStereoMode(System.String)">
+            <summary>
+            Utility method used to check and apply stereo mode property on the currently set VideoRenderMaterial material.
+            </summary>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayer.ApplyVideoRenderMaterial(System.String)">
+            <summary>
+            Utility method used to create if necessary and apply the currently set VideoRenderMaterial material.
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.VideoRenderMaterial">
+            <summary>
+            The Media Player's video rendering material. This will default to
+            "Unlit/Texture" if not set. If stereo rendering is to be supported
+            then the "_VideoStereoMode" property must be correctly implemented.
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.StereoMode">
+            <summary>
+            The Media Player's video rendering mode. This can be used to specify if the video
+            frame contains separate left and right eye video frames combined using the
+            Over/Under or Side-by-Side methods.
+            Mono is the default which specifies no stereo rendering.
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.VideoSource">
+            <summary>
+            The Media Player's source video URL. This can be a local streaming asset or web content
+            After changing the Video Source, you must call PrepareVideo() before calling Play()
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.LicenseServer">
+            <summary>
+            The Media Player's license server URL. If left blank, will attempt to use default
+            server returned by the DRM library.
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.CustomLicenseHeaderData">
+            <summary>
+            Set custom header key-value pairs to use in addition to default of "User-Agent : Widevine CDM v1.0"
+            when performing key request to the DRM license server.
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.CustomLicenseMessageData">
+            <summary>
+            Set custom key request key-value pair parameters used when generating default key request.
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.CustomLicenseRequestBuilder">
+            <summary>
+            Function to generate a licence request body.
+            First parameter is the DRM track being processed, either Video or Audio.
+            Second parameter is the byte[] containing the default generated request.
+            Return is the byte[] which will be used as the body to the license request.
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.CustomLicenseResponseParser">
+            <summary>
+            Function to parse licence response.
+            First parameter is the DRM track being processed, either Video or Audio.
+            Second parameter is the byte[] containing the response we received from the license server.
+            Return is the byte[] which will be the raw license data, base64 decoding if necessary.
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.OnPlay">
+            <summary>
+            Callback that is fired when the Media Player begins playback
+            Provides the length/duration of the video being played, in milliseconds
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.OnPause">
+            <summary>
+            Callback that is fired when the Media Player pauses playback
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.OnStop">
+            <summary>
+            Callback that is fired when the Media Player stops playback
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.OnSeekStarted">
+            <summary>
+            When beginning a seek, notifies with the target position in the media as a percentage.
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.OnSeekCompleted">
+            <summary>
+            When a seek completes, notifies with the current position in the media as a percentage.
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.OnVideoSizeChanged">
+            <summary>
+            When a video's resolution changes, notifies with the current resolution as a Rect.
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.OnEnded">
+            <summary>
+            Callback that notifies when the video has eached the end of the stream.
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.OnBufferingUpdate">
+            <summary>
+            When a video is buffering, notifies the percentage of completeness of the buffering
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.OnFrameSizeSetup">
+            <summary>
+            On starting, notifies the current aspect ratio of the video file
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.OnVideoPrepared">
+            <summary>
+            Notifies when a video has been prepared and is ready to begin playback
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.OnMediaError">
+            <summary>
+            Invoked when media player encounters an error.
+            First parameter is the type of error as MLMediaPlayerError.
+            Second parameter is extra information about the error as MLMediaError.
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.OnSubtitleTracksFound">
+            <summary>
+            Invoked when media player finds new closed caption track information.
+            First parameter is a dictionary of TrackData objects.
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.OnSubtitleDataFound">
+            <summary>
+            Invoked when subtitle data is recieved from the media library.
+            First parameter is a MLCea608CaptionSegment object that contains all the data given.
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.OnTimedTextDataFound">
+            <summary>
+            Invoked when timed text data is received from media library, time is based on media time.
+            First parameter is the textual data for this update.
+            Second parameter is time in milliseconds this text should be displayed.
+            Third parameter is time in milliseconds this text should stop being displayed.
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.OnInfo">
+            <summary>
+            Invoked when media player has informational events available
+            First parameter is the type of information event as MLMediaPlayerInfo
+            Second parameter is any extra info the informational event may define:
+                When info is MLMediaPlayerInfo.NetworkBandwidth, this holds bandwidth in kbps.
+                It is 0 for others.
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.MediaPlayerID">
+            <summary>
+            A unique identifier for this specific MLMediaPlayer object
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.IsLooping">
+            <summary>
+            Sets or gets if the video is looping.
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.IsPlaying">
+            <summary>
+            If the video is currently playing
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.AnimationPosition">
+            <summary>
+            The current percentage position through the video, useful for a UI to update a timeline
+            </summary>
+        </member>
+        <member name="P:UnityEngine.XR.MagicLeap.MLMediaPlayer.FrameDropThresholdMs">
+            <summary>
+            The current frame drop threshold in milliseconds, default value is 0.
+            Video frames older than this value are dropped, setting this to 0 will never drop frames.
+            </summary>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaPlayer.WidevineUUID">
+            <summary>
+            Widevine UUID Identifier: "edef8ba9-79d6-4ace-a3c8-27dcd51d21ed"
+            </summary>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayer.PrepareVideo">
+             <summary>
+             After setting VideoSource, prepare the video and start playback
+             </summary>
+             <returns>
+             MLResult.Code will be MLResultCode.Ok if successful.
+            
+             MLResult.Code will be MLResultCode.UnspecifiedFailure if failed due to an internal error prevented MediaPlayer from starting.
+            
+             MLResult.Code will be MLResultCode.MediaGenericNoInit if failed due to media player not properly initialized.
+            
+             MLResult.Code will be MLResultCode.MediaGenericInvalidOperation if failed due to calling from the wrong state.
+            
+             MLResult.Code will be MLResultCode.PrivilegeDenied if attempting to access web content without appropriate network privileges
+             </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayer.Seek(System.Int32)">
+             <summary>
+             Seek to a relative time in milliseconds
+             </summary>
+             <param name="timeMS">The time increment to jump to</param>
+             <returns>
+             MLResult.Code will be MLResultCode.Ok if successful.
+            
+             MLResult.Code will be MLResultCode.UnspecifiedFailure if failed due to an internal error prevented MediaPlayer from starting.
+            
+             MLResult.Code will be MLResultCode.MediaGenericNoInit if failed due to media player not properly initialized.
+            
+             MLResult.Code will be MLResultCode.MediaOutOfRange if failed due to attempting seek on a live video.
+             </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayer.Seek(System.Single)">
+             <summary>
+             Seek to a specified percentage through the video
+             </summary>
+             <param name="percent">Percent time to seek to [0.0 -> 1.0]</param>
+             <returns>
+             MLResult.Code will be MLResultCode.Ok if successful.
+            
+             MLResult.Code will be MLResultCode.UnspecifiedFailure if failed due to an internal error prevented MediaPlayer from starting.
+            
+             MLResult.Code will be MLResultCode.MediaGenericNoInit if failed due to media player not properly initialized.
+            
+             MLResult.Code will be MLResultCode.MediaOutOfRange if failed due to attempting seek on a live video.
+             </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayer.SetVolume(System.Single)">
+             <summary>
+             Set the volume
+             </summary>
+             <param name="volume">Volume in range [0.0 -> 1.0]</param>
+             <returns>
+             MLResult.Code will be MLResultCode.Ok if successful.
+            
+             MLResult.Code will be MLResultCode.UnspecifiedFailure if failed due to an internal error prevented MediaPlayer from starting.
+            
+             MLResult.Code will be MLResultCode.MediaGenericNoInit if failed due to media player not properly initialized.
+             </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayer.GetElapsedTimeMs">
+            <summary>
+            Get the elapsed time in milliseconds
+            </summary>
+            <returns>Integer of milliseconds passed.</returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayer.GetDurationMs">
+            <summary>
+            Get the duration of the video in milliseconds
+            </summary>
+            <returns>Integer of milliseconds total duration</returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayer.Play">
+             <summary>
+             Play the video
+             </summary>
+             <returns>
+             MLResult.Code will be MLResultCode.Ok if successful.
+            
+             MLResult.Code will be MLResultCode.UnspecifiedFailure if failed due to internal error.
+            
+             MLResult.Code will be MLResultCode.MediaGenericNoInit if failed due to media player not properly initialized.
+            
+             MLResult.Code will be MLResultCode.MediaGenericInvalidOperation if failed due to calling from the wrong state.
+             </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayer.Pause">
+             <summary>
+             Pause the video
+             </summary>
+             <returns>
+             MLResult.Code will be MLResultCode.Ok if successful.
+            
+             MLResult.Code will be MLResultCode.UnspecifiedFailure if failed due to internal error.
+            
+             MLResult.Code will be MLResultCode.MediaGenericNoInit if failed due to media player not properly initialized.
+            
+             MLResult.Code will be MLResultCode.MediaGenericInvalidOperation if failed due to calling from the wrong state.
+             </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayer.Stop">
+             <summary>
+             Stop the video and return to beginning.
+             </summary>
+             <returns>
+             MLResult.Code will be MLResultCode.Ok if successful.
+            
+             MLResult.Code will be MLResultCode.UnspecifiedFailure if failed due to internal error.
+            
+             MLResult.Code will be MLResultCode.MediaGenericNoInit if failed due to media player not properly initialized.
+            
+             MLResult.Code will be MLResultCode.MediaGenericInvalidOperation if failed due to calling from the wrong state.
+             </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayer.SelectSubtitleTrack(System.UInt32)">
+             <summary>
+             Select specific track in the media
+             </summary>
+             <param name="trackID">The id of the track to be selected.</param>
+             <returns>
+             MLResult.Code will be MLResultCode.Ok if track was correctly selected.
+            
+             MLResult.Code will be MLResultCode.UnspecifiedFailure if failed due to internal error.
+            
+             MLResult.Code will be MLResultCode.InvalidParam if media_player was invalid, track did not refer to a valid track number, was out of range or out_track_language was NULL.
+            
+             MLResult.Code will be MLResultCode.MediaGenericNoInit if MediaPlayer was not properly built or initialized.
+            
+             MLResult.Code will be MLResultCode.MediaGenericInvalidOperation if failed due to calling from the wrong state, can only be called after one of the setDataSource methods.
+             </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayer.UnselectSubtitleTrack(System.UInt32)">
+             <summary>
+             Unselect specific track in the media
+             </summary>
+             <param name="trackID">The id of the track to be unselected.</param>
+             <returns>
+             MLResult.Code will be MLResultCode.Ok if track was correctly unselected.
+            
+             MLResult.Code will be MLResultCode.UnspecifiedFailure if failed due to internal error.
+            
+             MLResult.Code will be MLResultCode.InvalidParam if media_player was invalid, track did not refer to a valid track number, was out of range or out_track_language was NULL.
+            
+             MLResult.Code will be MLResultCode.MediaGenericNoInit if MediaPlayer was not properly built or initialized.
+            
+             MLResult.Code will be MLResultCode.MediaGenericInvalidOperation if failed due to calling from the wrong state, can only be called after one of the setDataSource methods.
+             </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayer.GetAllTrackInfo">
+            <summary>
+            Query a snaphot of all known track info for a given media player.
+            This data can change from frame to frame.
+            </summary>
+            <returns>
+            A Dictionary&lt;long, TrackData&gt; of all known tracks, empty if no track are known.
+            </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayer.RequestActivationKeyRequest(System.Byte[],System.Action{UnityEngine.XR.MagicLeap.MLResult,System.Byte[],System.String})">
+            <summary>
+            Register a request to get the bytes used for a DRM key request.
+            </summary>
+            <param name="drmUUIDBytes">Bytes identifying the desired DRM type.</param>
+            <param name="callback">Callback to be called when successfully retrieved request data.</param>
+            <returns>
+            True if request was successfully registered.
+            </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayer.GetResolution">
+            <summary>
+            Returns the last known resolution for the mediaplayer
+            This data can change from frame to frame.
+            </summary>
+            <returns>
+            A Rect of the resolution.
+            </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayer.GetVideoBitrate">
+            <summary>
+            The bitrate of the video track in kbps
+            This data can change from frame to frame.
+            It is recommended that you use the OnInfo event for best results
+            </summary>
+            <returns>The bitrate of the video, -1 on failure</returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayer.OnDestroy">
+            <summary>
+            Clean up on application shutdown
+            </summary>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayer.OnApplicationPause(System.Boolean)">
+            <summary>
+            Pause the media player when the app loses focus
+            </summary>
+            <param name="isPaused">True when leaving the app, False when re-entering</param>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayer.CacheSubtitleTracks(System.Object,System.Object)">
+            <summary>
+            Chache the last know subtitle track data since we can't be sure the user set up
+            The callback before we send the event.
+            </summary>
+            <param name="mediaPlayerID">Id for the media player.</param>
+            <param name="subtitleTracks">The subtitle track infor to cache.</param>
+        </member>
+        <member name="T:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor">
+            <summary>
+            This class is the video player used in Editor. It implements the IVideoPlayer interface.
+            This version of the media player does not support DRM videos.
+            </summary>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.Initialize(System.Int32,System.Action{System.Object},System.Func{System.Object,UnityEngine.XR.MagicLeap.MLResult},System.Action{System.Object})">
+            <summary>
+            Initialize the Media Player for the Editor
+            </summary>
+            <param name="mediaPlayerID">ID of the media player</param>
+            <param name="startPreparedCallback">Callback when media player is created</param>
+            <param name="videoEndedCallback">Callback when video ends</param>
+            <param name="seekCompletedCallback">Callback when a seek completes</param>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.CreateStreamingMediaPlayer(UnityEngine.GameObject,System.String,System.Int32)">
+            <summary>
+            Creates the streaming media player for the editor
+            </summary>
+            <param name="mediaPlayerGO">The media player game object</param>
+            <param name="source">URL of the media</param>
+            <param name="mediaPlayerID">ID of the media player</param>
+            <returns>
+            MLResult.Code will be MLResult.Ok
+            </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.CreateTexture(UnityEngine.Renderer,System.Int32)">
+            <summary>
+            Creates the texture on the renderer to play the video on
+            </summary>
+            <param name="renderer">Renderer of the object to play on</param>
+            <param name="mediaPlayerID">ID of the media player</param>
+            <returns>True on success, false otherwise</returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.Play(System.Int32)">
+            <summary>
+            Plays the video in the editor
+            </summary>
+            <param name="mediaPlayerID">(unused) ID of the media player</param>
+            <returns>
+            MLResult.Code will be MLResultCode.Ok
+            </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.PauseVideo(System.Int32)">
+            <summary>
+            Pauses the video in the editor
+            </summary>
+            <param name="mediaPlayerID">(unused) ID of the media player</param>
+            <returns>
+            MLResult.Code will be MLResultCode.Ok
+            </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.Seek(System.Int32,System.Int32)">
+            <summary>
+            Seeks the specified time in the video in the editor
+            </summary>
+            <param name="positionMilliseconds">Absolute time to seek to</param>
+            <param name="mediaPlayerID">(unused) ID of the media player</param>
+            <returns>
+            MLResult.Code will be MLResultCode.Ok
+            </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.SetVolume(System.Single,System.Int32)">
+            <summary>
+            Sets the volume of the video in the editor
+            </summary>
+            <param name="vol">Volume</param>
+            <param name="mediaPlayerID">(unused) ID of the media player</param>
+            <returns>
+            MLResult.Code will be MLResultCode.Ok
+            </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.Stop(System.Int32)">
+            <summary>
+            Stops the video in the editor
+            </summary>
+            <param name="mediaPlayerID">(unused) ID of the media player</param>
+            <returns>
+            MLResult.Code will be MLResultCode.Ok
+            </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.Resume(System.Int32)">
+            <summary>
+            Resumes the video in the editor
+            </summary>
+            <param name="mediaPlayerID">(unused) ID of the media player</param>
+            <returns>
+            MLResult.Code will be MLResultCode.Ok
+            </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.SetLooping(System.Boolean,System.Int32)">
+            <summary>
+            Sets the loop flag for the video in the editor
+            </summary>
+            <param name="loop">Flag to loop</param>
+            <param name="mediaPlayerID">(unused) ID of the media player</param>
+            <returns>
+            MLResult.Code will be MLResultCode.Ok
+            </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.Cleanup(System.Int32)">
+            <summary>
+            Cleans up the video in the editor
+            </summary>
+            <param name="mediaPlayerID">(unused) ID of the media player</param>
+            <returns>
+            MLResult.Code will be MLResultCode.Ok
+            </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.RequestActivationKeyRequest(System.Byte[],System.Action{UnityEngine.XR.MagicLeap.MLResult,System.Byte[],System.String})">
+            <summary>
+            Register a request to get the bytes used for a DRM key request.
+            </summary>
+            <param name="drmUUIDBytes">Bytes identifying the desired DRM type.</param>
+            <param name="callback">Callback to be called when successfully retrieved request data.</param>
+            <returns>
+            True if request was successfully registered.
+            </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.GetResolution(System.Int32)">
+            <summary>
+            Get the resolution of the video
+            </summary>
+            <param name="mediaPlayerID">(unused) ID of the media player</param>
+            <returns>The resolution of the video</returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.GetVideoBitrate(System.Int32)">
+            <summary>
+            Get the video track bitrate
+            </summary>
+            <param name="mediaPlayerID">(unused) ID of the media player</param>
+            <returns>The bitrate of the video track</returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.GetDurationMilliseconds(System.Int32)">
+            <summary>
+            Gets the duration of the video in milliseconds
+            </summary>
+            <param name="mediaPlayerID">(unused) ID of the media player</param>
+            <returns>Duration of the video</returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.GetPositionMilliseconds(System.Int32)">
+            <summary>
+            Gets the current position of the video in milliseconds
+            </summary>
+            <param name="mediaPlayerID">(unused) ID of the media player</param>
+            <returns>Position of the playback of the video</returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.GetWidth(System.Int32)">
+            <summary>
+            Get the width of the video in pixels
+            </summary>
+            <param name="mediaPlayerID">(unused) ID of the media player</param>
+            <returns>The width of the video</returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.GetHeight(System.Int32)">
+            <summary>
+            Get the height of the video in pixels
+            </summary>
+            <param name="mediaPlayerID">(unused) ID of the media player</param>
+            <returns>The height of the video</returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.SetLicenseServer(System.String)">
+            <summary>
+            Sets the license server for DRM videos (should not be called)
+            </summary>
+            <param name="licenseServer">(unused) URL of the License Server</param>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.SetCustomLicenseHeaderData(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Set custom header key-value pairs to use in addition to default of "User-Agent : Widevine CDM v1.0"
+            when performing key request to the DRM license server.
+            </summary>
+            <param name="headerData">(unused) Dictionary of custom header key-value pairs</param>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.SetCustomLicenseMessageData(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Set custom key request key-value pair parameters used when generating default key request.
+            </summary>
+            <param name="messageData">(unused) Dictionary of optional key-value pair parameters</param>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.SetCustomLicenseRequestBuilder(System.Func{UnityEngine.XR.MagicLeap.MLMediaDRMTrack,System.Byte[],System.Byte[]})">
+            <summary>
+            Sets the custom function to customize the license request.
+            The default implementation, setting this to null, will simply use the default generated request.
+            </summary>
+            <param name="requestBuilder">
+            (unused) Function to generate a licence request body.
+            First parameter is the DRM track being processed, either Video or Audio.
+            Second parameter is the byte[] containing the default generated request.
+            Return is the byte[] which will be used as the body to the license request.
+            </param>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.SetCustomLicenseResponseParser(System.Func{UnityEngine.XR.MagicLeap.MLMediaDRMTrack,System.Byte[],System.Byte[]})">
+            <summary>
+            Sets a custom function to custom parse the license response.
+            The default implementation, setting this to null, will treat the entire response as the raw license data.
+            </summary>
+            <param name="responseParser">
+            (unused) Function to parse licence response.
+            First parameter is the DRM track being processed, either Video or Audio.
+            Second parameter is the byte[] containing the response we received from the license server.
+            Return is the byte[] which will be the raw license data, base64 decoding if necessary.
+            </param>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.GetFrameDropThresholdMs(System.Int32)">
+            <summary>
+            Gets the frame drop threshold.
+            </summary>
+            <param name="mediaPlayerID">(unused) ID of the media player</param>
+            <returns>The currently set millisecond threshold.</returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerEditor.SetFrameDropThresholdMs(System.Int32,System.UInt64)">
+            <summary>
+            Sets a threshold to drop video frames if they are older than specified value.
+            Setting this to 0 will not drop any frames, this is the default behavior.
+            </summary>
+            <param name="mediaPlayerID">(unused) ID of the media player</param>
+            <param name="threshold">(unused) New threshold in milliseconds</param>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerLumin.Initialize(System.Int32,System.Action{System.Object},System.Func{System.Object,UnityEngine.XR.MagicLeap.MLResult},System.Action{System.Object,System.Object},System.Action{System.Object,System.Object,System.Object},System.Action{System.Object,System.Object,System.Object},System.Action{System.Object},System.Action{System.Object,System.Object},System.Action{System.Object,System.Object},System.Action{System.Object,System.Object},System.Action{System.Object,System.Object,System.Object,System.Object})">
+            <summary>
+            Initialize the Media Player for the Editor
+            </summary>
+            <param name="mediaPlayerID">ID of the media player</param>
+            <param name="videoEndedCallback">Callback when video ends</param>
+            <param name="startPreparedCallback">Callback when video is prepared</param>
+            <param name="updateBufferingUICallback">Callback when video buffering is updated</param>
+            <param name="onErrorCallback">Callback when an error occurs</param>
+            <param name="onInfoCallback">Callback when an info event occurs</param>
+            <param name="onSeekCompleted">Callback when a seek completes</param>
+            <param name="onVideoSizeChanged">Callback when the video resolution changes</param>
+            <param name="getSubtitleTracksCallback">Callback when the subtitle tracks are found</param>
+            <param name="getSubtitleDataCallback">Callback when the subtitle data is recieved</param>
+            <param name="getTimedTextDataCallback">Callback when the timed text data is recieved</param>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerLumin.CreateStreamingMediaPlayer(UnityEngine.GameObject,System.String,System.Int32)">
+             <summary>
+             Creates the streaming media player
+             </summary>
+             <param name="mediaPlayerGO">The media player game object</param>
+             <param name="source">URL of the media</param>
+             <param name="mediaPlayerID">ID of the media player</param>
+             <returns>
+             MLResult.Code will be MLResultCode.Ok if successful
+            
+             MLResult.Code will be MLResultCode.InvalidParam if failed due to an invalid input parameter.
+            
+             MLResult.Code will be MLResultCode.UnspecifiedFailure if failed due to internal error.
+            
+             MLResult.Code will be MLResultCode.MediaGenericNoInit if media player was not properly built or initialized.
+            
+             MLResult.Code will be MLResultCode.PrivilegeDenied if attempting to access web content without appropriate network privileges
+             </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerLumin.Play(System.Int32)">
+             <summary>
+             Plays the video
+             </summary>
+             <param name="mediaPlayerID">ID of the media player</param>
+             <returns>
+             MLResult.Code will be MLResultCode.Ok if successful
+            
+             MLResult.Code will be MLResultCode.InvalidParam if failed due to an invalid input parameter.
+            
+             MLResult.Code will be MLResultCode.UnspecifiedFailure if failed due to internal error.
+            
+             MLResult.Code will be MLResultCode.MediaGenericNoInit if media player was not properly built or initialized.
+            
+             MLResult.Code will be MLResultCode.MediaGenericInvalidOperation if method was called from the wrong state.
+             </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerLumin.PauseVideo(System.Int32)">
+             <summary>
+             Pauses the video
+             </summary>
+             <param name="mediaPlayerID">ID of the media player</param>
+             <returns>
+             MLResult.Code will be MLResultCode.Ok if successful
+            
+             MLResult.Code will be MLResultCode.InvalidParam if failed due to an invalid input parameter.
+            
+             MLResult.Code will be MLResultCode.UnspecifiedFailure if failed due to internal error.
+            
+             MLResult.Code will be MLResultCode.MediaGenericNoInit if media player was not properly built or initialized.
+            
+             MLResult.Code will be MLResultCode.MediaGenericInvalidOperation if method was called from the wrong state.
+             </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerLumin.Seek(System.Int32,System.Int32)">
+             <summary>
+             Seeks the specified time in the video
+             </summary>
+             <param name="positionMilliseconds">Absolute time to seek to</param>
+             <param name="mediaPlayerID">ID of the media player</param>
+             <returns>
+             MLResult.Code will be MLResultCode.Ok if successful
+            
+             MLResult.Code will be MLResultCode.InvalidParam if failed due to an invalid input parameter.
+            
+             MLResult.Code will be MLResultCode.UnspecifiedFailure if failed due to internal error.
+            
+             MLResult.Code will be MLResultCode.MediaGenericNoInit if media player was not properly built or initialized.
+            
+             MLResult.Code will be MLResultCode.MediaGenericInvalidOperation if method was called from the wrong state.
+             </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerLumin.SetVolume(System.Single,System.Int32)">
+             <summary>
+             Sets the volume of the video
+             </summary>
+             <param name="vol">Volume</param>
+             <param name="mediaPlayerID">ID of the media player</param>
+             <returns>
+             MLResult.Code will be MLResultCode.Ok if successful
+            
+             MLResult.Code will be MLResultCode.InvalidParam if failed due to an invalid input parameter.
+            
+             MLResult.Code will be MLResultCode.UnspecifiedFailure if failed due to internal error.
+            
+             MLResult.Code will be MLResultCode.MediaGenericNoInit if media player was not properly built or initialized.
+             </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerLumin.Stop(System.Int32)">
+             <summary>
+             Stops the video in the editor
+             </summary>
+             <param name="mediaPlayerID">ID of the media player</param>
+             <returns>
+             MLResult.Code will be MLResultCode.Ok if successful
+            
+             MLResult.Code will be MLResultCode.InvalidParam if failed due to an invalid input parameter.
+            
+             MLResult.Code will be MLResultCode.UnspecifiedFailure if failed due to internal error.
+            
+             MLResult.Code will be MLResultCode.MediaGenericNoInit if media player was not properly built or initialized.
+            
+             MLResult.Code will be MLResultCode.MediaGenericInvalidOperation if method was called from the wrong state.
+             </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerLumin.Resume(System.Int32)">
+             <summary>
+             Resumes the video
+             </summary>
+             <param name="mediaPlayerID">ID of the media player</param>
+             <returns>
+             MLResult.Code will be MLResultCode.Ok if successful
+            
+             MLResult.Code will be MLResultCode.InvalidParam if failed due to an invalid input parameter.
+            
+             MLResult.Code will be MLResultCode.UnspecifiedFailure if failed due to internal error.
+            
+             MLResult.Code will be MLResultCode.MediaGenericNoInit if media player was not properly built or initialized.
+            
+             MLResult.Code will be MLResultCode.MediaGenericInvalidOperation if method was called from the wrong state.
+             </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerLumin.SetLooping(System.Boolean,System.Int32)">
+             <summary>
+             Sets the loop flag for the video
+             </summary>
+             <param name="loop">Flag to loop</param>
+             <param name="mediaPlayerID">ID of the media player</param>
+             <returns>
+             MLResult.Code will be MLResultCode.Ok if successful
+            
+             MLResult.Code will be MLResultCode.InvalidParam if failed due to an invalid input parameter.
+            
+             MLResult.Code will be MLResultCode.UnspecifiedFailure if failed due to internal error.
+            
+             MLResult.Code will be MLResultCode.MediaGenericNoInit if media player was not properly built or initialized.
+             </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerLumin.Cleanup(System.Int32)">
+             <summary>
+             Cleans up the video
+             </summary>
+             <param name="mediaPlayerID">ID of the media player</param>
+             <returns>
+             MLResult.Code will be MLResultCode.Ok if successful
+            
+             MLResult.Code will be MLResultCode.InvalidParam if failed due to an invalid input parameter.
+            
+             MLResult.Code will be MLResultCode.UnspecifiedFailure if failed due to internal error.
+            
+             MLResult.Code will be MLResultCode.MediaGenericNoInit if media player was not properly built or initialized.
+             </returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerLumin.GetDurationMilliseconds(System.Int32)">
+            <summary>
+            Gets the duration of the video in milliseconds
+            </summary>
+            <param name="mediaPlayerID">ID of the media player</param>
+            <returns>Duration of the video, -1 on failure</returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerLumin.GetPositionMilliseconds(System.Int32)">
+            <summary>
+            Gets the current position of the video in milliseconds
+            </summary>
+            <param name="mediaPlayerID">ID of the media player</param>
+            <returns>Position of the playback of the video, -1 on failure</returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerLumin.GetWidth(System.Int32)">
+            <summary>
+            Get the width of the video in pixels
+            </summary>
+            <param name="mediaPlayerID">ID of the media player</param>
+            <returns>The width of the video, -1 on failure</returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerLumin.GetHeight(System.Int32)">
+            <summary>
+            Get the height of the video in pixels
+            </summary>
+            <param name="mediaPlayerID">ID of the media player</param>
+            <returns>The height of the video, -1 on failure</returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerLumin.GetResolution(System.Int32)">
+            <summary>
+            Get the last known resolution of the video in pixels
+            </summary>
+            <param name="mediaPlayerID">ID of the media player</param>
+            <returns>The rect reprsenting the video resolution</returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerLumin.GetVideoBitrate(System.Int32)">
+            <summary>
+            Get the bitrate of the video kbps
+            </summary>
+            <param name="mediaPlayerID">ID of the media player</param>
+            <returns>The bitrate of the video, -1 on failure</returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerLumin.SetLicenseServer(System.String)">
+            <summary>
+            Sets the license server for DRM videos
+            </summary>
+            <param name="licenseServer">URL of the License Server</param>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerLumin.SetCustomLicenseHeaderData(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Set custom header key-value pairs to use in addition to default of "User-Agent : Widevine CDM v1.0"
+            when performing key request to the DRM license server.
+            </summary>
+            <param name="headerData">Dictionary of custom header key-value pairs</param>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerLumin.SetCustomLicenseMessageData(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Set custom key request key-value pair parameters used when generating default key request.
+            </summary>
+            <param name="messageData">Dictionary of optional key-value pair parameters</param>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerLumin.SetCustomLicenseRequestBuilder(System.Func{UnityEngine.XR.MagicLeap.MLMediaDRMTrack,System.Byte[],System.Byte[]})">
+            <summary>
+            Sets the custom function to customize the license request.
+            The default implementation, setting this to null, will simply use the default generated request.
+            </summary>
+            <param name="requestBuilder">
+            Function to generate a licence request body.
+            First parameter is the DRM track being processed, either Video or Audio.
+            Second parameter is the byte[] containing the default generated request.
+            Return is the byte[] which will be used as the body to the license request.
+            </param>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerLumin.SetCustomLicenseResponseParser(System.Func{UnityEngine.XR.MagicLeap.MLMediaDRMTrack,System.Byte[],System.Byte[]})">
+            <summary>
+            Sets a custom function to custom parse the license response.
+            The default implementation, setting this to null, will treat the entire response as the raw license data.
+            </summary>
+            <param name="responseParser">
+            Function to parse licence response.
+            First parameter is the DRM track being processed, either Video or Audio.
+            Second parameter is the byte[] containing the response we received from the license server.
+            Return is the byte[] which will be the raw license data, base64 decoding if necessary.
+            </param>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerLumin.GetFrameDropThresholdMs(System.Int32)">
+            <summary>
+            Gets the frame drop threshold.
+            </summary>
+            <param name="mediaPlayerID">ID of the media player</param>
+            <returns>The currently set millisecond threshold.</returns>
+        </member>
+        <member name="M:UnityEngine.XR.MagicLeap.MLMediaPlayerLumin.SetFrameDropThresholdMs(System.Int32,System.UInt64)">
+            <summary>
+            Sets a threshold to drop video frames if they are older than specified value.
+            Setting this to 0 will not drop any frames, this is the default behavior.
+            </summary>
+            <param name="mediaPlayerID">ID of the media player</param>
+            <param name="threshold">New threshold in milliseconds</param>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaPlayerInfo.Unknown">
+            <summary>
+            Unkown status
+            </summary>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaPlayerInfo.StartedAsNext">
+            <summary>
+            The player was started because it was used as the next player
+            </summary>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaPlayerInfo.RenderingStart">
+            <summary>
+            The player just pushed the very first video frame for rendering
+            </summary>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaPlayerInfo.Looping">
+            <summary>
+            The player just reached EOS and started from beginning loop.
+            </summary>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaPlayerInfo.VideoTrackLagging">
+            <summary>
+            The video is too complex for the decoder: it can't decode frames fast enough
+            </summary>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaPlayerInfo.BufferingStart">
+            <summary>
+            Media player is temporarily pausing playback
+            </summary>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaPlayerInfo.BufferingEnd">
+            <summary>
+            Media player is resuming playback after filling buffers
+            </summary>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaPlayerInfo.NetworkBandwidth">
+            <summary>
+            Network bandwidth info
+            </summary>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaPlayerInfo.BadInterleaving">
+            <summary>
+            Bad interleaving means that a media has been improperly interleaved
+            </summary>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaPlayerInfo.NotSeekable">
+            <summary>
+            The media is not seekable e.g live stream
+            </summary>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaPlayerInfo.MetadataUpdate">
+            <summary>
+            New media metadata is available
+            </summary>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaPlayerInfo.TimedTextError">
+            <summary>
+            Media timed text error
+            </summary>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaDRMKeyType.Streaming">
+            <summary>
+            This key request type specifies that the keys will be for online use, they will
+            not be saved to the device for subsequent use when the device is not connected to a network.
+            </summary>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaDRMKeyType.Offline">
+            <summary>
+            This key request type specifies that the keys will be for offline use, they
+            will be saved to the device for use when the device is not connected to a network.
+            </summary>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaDRMKeyType.Release">
+            <summary>
+            This key request type specifies that previously saved offline keys should be released.
+            </summary>
+        </member>
+        <member name="T:UnityEngine.XR.MagicLeap.MLMediaPlayerTrackType">
+            <summary>
+            MediaTrack types returned by MLMediaPlayerGetTrackType(...).
+            </summary>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaPlayerTrackType.Unknown">
+            <summary/>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaPlayerTrackType.Video">
+            <summary/>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaPlayerTrackType.Audio">
+            <summary/>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaPlayerTrackType.TimedText">
+            <summary/>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaPlayerTrackType.Subtitle">
+            <summary/>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLMediaPlayerTrackType.Metadata">
+            <summary/>
+        </member>
+        <member name="T:UnityEngine.XR.MagicLeap.MLCea608CaptionColor">
+            <summary>
+            Cea608 caption color code.
+            </summary>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLCea608CaptionColor.White">
+            <summary/>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLCea608CaptionColor.Green">
+            <summary/>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLCea608CaptionColor.Blue">
+            <summary/>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLCea608CaptionColor.Cyan">
+            <summary/>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLCea608CaptionColor.Red">
+            <summary/>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLCea608CaptionColor.Yellow">
+            <summary/>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLCea608CaptionColor.Magenta">
+            <summary/>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLCea608CaptionColor.Invalid">
+            <summary/>
+        </member>
+        <member name="T:UnityEngine.XR.MagicLeap.MLCea608CaptionStyle">
+            <summary>
+            Cea608 caption style code.
+            </summary>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLCea608CaptionStyle.Normal">
+            <summary/>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLCea608CaptionStyle.Italics">
+            <summary/>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLCea608CaptionStyle.Underline">
+            <summary/>
+        </member>
+        <member name="T:UnityEngine.XR.MagicLeap.MLCea608CaptionDimension">
+            <summary>
+            Cea608 Caption Dimension constants
+            </summary>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLCea608CaptionDimension.MLCea608_CCMaxRows">
+            <summary/>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLCea608CaptionDimension.MLCea608_CCMaxCols">
+            <summary/>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLCea608CaptionDimension.MLCea608_CCMaxRowsPlus2">
+            <summary/>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.MLCea608CaptionDimension.MLCea608_CCMaxColsPlus2">
+            <summary/>
+        </member>
+        <member name="T:UnityEngine.XR.MagicLeap.TrackData">
+            <summary>
+            Data for a specific track.
+            </summary>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.TrackData.id">
+            <summary/>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.TrackData.language">
+            <summary/>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.TrackData.type">
+            <summary/>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.TrackData.mimeType">
+            <summary> Mime format type of the track. </summary>
+        </member>
+        <member name="T:UnityEngine.XR.MagicLeap.SubtitleInfo">
+            <summary>
+            Structure which contains an array of all supported
+            close captioned track data.
+            </summary>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.SubtitleInfo.subtitleTracks">
+            <summary>Pointer to array of TrackData.</summary>
+        </member>
+        <member name="F:UnityEngine.XR.MagicLeap.SubtitleInfo.length">
+            <summary>Length of the array.</summary>
+        </member>
+        <member name="T:UnityEngine.XR.MagicLeap.MLCea608CaptionStyleColor">
+            <summary>
+            Cea608 caption style and color.
+            copied from ml_media_cea608_caption.h
+            </summary>
+        </member>
+        <member name="T:UnityEngine.XR.MagicLeap.MLCea608CaptionPAC">
+            <summary>
+            Cea608 caption preamble address code.
+            copied from ml_media_cea608_caption.h
+            </summary>
+        </member>
+        <member name="T:UnityEngine.XR.MagicLeap.MLCea608CaptionLineInternal">
+            <summary>
+            Cea608 caption line structure.
+            </summary>
+        </member>
+        <member name="T:UnityEngine.XR.MagicLeap.MLCea608CaptionSegmentInternal">
+            <summary>
+            Cea608 caption segment structure.
+            </summary>
+        </member>
+        <member name="T:UnityEngine.XR.MagicLeap.MLCea608CaptionLine">
+            <summary>
+            Cea608 caption line structure.
+            copied from ml_media_cea608_caption.h
+            </summary>
+        </member>
+        <member name="T:UnityEngine.XR.MagicLeap.MLCea608CaptionSegment">
+            <summary>
+            Cea608 caption segment structure.
+            copied from ml_media_cea608_caption.h
+            </summary>
+        </member>
+    </members>
+</doc>

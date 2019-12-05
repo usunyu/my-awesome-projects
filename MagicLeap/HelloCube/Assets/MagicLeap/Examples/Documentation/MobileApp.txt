@@ -1,0 +1,45 @@
+# Example Scene: Mobile App
+
+This example demonstrates and prescribes preferred methods for receiving input
+from a Magic Leap Mobile App (MLA).
+
+When an MLA is connected, this example shows the MLA connection status in the UI.
+A mobile phone model shows the state of the buttons and touch input. This model
+follows your mobile device with 3 DoF rotational data after calibration is completed.
+Positional data is not available for MLA. When an MLA is disconnected, the example
+also updates the MLA connection status in the UI.
+
+Controllers get ignored in this example and MLA connection status in the UI will
+show as disconnected if only a controller is connected.
+
+## Calibration
+- Press the MLA Home Button to enter calibration
+- Align your mobile device with the model on the scene
+- Press the MLA Home Button again to apply calibration and the model
+  rotate as you rotate your mobile phone.
+
+## Bumper - Bottom left button with 2 circles
+When you press the Bumper:
+- A ring around the bumper button on the mobile phone model lights up.
+
+## Home Button - Bottom middle button with the house icon
+When you release the Home Button:
+- A ring around the home button on the mobile phone model lights up for a short duration.
+- Calibration steps will get applied.
+
+## Trigger - Bottom right button with the 4 arrows
+When you press the Trigger button:
+- A ring around the trigger button on the mobile phone model lights up.
+- Note: the trigger value can only be 0 or 1 for the MLA.
+
+## Touchpad - Grid at the center of the app
+When you touch the Touchpad:
+- The touchpad on the mobile phone model shows the touch location, similar to what you see on the
+  actual MLA. A maximum of two touches can be detected.
+
+## Keyboard - Tap the keyboard icon on the upper right corner
+When you type on the Keyboard:
+- Printable characters appear on the keyboard input (left side). Note: you have to tap
+  **Submit** on the MLA.
+- The delete key (backspace) removes the last printable character entered. This key does
+  not require to tap Submit.

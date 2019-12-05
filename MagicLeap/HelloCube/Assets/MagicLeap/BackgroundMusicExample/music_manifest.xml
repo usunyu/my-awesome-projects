@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:ml="magicleap" ml:package="com.magicleap.musicservice" ml:version_code="1" ml:version_name="">
+    <application ml:min_api_level="6" ml:visible_name="Unity Music" ml:sdk_version="1.0">
+        <uses-privilege ml:name="LowLatencyLightwear" />
+        <uses-privilege ml:name="ConnectBackgroundMusicService" />
+        <uses-privilege ml:name="MusicService" />
+        <uses-privilege ml:name="RegisterBackgroundMusicService" />
+        <uses-privilege ml:name="ControllerPose" />
+        <component ml:name=".fullscreen"
+                ml:visible_name="Unity"
+                ml:binary_name="bin/Player.elf"
+                ml:type="Fullscreen">
+            <icon ml:model_folder="Icon/Model" ml:portal_folder="Icon/Portal" />
+        </component>
+        <component ml:name=".example_music_provider"
+                ml:visible_name="ExampleMusicProvider"
+                ml:binary_name="bin/ExampleMusicProvider"
+                ml:type="MusicService">
+            <music-attribute ml:name="seekable"/>
+            <music-attribute ml:name="shuffleable"/>
+            <music-attribute ml:name="songRepeatable"/>
+            <music-attribute ml:name="albumRepeatable"/>
+            <music-attribute ml:name="nextAvailable"/>
+            <music-attribute ml:name="prevAvailable"/>
+            <!-- <music-attribute ml:name="discoverable"/> Optional music attribute to make it discoverable, meaning, it runs at device boot -->
+            <icon ml:model_folder="Empty"
+                  ml:portal_folder="Empty" />
+        </component>
+    </application>
+</manifest>

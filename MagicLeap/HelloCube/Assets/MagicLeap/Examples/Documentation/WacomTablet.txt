@@ -1,0 +1,21 @@
+# Example Scene: WacomTablet
+
+This example demonstrates how to visualize information from the MLInput Tablet API.
+Once connected, the tablet will display which buttons are being pressed and the
+pen will respond by indicating position and pressure on the tablet. As you begin
+to draw the line thickness will change based on applied pressure and the color will
+reflect the selection from the color wheel.
+
+
+## Tablet Touch Ring
+Rotates through a list of 16 pre-defined colors.
+
+## Tablet Touch Ring - Button
+Clear the entire canvas instantly.
+
+## Drawing
+Used the pen on the tablet surface to draw with the selected color.
+
+## Erasing
+- Default Pen:  Use the opposite end of the pen while drawing to erase content.
+- Both Pens:    Hold the [Back] button on the pen while drawing to erase content.

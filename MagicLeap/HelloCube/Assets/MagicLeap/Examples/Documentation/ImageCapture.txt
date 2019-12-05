@@ -1,0 +1,7 @@
+# Example Scene: Image Capture
+
+This example demonstrates the functionality of using the camera
+in the device to capture an image.
+
+## Bumper
+- Captures an image and displays a preview in the user interface.

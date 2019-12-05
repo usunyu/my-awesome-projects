@@ -1,0 +1,16 @@
+# Example Scene: Hand Meshing
+
+This example demonstrates and prescribes preferred methods for hand meshing. The
+example provides a HandMeshingExample script that drives parameters of the 
+meshing API through the MLHandMeshingBehavior.
+
+The example uses Hand Gestures to control the rendering mode. Using your right hand,
+hold up the 'Ok' gesture for 2 seconds to switch to the next render mode.
+
+Render Modes:
+  Occlusion - Using an unlit black material, anything behind the hand
+    will be occluded.
+  Flat - The hand mesh will be rendered with an unlit white material
+  Wireframe - The hand mesh will be rendered with a wireframe material
+  Paused - The hand mesh will stop updating, freezing any mesh previously
+    acquired.

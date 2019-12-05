@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Parrot Talking
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Parrot_Geo
+    m_Weight: 0
+  - m_Path: Perch_GEO
+    m_Weight: 0
+  - m_Path: Perch_GEO/Rope_Geo
+    m_Weight: 0
+  - m_Path: Root_JNT
+    m_Weight: 0
+  - m_Path: Root_JNT/Spine_1_JNT
+    m_Weight: 0
+  - m_Path: Root_JNT/Spine_1_JNT/Spine_2_JNT
+    m_Weight: 0
+  - m_Path: Root_JNT/Spine_1_JNT/Spine_2_JNT/Spine_3_JNT
+    m_Weight: 0
+  - m_Path: Root_JNT/Spine_1_JNT/Spine_2_JNT/Spine_3_JNT/Neck_1_JNT
+    m_Weight: 0
+  - m_Path: Root_JNT/Spine_1_JNT/Spine_2_JNT/Spine_3_JNT/Neck_1_JNT/Neck_2_JNT
+    m_Weight: 0
+  - m_Path: Root_JNT/Spine_1_JNT/Spine_2_JNT/Spine_3_JNT/Neck_1_JNT/Neck_2_JNT/Head_JNT
+    m_Weight: 0
+  - m_Path: Root_JNT/Spine_1_JNT/Spine_2_JNT/Spine_3_JNT/Neck_1_JNT/Neck_2_JNT/Head_JNT/Lower_Beak_JNT
+    m_Weight: 1
+  - m_Path: Root_JNT/Spine_1_JNT/Spine_2_JNT/Spine_3_JNT/Neck_1_JNT/Neck_2_JNT/Head_JNT/Lower_Beak_JNT/Tongue_1_JNT
+    m_Weight: 1
+  - m_Path: Root_JNT/Spine_1_JNT/Spine_2_JNT/Spine_3_JNT/Neck_1_JNT/Neck_2_JNT/Head_JNT/Lower_Beak_JNT/Tongue_1_JNT/Tongue_2_JNT
+    m_Weight: 1
+  - m_Path: Root_JNT/Spine_1_JNT/Spine_2_JNT/Spine_3_JNT/Neck_1_JNT/Neck_2_JNT/Head_JNT/Lower_Beak_JNT/Tongue_1_JNT/Tongue_2_JNT/Tongue_3_JNT
+    m_Weight: 1
+  - m_Path: Root_JNT/Spine_1_JNT/Spine_2_JNT/Spine_3_JNT/Neck_1_JNT/Neck_2_JNT/Head_JNT/Lower_Beak_JNT/Tongue_1_JNT/Tongue_2_JNT/Tongue_tip_JNT
+    m_Weight: 1
+  - m_Path: Root_JNT/Tail_Base_JNT
+    m_Weight: 0
+  - m_Path: Root_JNT/Tail_Base_JNT/Tail_2_JNT
+    m_Weight: 0
+  - m_Path: Root_JNT/Tail_Base_JNT/Tail_2_JNT/Tail_3_JNT
+    m_Weight: 0
+  - m_Path: Root_JNT/Tail_Base_JNT/Tail_2_JNT/Tail_3_JNT/Tail_Tip_JNT
+    m_Weight: 0

@@ -1,0 +1,9 @@
+KIND = program
+SRCS = ExampleMusicProvider.cpp DecoderContext.cpp Utility.cpp MusicProviderContext.cpp
+INCS =
+
+USES = ml_sdk stdc++
+
+DEFS = ML_DEFAULT_LOG_TAG="ExampleMusicProvider"
+
+SHLIBS = ml_musicservice ml_musicservice_provider ml_mediacodec ml_mediaextractor ml_mediaformat ml_mediacodeclist ml_mediaerror

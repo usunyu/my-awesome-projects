@@ -1,0 +1,18 @@
+# Example Scene: Vignette
+
+This example scene demonstrates the Vignette effect, which allows the user to cycle
+between the Vignette modes: (Off, On, Mask) and adjust the power of the effect.
+This helps to gradually blend the edges of the FOV to remove the hard edge once the
+outer limit is reached.
+
+Upon launching the application it will begin with the Vignette mode set to: ON, with
+a power of 10 for the effect.
+
+## Bumper
+Cycle Vignette Mode
+
+## Trigger
+Adjust Vignette Power
+
+## Home Tap
+Reset

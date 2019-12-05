@@ -175,6 +175,9 @@ Learning by doing projects
 [ARCore](https://github.com/usunyu/my-awesome-projects/tree/master/ARCore):
 * Create ARCore App in Unity [[Tutorial](https://connect.unity.com/p/ji-zhu-zhi-bo-zai-unityzhong-chuang-jian-arcoreying-yong)]
 
+[MagicLeap](https://github.com/usunyu/my-awesome-projects/tree/master/MagicLeap):
+* Hello, Cube! Unity [[Tutorial](https://creator.magicleap.com/learn/guides/gsg-create-your-first-unity-app)]
+
 ## Blockchain
 
 [Dapp](https://github.com/usunyu/my-awesome-projects/tree/master/Dapp):

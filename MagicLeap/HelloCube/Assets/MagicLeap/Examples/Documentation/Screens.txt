@@ -1,0 +1,15 @@
+# Example Scene: Screens
+
+This example scene demonstrates and prescribes preferred methods for using the Screens API
+by displaying a streamed video at the location of the launched screens application.
+
+Going back to Universe should update the watch history for this application and the position
+of the launched screen if moved.
+
+Example set up:
+ - Launch Screens app in different locations
+
+If no screens are set up an red error will be displayed in the top right of the floating canvas
+
+## Bumper
+Holding the bumper will allow you to move the launched screen.
