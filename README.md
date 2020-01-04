@@ -43,10 +43,13 @@ Learning by doing projects
 * React Router tutorial for beginners [[YouTube](https://www.youtube.com/watch?v=91F8reC8kvo)]
 * Modern React with Redux [[Udemy](https://www.udemy.com/share/1000dWAkAfeVdVRQ==/)]
 * Server Side Rendering with React and Redux [[Udemy](https://www.udemy.com/share/100aViAkAfeVdVRQ==/)]
-* Learn Next.js [[Tutorial](https://nextjs.org/learn/basics/getting-started)]
 
 [Gatsby](https://github.com/usunyu/my-awesome-projects/tree/master/Gatsby):
 * Gatsby.js Tutorials [[Tutorial](https://www.gatsbyjs.org/tutorial/)]
+* Gatsby Theme Authoring [[Tutorial](https://egghead.io/courses/gatsby-theme-authoring)]
+
+[Next.js](https://github.com/usunyu/my-awesome-projects/tree/master/Nextjs)
+* Learn Next.js [[Tutorial](https://nextjs.org/learn/basics/getting-started)]
 
 [WebAssembly](https://github.com/usunyu/my-awesome-projects/tree/master/WebAssembly):
 * WebAssembly on MDN [[Tutorial](https://developer.mozilla.org/en-US/docs/WebAssembly)]
