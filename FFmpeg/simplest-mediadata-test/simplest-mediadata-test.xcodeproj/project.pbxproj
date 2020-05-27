@@ -32,7 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A4EA48982447F4330049B69F /* ffmpeg-tutorial */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ffmpeg-tutorial"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4EA48982447F4330049B69F /* simplest-mediadata-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "simplest-mediadata-test"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EA489B2447F4330049B69F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A4EA48A32447F5250049B69F /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.2.2_2/lib/libavformat.a; sourceTree = "<group>"; };
 		A4EA48A42447F5250049B69F /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.2.2_2/lib/libavutil.a; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		A4EA488F2447F4330049B69F = {
 			isa = PBXGroup;
 			children = (
-				A4EA489A2447F4330049B69F /* ffmpeg-tutorial */,
+				A4EA489A2447F4330049B69F /* simplest-mediadata-test */,
 				A4EA48992447F4330049B69F /* Products */,
 				A4EA48A22447F5250049B69F /* Frameworks */,
 			);
@@ -77,17 +77,17 @@
 		A4EA48992447F4330049B69F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A4EA48982447F4330049B69F /* ffmpeg-tutorial */,
+				A4EA48982447F4330049B69F /* simplest-mediadata-test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A4EA489A2447F4330049B69F /* ffmpeg-tutorial */ = {
+		A4EA489A2447F4330049B69F /* simplest-mediadata-test */ = {
 			isa = PBXGroup;
 			children = (
 				A4EA489B2447F4330049B69F /* main.cpp */,
 			);
-			path = "ffmpeg-tutorial";
+			path = "simplest-mediadata-test";
 			sourceTree = "<group>";
 		};
 		A4EA48A22447F5250049B69F /* Frameworks */ = {
@@ -109,9 +109,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A4EA48972447F4330049B69F /* ffmpeg-tutorial */ = {
+		A4EA48972447F4330049B69F /* simplest-mediadata-test */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A4EA489F2447F4330049B69F /* Build configuration list for PBXNativeTarget "ffmpeg-tutorial" */;
+			buildConfigurationList = A4EA489F2447F4330049B69F /* Build configuration list for PBXNativeTarget "simplest-mediadata-test" */;
 			buildPhases = (
 				A4EA48942447F4330049B69F /* Sources */,
 				A4EA48952447F4330049B69F /* Frameworks */,
@@ -121,9 +121,9 @@
 			);
 			dependencies = (
 			);
-			name = "ffmpeg-tutorial";
+			name = "simplest-mediadata-test";
 			productName = "ffmpeg-tutorial";
-			productReference = A4EA48982447F4330049B69F /* ffmpeg-tutorial */;
+			productReference = A4EA48982447F4330049B69F /* simplest-mediadata-test */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -140,7 +140,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A4EA48932447F4330049B69F /* Build configuration list for PBXProject "ffmpeg-tutorial" */;
+			buildConfigurationList = A4EA48932447F4330049B69F /* Build configuration list for PBXProject "simplest-mediadata-test" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -153,7 +153,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A4EA48972447F4330049B69F /* ffmpeg-tutorial */,
+				A4EA48972447F4330049B69F /* simplest-mediadata-test */,
 			);
 		};
 /* End PBXProject section */
@@ -302,7 +302,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A4EA48932447F4330049B69F /* Build configuration list for PBXProject "ffmpeg-tutorial" */ = {
+		A4EA48932447F4330049B69F /* Build configuration list for PBXProject "simplest-mediadata-test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A4EA489D2447F4330049B69F /* Debug */,
@@ -311,7 +311,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A4EA489F2447F4330049B69F /* Build configuration list for PBXNativeTarget "ffmpeg-tutorial" */ = {
+		A4EA489F2447F4330049B69F /* Build configuration list for PBXNativeTarget "simplest-mediadata-test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A4EA48A02447F4330049B69F /* Debug */,

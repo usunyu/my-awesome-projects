@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  ffmpeg-tutorial
+//  simplest-mediadata-test
 //
 //  Created by Yu Sun on 4/15/20.
 //  Copyright © 2020 usunyu. All rights reserved.
