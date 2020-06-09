@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A40ECBFE248CBEAA0042F6E3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A40ECBFD248CBEAA0042F6E3 /* main.cpp */; };
+		A40ECC0E248CBEE30042F6E3 /* libavutil.56.31.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECC05248CBEE20042F6E3 /* libavutil.56.31.100.dylib */; };
+		A40ECC0F248CBEE30042F6E3 /* libavresample.4.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECC06248CBEE20042F6E3 /* libavresample.4.0.0.dylib */; };
+		A40ECC10248CBEE30042F6E3 /* libavformat.58.29.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECC07248CBEE20042F6E3 /* libavformat.58.29.100.dylib */; };
+		A40ECC11248CBEE30042F6E3 /* libpostproc.55.5.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECC08248CBEE20042F6E3 /* libpostproc.55.5.100.dylib */; };
+		A40ECC12248CBEE30042F6E3 /* libavcodec.58.54.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECC09248CBEE20042F6E3 /* libavcodec.58.54.100.dylib */; };
+		A40ECC13248CBEE30042F6E3 /* libswscale.5.5.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECC0A248CBEE30042F6E3 /* libswscale.5.5.100.dylib */; };
+		A40ECC14248CBEE30042F6E3 /* libswresample.3.5.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECC0B248CBEE30042F6E3 /* libswresample.3.5.100.dylib */; };
+		A40ECC15248CBEE30042F6E3 /* libavdevice.58.8.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECC0C248CBEE30042F6E3 /* libavdevice.58.8.100.dylib */; };
+		A40ECC16248CBEE30042F6E3 /* libavfilter.7.57.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A40ECC0D248CBEE30042F6E3 /* libavfilter.7.57.100.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A40ECBF8248CBEAA0042F6E3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A40ECBFA248CBEAA0042F6E3 /* making-screencaps */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "making-screencaps"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A40ECBFD248CBEAA0042F6E3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A40ECC05248CBEE20042F6E3 /* libavutil.56.31.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.56.31.100.dylib; path = ../../../../../../../../usr/local/Cellar/ffmpeg/4.2.3_1/lib/libavutil.56.31.100.dylib; sourceTree = "<group>"; };
+		A40ECC06248CBEE20042F6E3 /* libavresample.4.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavresample.4.0.0.dylib; path = ../../../../../../../../usr/local/Cellar/ffmpeg/4.2.3_1/lib/libavresample.4.0.0.dylib; sourceTree = "<group>"; };
+		A40ECC07248CBEE20042F6E3 /* libavformat.58.29.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavformat.58.29.100.dylib; path = ../../../../../../../../usr/local/Cellar/ffmpeg/4.2.3_1/lib/libavformat.58.29.100.dylib; sourceTree = "<group>"; };
+		A40ECC08248CBEE20042F6E3 /* libpostproc.55.5.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpostproc.55.5.100.dylib; path = ../../../../../../../../usr/local/Cellar/ffmpeg/4.2.3_1/lib/libpostproc.55.5.100.dylib; sourceTree = "<group>"; };
+		A40ECC09248CBEE20042F6E3 /* libavcodec.58.54.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.58.54.100.dylib; path = ../../../../../../../../usr/local/Cellar/ffmpeg/4.2.3_1/lib/libavcodec.58.54.100.dylib; sourceTree = "<group>"; };
+		A40ECC0A248CBEE30042F6E3 /* libswscale.5.5.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.5.5.100.dylib; path = ../../../../../../../../usr/local/Cellar/ffmpeg/4.2.3_1/lib/libswscale.5.5.100.dylib; sourceTree = "<group>"; };
+		A40ECC0B248CBEE30042F6E3 /* libswresample.3.5.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswresample.3.5.100.dylib; path = ../../../../../../../../usr/local/Cellar/ffmpeg/4.2.3_1/lib/libswresample.3.5.100.dylib; sourceTree = "<group>"; };
+		A40ECC0C248CBEE30042F6E3 /* libavdevice.58.8.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavdevice.58.8.100.dylib; path = ../../../../../../../../usr/local/Cellar/ffmpeg/4.2.3_1/lib/libavdevice.58.8.100.dylib; sourceTree = "<group>"; };
+		A40ECC0D248CBEE30042F6E3 /* libavfilter.7.57.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavfilter.7.57.100.dylib; path = ../../../../../../../../usr/local/Cellar/ffmpeg/4.2.3_1/lib/libavfilter.7.57.100.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A40ECBF7248CBEAA0042F6E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A40ECC0E248CBEE30042F6E3 /* libavutil.56.31.100.dylib in Frameworks */,
+				A40ECC0F248CBEE30042F6E3 /* libavresample.4.0.0.dylib in Frameworks */,
+				A40ECC10248CBEE30042F6E3 /* libavformat.58.29.100.dylib in Frameworks */,
+				A40ECC11248CBEE30042F6E3 /* libpostproc.55.5.100.dylib in Frameworks */,
+				A40ECC12248CBEE30042F6E3 /* libavcodec.58.54.100.dylib in Frameworks */,
+				A40ECC13248CBEE30042F6E3 /* libswscale.5.5.100.dylib in Frameworks */,
+				A40ECC14248CBEE30042F6E3 /* libswresample.3.5.100.dylib in Frameworks */,
+				A40ECC15248CBEE30042F6E3 /* libavdevice.58.8.100.dylib in Frameworks */,
+				A40ECC16248CBEE30042F6E3 /* libavfilter.7.57.100.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A40ECBF1248CBEAA0042F6E3 = {
+			isa = PBXGroup;
+			children = (
+				A40ECBFC248CBEAA0042F6E3 /* making-screencaps */,
+				A40ECBFB248CBEAA0042F6E3 /* Products */,
+				A40ECC04248CBEE20042F6E3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A40ECBFB248CBEAA0042F6E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A40ECBFA248CBEAA0042F6E3 /* making-screencaps */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A40ECBFC248CBEAA0042F6E3 /* making-screencaps */ = {
+			isa = PBXGroup;
+			children = (
+				A40ECBFD248CBEAA0042F6E3 /* main.cpp */,
+			);
+			path = "making-screencaps";
+			sourceTree = "<group>";
+		};
+		A40ECC04248CBEE20042F6E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A40ECC09248CBEE20042F6E3 /* libavcodec.58.54.100.dylib */,
+				A40ECC0C248CBEE30042F6E3 /* libavdevice.58.8.100.dylib */,
+				A40ECC0D248CBEE30042F6E3 /* libavfilter.7.57.100.dylib */,
+				A40ECC07248CBEE20042F6E3 /* libavformat.58.29.100.dylib */,
+				A40ECC06248CBEE20042F6E3 /* libavresample.4.0.0.dylib */,
+				A40ECC05248CBEE20042F6E3 /* libavutil.56.31.100.dylib */,
+				A40ECC08248CBEE20042F6E3 /* libpostproc.55.5.100.dylib */,
+				A40ECC0B248CBEE30042F6E3 /* libswresample.3.5.100.dylib */,
+				A40ECC0A248CBEE30042F6E3 /* libswscale.5.5.100.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A40ECBF9248CBEAA0042F6E3 /* making-screencaps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A40ECC01248CBEAA0042F6E3 /* Build configuration list for PBXNativeTarget "making-screencaps" */;
+			buildPhases = (
+				A40ECBF6248CBEAA0042F6E3 /* Sources */,
+				A40ECBF7248CBEAA0042F6E3 /* Frameworks */,
+				A40ECBF8248CBEAA0042F6E3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "making-screencaps";
+			productName = "making-screencaps";
+			productReference = A40ECBFA248CBEAA0042F6E3 /* making-screencaps */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A40ECBF2248CBEAA0042F6E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = usunyu;
+				TargetAttributes = {
+					A40ECBF9248CBEAA0042F6E3 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = A40ECBF5248CBEAA0042F6E3 /* Build configuration list for PBXProject "making-screencaps" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A40ECBF1248CBEAA0042F6E3;
+			productRefGroup = A40ECBFB248CBEAA0042F6E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A40ECBF9248CBEAA0042F6E3 /* making-screencaps */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A40ECBF6248CBEAA0042F6E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A40ECBFE248CBEAA0042F6E3 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A40ECBFF248CBEAA0042F6E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A40ECC00248CBEAA0042F6E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A40ECC02248CBEAA0042F6E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/ffmpeg/4.2.3_1/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A40ECC03248CBEAA0042F6E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/ffmpeg/4.2.3_1/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A40ECBF5248CBEAA0042F6E3 /* Build configuration list for PBXProject "making-screencaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A40ECBFF248CBEAA0042F6E3 /* Debug */,
+				A40ECC00248CBEAA0042F6E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A40ECC01248CBEAA0042F6E3 /* Build configuration list for PBXNativeTarget "making-screencaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A40ECC02248CBEAA0042F6E3 /* Debug */,
+				A40ECC03248CBEAA0042F6E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A40ECBF2248CBEAA0042F6E3 /* Project object */;
+}
