@@ -123,6 +123,8 @@ Learning by doing projects
 ## Media
 
 [FFmpeg](https://github.com/usunyu/my-awesome-projects/tree/master/FFmpeg):
+* How to Write a Video Player in Less Than 1000 Lines [[Tutorial](http://dranger.com/ffmpeg/)]
+* Simplest FFmpeg Picture Encoder [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/25346147)] [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_picture_encoder)]
 * Simplest FFmpeg Video Encoder (YUV to H.264) [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/25430425)] [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_video_encoder)]
 * Simplest FFmpeg Video Decoder [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/46889389)] [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_player/tree/master/simplest_ffmpeg_decoder)]
 * Simplest FFmpeg Streamer (RTMP example) [[Tutorial](http://blog.csdn.net/leixiaohua1020/article/details/39803457)] [[Github](https://github.com/leixiaohua1020/simplest_ffmpeg_streamer)]
