@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:playing-sound/playing-sound.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:outputting-to-the-screen/outputting-to-the-screen.xcodeproj">
    </FileRef>
    <FileRef
