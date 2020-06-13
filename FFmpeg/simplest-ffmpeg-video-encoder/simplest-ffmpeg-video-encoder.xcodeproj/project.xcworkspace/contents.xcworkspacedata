@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:FFmpegVideoStreamerSample.xcodeproj">
+      location = "self:simplest-ffmpeg-video-encoder.xcodeproj">
    </FileRef>
 </Workspace>
