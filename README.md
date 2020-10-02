@@ -193,3 +193,7 @@ Learning by doing projects
 * Ethereum Pet Shop [[Tutorial](http://truffleframework.com/tutorials/pet-shop)]
 * Crypto Zombies [[Tutorial](https://cryptozombies.io/en/course/)]
 
+## Fintech
+
+[Algorithmic Trading](https://github.com/usunyu/my-awesome-projects/tree/master/Algorithmic%20Trading):
+* Python for Financial Analysis and Algorithmic Trading [[Udemy](https://www.udemy.com/course/python-for-finance-and-trading-algorithms/)]
