@@ -103,6 +103,7 @@ Learning by doing projects
 [Firebase](https://github.com/usunyu/my-awesome-projects/tree/master/Firebase):
 * Firebase Firestore Tutorial [[Youtube](https://www.youtube.com/watch?v=4d-gIPGzmK4&list=PL4cUxeGkcC9itfjle0ji1xOZ2cjRGY_WB)]
 * Firebase Authentication Tutorial [[Youtube](https://www.youtube.com/watch?v=aN1LnNq4z54&list=PL4cUxeGkcC9jUPIes_B8vRjn1_GaplOPQ)]
+* Firebase Functions Tutorial [[Youtube](https://www.youtube.com/watch?v=udHm7I_OvJs&list=PL4cUxeGkcC9i_aLkr62adUTJi53y7OjOf&index=1)]
 
 ## Big Data
 
