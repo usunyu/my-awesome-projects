@@ -1,5 +1,5 @@
 
-const functions = require('firebase-functions');
+const functions = require("firebase-functions");
 
 // http request 1
 exports.randomNumber = functions.https.onRequest((request, response) => {
@@ -10,5 +10,11 @@ exports.randomNumber = functions.https.onRequest((request, response) => {
 
 // http request 2
 exports.toMySite = functions.https.onRequest((request, response) => {
-  response.redirect('https://usunyu.com/');
+  response.redirect("https://usunyu.com/");
+});
+
+// http callable function
+exports.sayHello = functions.https.onCall((data, context) => {
+  const name = data.name;
+  return `hello ${name} :)`;
 });
