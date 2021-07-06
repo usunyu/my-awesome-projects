@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tutorial Requests</title>
     <!-- stylesheets -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+
+    <!-- auth modals -->
+    <div class="auth open">
+      <div class="modal active">
+        <h2>Login</h2>
+        <form class="login">
+          <input type="text" name="email" placeholder="Email">
+          <input type="password" name="password" placeholder="Password">
+          <button>Login</button>
+          <p class="error"></p>
+        </form>
+        <div>No account? <a class="switch">Register instead</a></div>
+      </div>
+      <div class="modal">
+        <h2>Register</h2>
+        <form class="register">
+          <input type="text" name="email" placeholder="Email">
+          <input type="password" name="password" placeholder="Password">
+          <button>Register</button>
+          <p class="error"></p>
+        </form>
+        <div>Got an account? <a class="switch">Login instead</a></div>
+      </div>
+    </div>
 
     <!-- new request modal -->
     <div class="new-request">
       <div class="modal">
         <h2>Request a Tutorial</h2>
         <form>
-          <input type="text" name="request" placeholder="Request...">
+          <input type="text" name="request" placeholder="Request..." />
           <button>Submit Request</button>
           <p class="error"></p>
         </form>
       </div>
     </div>
-    
+
     <header>
       <nav>
         <a class="add-request">add request</a>
@@ -31,7 +58,7 @@
 
     <section class="content">
       <h1>Tutorial Requests</h1>
-      <ul class="request-list"> 
+      <ul class="request-list">
         <li>
           <span class="text">Laravel 6 tutorial</span>
           <div>
@@ -44,14 +71,15 @@
     </section>
 
     <!-- update the version number as needed -->
-    <script src="/__/firebase/7.7.0/firebase-app.js"></script>
+    <script src="/__/firebase/8.7.0/firebase-app.js"></script>
     <!-- include only the Firebase features as you need -->
-    <script src="/__/firebase/7.7.0/firebase-auth.js"></script>
-    <script src="/__/firebase/7.7.0/firebase-firestore.js"></script>
-    <script src="/__/firebase/7.7.0/firebase-functions.js"></script>
+    <script src="/__/firebase/8.7.0/firebase-auth.js"></script>
+    <script src="/__/firebase/8.7.0/firebase-firestore.js"></script>
+    <script src="/__/firebase/8.7.0/firebase-functions.js"></script>
     <!-- initialize the SDK after all desired features are loaded -->
     <script src="/__/firebase/init.js"></script>
-    
+
     <script src="js/app.js"></script>
+    <script src="js/auth.js"></script>
   </body>
 </html>

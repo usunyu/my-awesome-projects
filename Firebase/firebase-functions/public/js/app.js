@@ -19,7 +19,7 @@ button.addEventListener('click', () => {
   // get function reference
   const sayHello = firebase.functions().httpsCallable('sayHello');
   // call the function and pass data
-  sayHello({ name: 'Shaun' }).then(result => {
+  sayHello({ name: 'Yu' }).then(result => {
     console.log(result.data);
   });
 });
