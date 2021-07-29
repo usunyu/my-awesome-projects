@@ -110,6 +110,11 @@ Learning by doing projects
 [Hadoop](https://github.com/usunyu/my-awesome-projects/tree/master/Hadoop):
 * Become a Certified Hadoop Developer [[Udemy](https://www.udemy.com/share/1007h8AkAfeVdVRQ==/)]
 
+## Data Science
+
+[Statistics and Probability](https://github.com/usunyu/my-awesome-projects/tree/master/Statistics):
+* Statistics and Probability: Your first steps on the road to data science [[YouTube](https://www.youtube.com/watch?v=w1Aozoynr6M)]
+
 ## Machine Learning
 
 [Core ML](https://github.com/usunyu/my-awesome-projects/tree/master/Core%20ML):
