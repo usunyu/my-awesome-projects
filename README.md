@@ -81,7 +81,7 @@ Learning by doing projects
 * The RSpec Book [[Book](https://amzn.to/2XDLKQs)]
 
 [Flask](https://github.com/usunyu/my-awesome-projects/tree/master/Flask):
-* Creating a RESTFul API with Python and Flask[[YouTube](https://www.youtube.com/playlist?list=PLXmMXHVSvS-AFMUmbBeIfL3PqTvgw8ygb)]
+* Creating a RESTFul API with Python and Flask [[YouTube](https://www.youtube.com/playlist?list=PLXmMXHVSvS-AFMUmbBeIfL3PqTvgw8ygb)]
 
 [Django](https://github.com/usunyu/my-awesome-projects/tree/master/Django):
 * Writing your first Django app [[Tutorial](https://docs.djangoproject.com/en/dev/intro/tutorial01/)]
@@ -111,6 +111,9 @@ Learning by doing projects
 * Become a Certified Hadoop Developer [[Udemy](https://www.udemy.com/share/1007h8AkAfeVdVRQ==/)]
 
 ## Data Science
+
+[Pandas](https://github.com/usunyu/my-awesome-projects/tree/master/Pandas):
+* Python Pandas Tutorial [[YouTube](https://www.youtube.com/watch?v=ZyhVh-qRZPA&list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS)]
 
 [Statistics and Probability](https://github.com/usunyu/my-awesome-projects/tree/master/Statistics):
 * Statistics and Probability: Your first steps on the road to data science [[YouTube](https://www.youtube.com/watch?v=w1Aozoynr6M)]
