@@ -112,6 +112,9 @@ Learning by doing projects
 
 ## Data Science
 
+[NumPy](https://github.com/usunyu/my-awesome-projects/tree/master/NumPy)
+* Complete Python NumPy Tutorial [[YouTube](https://www.youtube.com/watch?v=GB9ByFAIAH4)]
+
 [Pandas](https://github.com/usunyu/my-awesome-projects/tree/master/Pandas):
 * Python Pandas Tutorial [[YouTube](https://www.youtube.com/watch?v=ZyhVh-qRZPA&list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS)]
 
