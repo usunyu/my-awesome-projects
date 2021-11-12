@@ -105,6 +105,11 @@ Learning by doing projects
 * Firebase Authentication Tutorial [[Youtube](https://www.youtube.com/watch?v=aN1LnNq4z54&list=PL4cUxeGkcC9jUPIes_B8vRjn1_GaplOPQ)]
 * Firebase Functions Tutorial [[Youtube](https://www.youtube.com/watch?v=udHm7I_OvJs&list=PL4cUxeGkcC9i_aLkr62adUTJi53y7OjOf&index=1)]
 
+## Database
+
+[MongoDB](https://github.com/usunyu/my-awesome-projects/tree/master/MongoDB):
+* MongoDB with Python Crash Course - Tutorial for Beginners [[Youtube](https://www.youtube.com/watch?v=E-1xI85Zog8)]
+
 ## Big Data
 
 [Hadoop](https://github.com/usunyu/my-awesome-projects/tree/master/Hadoop):
