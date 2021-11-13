@@ -81,6 +81,7 @@ Learning by doing projects
 * The RSpec Book [[Book](https://amzn.to/2XDLKQs)]
 
 [Flask](https://github.com/usunyu/my-awesome-projects/tree/master/Flask):
+* Flask Tutorial [[Tutorial](https://flask.palletsprojects.com/en/2.0.x/tutorial/)]
 * Creating a RESTFul API with Python and Flask [[YouTube](https://www.youtube.com/playlist?list=PLXmMXHVSvS-AFMUmbBeIfL3PqTvgw8ygb)]
 
 [Django](https://github.com/usunyu/my-awesome-projects/tree/master/Django):
