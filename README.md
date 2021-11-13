@@ -109,6 +109,7 @@ Learning by doing projects
 
 [MongoDB](https://github.com/usunyu/my-awesome-projects/tree/master/MongoDB):
 * MongoDB with Python Crash Course - Tutorial for Beginners [[Youtube](https://www.youtube.com/watch?v=E-1xI85Zog8)]
+* MongoDB Crash Course With Python 2021 [[Youtube](https://www.youtube.com/watch?v=qWYx5neOh2s)]
 
 ## Big Data
 
