@@ -19,13 +19,20 @@ Learning by doing projects
 [Socket](https://github.com/usunyu/my-awesome-projects/tree/master/Socket):
 * Learn Socket Programming in C from Scratch [[Udemy](https://www.udemy.com/share/1008p6AkAfeVdVRQ==/)]
 
+## Concurrency
+
+[Multithreading](https://github.com/usunyu/my-awesome-projects/tree/master/Concurrency):
+* Java Multithreading [[Udemy](https://www.udemy.com/share/10043OAkAfeVdVRQ==/)]
+
+## Parallelism
+
+[Parallelism](https://github.com/usunyu/my-awesome-projects/tree/master/Parallelism):
+* Parallel Programming with Python [[Tutorial](https://chryswoods.com/parallel_python/README.html)]
+
 ## Architect
 
 [Design Patterns](https://github.com/usunyu/my-awesome-projects/tree/master/Design%20Pattern):
 * Design Patterns Video Tutorial [[YouTube](https://www.youtube.com/watch?v=vNHpsC5ng_E&list=PLF206E906175C7E07&index=1)]
-
-[Multithreading](https://github.com/usunyu/my-awesome-projects/tree/master/Multithreading):
-* Java Multithreading [[Udemy](https://www.udemy.com/share/10043OAkAfeVdVRQ==/)]
 
 ## Web Application
 
