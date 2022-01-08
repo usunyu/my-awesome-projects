@@ -1,7 +1,8 @@
 import sys
+from functools import reduce
 
-input_files = sys.argv
-input_files.pop(0)
+input_files = sys.argv[1:]
+
 
 def count_lines(input_file: str):
     with open(input_file) as f:
@@ -11,4 +12,13 @@ def count_lines(input_file: str):
 # for input_file in input_files:
 #     print(count_lines(input_file))
 
-print(sum(list(map(count_lines, input_files))))
+
+print(list(zip(input_files, map(count_lines, input_files))))
+
+
+def add(a: float, b: float) -> float:
+    return a + b
+
+
+total = reduce(add, map(count_lines, input_files))
+print(f"Total: {total}")
