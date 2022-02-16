@@ -219,8 +219,9 @@ Learning by doing projects
 * Ethereum Pet Shop [[Tutorial](http://truffleframework.com/tutorials/pet-shop)]
 * Crypto Zombies [[Tutorial](https://cryptozombies.io/en/course/)]
 
-## Fintech
+## Algorithmic Trading
 
 [Algorithmic Trading](https://github.com/usunyu/my-awesome-projects/tree/master/Algorithmic%20Trading):
 * Python for Financial Analysis and Algorithmic Trading [[Udemy](https://www.udemy.com/course/python-for-finance-and-trading-algorithms/)]
 * Binance API Tutorial [[Tutorial](https://www.youtube.com/watch?v=rvhnz1yBHgQ&list=PLvzuUVysUFOuB1kJQ3S2G-nB7_nHhD7Ay&index=1)]
+* Python for Algorithmic Trading: From Idea to Cloud Deployment [[Book](https://www.amazon.com/Python-Algorithmic-Trading-Cloud-Deployment/dp/149205335X)]
