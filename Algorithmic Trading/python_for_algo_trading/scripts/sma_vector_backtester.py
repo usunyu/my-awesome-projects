@@ -18,29 +18,29 @@ class SMAVectorBacktester(object):
     Attributes
     ==========
     symbol: str
-    RIC symbol with which to work
+        RIC symbol with which to work
     SMA1: int
-    time window in days for shorter SMA
+        time window in days for shorter SMA
     SMA2: int
-    time window in days for longer SMA
+        time window in days for longer SMA
     start: str
-    start date for data retrieval
+        start date for data retrieval
     end: str
-    end date for data retrieval
+        end date for data retrieval
     Methods
     =======
     get_data:
-    retrieves and prepares the base data set
+        retrieves and prepares the base data set
     set_parameters:
-    sets one or two new SMA parameters
+        sets one or two new SMA parameters
     run_strategy:
-    runs the backtest for the SMA-based strategy
+        runs the backtest for the SMA-based strategy
     plot_results:
-    plots the performance of the strategy compared to the symbol
+        plots the performance of the strategy compared to the symbol
     update_and_run:
-    updates SMA parameters and returns the (negative) absolute performance
+        updates SMA parameters and returns the (negative) absolute performance
     optimize_parameters:
-    implements a brute force optimization for the two SMA parameters
+        implements a brute force optimization for the two SMA parameters
     '''
 
     def __init__(self, symbol, SMA1, SMA2, start, end):

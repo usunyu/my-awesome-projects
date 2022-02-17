@@ -3,6 +3,7 @@ argon2-cffi==21.3.0
 argon2-cffi-bindings==21.2.0
 asttokens==2.0.5
 attrs==21.4.0
+autopep8==1.6.0
 Babel==2.9.1
 backcall==0.2.0
 black==22.1.0
@@ -26,6 +27,7 @@ ipython==8.0.1
 ipython-genutils==0.2.0
 jedi==0.18.1
 Jinja2==3.0.3
+joblib==1.1.0
 json5==0.9.6
 jsonschema==4.4.0
 jupyter-client==7.1.2
@@ -63,6 +65,7 @@ prometheus-client==0.13.1
 prompt-toolkit==3.0.28
 ptyprocess==0.7.0
 pure-eval==0.2.2
+pycodestyle==2.8.0
 pycparser==2.21
 Pygments==2.11.2
 pyparsing==3.0.7
@@ -71,6 +74,7 @@ python-dateutil==2.8.2
 pytz==2021.3
 pyzmq==22.3.0
 requests==2.27.1
+scikit-learn==1.0.2
 scipy==1.8.0
 Send2Trash==1.8.0
 six==1.16.0
@@ -79,6 +83,8 @@ stack-data==0.1.4
 tables==3.7.0
 terminado==0.13.1
 testpath==0.5.0
+threadpoolctl==3.1.0
+toml==0.10.2
 tomli==2.0.1
 tornado==6.1
 traitlets==5.1.1
