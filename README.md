@@ -224,4 +224,5 @@ Learning by doing projects
 [Algorithmic Trading](https://github.com/usunyu/my-awesome-projects/tree/master/Algorithmic%20Trading):
 * Python for Financial Analysis and Algorithmic Trading [[Udemy](https://www.udemy.com/course/python-for-finance-and-trading-algorithms/)]
 * Binance API Tutorial [[Tutorial](https://www.youtube.com/watch?v=rvhnz1yBHgQ&list=PLvzuUVysUFOuB1kJQ3S2G-nB7_nHhD7Ay&index=1)]
+* Predicting Stock Prices with Linear Regression in Python [[Tutorial](https://www.alpharithms.com/predicting-stock-prices-with-linear-regression-214618/)]
 * Python for Algorithmic Trading: From Idea to Cloud Deployment [[Book](https://www.amazon.com/Python-Algorithmic-Trading-Cloud-Deployment/dp/149205335X)]
