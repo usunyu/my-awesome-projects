@@ -141,6 +141,9 @@ Learning by doing projects
 * Super Impressive and Easy Face Detection using Vision API in Swift 4 [[Youtube](https://www.youtube.com/watch?v=d0U5j89M6aI)]
 * Real Time Camera Object Detection with Machine Learning - Swift 4 [[Youtube](https://www.youtube.com/watch?v=p6GA8ODlnX0)]
 
+[Linear Regression](https://github.com/usunyu/my-awesome-projects/tree/master/Linear%20Regression):
+* Multiple Linear Regression Using Python and Scikit-learn [[Tutorial](https://www.analyticsvidhya.com/blog/2021/05/multiple-linear-regression-using-python-and-scikit-learn/)]
+
 ## Computer Vision
 
 [OpenCV](https://github.com/usunyu/my-awesome-projects/tree/master/OpenCV):
