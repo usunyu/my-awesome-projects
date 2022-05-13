@@ -224,6 +224,9 @@ Learning by doing projects
 
 ## Algorithmic Trading
 
+[Arbitrage](https://github.com/usunyu/my-awesome-projects/tree/master/Arbitrage):
+* Triangular Arbitrage for Crypto with Python [[Udemy](https://www.udemy.com/course/triangular-arbitrage/)]
+
 [Algorithmic Trading](https://github.com/usunyu/my-awesome-projects/tree/master/Algorithmic%20Trading):
 * Python for Financial Analysis and Algorithmic Trading [[Udemy](https://www.udemy.com/course/python-for-finance-and-trading-algorithms/)]
 * Binance API Tutorial [[Tutorial](https://www.youtube.com/watch?v=rvhnz1yBHgQ&list=PLvzuUVysUFOuB1kJQ3S2G-nB7_nHhD7Ay&index=1)]

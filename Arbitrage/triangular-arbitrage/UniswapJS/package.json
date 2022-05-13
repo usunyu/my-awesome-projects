@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "ethers": "^5.5.2",
+    "web3": "^1.6.1"
+  },
+  "devDependencies": {
+    "@uniswap/sdk-core": "^3.0.1",
+    "@uniswap/v3-sdk": "^3.6.3"
+  }
+}
