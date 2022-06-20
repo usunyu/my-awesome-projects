@@ -227,6 +227,7 @@ Learning by doing projects
 [Arbitrage](https://github.com/usunyu/my-awesome-projects/tree/master/Arbitrage):
 * Triangular Arbitrage for Crypto with Python [[Udemy](https://www.udemy.com/course/triangular-arbitrage/)]
 * Statistical Arbitrage Bot Build in Crypto with Python [[Udemy](https://www.udemy.com/course/statistical-arbitrage-bot-build-in-crypto-with-python-a-z/)]
+* Crypto Trading Execution with Flash Loans, Web3 and Hardhat [[Udemy](https://www.udemy.com/course/crypto-trading-execution-with-flash-loans-web3-and-hardhat/)]
 
 [Algorithmic Trading](https://github.com/usunyu/my-awesome-projects/tree/master/Algorithmic%20Trading):
 * Python for Financial Analysis and Algorithmic Trading [[Udemy](https://www.udemy.com/course/python-for-finance-and-trading-algorithms/)]
