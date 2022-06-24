@@ -1,0 +1,33 @@
+{
+  "name": "defi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t4sk/defi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/t4sk/defi/issues"
+  },
+  "homepage": "https://github.com/t4sk/defi#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.2",
+    "ganache-cli": "^6.12.2",
+    "truffle": "^5.4.16"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "bn.js": "^5.2.0",
+    "eslint": "^8.1.0",
+    "prettier": "^2.4.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.18"
+  }
+}

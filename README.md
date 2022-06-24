@@ -222,6 +222,9 @@ Learning by doing projects
 * Ethereum Pet Shop [[Tutorial](http://truffleframework.com/tutorials/pet-shop)]
 * Crypto Zombies [[Tutorial](https://cryptozombies.io/en/course/)]
 
+[DeFi](https://github.com/usunyu/my-awesome-projects/tree/master/DeFi)
+* DeFi by Example [[Tutorial](https://www.youtube.com/watch?v=qB2Ulx201wY&list=PLO5VPQH6OWdX-Rh7RonjZhOd9pb9zOnHW)]
+
 ## Algorithmic Trading
 
 [Arbitrage](https://github.com/usunyu/my-awesome-projects/tree/master/Arbitrage):
