@@ -222,6 +222,7 @@ Learning by doing projects
 * Crypto Zombies [[Tutorial](https://cryptozombies.io/en/course/)]
 
 [DeFi](https://github.com/usunyu/my-awesome-projects/tree/master/DeFi)
+* Uniswap Tutorial for Developers (Solidity & Javascript) [[Youtube]](https://www.youtube.com/watch?v=0Im5iaYoz1Y)
 * DeFi by Example [[Tutorial](https://www.youtube.com/watch?v=qB2Ulx201wY&list=PLO5VPQH6OWdX-Rh7RonjZhOd9pb9zOnHW)]
 
 ## Algorithmic Trading
