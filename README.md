@@ -124,7 +124,11 @@ Learning by doing projects
 [Hadoop](https://github.com/usunyu/my-awesome-projects/tree/master/Hadoop):
 * Become a Certified Hadoop Developer [[Udemy](https://www.udemy.com/share/1007h8AkAfeVdVRQ==/)]
 
-## Data Science
+## Machine Learning
+
+[Core ML](https://github.com/usunyu/my-awesome-projects/tree/master/Core%20ML):
+* Super Impressive and Easy Face Detection using Vision API in Swift 4 [[Youtube](https://www.youtube.com/watch?v=d0U5j89M6aI)]
+* Real Time Camera Object Detection with Machine Learning - Swift 4 [[Youtube](https://www.youtube.com/watch?v=p6GA8ODlnX0)]
 
 [NumPy](https://github.com/usunyu/my-awesome-projects/tree/master/NumPy)
 * Complete Python NumPy Tutorial [[YouTube](https://www.youtube.com/watch?v=GB9ByFAIAH4)]
@@ -132,21 +136,13 @@ Learning by doing projects
 [Pandas](https://github.com/usunyu/my-awesome-projects/tree/master/Pandas):
 * Python Pandas Tutorial [[YouTube](https://www.youtube.com/watch?v=ZyhVh-qRZPA&list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS)]
 
-[Statistics and Probability](https://github.com/usunyu/my-awesome-projects/tree/master/Statistics):
+[Statistics](https://github.com/usunyu/my-awesome-projects/tree/master/Statistics):
 * Statistics and Probability: Your first steps on the road to data science [[YouTube](https://www.youtube.com/watch?v=w1Aozoynr6M)]
-
-## Machine Learning
-
-[Core ML](https://github.com/usunyu/my-awesome-projects/tree/master/Core%20ML):
-* Super Impressive and Easy Face Detection using Vision API in Swift 4 [[Youtube](https://www.youtube.com/watch?v=d0U5j89M6aI)]
-* Real Time Camera Object Detection with Machine Learning - Swift 4 [[Youtube](https://www.youtube.com/watch?v=p6GA8ODlnX0)]
-
-[OpenCV](https://github.com/usunyu/my-awesome-projects/tree/master/OpenCV):
-* Simple OpenCV Stitcher [[Github](https://github.com/prateekvjoshi/PanoStitch)]
 
 [Sklearn](https://github.com/usunyu/my-awesome-projects/tree/master/Sklearn):
 * Multiple Linear Regression Using Python and Scikit-learn [[Tutorial](https://www.analyticsvidhya.com/blog/2021/05/multiple-linear-regression-using-python-and-scikit-learn/)]
 * Machine Learning Tutorial Python [[Youtube](https://www.youtube.com/watch?v=gmvvaobm7eQ&list=PLeo1K3hjS3uvCeTYTeyfe0-rN5r8zn9rw)]
+* Data Science and Machine Learning with Python [[Skillshare](https://www.skillshare.com/en/classes/Data-Science-and-Machine-Learning-with-Python/1489151284)]
 
 ## Media
 
@@ -163,6 +159,9 @@ Learning by doing projects
 
 [Video Player](https://github.com/usunyu/my-awesome-projects/tree/master/Video%20Player):
 * TextureView SurfaceTexture OpenGL Video Player [[Tutorial](http://www.jianshu.com/p/d3d3186eefcb)]
+
+[OpenCV](https://github.com/usunyu/my-awesome-projects/tree/master/OpenCV):
+* Simple OpenCV Stitcher [[Github](https://github.com/prateekvjoshi/PanoStitch)]
 
 ## Graphic
 
