@@ -224,7 +224,7 @@ Learning by doing projects
 * Uniswap Tutorial for Developers (Solidity & Javascript) [[Youtube]](https://www.youtube.com/watch?v=0Im5iaYoz1Y)
 * DeFi by Example [[Tutorial](https://www.youtube.com/watch?v=qB2Ulx201wY&list=PLO5VPQH6OWdX-Rh7RonjZhOd9pb9zOnHW)]
 
-## Algorithmic Trading
+## Quant
 
 [Arbitrage](https://github.com/usunyu/my-awesome-projects/tree/master/Arbitrage):
 * Triangular Arbitrage for Crypto with Python [[Udemy](https://www.udemy.com/course/triangular-arbitrage/)]
