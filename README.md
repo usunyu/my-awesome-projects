@@ -69,6 +69,10 @@ Learning by doing projects
 * Brian Advent Tutorials [[YouTube](https://www.youtube.com/channel/UCysEngjfeIYapEER9K8aikw/playlists)]
 * Speech Recognition Tutorial for iOS [[Tutorial](https://www.raywenderlich.com/155752/speech-recognition-tutorial-ios)]
 
+[Core ML](https://github.com/usunyu/my-awesome-projects/tree/master/Core%20ML):
+* Super Impressive and Easy Face Detection using Vision API in Swift 4 [[Youtube](https://www.youtube.com/watch?v=d0U5j89M6aI)]
+* Real Time Camera Object Detection with Machine Learning - Swift 4 [[Youtube](https://www.youtube.com/watch?v=p6GA8ODlnX0)]
+
 [React Native](https://github.com/usunyu/my-awesome-projects/tree/master/React%20Native/):
 * The Complete React Native and Redux Course [[Udemy](https://www.udemy.com/share/1001rgAkAfeVdVRQ==/)]
 
@@ -125,10 +129,6 @@ Learning by doing projects
 * Become a Certified Hadoop Developer [[Udemy](https://www.udemy.com/share/1007h8AkAfeVdVRQ==/)]
 
 ## Machine Learning
-
-[Core ML](https://github.com/usunyu/my-awesome-projects/tree/master/Core%20ML):
-* Super Impressive and Easy Face Detection using Vision API in Swift 4 [[Youtube](https://www.youtube.com/watch?v=d0U5j89M6aI)]
-* Real Time Camera Object Detection with Machine Learning - Swift 4 [[Youtube](https://www.youtube.com/watch?v=p6GA8ODlnX0)]
 
 [NumPy](https://github.com/usunyu/my-awesome-projects/tree/master/NumPy)
 * Complete Python NumPy Tutorial [[YouTube](https://www.youtube.com/watch?v=GB9ByFAIAH4)]
