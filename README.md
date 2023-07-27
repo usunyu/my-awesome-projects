@@ -128,6 +128,11 @@ Learning by doing projects
 [Hadoop](https://github.com/usunyu/my-awesome-projects/tree/master/Hadoop):
 * Become a Certified Hadoop Developer [[Udemy](https://www.udemy.com/share/1007h8AkAfeVdVRQ==/)]
 
+## DevOps
+
+[Docker](https://github.com/usunyu/my-awesome-projects/tree/master/Docker):
+* Docker Crash Course Tutorial [[YouTube](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hxjeEtdHFNYMtCpjNBm3h7)]
+
 ## Machine Learning
 
 [NumPy](https://github.com/usunyu/my-awesome-projects/tree/master/NumPy)
